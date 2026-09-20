@@ -1,0 +1,2 @@
+timestamp_s,mission_success,failure_reason,mission_time_s,search_time_s,target_acquisition_time_s,detect_time_s,approach_time_s,mean_abs_pixel_error_px,p95_abs_pixel_error_px,target_lost_count,approach_reacquire_count,approach_start_area_ratio,approach_final_area_ratio,trajectory_length_3d_m,final_home_error_m
+1789899831.839,1,,172.297,32.353,30.400,4.401,104.846,19.199,48.200,3,3,0.002153,0.020061,58.545,0.086

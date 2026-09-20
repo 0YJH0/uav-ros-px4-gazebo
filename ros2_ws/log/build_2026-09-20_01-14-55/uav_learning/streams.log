@@ -1,0 +1,38 @@
+[0.661s] Invoking command in '/home/yjh/ROS2_manmade/ros2_ws/src/uav_learning': PYTHONPATH=/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uav_learning build --build-base /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build install --record /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/install.log --install-scripts $base/lib/uav_learning --single-version-externally-managed install_data
+[0.801s] running egg_info
+[0.801s] creating ../../build/uav_learning/uav_learning.egg-info
+[0.811s] writing ../../build/uav_learning/uav_learning.egg-info/PKG-INFO
+[0.811s] writing dependency_links to ../../build/uav_learning/uav_learning.egg-info/dependency_links.txt
+[0.811s] writing entry points to ../../build/uav_learning/uav_learning.egg-info/entry_points.txt
+[0.812s] writing requirements to ../../build/uav_learning/uav_learning.egg-info/requires.txt
+[0.812s] writing top-level names to ../../build/uav_learning/uav_learning.egg-info/top_level.txt
+[0.812s] writing manifest file '../../build/uav_learning/uav_learning.egg-info/SOURCES.txt'
+[0.834s] reading manifest file '../../build/uav_learning/uav_learning.egg-info/SOURCES.txt'
+[0.834s] adding license file 'LICENSE'
+[0.834s] writing manifest file '../../build/uav_learning/uav_learning.egg-info/SOURCES.txt'
+[0.834s] running build
+[0.834s] running build_py
+[0.834s] creating /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build
+[0.834s] creating /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build/lib
+[0.834s] creating /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build/lib/uav_learning
+[0.835s] copying uav_learning/__init__.py -> /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build/lib/uav_learning
+[0.835s] copying uav_learning/status_publisher.py -> /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build/lib/uav_learning
+[0.835s] running install
+[0.839s] running install_lib
+[0.849s] creating /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning
+[0.849s] copying /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build/lib/uav_learning/__init__.py -> /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning
+[0.849s] copying /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build/lib/uav_learning/status_publisher.py -> /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning
+[0.849s] byte-compiling /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning/__init__.py to __init__.cpython-312.pyc
+[0.850s] byte-compiling /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning/status_publisher.py to status_publisher.cpython-312.pyc
+[0.850s] running install_data
+[0.850s] creating /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/share/ament_index
+[0.850s] creating /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/share/ament_index/resource_index
+[0.851s] creating /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/share/ament_index/resource_index/packages
+[0.851s] copying resource/uav_learning -> /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/share/ament_index/resource_index/packages
+[0.851s] copying package.xml -> /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/share/uav_learning
+[0.851s] running install_egg_info
+[0.862s] Copying ../../build/uav_learning/uav_learning.egg-info to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning-0.0.0-py3.12.egg-info
+[0.862s] running install_scripts
+[0.929s] Installing status_publisher script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[0.929s] writing list of installed files to '/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/install.log'
+[0.943s] Invoked command in '/home/yjh/ROS2_manmade/ros2_ws/src/uav_learning' returned '0': PYTHONPATH=/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uav_learning build --build-base /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build install --record /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/install.log --install-scripts $base/lib/uav_learning --single-version-externally-managed install_data

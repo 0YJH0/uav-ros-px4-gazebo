@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "uav_interfaces/action/FlyToAltitude_Feedback",
+      "fields": [
+        {
+          "name": "current_altitude",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "uav_interfaces/action/FlyToAltitude_Feedback",
+      "hash_string": "RIHS01_4342d31112e537a44f4b4c394ebef413502dbb9f9b4327f9b3bf4535cf44e8f2"
+    }
+  ]
+}

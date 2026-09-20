@@ -1,0 +1,1 @@
+/home/yjh/ROS2_manmade/ros2_ws/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/trajectory_setpoint__type_support.h

@@ -1,0 +1,13 @@
+# Target labels
+ spdlog
+# Source files and their labels
+/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/CMakeFiles/spdlog
+/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/CMakeFiles/spdlog.rule
+/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/CMakeFiles/spdlog-complete.rule
+/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/spdlog/src/spdlog-stamp/spdlog-build.rule
+/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/spdlog/src/spdlog-stamp/spdlog-configure.rule
+/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/spdlog/src/spdlog-stamp/spdlog-download.rule
+/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/spdlog/src/spdlog-stamp/spdlog-install.rule
+/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/spdlog/src/spdlog-stamp/spdlog-mkdir.rule
+/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/spdlog/src/spdlog-stamp/spdlog-patch.rule
+/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/spdlog/src/spdlog-stamp/spdlog-update.rule

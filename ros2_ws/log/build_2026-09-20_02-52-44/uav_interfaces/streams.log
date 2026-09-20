@@ -1,0 +1,26 @@
+[0.019s] Invoking command in '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/cmake /home/yjh/ROS2_manmade/ros2_ws/src/uav_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces
+[0.036s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.140s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.167s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.173s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.384s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.430s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.734s] -- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.831s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.937s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.942s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[1.205s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[1.247s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.268s] -- Configuring done (1.2s)
+[1.333s] -- Generating done (0.1s)
+[1.347s] -- Build files have been written to: /home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces
+[1.354s] Invoked command in '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/cmake /home/yjh/ROS2_manmade/ros2_ws/src/uav_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces
+[1.355s] Invoking command in '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/cmake --build /home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces -- -j32 -l32
+[1.391s] failed to create symbolic link '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/ament_cmake_python/uav_interfaces/uav_interfaces' because existing path cannot be removed: Is a directory
+[1.392s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_uav_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_uav_interfaces] Error 1
+[1.392s] [  4%] Built target uav_interfaces__rosidl_generator_type_description
+[1.392s] [  4%] Built target uav_interfaces__rs
+[1.392s] gmake[1]: *** [CMakeFiles/Makefile2:471: CMakeFiles/ament_cmake_python_symlink_uav_interfaces.dir/all] Error 2
+[1.392s] gmake[1]: *** Waiting for unfinished jobs....
+[1.393s] gmake: *** [Makefile:146: all] Error 2
+[1.395s] Invoked command in '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/cmake --build /home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces -- -j32 -l32

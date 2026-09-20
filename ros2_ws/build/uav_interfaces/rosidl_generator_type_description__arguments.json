@@ -1,0 +1,15 @@
+{
+  "package_name": "uav_interfaces",
+  "output_dir": "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_generator_type_description/uav_interfaces",
+  "idl_tuples": [
+    "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_adapter/uav_interfaces:msg/TargetDetection.idl",
+    "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_adapter/uav_interfaces:srv/SetMode.idl",
+    "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_adapter/uav_interfaces:action/FlyToAltitude.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs"
+  ]
+}

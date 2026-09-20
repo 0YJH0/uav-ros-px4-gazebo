@@ -1,0 +1,510 @@
+[0.000000] (-) TimerEvent: {}
+[0.000413] (-) JobUnselected: {'identifier': 'microxrcedds_agent'}
+[0.000490] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000513] (-) JobUnselected: {'identifier': 'uav_learning'}
+[0.000532] (uav_interfaces) JobQueued: {'identifier': 'uav_interfaces', 'dependencies': OrderedDict()}
+[0.000580] (uav_interfaces) JobStarted: {'identifier': 'uav_interfaces'}
+[0.009273] (uav_interfaces) JobProgress: {'identifier': 'uav_interfaces', 'progress': 'cmake'}
+[0.010739] (uav_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/yjh/ROS2_manmade/ros2_ws/src/uav_interfaces', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces'], 'cwd': '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'yjh', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs/lib:/home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/yjh', 'OLDPWD': '/home/yjh/ROS2_manmade', 'TERM_PROGRAM_VERSION': '1.85.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-62d2461f-b834-4630-95cd-a6946b37216c.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'yjh', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/7617_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2022b/runtime/win64:/mnt/c/Program Files/MATLAB/R2022b/bin:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/yjh/blender/blender-4.2.1-windows-x64/blender-4.2.1-windows-x64/custom-python-packages/Python311/Scripts:/mnt/c/Program Files/nodejs/:/mnt/c/Users/yjh/anaconda3:/mnt/c/Users/yjh/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/yjh/anaconda3/Library/usr/bin:/mnt/c/Users/yjh/anaconda3/Library/bin:/mnt/c/Users/yjh/anaconda3/Scripts:/mnt/c/Users/yjh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm 2025.1.1.1/bin:/mnt/c/Users/yjh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/yjh/.dotnet/tools:/mnt/c/Users/yjh/AppData/Roaming/npm:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f74a288ac0.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs:/home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}), 'shell': False}
+[0.099133] (-) TimerEvent: {}
+[0.199465] (-) TimerEvent: {}
+[0.298102] (uav_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.299589] (-) TimerEvent: {}
+[0.399869] (-) TimerEvent: {}
+[0.500242] (-) TimerEvent: {}
+[0.600605] (-) TimerEvent: {}
+[0.700942] (-) TimerEvent: {}
+[0.801349] (-) TimerEvent: {}
+[0.901758] (-) TimerEvent: {}
+[1.002062] (-) TimerEvent: {}
+[1.102448] (-) TimerEvent: {}
+[1.202810] (-) TimerEvent: {}
+[1.303098] (-) TimerEvent: {}
+[1.403470] (-) TimerEvent: {}
+[1.503846] (-) TimerEvent: {}
+[1.604216] (-) TimerEvent: {}
+[1.617752] (uav_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.704440] (-) TimerEvent: {}
+[1.804798] (-) TimerEvent: {}
+[1.905100] (-) TimerEvent: {}
+[2.005466] (-) TimerEvent: {}
+[2.105969] (-) TimerEvent: {}
+[2.206463] (-) TimerEvent: {}
+[2.307041] (-) TimerEvent: {}
+[2.407476] (-) TimerEvent: {}
+[2.507807] (-) TimerEvent: {}
+[2.608134] (-) TimerEvent: {}
+[2.708525] (-) TimerEvent: {}
+[2.798695] (uav_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.808607] (-) TimerEvent: {}
+[2.909007] (-) TimerEvent: {}
+[3.009340] (-) TimerEvent: {}
+[3.109641] (-) TimerEvent: {}
+[3.209982] (-) TimerEvent: {}
+[3.238607] (uav_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.250337] (uav_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.251042] (uav_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.251551] (uav_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.310691] (-) TimerEvent: {}
+[3.411052] (-) TimerEvent: {}
+[3.426323] (uav_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.511180] (-) TimerEvent: {}
+[3.611627] (-) TimerEvent: {}
+[3.711994] (-) TimerEvent: {}
+[3.812393] (-) TimerEvent: {}
+[3.874126] (uav_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.884906] (uav_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.885318] (uav_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.885832] (uav_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.892453] (uav_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[3.912539] (-) TimerEvent: {}
+[4.013027] (-) TimerEvent: {}
+[4.113408] (-) TimerEvent: {}
+[4.116074] (uav_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.213560] (-) TimerEvent: {}
+[4.285555] (uav_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[4.299387] (uav_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.313698] (-) TimerEvent: {}
+[4.414001] (-) TimerEvent: {}
+[4.514378] (-) TimerEvent: {}
+[4.614712] (-) TimerEvent: {}
+[4.666406] (uav_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.715454] (-) TimerEvent: {}
+[4.735720] (uav_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[4.742148] (uav_interfaces) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.0.4 (/opt/ros/jazzy/share/builtin_interfaces/cmake)\n'}
+[4.815546] (-) TimerEvent: {}
+[4.915915] (-) TimerEvent: {}
+[5.016302] (-) TimerEvent: {}
+[5.116638] (-) TimerEvent: {}
+[5.216902] (-) TimerEvent: {}
+[5.317241] (-) TimerEvent: {}
+[5.417564] (-) TimerEvent: {}
+[5.517887] (-) TimerEvent: {}
+[5.603719] (uav_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[5.617971] (-) TimerEvent: {}
+[5.718256] (-) TimerEvent: {}
+[5.818695] (-) TimerEvent: {}
+[5.918958] (-) TimerEvent: {}
+[6.019351] (-) TimerEvent: {}
+[6.119874] (-) TimerEvent: {}
+[6.184640] (uav_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.220077] (-) TimerEvent: {}
+[6.320601] (-) TimerEvent: {}
+[6.421173] (-) TimerEvent: {}
+[6.521898] (-) TimerEvent: {}
+[6.622455] (-) TimerEvent: {}
+[6.722904] (-) TimerEvent: {}
+[6.823253] (-) TimerEvent: {}
+[6.923740] (-) TimerEvent: {}
+[7.024262] (-) TimerEvent: {}
+[7.086742] (uav_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.091694] (uav_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[7.124401] (-) TimerEvent: {}
+[7.224847] (-) TimerEvent: {}
+[7.301016] (uav_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[7.324955] (-) TimerEvent: {}
+[7.425380] (-) TimerEvent: {}
+[7.525921] (-) TimerEvent: {}
+[7.626454] (-) TimerEvent: {}
+[7.727119] (-) TimerEvent: {}
+[7.827517] (-) TimerEvent: {}
+[7.927860] (-) TimerEvent: {}
+[7.978427] (uav_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[8.028259] (-) TimerEvent: {}
+[8.090545] (uav_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[8.106424] (uav_interfaces) StdoutLine: {'line': b'-- Configuring done (8.1s)\n'}
+[8.128475] (-) TimerEvent: {}
+[8.180995] (uav_interfaces) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[8.187048] (uav_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[8.187297] (uav_interfaces) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[8.187385] (uav_interfaces) StderrLine: {'line': b'\n'}
+[8.187460] (uav_interfaces) StderrLine: {'line': b'    CATKIN_INSTALL_INTO_PREFIX_ROOT\n'}
+[8.187531] (uav_interfaces) StderrLine: {'line': b'    CATKIN_SYMLINK_INSTALL\n'}
+[8.187603] (uav_interfaces) StderrLine: {'line': b'\n'}
+[8.187675] (uav_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[8.203144] (uav_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces\n'}
+[8.215950] (uav_interfaces) CommandEnded: {'returncode': 0}
+[8.218313] (uav_interfaces) JobProgress: {'identifier': 'uav_interfaces', 'progress': 'build'}
+[8.218484] (uav_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces', '--', '-j32', '-l32'], 'cwd': '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'yjh', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs/lib:/home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/yjh', 'OLDPWD': '/home/yjh/ROS2_manmade', 'TERM_PROGRAM_VERSION': '1.85.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-62d2461f-b834-4630-95cd-a6946b37216c.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'yjh', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/7617_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2022b/runtime/win64:/mnt/c/Program Files/MATLAB/R2022b/bin:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/yjh/blender/blender-4.2.1-windows-x64/blender-4.2.1-windows-x64/custom-python-packages/Python311/Scripts:/mnt/c/Program Files/nodejs/:/mnt/c/Users/yjh/anaconda3:/mnt/c/Users/yjh/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/yjh/anaconda3/Library/usr/bin:/mnt/c/Users/yjh/anaconda3/Library/bin:/mnt/c/Users/yjh/anaconda3/Scripts:/mnt/c/Users/yjh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm 2025.1.1.1/bin:/mnt/c/Users/yjh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/yjh/.dotnet/tools:/mnt/c/Users/yjh/AppData/Roaming/npm:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f74a288ac0.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs:/home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}), 'shell': False}
+[8.228595] (-) TimerEvent: {}
+[8.287675] (uav_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[8.288363] (uav_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[8.296437] (uav_interfaces) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_uav_interfaces\n'}
+[8.328729] (-) TimerEvent: {}
+[8.429168] (-) TimerEvent: {}
+[8.529650] (-) TimerEvent: {}
+[8.621203] (uav_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[8.622237] (uav_interfaces) StdoutLine: {'line': b'creating uav_interfaces.egg-info\n'}
+[8.624727] (uav_interfaces) StdoutLine: {'line': b'[  3%] Built target uav_interfaces__rosidl_generator_type_description\n'}
+[8.629847] (-) TimerEvent: {}
+[8.637361] (uav_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[8.649947] (uav_interfaces) StdoutLine: {'line': b'writing uav_interfaces.egg-info/PKG-INFO\n'}
+[8.650638] (uav_interfaces) StdoutLine: {'line': b'writing dependency_links to uav_interfaces.egg-info/dependency_links.txt\n'}
+[8.650954] (uav_interfaces) StdoutLine: {'line': b'writing top-level names to uav_interfaces.egg-info/top_level.txt\n'}
+[8.651183] (uav_interfaces) StdoutLine: {'line': b"writing manifest file 'uav_interfaces.egg-info/SOURCES.txt'\n"}
+[8.655002] (uav_interfaces) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[8.716301] (uav_interfaces) StdoutLine: {'line': b'[  7%] Built target uav_interfaces__rs\n'}
+[8.729994] (-) TimerEvent: {}
+[8.735452] (uav_interfaces) StdoutLine: {'line': b"reading manifest file 'uav_interfaces.egg-info/SOURCES.txt'\n"}
+[8.736350] (uav_interfaces) StdoutLine: {'line': b"writing manifest file 'uav_interfaces.egg-info/SOURCES.txt'\n"}
+[8.775931] (uav_interfaces) StdoutLine: {'line': b'[  7%] Built target ament_cmake_python_build_uav_interfaces_egg\n'}
+[8.830134] (-) TimerEvent: {}
+[8.930461] (-) TimerEvent: {}
+[9.030844] (-) TimerEvent: {}
+[9.131323] (-) TimerEvent: {}
+[9.231747] (-) TimerEvent: {}
+[9.332162] (-) TimerEvent: {}
+[9.371178] (uav_interfaces) StdoutLine: {'line': b'[  7%] Built target uav_interfaces__cpp\n'}
+[9.432306] (-) TimerEvent: {}
+[9.458420] (uav_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uav_interfaces/msg/detail/target_detection__functions.c.o\x1b[0m\n'}
+[9.459009] (uav_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uav_interfaces/msg/detail/target_detection__description.c.o\x1b[0m\n'}
+[9.459353] (uav_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uav_interfaces/srv/detail/set_mode__functions.c.o\x1b[0m\n'}
+[9.459827] (uav_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uav_interfaces/srv/detail/set_mode__description.c.o\x1b[0m\n'}
+[9.460495] (uav_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uav_interfaces/msg/detail/target_detection__type_support.c.o\x1b[0m\n'}
+[9.460811] (uav_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uav_interfaces/action/detail/fly_to_altitude__functions.c.o\x1b[0m\n'}
+[9.461244] (uav_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uav_interfaces/srv/detail/set_mode__type_support.c.o\x1b[0m\n'}
+[9.461716] (uav_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uav_interfaces/action/detail/fly_to_altitude__type_support.c.o\x1b[0m\n'}
+[9.467552] (uav_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_generator_c.dir/rosidl_generator_c/uav_interfaces/action/detail/fly_to_altitude__description.c.o\x1b[0m\n'}
+[9.532590] (-) TimerEvent: {}
+[9.633109] (-) TimerEvent: {}
+[9.721893] (uav_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libuav_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[9.733291] (-) TimerEvent: {}
+[9.833707] (-) TimerEvent: {}
+[9.934372] (-) TimerEvent: {}
+[9.937838] (uav_interfaces) StdoutLine: {'line': b'[ 25%] Built target uav_interfaces__rosidl_generator_c\n'}
+[9.951261] (uav_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[9.952142] (uav_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.952283] (uav_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.952370] (uav_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[9.956224] (uav_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.958948] (uav_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.034552] (-) TimerEvent: {}
+[10.135066] (-) TimerEvent: {}
+[10.235479] (-) TimerEvent: {}
+[10.335997] (-) TimerEvent: {}
+[10.436420] (-) TimerEvent: {}
+[10.479758] (uav_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uav_interfaces/msg/target_detection__type_support.cpp.o\x1b[0m\n'}
+[10.480441] (uav_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uav_interfaces/srv/set_mode__type_support.cpp.o\x1b[0m\n'}
+[10.483343] (uav_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/uav_interfaces/action/fly_to_altitude__type_support.cpp.o\x1b[0m\n'}
+[10.513425] (uav_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uav_interfaces/srv/set_mode__type_support.cpp.o\x1b[0m\n'}
+[10.513839] (uav_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uav_interfaces/msg/target_detection__type_support.cpp.o\x1b[0m\n'}
+[10.514232] (uav_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/uav_interfaces/action/fly_to_altitude__type_support.cpp.o\x1b[0m\n'}
+[10.536547] (-) TimerEvent: {}
+[10.590246] (uav_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library libuav_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.596207] (uav_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uav_interfaces/msg/detail/target_detection__type_support.cpp.o\x1b[0m\n'}
+[10.597701] (uav_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uav_interfaces/action/detail/fly_to_altitude__type_support.cpp.o\x1b[0m\n'}
+[10.598964] (uav_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/uav_interfaces/srv/detail/set_mode__type_support.cpp.o\x1b[0m\n'}
+[10.636667] (-) TimerEvent: {}
+[10.650470] (uav_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uav_interfaces/msg/detail/target_detection__type_support.c.o\x1b[0m\n'}
+[10.650903] (uav_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uav_interfaces/action/detail/fly_to_altitude__type_support.c.o\x1b[0m\n'}
+[10.656038] (uav_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/uav_interfaces/srv/detail/set_mode__type_support.c.o\x1b[0m\n'}
+[10.736886] (-) TimerEvent: {}
+[10.782886] (uav_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libuav_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.837009] (-) TimerEvent: {}
+[10.893387] (uav_interfaces) StdoutLine: {'line': b'[ 61%] Built target uav_interfaces__rosidl_typesupport_c\n'}
+[10.937167] (-) TimerEvent: {}
+[11.026534] (uav_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uav_interfaces/srv/detail/dds_fastrtps/set_mode__type_support.cpp.o\x1b[0m\n'}
+[11.032052] (uav_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uav_interfaces/msg/detail/dds_fastrtps/target_detection__type_support.cpp.o\x1b[0m\n'}
+[11.032654] (uav_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uav_interfaces/action/detail/dds_fastrtps/fly_to_altitude__type_support.cpp.o\x1b[0m\n'}
+[11.037242] (-) TimerEvent: {}
+[11.083930] (uav_interfaces) StdoutLine: {'line': b'[ 67%] Built target uav_interfaces__rosidl_typesupport_introspection_c\n'}
+[11.136086] (uav_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uav_interfaces/srv/detail/set_mode__type_support_c.cpp.o\x1b[0m\n'}
+[11.136395] (uav_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uav_interfaces/action/detail/fly_to_altitude__type_support_c.cpp.o\x1b[0m\n'}
+[11.137395] (-) TimerEvent: {}
+[11.137932] (uav_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/uav_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/uav_interfaces/msg/detail/target_detection__type_support_c.cpp.o\x1b[0m\n'}
+[11.237601] (-) TimerEvent: {}
+[11.338284] (-) TimerEvent: {}
+[11.438878] (-) TimerEvent: {}
+[11.539358] (-) TimerEvent: {}
+[11.639985] (-) TimerEvent: {}
+[11.740477] (-) TimerEvent: {}
+[11.830481] (uav_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libuav_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[11.840695] (-) TimerEvent: {}
+[11.941314] (-) TimerEvent: {}
+[12.036191] (uav_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libuav_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[12.041446] (-) TimerEvent: {}
+[12.119715] (uav_interfaces) StdoutLine: {'line': b'[ 76%] Built target uav_interfaces__rosidl_typesupport_cpp\n'}
+[12.141579] (-) TimerEvent: {}
+[12.166707] (uav_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libuav_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.241763] (-) TimerEvent: {}
+[12.301807] (uav_interfaces) StdoutLine: {'line': b'[ 78%] Built target uav_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[12.341909] (-) TimerEvent: {}
+[12.428416] (uav_interfaces) StdoutLine: {'line': b'[ 78%] Built target uav_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[12.442058] (-) TimerEvent: {}
+[12.542429] (-) TimerEvent: {}
+[12.588161] (uav_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libuav_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.642585] (-) TimerEvent: {}
+[12.742947] (-) TimerEvent: {}
+[12.840637] (uav_interfaces) StdoutLine: {'line': b'[ 80%] Built target uav_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[12.843033] (-) TimerEvent: {}
+[12.861216] (uav_interfaces) StdoutLine: {'line': b'[ 80%] Built target uav_interfaces\n'}
+[12.883079] (uav_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.943106] (-) TimerEvent: {}
+[13.043462] (-) TimerEvent: {}
+[13.143778] (-) TimerEvent: {}
+[13.244084] (-) TimerEvent: {}
+[13.344362] (-) TimerEvent: {}
+[13.444630] (-) TimerEvent: {}
+[13.544876] (-) TimerEvent: {}
+[13.645269] (-) TimerEvent: {}
+[13.745619] (-) TimerEvent: {}
+[13.840998] (uav_interfaces) StdoutLine: {'line': b'[ 81%] Built target uav_interfaces__py\n'}
+[13.845710] (-) TimerEvent: {}
+[13.861406] (uav_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uav_interfaces/msg/_target_detection_s.c.o\x1b[0m\n'}
+[13.862028] (uav_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uav_interfaces/srv/_set_mode_s.c.o\x1b[0m\n'}
+[13.862426] (uav_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces__rosidl_generator_py.dir/rosidl_generator_py/uav_interfaces/action/_fly_to_altitude_s.c.o\x1b[0m\n'}
+[13.945922] (-) TimerEvent: {}
+[14.046317] (-) TimerEvent: {}
+[14.110144] (uav_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library libuav_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[14.146499] (-) TimerEvent: {}
+[14.246787] (-) TimerEvent: {}
+[14.285481] (uav_interfaces) StdoutLine: {'line': b'[ 89%] Built target uav_interfaces__rosidl_generator_py\n'}
+[14.298741] (uav_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/uav_interfaces/_uav_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.299383] (uav_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/uav_interfaces/_uav_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.299583] (uav_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/uav_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/uav_interfaces/_uav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.346862] (-) TimerEvent: {}
+[14.389338] (uav_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/uav_interfaces/uav_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[14.389498] (uav_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/uav_interfaces/uav_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[14.394804] (uav_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/uav_interfaces/uav_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[14.446966] (-) TimerEvent: {}
+[14.464829] (uav_interfaces) StdoutLine: {'line': b'[100%] Built target uav_interfaces_s__rosidl_typesupport_c\n'}
+[14.467420] (uav_interfaces) StdoutLine: {'line': b'[100%] Built target uav_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[14.498255] (uav_interfaces) StdoutLine: {'line': b'[100%] Built target uav_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[14.509159] (uav_interfaces) CommandEnded: {'returncode': 0}
+[14.510178] (uav_interfaces) JobProgress: {'identifier': 'uav_interfaces', 'progress': 'install'}
+[14.516395] (uav_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces'], 'cwd': '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'yjh', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs/lib:/home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/yjh', 'OLDPWD': '/home/yjh/ROS2_manmade', 'TERM_PROGRAM_VERSION': '1.85.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-62d2461f-b834-4630-95cd-a6946b37216c.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'yjh', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/7617_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2022b/runtime/win64:/mnt/c/Program Files/MATLAB/R2022b/bin:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/yjh/blender/blender-4.2.1-windows-x64/blender-4.2.1-windows-x64/custom-python-packages/Python311/Scripts:/mnt/c/Program Files/nodejs/:/mnt/c/Users/yjh/anaconda3:/mnt/c/Users/yjh/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/yjh/anaconda3/Library/usr/bin:/mnt/c/Users/yjh/anaconda3/Library/bin:/mnt/c/Users/yjh/anaconda3/Scripts:/mnt/c/Users/yjh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm 2025.1.1.1/bin:/mnt/c/Users/yjh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/yjh/.dotnet/tools:/mnt/c/Users/yjh/AppData/Roaming/npm:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f74a288ac0.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs:/home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}), 'shell': False}
+[14.522142] (uav_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.522672] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/ament_index/resource_index/rosidl_interfaces/uav_interfaces\n'}
+[14.522848] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/msg/TargetDetection.json\n'}
+[14.523005] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/srv/SetMode.json\n'}
+[14.523157] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/action/FlyToAltitude.json\n'}
+[14.523375] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces\n'}
+[14.523952] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv\n'}
+[14.524340] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail\n'}
+[14.524629] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__type_support.c\n'}
+[14.524737] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__functions.h\n'}
+[14.524838] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__struct.h\n'}
+[14.524943] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__functions.c\n'}
+[14.525054] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__description.c\n'}
+[14.525152] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__type_support.h\n'}
+[14.525241] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/set_mode.h\n'}
+[14.525546] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg\n'}
+[14.525602] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail\n'}
+[14.525656] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__type_support.h\n'}
+[14.525757] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__type_support.c\n'}
+[14.525837] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__functions.h\n'}
+[14.525896] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__functions.c\n'}
+[14.525934] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__description.c\n'}
+[14.525969] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__struct.h\n'}
+[14.526005] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/target_detection.h\n'}
+[14.526039] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[14.526259] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action\n'}
+[14.526372] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail\n'}
+[14.526551] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__functions.h\n'}
+[14.526771] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__functions.c\n'}
+[14.526983] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__description.c\n'}
+[14.527284] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__struct.h\n'}
+[14.527455] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__type_support.h\n'}
+[14.527544] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__type_support.c\n'}
+[14.527768] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/fly_to_altitude.h\n'}
+[14.527962] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/library_path.sh\n'}
+[14.528226] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/library_path.dsv\n'}
+[14.528537] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_generator_c.so\n'}
+[14.528844] (uav_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_generator_c.so" to ""\n'}
+[14.529106] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces\n'}
+[14.529407] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv\n'}
+[14.529629] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail\n'}
+[14.529741] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__rosidl_typesupport_fastrtps_c.h\n'}
+[14.529829] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg\n'}
+[14.529931] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail\n'}
+[14.529991] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__rosidl_typesupport_fastrtps_c.h\n'}
+[14.530080] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[14.530181] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action\n'}
+[14.530271] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail\n'}
+[14.530375] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__rosidl_typesupport_fastrtps_c.h\n'}
+[14.530478] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[14.530741] (uav_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.530836] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces\n'}
+[14.530980] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv\n'}
+[14.531162] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail\n'}
+[14.531218] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__type_support.c\n'}
+[14.531257] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__rosidl_typesupport_introspection_c.h\n'}
+[14.531292] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg\n'}
+[14.531325] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail\n'}
+[14.531445] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__rosidl_typesupport_introspection_c.h\n'}
+[14.531547] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__type_support.c\n'}
+[14.531633] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[14.531717] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action\n'}
+[14.532095] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail\n'}
+[14.532568] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__rosidl_typesupport_introspection_c.h\n'}
+[14.532933] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__type_support.c\n'}
+[14.533228] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[14.533409] (uav_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.533516] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_c.so\n'}
+[14.533618] (uav_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[14.533812] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces\n'}
+[14.533901] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv\n'}
+[14.533984] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail\n'}
+[14.534061] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__traits.hpp\n'}
+[14.534136] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__type_support.hpp\n'}
+[14.534209] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__builder.hpp\n'}
+[14.534287] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__struct.hpp\n'}
+[14.534360] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/set_mode.hpp\n'}
+[14.534433] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg\n'}
+[14.534506] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail\n'}
+[14.534579] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__struct.hpp\n'}
+[14.534652] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__builder.hpp\n'}
+[14.534724] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__type_support.hpp\n'}
+[14.534797] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__traits.hpp\n'}
+[14.534869] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/target_detection.hpp\n'}
+[14.534942] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[14.535015] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action\n'}
+[14.535143] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail\n'}
+[14.535220] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__traits.hpp\n'}
+[14.535334] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__type_support.hpp\n'}
+[14.535414] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__struct.hpp\n'}
+[14.535489] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__builder.hpp\n'}
+[14.535568] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/fly_to_altitude.hpp\n'}
+[14.535642] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces\n'}
+[14.535714] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv\n'}
+[14.535796] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail\n'}
+[14.535954] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/dds_fastrtps\n'}
+[14.536042] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.536086] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg\n'}
+[14.536124] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail\n'}
+[14.536157] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/dds_fastrtps\n'}
+[14.536224] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.536292] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[14.536353] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action\n'}
+[14.536416] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail\n'}
+[14.536486] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/dds_fastrtps\n'}
+[14.536525] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.536560] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[14.536596] (uav_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[14.536630] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces\n'}
+[14.536665] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv\n'}
+[14.536698] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail\n'}
+[14.536731] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__type_support.cpp\n'}
+[14.536765] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.536800] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg\n'}
+[14.536833] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail\n'}
+[14.536866] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__type_support.cpp\n'}
+[14.536900] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.536933] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action\n'}
+[14.536966] (uav_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail\n'}
+[14.536998] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__type_support.cpp\n'}
+[14.537032] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.537064] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[14.537096] (uav_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[14.537128] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_cpp.so\n'}
+[14.537161] (uav_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[14.537193] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/pythonpath.sh\n'}
+[14.537226] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/pythonpath.dsv\n'}
+[14.537259] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces-0.0.0-py3.12.egg-info\n'}
+[14.537292] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[14.537324] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[14.537358] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[14.537395] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[14.537427] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces\n'}
+[14.537461] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/_uav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[14.537492] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_c.so\n'}
+[14.537524] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/srv\n'}
+[14.537583] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/srv/_set_mode_s.c\n'}
+[14.537624] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/srv/__init__.py\n'}
+[14.537662] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/srv/_set_mode.py\n'}
+[14.537722] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/msg\n'}
+[14.537781] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/msg/_target_detection.py\n'}
+[14.537841] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/msg/_target_detection_s.c\n'}
+[14.537896] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/msg/__init__.py\n'}
+[14.537954] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/__init__.py\n'}
+[14.538010] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/_uav_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[14.538063] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[14.538100] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[14.538134] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/action\n'}
+[14.538167] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/action/_fly_to_altitude_s.c\n'}
+[14.538200] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/action/__init__.py\n'}
+[14.538233] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/action/_fly_to_altitude.py\n'}
+[14.538266] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/_uav_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[14.547104] (-) TimerEvent: {}
+[14.575437] (uav_interfaces) StdoutLine: {'line': b"Listing '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces'...\n"}
+[14.575718] (uav_interfaces) StdoutLine: {'line': b"Compiling '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/__init__.py'...\n"}
+[14.575782] (uav_interfaces) StdoutLine: {'line': b"Listing '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/action'...\n"}
+[14.575858] (uav_interfaces) StdoutLine: {'line': b"Compiling '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/action/__init__.py'...\n"}
+[14.575903] (uav_interfaces) StdoutLine: {'line': b"Compiling '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/action/_fly_to_altitude.py'...\n"}
+[14.575941] (uav_interfaces) StdoutLine: {'line': b"Listing '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/msg'...\n"}
+[14.575978] (uav_interfaces) StdoutLine: {'line': b"Compiling '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/msg/__init__.py'...\n"}
+[14.576016] (uav_interfaces) StdoutLine: {'line': b"Compiling '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/msg/_target_detection.py'...\n"}
+[14.576055] (uav_interfaces) StdoutLine: {'line': b"Listing '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/srv'...\n"}
+[14.576091] (uav_interfaces) StdoutLine: {'line': b"Compiling '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/srv/__init__.py'...\n"}
+[14.576126] (uav_interfaces) StdoutLine: {'line': b"Compiling '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/srv/_set_mode.py'...\n"}
+[14.580329] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[14.580739] (uav_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.580915] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[14.581108] (uav_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.581210] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_c.so\n'}
+[14.581402] (uav_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[14.581576] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_generator_py.so\n'}
+[14.581731] (uav_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_generator_py.so" to ""\n'}
+[14.581819] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust\n'}
+[14.581904] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/build.rs\n'}
+[14.582006] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/Cargo.toml\n'}
+[14.582075] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src\n'}
+[14.582298] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/action.rs\n'}
+[14.582390] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/msg.rs\n'}
+[14.582553] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/srv\n'}
+[14.582597] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/srv/rmw.rs\n'}
+[14.582669] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/msg\n'}
+[14.582811] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/msg/rmw.rs\n'}
+[14.583051] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/srv.rs\n'}
+[14.583130] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/lib.rs\n'}
+[14.583222] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/action\n'}
+[14.583324] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/action/rmw.rs\n'}
+[14.583417] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/msg/TargetDetection.idl\n'}
+[14.583588] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/srv/SetMode.idl\n'}
+[14.583726] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/action/FlyToAltitude.idl\n'}
+[14.583766] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/msg/TargetDetection.msg\n'}
+[14.583870] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/srv/SetMode.srv\n'}
+[14.584010] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/action/FlyToAltitude.action\n'}
+[14.584123] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/ament_index/resource_index/package_run_dependencies/uav_interfaces\n'}
+[14.584304] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/ament_index/resource_index/parent_prefix_path/uav_interfaces\n'}
+[14.584515] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/ament_prefix_path.sh\n'}
+[14.584615] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/ament_prefix_path.dsv\n'}
+[14.584718] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/path.sh\n'}
+[14.584820] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/path.dsv\n'}
+[14.584923] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/local_setup.bash\n'}
+[14.585024] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/local_setup.sh\n'}
+[14.585128] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/local_setup.zsh\n'}
+[14.585338] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/local_setup.dsv\n'}
+[14.585429] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/package.dsv\n'}
+[14.585565] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/ament_index/resource_index/packages/uav_interfaces\n'}
+[14.585733] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_generator_cExport.cmake\n'}
+[14.586093] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[14.586327] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[14.586690] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[14.586747] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[14.586787] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[14.586825] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[14.586860] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[14.586895] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_generator_cppExport.cmake\n'}
+[14.586929] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[14.586963] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[14.586996] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[14.587029] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[14.587062] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[14.587101] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[14.587135] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_generator_pyExport.cmake\n'}
+[14.587169] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[14.587204] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[14.588681] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.589201] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.589413] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.589659] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.590039] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[14.590156] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[14.590274] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[14.590634] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfacesConfig.cmake\n'}
+[14.590967] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfacesConfig-version.cmake\n'}
+[14.591088] (uav_interfaces) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/package.xml\n'}
+[14.591339] (uav_interfaces) CommandEnded: {'returncode': 0}
+[14.606975] (uav_interfaces) JobEnded: {'identifier': 'uav_interfaces', 'rc': 0}
+[14.608025] (-) EventReactorShutdown: {}

@@ -1,0 +1,16 @@
+[0.013s] Invoking command in '/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/cmake /home/yjh/ROS2_manmade/ros2_ws/src/Micro-XRCE-DDS-Agent -DUAGENT_ISOLATED_INSTALL=OFF -DUAGENT_USE_SYSTEM_FASTCDR=ON -DUAGENT_USE_SYSTEM_FASTDDS=ON -DCMAKE_INSTALL_PREFIX=/home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent
+[0.112s] -- The C compiler identification is GNU 13.3.0
+[0.554s] -- Detecting C compiler ABI info
+[0.765s] -- Detecting C compiler ABI info - done
+[0.772s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.772s] -- Detecting C compile features
+[0.773s] -- Detecting C compile features - done
+[0.893s] -- The CXX compiler identification is GNU 13.3.0
+[1.472s] -- Detecting CXX compiler ABI info
+[1.718s] -- Detecting CXX compiler ABI info - done
+[1.726s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.726s] -- Detecting CXX compile features
+[1.727s] -- Detecting CXX compile features - done
+[4.211s] -- Configuring done (4.2s)
+[4.214s] -- Generating done (0.0s)
+[4.215s] -- Build files have been written to: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent

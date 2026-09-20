@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: uav-learning
+Version: 0.0.0
+Summary: ROS 2 UAV autonomous perception, PX4 Offboard control and Gazebo mission simulation.
+Maintainer: yjh
+Maintainer-email: yjh@todo.todo
+License: Apache-2.0

@@ -1,0 +1,24 @@
+running develop
+running egg_info
+writing uav_learning.egg-info/PKG-INFO
+writing dependency_links to uav_learning.egg-info/dependency_links.txt
+writing entry points to uav_learning.egg-info/entry_points.txt
+writing requirements to uav_learning.egg-info/requires.txt
+writing top-level names to uav_learning.egg-info/top_level.txt
+reading manifest file 'uav_learning.egg-info/SOURCES.txt'
+writing manifest file 'uav_learning.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav-learning.egg-link (link to .)
+Installing fly_to_altitude_client script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+Installing fly_to_altitude_server script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+Installing perception_node script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+Installing px4_offboard_controller script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+Installing status_publisher script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+Installing status_subscriber script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+Installing uav_mode_client script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+Installing uav_mode_server script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+Installing uav_state_monitor script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+Installing uav_state_publisher script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+
+Installed /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning
+running symlink_data

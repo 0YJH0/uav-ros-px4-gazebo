@@ -1,0 +1,13 @@
+[console_scripts]
+batch_benchmark_runner = uav_learning.batch_benchmark:main
+benchmark_logger = uav_learning.benchmark_logger:main
+fly_to_altitude_client = uav_learning.fly_to_altitude_client:main
+fly_to_altitude_server = uav_learning.fly_to_altitude_server:main
+perception_node = uav_learning.perception_node:main
+px4_offboard_controller = uav_learning.px4_offboard_controller:main
+status_publisher = uav_learning.status_publisher:main
+status_subscriber = uav_learning.status_subscriber:main
+uav_mode_client = uav_learning.uav_mode_client:main
+uav_mode_server = uav_learning.uav_mode_server:main
+uav_state_monitor = uav_learning.uav_state_monitor:main
+uav_state_publisher = uav_learning.uav_state_publisher:main

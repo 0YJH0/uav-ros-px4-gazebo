@@ -1,0 +1,38 @@
+[1.911s] Invoking command in '/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build --no-deps symlink_data
+[2.191s] running develop
+[2.355s] running egg_info
+[2.355s] creating uav_learning.egg-info
+[2.370s] writing uav_learning.egg-info/PKG-INFO
+[2.370s] writing dependency_links to uav_learning.egg-info/dependency_links.txt
+[2.371s] writing entry points to uav_learning.egg-info/entry_points.txt
+[2.371s] writing requirements to uav_learning.egg-info/requires.txt
+[2.371s] writing top-level names to uav_learning.egg-info/top_level.txt
+[2.371s] writing manifest file 'uav_learning.egg-info/SOURCES.txt'
+[2.404s] reading manifest file 'uav_learning.egg-info/SOURCES.txt'
+[2.405s] writing manifest file 'uav_learning.egg-info/SOURCES.txt'
+[2.422s] running build_ext
+[2.422s] Creating /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav-learning.egg-link (link to .)
+[2.423s] Installing batch_benchmark_runner script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[2.423s] Installing benchmark_logger script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[2.423s] Installing fly_to_altitude_client script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[2.423s] Installing fly_to_altitude_server script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[2.423s] Installing perception_node script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[2.424s] Installing px4_offboard_controller script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[2.424s] Installing status_publisher script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[2.424s] Installing status_subscriber script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[2.425s] Installing uav_mode_client script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[2.425s] Installing uav_mode_server script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[2.425s] Installing uav_state_monitor script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[2.425s] Installing uav_state_publisher script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[2.425s] 
+[2.425s] Installed /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning
+[2.425s] running symlink_data
+[2.425s] creating /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/share/ament_index
+[2.425s] creating /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/share/ament_index/resource_index
+[2.425s] creating /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/share/ament_index/resource_index/packages
+[2.426s] symbolically linking /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/resource/uav_learning -> /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/share/ament_index/resource_index/packages
+[2.426s] symbolically linking /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/package.xml -> /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/share/uav_learning
+[2.426s] creating /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/share/uav_learning/launch
+[2.426s] symbolically linking /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/launch/camera_bridge.launch.py -> /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/share/uav_learning/launch
+[2.426s] symbolically linking /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/launch/uav_system.launch.py -> /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/share/uav_learning/launch
+[2.453s] Invoked command in '/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build --no-deps symlink_data

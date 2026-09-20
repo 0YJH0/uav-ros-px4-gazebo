@@ -1,0 +1,267 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-29bc46461e34eff76cfd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "uav_interfaces__py",
+					"jsonFile" : "directory-uav_interfaces__py-3a60d389ee812477d6e3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/uav_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "uav_interfaces__rs",
+					"jsonFile" : "directory-uav_interfaces__rs-1d763a7af745754877fd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/uav_interfaces__rs",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "uav_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_uav_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_uav_interfaces_egg-93b9e9565799545cd9d4.json",
+					"name" : "ament_cmake_python_build_uav_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_uav_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_uav_interfaces-7b9f3cd38f9cf0e9691b.json",
+					"name" : "ament_cmake_python_copy_uav_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces-c6fedaa1bae9b8d541be.json",
+					"name" : "uav_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces__cpp-050d0c0068449e196c64.json",
+					"name" : "uav_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uav_interfaces__py::@573414c011e9bc2bcfe4",
+					"jsonFile" : "target-uav_interfaces__py-5098522eaa9f61d96928.json",
+					"name" : "uav_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces__rosidl_generator_c-1b6b70c65ef88055ba09.json",
+					"name" : "uav_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces__rosidl_generator_py-c5aea677516fcded29b5.json",
+					"name" : "uav_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces__rosidl_generator_type_description-7b8eb14cd61abc18db23.json",
+					"name" : "uav_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces__rosidl_typesupport_c-857e12cc3714ffbed331.json",
+					"name" : "uav_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces__rosidl_typesupport_cpp-be4af08f5dd8726a13eb.json",
+					"name" : "uav_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces__rosidl_typesupport_fastrtps_c-5ee4ab3a0ddef7a082e3.json",
+					"name" : "uav_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces__rosidl_typesupport_fastrtps_cpp-59dfc48a98d987d867c6.json",
+					"name" : "uav_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces__rosidl_typesupport_introspection_c-d0c0be464a3ffd09fbbc.json",
+					"name" : "uav_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces__rosidl_typesupport_introspection_cpp-612220f1f6b8e033830a.json",
+					"name" : "uav_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "uav_interfaces__rs::@6efbe74caa001e26b406",
+					"jsonFile" : "target-uav_interfaces__rs-4f37a52539fd3346aab2.json",
+					"name" : "uav_interfaces__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces_s__rosidl_typesupport_c-f74f000227c1652c867d.json",
+					"name" : "uav_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces_s__rosidl_typesupport_fastrtps_c-d4af5894632d6cf99efd.json",
+					"name" : "uav_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces_s__rosidl_typesupport_introspection_c-757c88fe95ca03a2cec8.json",
+					"name" : "uav_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uav_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uav_interfaces_uninstall-db1b8f34a2df14c0f47f.json",
+					"name" : "uav_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-14d23e9d80b2e5a730cc.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces",
+		"source" : "/home/yjh/ROS2_manmade/ros2_ws/src/uav_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

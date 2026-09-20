@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/uav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uav_interfaces/action/detail/dds_fastrtps/fly_to_altitude__type_support.cpp.o"
+  "CMakeFiles/uav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uav_interfaces/action/detail/dds_fastrtps/fly_to_altitude__type_support.cpp.o.d"
+  "CMakeFiles/uav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uav_interfaces/msg/detail/dds_fastrtps/target_detection__type_support.cpp.o"
+  "CMakeFiles/uav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uav_interfaces/msg/detail/dds_fastrtps/target_detection__type_support.cpp.o.d"
+  "CMakeFiles/uav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uav_interfaces/srv/detail/dds_fastrtps/set_mode__type_support.cpp.o"
+  "CMakeFiles/uav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/uav_interfaces/srv/detail/dds_fastrtps/set_mode__type_support.cpp.o.d"
+  "libuav_interfaces__rosidl_typesupport_fastrtps_cpp.pdb"
+  "libuav_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+  "rosidl_typesupport_fastrtps_cpp/uav_interfaces/action/detail/dds_fastrtps/fly_to_altitude__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/uav_interfaces/action/detail/fly_to_altitude__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/uav_interfaces/msg/detail/dds_fastrtps/target_detection__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/uav_interfaces/msg/detail/target_detection__rosidl_typesupport_fastrtps_cpp.hpp"
+  "rosidl_typesupport_fastrtps_cpp/uav_interfaces/srv/detail/dds_fastrtps/set_mode__type_support.cpp"
+  "rosidl_typesupport_fastrtps_cpp/uav_interfaces/srv/detail/set_mode__rosidl_typesupport_fastrtps_cpp.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/uav_interfaces__rosidl_typesupport_fastrtps_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

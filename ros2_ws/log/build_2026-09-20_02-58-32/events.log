@@ -1,0 +1,1147 @@
+[0.000000] (-) TimerEvent: {}
+[0.000444] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000687] (-) JobUnselected: {'identifier': 'uav_interfaces'}
+[0.000748] (-) JobUnselected: {'identifier': 'uav_learning'}
+[0.000773] (microxrcedds_agent) JobQueued: {'identifier': 'microxrcedds_agent', 'dependencies': OrderedDict()}
+[0.000800] (microxrcedds_agent) JobStarted: {'identifier': 'microxrcedds_agent'}
+[0.005737] (microxrcedds_agent) JobProgress: {'identifier': 'microxrcedds_agent', 'progress': 'cmake'}
+[0.005980] (microxrcedds_agent) JobProgress: {'identifier': 'microxrcedds_agent', 'progress': 'build'}
+[0.006401] (microxrcedds_agent) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent', '--', '-j32', '-l32'], 'cwd': '/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'HTTPS_PROXY': 'http://172.21.144.1:7897', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'yjh', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs/lib:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/yjh', 'OLDPWD': '/home/yjh/ROS2_manmade/ros2_ws', 'TERM_PROGRAM_VERSION': '1.85.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-14db6617-ea06-4ac1-866a-9ee096b47a19.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'https_proxy': 'http://172.21.144.1:7897', 'COLCON_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'yjh', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/7617_interop', 'http_proxy': 'http://172.21.144.1:7897', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2022b/runtime/win64:/mnt/c/Program Files/MATLAB/R2022b/bin:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/yjh/blender/blender-4.2.1-windows-x64/blender-4.2.1-windows-x64/custom-python-packages/Python311/Scripts:/mnt/c/Program Files/nodejs/:/mnt/c/Users/yjh/anaconda3:/mnt/c/Users/yjh/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/yjh/anaconda3/Library/usr/bin:/mnt/c/Users/yjh/anaconda3/Library/bin:/mnt/c/Users/yjh/anaconda3/Scripts:/mnt/c/Users/yjh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm 2025.1.1.1/bin:/mnt/c/Users/yjh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/yjh/.dotnet/tools:/mnt/c/Users/yjh/AppData/Roaming/npm:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f74a288ac0.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://172.21.144.1:7897', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}), 'shell': False}
+[0.038277] (microxrcedds_agent) StdoutLine: {'line': b"[  4%] \x1b[34m\x1b[1mCreating directories for 'microxrcedds_client'\x1b[0m\n"}
+[0.039792] (microxrcedds_agent) StdoutLine: {'line': b"[  8%] \x1b[34m\x1b[1mCreating directories for 'spdlog'\x1b[0m\n"}
+[0.053059] (microxrcedds_agent) StdoutLine: {'line': b"[ 12%] \x1b[34m\x1b[1mPerforming download step (git clone) for 'microxrcedds_client'\x1b[0m\n"}
+[0.054904] (microxrcedds_agent) StdoutLine: {'line': b"[ 16%] \x1b[34m\x1b[1mPerforming download step (git clone) for 'spdlog'\x1b[0m\n"}
+[0.064462] (microxrcedds_agent) StderrLine: {'line': b"Cloning into 'microxrcedds_client'...\n"}
+[0.066900] (microxrcedds_agent) StderrLine: {'line': b"Cloning into 'spdlog'...\n"}
+[0.099708] (-) TimerEvent: {}
+[0.200074] (-) TimerEvent: {}
+[0.300414] (-) TimerEvent: {}
+[0.400882] (-) TimerEvent: {}
+[0.501118] (-) TimerEvent: {}
+[0.601370] (-) TimerEvent: {}
+[0.701639] (-) TimerEvent: {}
+[0.801919] (-) TimerEvent: {}
+[0.902135] (-) TimerEvent: {}
+[1.002354] (-) TimerEvent: {}
+[1.102586] (-) TimerEvent: {}
+[1.202787] (-) TimerEvent: {}
+[1.303031] (-) TimerEvent: {}
+[1.403285] (-) TimerEvent: {}
+[1.503520] (-) TimerEvent: {}
+[1.603770] (-) TimerEvent: {}
+[1.704023] (-) TimerEvent: {}
+[1.804301] (-) TimerEvent: {}
+[1.904524] (-) TimerEvent: {}
+[2.004769] (-) TimerEvent: {}
+[2.105060] (-) TimerEvent: {}
+[2.205355] (-) TimerEvent: {}
+[2.305590] (-) TimerEvent: {}
+[2.405820] (-) TimerEvent: {}
+[2.506054] (-) TimerEvent: {}
+[2.606273] (-) TimerEvent: {}
+[2.708044] (-) TimerEvent: {}
+[2.808297] (-) TimerEvent: {}
+[2.908546] (-) TimerEvent: {}
+[3.008788] (-) TimerEvent: {}
+[3.109037] (-) TimerEvent: {}
+[3.209297] (-) TimerEvent: {}
+[3.309704] (-) TimerEvent: {}
+[3.409956] (-) TimerEvent: {}
+[3.510192] (-) TimerEvent: {}
+[3.610458] (-) TimerEvent: {}
+[3.710730] (-) TimerEvent: {}
+[3.811018] (-) TimerEvent: {}
+[3.911237] (-) TimerEvent: {}
+[4.011467] (-) TimerEvent: {}
+[4.111726] (-) TimerEvent: {}
+[4.211991] (-) TimerEvent: {}
+[4.312227] (-) TimerEvent: {}
+[4.412474] (-) TimerEvent: {}
+[4.490102] (microxrcedds_agent) StderrLine: {'line': b'HEAD is now at d44dc3f Release v2.4.3\n'}
+[4.512629] (-) TimerEvent: {}
+[4.520400] (microxrcedds_agent) StdoutLine: {'line': b"[ 20%] \x1b[34m\x1b[1mPerforming update step for 'microxrcedds_client'\x1b[0m\n"}
+[4.536074] (microxrcedds_agent) StdoutLine: {'line': b"[ 25%] \x1b[34m\x1b[1mNo patch step for 'microxrcedds_client'\x1b[0m\n"}
+[4.551048] (microxrcedds_agent) StdoutLine: {'line': b"[ 29%] \x1b[34m\x1b[1mPerforming configure step for 'microxrcedds_client'\x1b[0m\n"}
+[4.556116] (microxrcedds_agent) StdoutLine: {'line': b'loading initial cache file /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/tmp/microxrcedds_client-cache-.cmake\n'}
+[4.612724] (-) TimerEvent: {}
+[4.712954] (-) TimerEvent: {}
+[4.813163] (-) TimerEvent: {}
+[4.890347] (microxrcedds_agent) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[4.913234] (-) TimerEvent: {}
+[5.013430] (-) TimerEvent: {}
+[5.113690] (-) TimerEvent: {}
+[5.213889] (-) TimerEvent: {}
+[5.314148] (-) TimerEvent: {}
+[5.414408] (-) TimerEvent: {}
+[5.514659] (-) TimerEvent: {}
+[5.614911] (-) TimerEvent: {}
+[5.715130] (-) TimerEvent: {}
+[5.815402] (-) TimerEvent: {}
+[5.915676] (-) TimerEvent: {}
+[6.015933] (-) TimerEvent: {}
+[6.116179] (-) TimerEvent: {}
+[6.216418] (-) TimerEvent: {}
+[6.316651] (-) TimerEvent: {}
+[6.416884] (-) TimerEvent: {}
+[6.517124] (-) TimerEvent: {}
+[6.617342] (-) TimerEvent: {}
+[6.717669] (-) TimerEvent: {}
+[6.726575] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.817755] (-) TimerEvent: {}
+[6.917979] (-) TimerEvent: {}
+[6.966368] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.972380] (microxrcedds_agent) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.972759] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.972954] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.018090] (-) TimerEvent: {}
+[7.096559] (microxrcedds_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[7.118172] (-) TimerEvent: {}
+[7.218401] (-) TimerEvent: {}
+[7.318627] (-) TimerEvent: {}
+[7.418852] (-) TimerEvent: {}
+[7.519081] (-) TimerEvent: {}
+[7.619344] (-) TimerEvent: {}
+[7.719588] (-) TimerEvent: {}
+[7.819947] (-) TimerEvent: {}
+[7.920192] (-) TimerEvent: {}
+[8.020394] (-) TimerEvent: {}
+[8.120626] (-) TimerEvent: {}
+[8.220963] (-) TimerEvent: {}
+[8.251503] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[8.321049] (-) TimerEvent: {}
+[8.421266] (-) TimerEvent: {}
+[8.521502] (-) TimerEvent: {}
+[8.545613] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[8.551701] (microxrcedds_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[8.551921] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[8.552242] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[8.559226] (microxrcedds_agent) StderrLine: {'line': b'HEAD is now at eb322062 Bump version to 1.9.2\n'}
+[8.591259] (microxrcedds_agent) StdoutLine: {'line': b"[ 33%] \x1b[34m\x1b[1mPerforming update step for 'spdlog'\x1b[0m\n"}
+[8.605526] (microxrcedds_agent) StdoutLine: {'line': b"[ 37%] \x1b[34m\x1b[1mNo patch step for 'spdlog'\x1b[0m\n"}
+[8.620691] (microxrcedds_agent) StdoutLine: {'line': b"[ 41%] \x1b[34m\x1b[1mPerforming configure step for 'spdlog'\x1b[0m\n"}
+[8.621542] (-) TimerEvent: {}
+[8.626176] (microxrcedds_agent) StdoutLine: {'line': b'loading initial cache file /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/spdlog/tmp/spdlog-cache-.cmake\n'}
+[8.721631] (-) TimerEvent: {}
+[8.749298] (microxrcedds_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[8.821708] (-) TimerEvent: {}
+[8.922023] (-) TimerEvent: {}
+[9.022337] (-) TimerEvent: {}
+[9.122943] (-) TimerEvent: {}
+[9.223175] (-) TimerEvent: {}
+[9.321977] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[9.323219] (-) TimerEvent: {}
+[9.423408] (-) TimerEvent: {}
+[9.523611] (-) TimerEvent: {}
+[9.558724] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[9.565255] (microxrcedds_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[9.565424] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[9.565758] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[9.566186] (microxrcedds_agent) StdoutLine: {'line': b'-- Build spdlog: 1.9.2\n'}
+[9.569809] (microxrcedds_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[9.623712] (-) TimerEvent: {}
+[9.721738] (microxrcedds_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[9.722363] (microxrcedds_agent) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.722651] (microxrcedds_agent) StdoutLine: {'line': b'-- Build type: Release\n'}
+[9.722947] (microxrcedds_agent) StdoutLine: {'line': b'-- Generating example(s)\n'}
+[9.723488] (microxrcedds_agent) StdoutLine: {'line': b'-- Generating install\n'}
+[9.723760] (-) TimerEvent: {}
+[9.733804] (microxrcedds_agent) StdoutLine: {'line': b'-- Configuring done (1.1s)\n'}
+[9.738998] (microxrcedds_agent) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[9.739436] (microxrcedds_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/spdlog/src/spdlog-build\n'}
+[9.752264] (microxrcedds_agent) StdoutLine: {'line': b"[ 45%] \x1b[34m\x1b[1mPerforming build step for 'spdlog'\x1b[0m\n"}
+[9.778577] (microxrcedds_agent) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/color_sinks.cpp.o\x1b[0m\n'}
+[9.778739] (microxrcedds_agent) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o\x1b[0m\n'}
+[9.778783] (microxrcedds_agent) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/spdlog.cpp.o\x1b[0m\n'}
+[9.778823] (microxrcedds_agent) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/file_sinks.cpp.o\x1b[0m\n'}
+[9.778860] (microxrcedds_agent) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/async.cpp.o\x1b[0m\n'}
+[9.780302] (microxrcedds_agent) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/fmt.cpp.o\x1b[0m\n'}
+[9.780447] (microxrcedds_agent) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/cfg.cpp.o\x1b[0m\n'}
+[9.823864] (-) TimerEvent: {}
+[9.924156] (-) TimerEvent: {}
+[10.024538] (-) TimerEvent: {}
+[10.054254] (microxrcedds_agent) StdoutLine: {'line': b'-- Configuring done (5.5s)\n'}
+[10.058380] (microxrcedds_agent) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[10.059214] (microxrcedds_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build\n'}
+[10.076621] (microxrcedds_agent) StdoutLine: {'line': b"[ 50%] \x1b[34m\x1b[1mPerforming build step for 'microxrcedds_client'\x1b[0m\n"}
+[10.107417] (microxrcedds_agent) StdoutLine: {'line': b"[  6%] \x1b[34m\x1b[1mCreating directories for 'microcdr'\x1b[0m\n"}
+[10.124638] (-) TimerEvent: {}
+[10.125825] (microxrcedds_agent) StdoutLine: {'line': b"[ 12%] \x1b[34m\x1b[1mPerforming download step (git clone) for 'microcdr'\x1b[0m\n"}
+[10.140155] (microxrcedds_agent) StderrLine: {'line': b"Cloning into 'microcdr'...\n"}
+[10.224774] (-) TimerEvent: {}
+[10.325127] (-) TimerEvent: {}
+[10.425618] (-) TimerEvent: {}
+[10.525950] (-) TimerEvent: {}
+[10.626312] (-) TimerEvent: {}
+[10.726739] (-) TimerEvent: {}
+[10.827023] (-) TimerEvent: {}
+[10.927284] (-) TimerEvent: {}
+[11.027543] (-) TimerEvent: {}
+[11.127822] (-) TimerEvent: {}
+[11.228172] (-) TimerEvent: {}
+[11.328608] (-) TimerEvent: {}
+[11.428852] (-) TimerEvent: {}
+[11.529111] (-) TimerEvent: {}
+[11.629349] (-) TimerEvent: {}
+[11.729620] (-) TimerEvent: {}
+[11.829898] (-) TimerEvent: {}
+[11.930658] (-) TimerEvent: {}
+[12.031032] (-) TimerEvent: {}
+[12.131330] (-) TimerEvent: {}
+[12.231621] (-) TimerEvent: {}
+[12.331860] (-) TimerEvent: {}
+[12.432133] (-) TimerEvent: {}
+[12.532359] (-) TimerEvent: {}
+[12.632613] (-) TimerEvent: {}
+[12.732843] (-) TimerEvent: {}
+[12.833050] (-) TimerEvent: {}
+[12.933274] (-) TimerEvent: {}
+[12.989371] (microxrcedds_agent) StderrLine: {'line': b'HEAD is now at 3d1b177 Release v2.0.1\n'}
+[13.022252] (microxrcedds_agent) StdoutLine: {'line': b"[ 18%] \x1b[34m\x1b[1mPerforming update step for 'microcdr'\x1b[0m\n"}
+[13.033333] (-) TimerEvent: {}
+[13.037601] (microxrcedds_agent) StdoutLine: {'line': b"[ 25%] \x1b[34m\x1b[1mNo patch step for 'microcdr'\x1b[0m\n"}
+[13.052222] (microxrcedds_agent) StdoutLine: {'line': b"[ 31%] \x1b[34m\x1b[1mPerforming configure step for 'microcdr'\x1b[0m\n"}
+[13.057644] (microxrcedds_agent) StdoutLine: {'line': b'loading initial cache file /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/microcdr/tmp/microcdr-cache-.cmake\n'}
+[13.058081] (microxrcedds_agent) StdoutLine: {'line': b"-- Setting build type to 'Release' as none was specified.\n"}
+[13.133390] (-) TimerEvent: {}
+[13.190884] (microxrcedds_agent) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[13.233437] (-) TimerEvent: {}
+[13.333681] (-) TimerEvent: {}
+[13.433899] (-) TimerEvent: {}
+[13.534148] (-) TimerEvent: {}
+[13.634394] (-) TimerEvent: {}
+[13.734638] (-) TimerEvent: {}
+[13.834893] (-) TimerEvent: {}
+[13.876102] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[13.935003] (-) TimerEvent: {}
+[14.035244] (-) TimerEvent: {}
+[14.107588] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[14.114048] (microxrcedds_agent) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[14.114218] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[14.114456] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[14.135342] (-) TimerEvent: {}
+[14.235584] (-) TimerEvent: {}
+[14.257105] (microxrcedds_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[14.335682] (-) TimerEvent: {}
+[14.435939] (-) TimerEvent: {}
+[14.536204] (-) TimerEvent: {}
+[14.636449] (-) TimerEvent: {}
+[14.736691] (-) TimerEvent: {}
+[14.836917] (-) TimerEvent: {}
+[14.887810] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[14.937600] (-) TimerEvent: {}
+[14.997860] (microxrcedds_agent) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX static library libspdlog.a\x1b[0m\n'}
+[15.023616] (microxrcedds_agent) StdoutLine: {'line': b'[ 80%] Built target spdlog\n'}
+[15.035432] (microxrcedds_agent) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object example/CMakeFiles/example.dir/example.cpp.o\x1b[0m\n'}
+[15.037680] (-) TimerEvent: {}
+[15.134357] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[15.137795] (-) TimerEvent: {}
+[15.141351] (microxrcedds_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[15.141587] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[15.141678] (microxrcedds_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[15.151803] (microxrcedds_agent) StdoutLine: {'line': b'-- Configuring done (2.1s)\n'}
+[15.153450] (microxrcedds_agent) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[15.153971] (microxrcedds_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/microcdr/src/microcdr-build\n'}
+[15.167457] (microxrcedds_agent) StdoutLine: {'line': b"[ 37%] \x1b[34m\x1b[1mPerforming build step for 'microcdr'\x1b[0m\n"}
+[15.193143] (microxrcedds_agent) StdoutLine: {'line': b"[ 12%] \x1b[34m\x1b[1mCreating directories for 'ucdr'\x1b[0m\n"}
+[15.208651] (microxrcedds_agent) StdoutLine: {'line': b"[ 25%] \x1b[34m\x1b[1mNo download step for 'ucdr'\x1b[0m\n"}
+[15.225515] (microxrcedds_agent) StdoutLine: {'line': b"[ 37%] \x1b[34m\x1b[1mNo update step for 'ucdr'\x1b[0m\n"}
+[15.237882] (-) TimerEvent: {}
+[15.239011] (microxrcedds_agent) StdoutLine: {'line': b"[ 50%] \x1b[34m\x1b[1mNo patch step for 'ucdr'\x1b[0m\n"}
+[15.254891] (microxrcedds_agent) StdoutLine: {'line': b"[ 62%] \x1b[34m\x1b[1mPerforming configure step for 'ucdr'\x1b[0m\n"}
+[15.260575] (microxrcedds_agent) StdoutLine: {'line': b'loading initial cache file /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/microcdr/src/microcdr-build/ucdr-prefix/tmp/ucdr-cache-Release.cmake\n'}
+[15.266067] (microxrcedds_agent) StdoutLine: {'line': b'-- Configuring done (0.0s)\n'}
+[15.269011] (microxrcedds_agent) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[15.269352] (microxrcedds_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/microcdr/src/microcdr-build\n'}
+[15.280417] (microxrcedds_agent) StdoutLine: {'line': b"[ 75%] \x1b[34m\x1b[1mPerforming build step for 'ucdr'\x1b[0m\n"}
+[15.306021] (microxrcedds_agent) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/microcdr.dir/src/c/common.c.o\x1b[0m\n'}
+[15.306580] (microxrcedds_agent) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/microcdr.dir/src/c/types/string.c.o\x1b[0m\n'}
+[15.306733] (microxrcedds_agent) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/microcdr.dir/src/c/types/array.c.o\x1b[0m\n'}
+[15.306818] (microxrcedds_agent) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/microcdr.dir/src/c/types/basic.c.o\x1b[0m\n'}
+[15.308025] (microxrcedds_agent) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/microcdr.dir/src/c/types/sequence.c.o\x1b[0m\n'}
+[15.338025] (-) TimerEvent: {}
+[15.438272] (-) TimerEvent: {}
+[15.538510] (-) TimerEvent: {}
+[15.638746] (-) TimerEvent: {}
+[15.710999] (microxrcedds_agent) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library libmicrocdr.so\x1b[0m\n'}
+[15.738820] (-) TimerEvent: {}
+[15.826825] (microxrcedds_agent) StdoutLine: {'line': b'[100%] Built target microcdr\n'}
+[15.838918] (-) TimerEvent: {}
+[15.841403] (microxrcedds_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mNo install step for 'ucdr'\x1b[0m\n"}
+[15.857803] (microxrcedds_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mCompleted 'ucdr'\x1b[0m\n"}
+[15.876921] (microxrcedds_agent) StdoutLine: {'line': b'Built target ucdr\n'}
+[15.891770] (microxrcedds_agent) StdoutLine: {'line': b"[ 43%] \x1b[34m\x1b[1mPerforming install step for 'microcdr'\x1b[0m\n"}
+[15.917613] (microxrcedds_agent) StdoutLine: {'line': b'[100%] Built target microcdr\n'}
+[15.929593] (microxrcedds_agent) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[15.935021] (microxrcedds_agent) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[15.935236] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/temp_install/microcdr-2.0.1/lib/libmicrocdr.so.2.0.1\n'}
+[15.935293] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/temp_install/microcdr-2.0.1/lib/libmicrocdr.so.2.0\n'}
+[15.935438] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/temp_install/microcdr-2.0.1/lib/libmicrocdr.so\n'}
+[15.935488] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/temp_install/microcdr-2.0.1/include/ucdr\n'}
+[15.935560] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/temp_install/microcdr-2.0.1/include/ucdr/visibility.h\n'}
+[15.935752] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/temp_install/microcdr-2.0.1/include/ucdr/microcdr.h\n'}
+[15.935941] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/temp_install/microcdr-2.0.1/include/ucdr/config.h\n'}
+[15.936265] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/temp_install/microcdr-2.0.1/share/microcdr/cmake/microcdrTargets.cmake\n'}
+[15.936469] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/temp_install/microcdr-2.0.1/share/microcdr/cmake/microcdrTargets-release.cmake\n'}
+[15.936580] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/temp_install/microcdr-2.0.1/share/microcdr/cmake/microcdrConfig.cmake\n'}
+[15.936680] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/temp_install/microcdr-2.0.1/share/microcdr/cmake/microcdrConfigVersion.cmake\n'}
+[15.939045] (-) TimerEvent: {}
+[15.946949] (microxrcedds_agent) StdoutLine: {'line': b"[ 50%] \x1b[34m\x1b[1mCompleted 'microcdr'\x1b[0m\n"}
+[15.969451] (microxrcedds_agent) StdoutLine: {'line': b'[ 50%] Built target microcdr\n'}
+[15.981225] (microxrcedds_agent) StdoutLine: {'line': b"[ 56%] \x1b[34m\x1b[1mCreating directories for 'uclient'\x1b[0m\n"}
+[15.998233] (microxrcedds_agent) StdoutLine: {'line': b"[ 62%] \x1b[34m\x1b[1mNo download step for 'uclient'\x1b[0m\n"}
+[16.013787] (microxrcedds_agent) StdoutLine: {'line': b"[ 68%] \x1b[34m\x1b[1mNo update step for 'uclient'\x1b[0m\n"}
+[16.030047] (microxrcedds_agent) StdoutLine: {'line': b"[ 75%] \x1b[34m\x1b[1mNo patch step for 'uclient'\x1b[0m\n"}
+[16.039143] (-) TimerEvent: {}
+[16.044658] (microxrcedds_agent) StdoutLine: {'line': b"[ 81%] \x1b[34m\x1b[1mPerforming configure step for 'uclient'\x1b[0m\n"}
+[16.050200] (microxrcedds_agent) StdoutLine: {'line': b'loading initial cache file /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build/uclient-prefix/tmp/uclient-cache-.cmake\n'}
+[16.053247] (microxrcedds_agent) StdoutLine: {'line': b"-- Setting build type to 'Release' as none was specified.\n"}
+[16.139233] (-) TimerEvent: {}
+[16.149775] (microxrcedds_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[16.239444] (-) TimerEvent: {}
+[16.304313] (microxrcedds_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[16.304844] (microxrcedds_agent) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[16.306349] (microxrcedds_agent) StdoutLine: {'line': b'-- Configuring done (0.3s)\n'}
+[16.312862] (microxrcedds_agent) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[16.313325] (microxrcedds_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/microxrcedds_client/src/microxrcedds_client-build\n'}
+[16.324349] (microxrcedds_agent) StdoutLine: {'line': b"[ 87%] \x1b[34m\x1b[1mPerforming build step for 'uclient'\x1b[0m\n"}
+[16.339689] (-) TimerEvent: {}
+[16.352332] (microxrcedds_agent) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/input_best_effort_stream.c.o\x1b[0m\n'}
+[16.353017] (microxrcedds_agent) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/input_reliable_stream.c.o\x1b[0m\n'}
+[16.354099] (microxrcedds_agent) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/output_best_effort_stream.c.o\x1b[0m\n'}
+[16.354212] (microxrcedds_agent) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/session.c.o\x1b[0m\n'}
+[16.354341] (microxrcedds_agent) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/session_info.c.o\x1b[0m\n'}
+[16.354817] (microxrcedds_agent) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/output_reliable_stream.c.o\x1b[0m\n'}
+[16.355087] (microxrcedds_agent) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/serialization/xrce_header.c.o\x1b[0m\n'}
+[16.355193] (microxrcedds_agent) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/seq_num.c.o\x1b[0m\n'}
+[16.357034] (microxrcedds_agent) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/stream_id.c.o\x1b[0m\n'}
+[16.357368] (microxrcedds_agent) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/serialization/xrce_types.c.o\x1b[0m\n'}
+[16.357692] (microxrcedds_agent) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/submessage.c.o\x1b[0m\n'}
+[16.357845] (microxrcedds_agent) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/object_id.c.o\x1b[0m\n'}
+[16.358014] (microxrcedds_agent) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/util/ping.c.o\x1b[0m\n'}
+[16.358228] (microxrcedds_agent) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/create_entities_xml.c.o\x1b[0m\n'}
+[16.358883] (microxrcedds_agent) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/create_entities_ref.c.o\x1b[0m\n'}
+[16.359131] (microxrcedds_agent) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/stream/stream_storage.c.o\x1b[0m\n'}
+[16.359864] (microxrcedds_agent) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/serialization/xrce_subheader.c.o\x1b[0m\n'}
+[16.360870] (microxrcedds_agent) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/common_create_entities.c.o\x1b[0m\n'}
+[16.363125] (microxrcedds_agent) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/util/time.c.o\x1b[0m\n'}
+[16.363549] (microxrcedds_agent) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/create_entities_bin.c.o\x1b[0m\n'}
+[16.364801] (microxrcedds_agent) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/read_access.c.o\x1b[0m\n'}
+[16.367071] (microxrcedds_agent) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/ip/udp/udp_transport_posix.c.o\x1b[0m\n'}
+[16.367475] (microxrcedds_agent) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/core/session/write_access.c.o\x1b[0m\n'}
+[16.368275] (microxrcedds_agent) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/stream_framing/stream_framing_protocol.c.o\x1b[0m\n'}
+[16.371610] (microxrcedds_agent) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/ip/udp/udp_transport.c.o\x1b[0m\n'}
+[16.371787] (microxrcedds_agent) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/ip/tcp/tcp_transport.c.o\x1b[0m\n'}
+[16.374134] (microxrcedds_agent) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/ip/tcp/tcp_transport_posix.c.o\x1b[0m\n'}
+[16.380440] (microxrcedds_agent) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/serial/serial_transport.c.o\x1b[0m\n'}
+[16.396191] (microxrcedds_agent) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/discovery/discovery.c.o\x1b[0m\n'}
+[16.397608] (microxrcedds_agent) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/serial/serial_transport_posix.c.o\x1b[0m\n'}
+[16.397992] (microxrcedds_agent) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/custom/custom_transport.c.o\x1b[0m\n'}
+[16.398692] (microxrcedds_agent) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/transport/ip/ip_posix.c.o\x1b[0m\n'}
+[16.400601] (microxrcedds_agent) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/microxrcedds_client.dir/src/c/profile/discovery/transport/udp_transport_datagram_posix.c.o\x1b[0m\n'}
+[16.439823] (-) TimerEvent: {}
+[16.540211] (-) TimerEvent: {}
+[16.640523] (-) TimerEvent: {}
+[16.740796] (-) TimerEvent: {}
+[16.744616] (microxrcedds_agent) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library libmicroxrcedds_client.so\x1b[0m\n'}
+[16.840874] (-) TimerEvent: {}
+[16.874765] (microxrcedds_agent) StdoutLine: {'line': b'[100%] Built target microxrcedds_client\n'}
+[16.891152] (microxrcedds_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mNo install step for 'uclient'\x1b[0m\n"}
+[16.906150] (microxrcedds_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mCompleted 'uclient'\x1b[0m\n"}
+[16.926207] (microxrcedds_agent) StdoutLine: {'line': b'Built target uclient\n'}
+[16.941027] (-) TimerEvent: {}
+[16.941496] (microxrcedds_agent) StdoutLine: {'line': b"[ 54%] \x1b[34m\x1b[1mPerforming install step for 'microxrcedds_client'\x1b[0m\n"}
+[16.978357] (microxrcedds_agent) StdoutLine: {'line': b'[100%] Built target microxrcedds_client\n'}
+[16.989541] (microxrcedds_agent) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[16.995017] (microxrcedds_agent) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[16.995263] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/lib/libmicroxrcedds_client.so.2.4.3\n'}
+[16.995428] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/lib/libmicroxrcedds_client.so.2.4\n'}
+[16.995619] (microxrcedds_agent) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/lib/libmicroxrcedds_client.so.2.4.3" to ""\n'}
+[16.995850] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/lib/libmicroxrcedds_client.so\n'}
+[16.996093] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client\n'}
+[16.996291] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/transport.h\n'}
+[16.996412] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/client.h\n'}
+[16.996703] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile\n'}
+[16.996756] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/multithread\n'}
+[16.996855] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/multithread/multithread.h\n'}
+[16.997034] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport\n'}
+[16.997133] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip\n'}
+[16.997238] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/udp\n'}
+[16.997394] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/udp/udp_transport_posix_nopoll.h\n'}
+[16.997582] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/udp/udp_transport_rtems_bsd_net.h\n'}
+[16.997682] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/udp/udp_transport_windows.h\n'}
+[16.997784] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/udp/udp_transport_freertos_plus_tcp.h\n'}
+[16.997884] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/udp/udp_transport_posix.h\n'}
+[16.997975] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/udp/udp_transport.h\n'}
+[16.998052] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/ip.h\n'}
+[16.998110] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/tcp\n'}
+[16.998199] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/tcp/tcp_transport_rtems_bsd_net.h\n'}
+[16.998329] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/tcp/tcp_transport_posix_nopoll.h\n'}
+[16.998566] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/tcp/tcp_transport_freertos_plus_tcp.h\n'}
+[16.998688] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/tcp/tcp_transport_posix.h\n'}
+[16.998793] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/tcp/tcp_transport_windows.h\n'}
+[16.998897] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/ip/tcp/tcp_transport.h\n'}
+[16.998998] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/custom\n'}
+[16.999117] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/custom/custom_transport.h\n'}
+[16.999217] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/can\n'}
+[16.999319] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/can/can_transport_posix.h\n'}
+[16.999714] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/can/can_transport.h\n'}
+[16.999862] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/serial\n'}
+[16.999949] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/serial/serial_transport.h\n'}
+[17.000152] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/serial/serial_transport_posix.h\n'}
+[17.000428] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/serial/serial_transport_platform.h\n'}
+[17.000583] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/serial/serial_transport_rtems_bsd_net.h\n'}
+[17.000649] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/stream_framing\n'}
+[17.000691] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/transport/stream_framing/stream_framing_protocol.h\n'}
+[17.000727] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/discovery\n'}
+[17.000762] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/profile/discovery/discovery.h\n'}
+[17.000796] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core\n'}
+[17.000846] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/type\n'}
+[17.001051] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/type/xrce_types.h\n'}
+[17.001158] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/communication\n'}
+[17.001262] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/communication/communication.h\n'}
+[17.001366] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session\n'}
+[17.001412] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/create_entities_bin.h\n'}
+[17.001512] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/common_create_entities.h\n'}
+[17.001604] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/time_sync.h\n'}
+[17.001646] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/create_entities_ref.h\n'}
+[17.002304] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/object_id.h\n'}
+[17.002409] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/read_access.h\n'}
+[17.002633] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/write_access.h\n'}
+[17.002794] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/create_entities_xml.h\n'}
+[17.002884] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/session.h\n'}
+[17.002987] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/stream\n'}
+[17.003087] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/stream/seq_num.h\n'}
+[17.003196] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/stream/reliable_stream.h\n'}
+[17.003286] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/stream/input_best_effort_stream.h\n'}
+[17.003393] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/stream/output_reliable_stream.h\n'}
+[17.003467] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/stream/stream_id.h\n'}
+[17.003530] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/stream/output_best_effort_stream.h\n'}
+[17.003572] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/stream/input_reliable_stream.h\n'}
+[17.003609] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/stream/stream_storage.h\n'}
+[17.003670] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/core/session/session_info.h\n'}
+[17.003709] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/util\n'}
+[17.003745] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/util/ping.h\n'}
+[17.003783] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/util/time.h\n'}
+[17.003819] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/visibility.h\n'}
+[17.003855] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/defines.h\n'}
+[17.003909] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/include/uxr/client/config.h\n'}
+[17.004013] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/share/microxrcedds_client/cmake/microxrcedds_clientTargets.cmake\n'}
+[17.004121] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/share/microxrcedds_client/cmake/microxrcedds_clientTargets-release.cmake\n'}
+[17.004197] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/share/microxrcedds_client/cmake/microxrcedds_clientConfig.cmake\n'}
+[17.004294] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/share/microxrcedds_client/cmake/microxrcedds_clientConfigVersion.cmake\n'}
+[17.004366] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1\n'}
+[17.004762] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/lib\n'}
+[17.004952] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/lib/libmicrocdr.so.2.0\n'}
+[17.005091] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/lib/libmicrocdr.so\n'}
+[17.005152] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/lib/libmicrocdr.so.2.0.1\n'}
+[17.005192] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/share\n'}
+[17.005230] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/share/microcdr\n'}
+[17.005265] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/share/microcdr/cmake\n'}
+[17.005299] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/share/microcdr/cmake/microcdrConfigVersion.cmake\n'}
+[17.005336] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/share/microcdr/cmake/microcdrTargets.cmake\n'}
+[17.005372] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/share/microcdr/cmake/microcdrTargets-release.cmake\n'}
+[17.005408] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/share/microcdr/cmake/microcdrConfig.cmake\n'}
+[17.005442] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/include\n'}
+[17.005475] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/include/ucdr\n'}
+[17.005507] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/include/ucdr/config.h\n'}
+[17.005540] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/include/ucdr/visibility.h\n'}
+[17.005573] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/microxrcedds_client-2.4.3/..//microcdr-2.0.1/include/ucdr/microcdr.h\n'}
+[17.015155] (microxrcedds_agent) StdoutLine: {'line': b"[ 58%] \x1b[34m\x1b[1mCompleted 'microxrcedds_client'\x1b[0m\n"}
+[17.034785] (microxrcedds_agent) StdoutLine: {'line': b'[ 58%] Built target microxrcedds_client\n'}
+[17.041093] (-) TimerEvent: {}
+[17.141293] (-) TimerEvent: {}
+[17.241959] (-) TimerEvent: {}
+[17.342235] (-) TimerEvent: {}
+[17.442499] (-) TimerEvent: {}
+[17.542773] (-) TimerEvent: {}
+[17.643008] (-) TimerEvent: {}
+[17.743211] (-) TimerEvent: {}
+[17.843452] (-) TimerEvent: {}
+[17.943704] (-) TimerEvent: {}
+[18.044032] (-) TimerEvent: {}
+[18.144398] (-) TimerEvent: {}
+[18.208340] (microxrcedds_agent) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable example\x1b[0m\n'}
+[18.244497] (-) TimerEvent: {}
+[18.344730] (-) TimerEvent: {}
+[18.363526] (microxrcedds_agent) StdoutLine: {'line': b'[100%] Built target example\n'}
+[18.380065] (microxrcedds_agent) StdoutLine: {'line': b"[ 62%] \x1b[34m\x1b[1mPerforming install step for 'spdlog'\x1b[0m\n"}
+[18.410689] (microxrcedds_agent) StdoutLine: {'line': b'[ 80%] Built target spdlog\n'}
+[18.424999] (microxrcedds_agent) StdoutLine: {'line': b'[100%] Built target example\n'}
+[18.437796] (microxrcedds_agent) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[18.442933] (microxrcedds_agent) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[18.443131] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include\n'}
+[18.443245] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog\n'}
+[18.443403] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/async.h\n'}
+[18.443576] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/pattern_formatter.h\n'}
+[18.443635] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/tweakme.h\n'}
+[18.443743] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/version.h\n'}
+[18.443849] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks\n'}
+[18.443896] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/syslog_sink.h\n'}
+[18.443988] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/qt_sinks.h\n'}
+[18.444172] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/tcp_sink.h\n'}
+[18.444372] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/mongo_sink.h\n'}
+[18.444416] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/stdout_sinks.h\n'}
+[18.444457] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/ansicolor_sink.h\n'}
+[18.444517] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/rotating_file_sink-inl.h\n'}
+[18.444613] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/sink.h\n'}
+[18.444719] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/dup_filter_sink.h\n'}
+[18.444823] (-) TimerEvent: {}
+[18.444981] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/base_sink.h\n'}
+[18.445117] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/ostream_sink.h\n'}
+[18.445227] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/msvc_sink.h\n'}
+[18.445334] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/base_sink-inl.h\n'}
+[18.445438] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/wincolor_sink.h\n'}
+[18.445542] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/systemd_sink.h\n'}
+[18.445646] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/sink-inl.h\n'}
+[18.445749] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/dist_sink.h\n'}
+[18.445854] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/hourly_file_sink.h\n'}
+[18.445958] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/basic_file_sink-inl.h\n'}
+[18.446062] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/win_eventlog_sink.h\n'}
+[18.446154] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/basic_file_sink.h\n'}
+[18.446260] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/stdout_sinks-inl.h\n'}
+[18.446546] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/daily_file_sink.h\n'}
+[18.446661] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/android_sink.h\n'}
+[18.446766] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/ringbuffer_sink.h\n'}
+[18.446871] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/rotating_file_sink.h\n'}
+[18.446974] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/wincolor_sink-inl.h\n'}
+[18.447077] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/ansicolor_sink-inl.h\n'}
+[18.447258] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/stdout_color_sinks.h\n'}
+[18.447411] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/stdout_color_sinks-inl.h\n'}
+[18.447523] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/sinks/null_sink.h\n'}
+[18.447630] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/async_logger-inl.h\n'}
+[18.447734] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/formatter.h\n'}
+[18.447845] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/cfg\n'}
+[18.447923] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/cfg/env.h\n'}
+[18.448027] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/cfg/argv.h\n'}
+[18.448131] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/cfg/helpers-inl.h\n'}
+[18.448235] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/cfg/helpers.h\n'}
+[18.448340] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/pattern_formatter-inl.h\n'}
+[18.448442] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt\n'}
+[18.448547] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/fmt.h\n'}
+[18.448651] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/chrono.h\n'}
+[18.448753] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/xchar.h\n'}
+[18.448858] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bin_to_hex.h\n'}
+[18.448961] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/compile.h\n'}
+[18.449141] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/ostr.h\n'}
+[18.449187] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/logger.h\n'}
+[18.449224] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/stopwatch.h\n'}
+[18.449260] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/logger-inl.h\n'}
+[18.449294] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/spdlog-inl.h\n'}
+[18.449329] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details\n'}
+[18.449363] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/fmt_helper.h\n'}
+[18.449396] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/log_msg.h\n'}
+[18.449464] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/os-inl.h\n'}
+[18.449567] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/os.h\n'}
+[18.449671] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/null_mutex.h\n'}
+[18.449775] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/windows_include.h\n'}
+[18.449879] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/thread_pool-inl.h\n'}
+[18.449980] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/mpmc_blocking_q.h\n'}
+[18.450073] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/synchronous_factory.h\n'}
+[18.450182] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/circular_q.h\n'}
+[18.450384] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/periodic_worker.h\n'}
+[18.450505] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/tcp_client-windows.h\n'}
+[18.450671] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/registry-inl.h\n'}
+[18.450754] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/file_helper.h\n'}
+[18.450855] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/tcp_client.h\n'}
+[18.450962] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/backtracer-inl.h\n'}
+[18.451034] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/log_msg_buffer.h\n'}
+[18.451127] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/file_helper-inl.h\n'}
+[18.451317] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/thread_pool.h\n'}
+[18.451369] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/periodic_worker-inl.h\n'}
+[18.451406] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/console_globals.h\n'}
+[18.451443] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/backtracer.h\n'}
+[18.451477] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/log_msg_buffer-inl.h\n'}
+[18.451512] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/log_msg-inl.h\n'}
+[18.451548] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/details/registry.h\n'}
+[18.451583] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/common-inl.h\n'}
+[18.451618] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/spdlog.h\n'}
+[18.451652] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/async_logger.h\n'}
+[18.451687] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fwd.h\n'}
+[18.451720] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/common.h\n'}
+[18.451754] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/lib/libspdlog.a\n'}
+[18.451789] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled/\n'}
+[18.451823] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//os.h\n'}
+[18.451857] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//format.h\n'}
+[18.451905] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//core.h\n'}
+[18.451959] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//chrono.h\n'}
+[18.451998] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//xchar.h\n'}
+[18.452036] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//format-inl.h\n'}
+[18.452074] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//args.h\n'}
+[18.452110] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//ranges.h\n'}
+[18.452154] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//color.h\n'}
+[18.452204] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//ostream.h\n'}
+[18.452242] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//compile.h\n'}
+[18.452281] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//printf.h\n'}
+[18.452319] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//locale.h\n'}
+[18.452357] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/lib/pkgconfig/spdlog.pc\n'}
+[18.452392] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/lib/cmake/spdlog/spdlogConfigTargets.cmake\n'}
+[18.452428] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/lib/cmake/spdlog/spdlogConfigTargets-release.cmake\n'}
+[18.452471] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/lib/cmake/spdlog/spdlogConfig.cmake\n'}
+[18.452564] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/temp_install/spdlog-1.9.2/lib/cmake/spdlog/spdlogConfigVersion.cmake\n'}
+[18.463819] (microxrcedds_agent) StdoutLine: {'line': b"[ 66%] \x1b[34m\x1b[1mCompleted 'spdlog'\x1b[0m\n"}
+[18.485827] (microxrcedds_agent) StdoutLine: {'line': b'[ 66%] Built target spdlog\n'}
+[18.497644] (microxrcedds_agent) StdoutLine: {'line': b"[ 70%] \x1b[34m\x1b[1mCreating directories for 'uagent'\x1b[0m\n"}
+[18.515171] (microxrcedds_agent) StdoutLine: {'line': b"[ 75%] \x1b[34m\x1b[1mNo download step for 'uagent'\x1b[0m\n"}
+[18.529612] (microxrcedds_agent) StdoutLine: {'line': b"[ 79%] \x1b[34m\x1b[1mNo update step for 'uagent'\x1b[0m\n"}
+[18.544938] (-) TimerEvent: {}
+[18.545170] (microxrcedds_agent) StdoutLine: {'line': b"[ 83%] \x1b[34m\x1b[1mNo patch step for 'uagent'\x1b[0m\n"}
+[18.559531] (microxrcedds_agent) StdoutLine: {'line': b"[ 87%] \x1b[34m\x1b[1mPerforming configure step for 'uagent'\x1b[0m\n"}
+[18.564738] (microxrcedds_agent) StdoutLine: {'line': b'loading initial cache file /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent/uagent-prefix/tmp/uagent-cache-.cmake\n'}
+[18.568495] (microxrcedds_agent) StdoutLine: {'line': b"-- Setting build type to 'Release' as none was specified.\n"}
+[18.586788] (microxrcedds_agent) StdoutLine: {'line': b'-- Found TinyXML2: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2\n'}
+[18.627357] (microxrcedds_agent) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[18.630613] (microxrcedds_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[18.645055] (-) TimerEvent: {}
+[18.745284] (-) TimerEvent: {}
+[18.777454] (microxrcedds_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[18.778065] (microxrcedds_agent) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[18.781249] (microxrcedds_agent) StdoutLine: {'line': b'-- Configuring done (0.2s)\n'}
+[18.793020] (microxrcedds_agent) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[18.795013] (microxrcedds_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent\n'}
+[18.808655] (microxrcedds_agent) StdoutLine: {'line': b"[ 91%] \x1b[34m\x1b[1mPerforming build step for 'uagent'\x1b[0m\n"}
+[18.835186] (microxrcedds_agent) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/AgentInstance.cpp.o\x1b[0m\n'}
+[18.835330] (microxrcedds_agent) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/client/ProxyClient.cpp.o\x1b[0m\n'}
+[18.835816] (microxrcedds_agent) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/processor/Processor.cpp.o\x1b[0m\n'}
+[18.836309] (microxrcedds_agent) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datawriter/DataWriter.cpp.o\x1b[0m\n'}
+[18.836461] (microxrcedds_agent) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datareader/DataReader.cpp.o\x1b[0m\n'}
+[18.836548] (microxrcedds_agent) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/topic/Topic.cpp.o\x1b[0m\n'}
+[18.837804] (microxrcedds_agent) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Agent.cpp.o\x1b[0m\n'}
+[18.838277] (microxrcedds_agent) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Root.cpp.o\x1b[0m\n'}
+[18.838569] (microxrcedds_agent) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/XRCETypes.cpp.o\x1b[0m\n'}
+[18.838779] (microxrcedds_agent) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/publisher/Publisher.cpp.o\x1b[0m\n'}
+[18.839103] (microxrcedds_agent) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/subscriber/Subscriber.cpp.o\x1b[0m\n'}
+[18.839487] (microxrcedds_agent) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/SubMessageHeader.cpp.o\x1b[0m\n'}
+[18.839645] (microxrcedds_agent) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/participant/Participant.cpp.o\x1b[0m\n'}
+[18.842298] (microxrcedds_agent) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/object/XRCEObject.cpp.o\x1b[0m\n'}
+[18.842617] (microxrcedds_agent) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/requester/Requester.cpp.o\x1b[0m\n'}
+[18.842720] (microxrcedds_agent) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/replier/Replier.cpp.o\x1b[0m\n'}
+[18.843376] (microxrcedds_agent) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/MessageHeader.cpp.o\x1b[0m\n'}
+[18.844384] (microxrcedds_agent) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/InputMessage.cpp.o\x1b[0m\n'}
+[18.845323] (-) TimerEvent: {}
+[18.849351] (microxrcedds_agent) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/OutputMessage.cpp.o\x1b[0m\n'}
+[18.849601] (microxrcedds_agent) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/Server.cpp.o\x1b[0m\n'}
+[18.850219] (microxrcedds_agent) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv4AgentLinux.cpp.o\x1b[0m\n'}
+[18.850602] (microxrcedds_agent) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv6AgentLinux.cpp.o\x1b[0m\n'}
+[18.850735] (microxrcedds_agent) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/utils/ArgumentParser.cpp.o\x1b[0m\n'}
+[18.851326] (microxrcedds_agent) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/stream_framing/StreamFramingProtocol.cpp.o\x1b[0m\n'}
+[18.854241] (microxrcedds_agent) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/custom/CustomAgent.cpp.o\x1b[0m\n'}
+[18.865235] (microxrcedds_agent) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv4AgentLinux.cpp.o\x1b[0m\n'}
+[18.873936] (microxrcedds_agent) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/TermiosAgentLinux.cpp.o\x1b[0m\n'}
+[18.877030] (microxrcedds_agent) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiSerialAgentLinux.cpp.o\x1b[0m\n'}
+[18.891417] (microxrcedds_agent) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/SerialAgentLinux.cpp.o\x1b[0m\n'}
+[18.891867] (microxrcedds_agent) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiTermiosAgentLinux.cpp.o\x1b[0m\n'}
+[18.895518] (microxrcedds_agent) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv6AgentLinux.cpp.o\x1b[0m\n'}
+[18.945485] (-) TimerEvent: {}
+[18.981570] (microxrcedds_agent) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/PseudoTerminalAgentLinux.cpp.o\x1b[0m\n'}
+[19.045600] (-) TimerEvent: {}
+[19.130139] (microxrcedds_agent) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/can/CanAgentLinux.cpp.o\x1b[0m\n'}
+[19.145702] (-) TimerEvent: {}
+[19.246001] (-) TimerEvent: {}
+[19.346288] (-) TimerEvent: {}
+[19.446911] (-) TimerEvent: {}
+[19.547209] (-) TimerEvent: {}
+[19.603354] (microxrcedds_agent) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServerLinux.cpp.o\x1b[0m\n'}
+[19.647319] (-) TimerEvent: {}
+[19.732902] (microxrcedds_agent) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/p2p/AgentDiscovererLinux.cpp.o\x1b[0m\n'}
+[19.747427] (-) TimerEvent: {}
+[19.775927] (microxrcedds_agent) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServer.cpp.o\x1b[0m\n'}
+[19.847526] (-) TimerEvent: {}
+[19.947848] (-) TimerEvent: {}
+[20.048215] (-) TimerEvent: {}
+[20.148534] (-) TimerEvent: {}
+[20.248891] (-) TimerEvent: {}
+[20.349348] (-) TimerEvent: {}
+[20.450516] (-) TimerEvent: {}
+[20.520724] (microxrcedds_agent) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/TopicPubSubType.cpp.o\x1b[0m\n'}
+[20.539546] (microxrcedds_agent) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/xmlobjects/xmlobjects.cpp.o\x1b[0m\n'}
+[20.550646] (-) TimerEvent: {}
+[20.651091] (-) TimerEvent: {}
+[20.751409] (-) TimerEvent: {}
+[20.851777] (-) TimerEvent: {}
+[20.926739] (microxrcedds_agent) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastEntities.cpp.o\x1b[0m\n'}
+[20.952043] (-) TimerEvent: {}
+[20.955849] (microxrcedds_agent) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastMiddleware.cpp.o\x1b[0m\n'}
+[21.052192] (-) TimerEvent: {}
+[21.152532] (-) TimerEvent: {}
+[21.224709] (microxrcedds_agent) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSEntities.cpp.o\x1b[0m\n'}
+[21.252663] (-) TimerEvent: {}
+[21.353183] (-) TimerEvent: {}
+[21.357446] (microxrcedds_agent) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSMiddleware.cpp.o\x1b[0m\n'}
+[21.453254] (-) TimerEvent: {}
+[21.553682] (-) TimerEvent: {}
+[21.654446] (-) TimerEvent: {}
+[21.754836] (-) TimerEvent: {}
+[21.855942] (-) TimerEvent: {}
+[21.956610] (-) TimerEvent: {}
+[22.056910] (-) TimerEvent: {}
+[22.157238] (-) TimerEvent: {}
+[22.257552] (-) TimerEvent: {}
+[22.357850] (-) TimerEvent: {}
+[22.458667] (-) TimerEvent: {}
+[22.558963] (-) TimerEvent: {}
+[22.659276] (-) TimerEvent: {}
+[22.759568] (-) TimerEvent: {}
+[22.859857] (-) TimerEvent: {}
+[22.960161] (-) TimerEvent: {}
+[23.060553] (-) TimerEvent: {}
+[23.143768] (microxrcedds_agent) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/ced/CedEntities.cpp.o\x1b[0m\n'}
+[23.161154] (-) TimerEvent: {}
+[23.261437] (-) TimerEvent: {}
+[23.364662] (-) TimerEvent: {}
+[23.464967] (-) TimerEvent: {}
+[23.565255] (-) TimerEvent: {}
+[23.665545] (-) TimerEvent: {}
+[23.765870] (-) TimerEvent: {}
+[23.866202] (-) TimerEvent: {}
+[23.966498] (-) TimerEvent: {}
+[23.970995] (microxrcedds_agent) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/ced/CedMiddleware.cpp.o\x1b[0m\n'}
+[24.066597] (-) TimerEvent: {}
+[24.166919] (-) TimerEvent: {}
+[24.219809] (microxrcedds_agent) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/p2p/AgentDiscoverer.cpp.o\x1b[0m\n'}
+[24.267055] (-) TimerEvent: {}
+[24.334154] (microxrcedds_agent) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/p2p/InternalClientManager.cpp.o\x1b[0m\n'}
+[24.367672] (-) TimerEvent: {}
+[24.392128] (microxrcedds_agent) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/p2p/InternalClient.cpp.o\x1b[0m\n'}
+[24.467776] (-) TimerEvent: {}
+[24.568078] (-) TimerEvent: {}
+[24.668375] (-) TimerEvent: {}
+[24.768702] (-) TimerEvent: {}
+[24.869001] (-) TimerEvent: {}
+[24.969321] (-) TimerEvent: {}
+[25.069729] (-) TimerEvent: {}
+[25.170049] (-) TimerEvent: {}
+[25.270396] (-) TimerEvent: {}
+[25.370669] (-) TimerEvent: {}
+[25.470996] (-) TimerEvent: {}
+[25.571390] (-) TimerEvent: {}
+[25.671778] (-) TimerEvent: {}
+[25.772227] (-) TimerEvent: {}
+[25.872700] (-) TimerEvent: {}
+[25.973111] (-) TimerEvent: {}
+[26.073397] (-) TimerEvent: {}
+[26.173758] (-) TimerEvent: {}
+[26.274125] (-) TimerEvent: {}
+[26.374564] (-) TimerEvent: {}
+[26.474962] (-) TimerEvent: {}
+[26.575286] (-) TimerEvent: {}
+[26.675565] (-) TimerEvent: {}
+[26.775973] (-) TimerEvent: {}
+[26.876361] (-) TimerEvent: {}
+[26.976859] (-) TimerEvent: {}
+[27.077262] (-) TimerEvent: {}
+[27.177659] (-) TimerEvent: {}
+[27.278055] (-) TimerEvent: {}
+[27.378492] (-) TimerEvent: {}
+[27.478911] (-) TimerEvent: {}
+[27.579296] (-) TimerEvent: {}
+[27.679678] (-) TimerEvent: {}
+[27.780118] (-) TimerEvent: {}
+[27.880667] (-) TimerEvent: {}
+[27.980985] (-) TimerEvent: {}
+[28.081242] (-) TimerEvent: {}
+[28.181505] (-) TimerEvent: {}
+[28.281785] (-) TimerEvent: {}
+[28.382226] (-) TimerEvent: {}
+[28.482469] (-) TimerEvent: {}
+[28.582772] (-) TimerEvent: {}
+[28.683061] (-) TimerEvent: {}
+[28.783322] (-) TimerEvent: {}
+[28.883580] (-) TimerEvent: {}
+[28.983859] (-) TimerEvent: {}
+[29.084142] (-) TimerEvent: {}
+[29.184417] (-) TimerEvent: {}
+[29.284717] (-) TimerEvent: {}
+[29.385047] (-) TimerEvent: {}
+[29.485381] (-) TimerEvent: {}
+[29.585626] (-) TimerEvent: {}
+[29.685865] (-) TimerEvent: {}
+[29.786139] (-) TimerEvent: {}
+[29.886386] (-) TimerEvent: {}
+[29.986630] (-) TimerEvent: {}
+[30.086874] (-) TimerEvent: {}
+[30.187112] (-) TimerEvent: {}
+[30.287396] (-) TimerEvent: {}
+[30.387643] (-) TimerEvent: {}
+[30.487896] (-) TimerEvent: {}
+[30.588182] (-) TimerEvent: {}
+[30.688501] (-) TimerEvent: {}
+[30.788761] (-) TimerEvent: {}
+[30.889206] (-) TimerEvent: {}
+[30.989502] (-) TimerEvent: {}
+[31.089883] (-) TimerEvent: {}
+[31.190160] (-) TimerEvent: {}
+[31.278805] (microxrcedds_agent) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared library libmicroxrcedds_agent.so\x1b[0m\n'}
+[31.290238] (-) TimerEvent: {}
+[31.390457] (-) TimerEvent: {}
+[31.490680] (-) TimerEvent: {}
+[31.556601] (microxrcedds_agent) StdoutLine: {'line': b'[ 96%] Built target microxrcedds_agent\n'}
+[31.569345] (microxrcedds_agent) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding CXX object CMakeFiles/MicroXRCEAgent.dir/microxrce_agent.cpp.o\x1b[0m\n'}
+[31.590765] (-) TimerEvent: {}
+[31.691275] (-) TimerEvent: {}
+[31.791620] (-) TimerEvent: {}
+[31.891822] (-) TimerEvent: {}
+[31.998676] (-) TimerEvent: {}
+[32.098886] (-) TimerEvent: {}
+[32.199139] (-) TimerEvent: {}
+[32.288957] (microxrcedds_agent) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable MicroXRCEAgent\x1b[0m\n'}
+[32.299223] (-) TimerEvent: {}
+[32.399512] (-) TimerEvent: {}
+[32.485429] (microxrcedds_agent) StdoutLine: {'line': b'[100%] Built target MicroXRCEAgent\n'}
+[32.499596] (-) TimerEvent: {}
+[32.503040] (microxrcedds_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mNo install step for 'uagent'\x1b[0m\n"}
+[32.517508] (microxrcedds_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mCompleted 'uagent'\x1b[0m\n"}
+[32.538744] (microxrcedds_agent) StdoutLine: {'line': b'Built target uagent\n'}
+[32.545527] (microxrcedds_agent) CommandEnded: {'returncode': 0}
+[32.546327] (microxrcedds_agent) JobProgress: {'identifier': 'microxrcedds_agent', 'progress': 'install'}
+[32.551762] (microxrcedds_agent) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent'], 'cwd': '/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'HTTPS_PROXY': 'http://172.21.144.1:7897', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'yjh', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'GIT_ASKPASS': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs/lib:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/yjh', 'OLDPWD': '/home/yjh/ROS2_manmade/ros2_ws', 'TERM_PROGRAM_VERSION': '1.85.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-14db6617-ea06-4ac1-866a-9ee096b47a19.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'https_proxy': 'http://172.21.144.1:7897', 'COLCON_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'yjh', 'NAME': 'Code', 'WSL_INTEROP': '/run/WSL/7617_interop', 'http_proxy': 'http://172.21.144.1:7897', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/yjh/.vscode-server/bin/8b3775030ed1a69b13e4f4c628c612102e30a681/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/MATLAB/R2022b/runtime/win64:/mnt/c/Program Files/MATLAB/R2022b/bin:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/yjh/blender/blender-4.2.1-windows-x64/blender-4.2.1-windows-x64/custom-python-packages/Python311/Scripts:/mnt/c/Program Files/nodejs/:/mnt/c/Users/yjh/anaconda3:/mnt/c/Users/yjh/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/yjh/anaconda3/Library/usr/bin:/mnt/c/Users/yjh/anaconda3/Library/bin:/mnt/c/Users/yjh/anaconda3/Scripts:/mnt/c/Users/yjh/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/JetBrains/PyCharm 2025.1.1.1/bin:/mnt/c/Users/yjh/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/yjh/.dotnet/tools:/mnt/c/Users/yjh/AppData/Roaming/npm:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-f74a288ac0.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/yjh/ROS2_manmade/ros2_ws/build/microxrcedds_agent', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://172.21.144.1:7897', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/yjh/ROS2_manmade/ros2_ws/install/px4_msgs:/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'ELECTRON_RUN_AS_NODE/w:'}), 'shell': False}
+[32.556543] (microxrcedds_agent) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[32.556727] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/libmicroxrcedds_agent.so.2.4.3\n'}
+[32.559793] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/libmicroxrcedds_agent.so.2.4\n'}
+[32.560032] (microxrcedds_agent) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/libmicroxrcedds_agent.so.2.4.3" to ""\n'}
+[32.560111] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/libmicroxrcedds_agent.so\n'}
+[32.560154] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent\n'}
+[32.560276] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/topic\n'}
+[32.560402] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/topic/Topic.hpp\n'}
+[32.560577] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/middleware\n'}
+[32.560701] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/middleware/Middleware.hpp\n'}
+[32.560887] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/middleware/fast\n'}
+[32.560998] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/middleware/fast/FastMiddleware.hpp\n'}
+[32.561268] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/middleware/fast/FastEntities.hpp\n'}
+[32.561487] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/middleware/ced\n'}
+[32.561779] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/middleware/ced/CedMiddleware.hpp\n'}
+[32.561899] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/middleware/ced/CedEntities.hpp\n'}
+[32.562001] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/middleware/fastdds\n'}
+[32.562103] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/middleware/fastdds/FastDDSMiddleware.hpp\n'}
+[32.562387] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/middleware/fastdds/FastDDSEntities.hpp\n'}
+[32.562496] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/middleware/utils\n'}
+[32.562742] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/middleware/utils/Callbacks.hpp\n'}
+[32.562869] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/Root.hpp\n'}
+[32.562930] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/subscriber\n'}
+[32.562971] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/subscriber/Subscriber.hpp\n'}
+[32.563027] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/AgentInstance.hpp\n'}
+[32.563084] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/types\n'}
+[32.563245] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/types/TopicPubSubType.hpp\n'}
+[32.563364] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/types/Optional.hpp\n'}
+[32.563549] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/types/XRCETypes.hpp\n'}
+[32.563647] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/types/SubMessageHeader.hpp\n'}
+[32.563814] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/types/MessageHeader.hpp\n'}
+[32.563913] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/p2p\n'}
+[32.564063] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/p2p/InternalClientManager.hpp\n'}
+[32.564162] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/p2p/InternalClient.hpp\n'}
+[32.564285] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/replier\n'}
+[32.564384] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/replier/Replier.hpp\n'}
+[32.564480] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/scheduler\n'}
+[32.564524] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/scheduler/PacketScheduler.hpp\n'}
+[32.564612] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/scheduler/Scheduler.hpp\n'}
+[32.564698] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/publisher\n'}
+[32.564979] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/publisher/Publisher.hpp\n'}
+[32.565077] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/datareader\n'}
+[32.565164] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/datareader/DataReader.hpp\n'}
+[32.565244] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/participant\n'}
+[32.565325] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/participant/Participant.hpp\n'}
+[32.565405] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/object\n'}
+[32.565486] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/object/XRCEObject.hpp\n'}
+[32.565566] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/message\n'}
+[32.565646] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/message/OutputMessage.hpp\n'}
+[32.565727] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/message/Packet.hpp\n'}
+[32.565807] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/message/InputMessage.hpp\n'}
+[32.565887] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/reader\n'}
+[32.565969] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/reader/Reader.hpp\n'}
+[32.566216] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/processor\n'}
+[32.566424] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/processor/Processor.hpp\n'}
+[32.566531] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/visibility.hpp\n'}
+[32.566615] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/Agent.hpp\n'}
+[32.566725] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/logger\n'}
+[32.566820] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/logger/Logger.hpp\n'}
+[32.566937] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport\n'}
+[32.567036] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/udp\n'}
+[32.567134] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/udp/UDPv6AgentWindows.hpp\n'}
+[32.567230] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/udp/UDPv6AgentLinux.hpp\n'}
+[32.567327] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/udp/UDPv4AgentLinux.hpp\n'}
+[32.567423] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/udp/UDPv4AgentWindows.hpp\n'}
+[32.567510] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/p2p\n'}
+[32.567549] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/p2p/AgentDiscovererLinux.hpp\n'}
+[32.567809] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/p2p/AgentDiscoverer.hpp\n'}
+[32.567942] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/custom\n'}
+[32.568028] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/custom/CustomAgent.hpp\n'}
+[32.568127] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/SessionManager.hpp\n'}
+[32.568283] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/can\n'}
+[32.568411] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/can/CanAgentLinux.hpp\n'}
+[32.568512] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/util\n'}
+[32.568610] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/util/InterfaceWindows.hpp\n'}
+[32.568871] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/util/InterfaceLinux.hpp\n'}
+[32.569026] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/TransportRc.hpp\n'}
+[32.569322] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/serial\n'}
+[32.569464] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/serial/TermiosAgentLinux.hpp\n'}
+[32.569550] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/serial/MultiSerialAgentLinux.hpp\n'}
+[32.569759] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/serial/baud_rate_table_linux.h\n'}
+[32.569864] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/serial/SerialAgentLinux.hpp\n'}
+[32.569974] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/serial/MultiTermiosAgentLinux.hpp\n'}
+[32.570061] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/serial/PseudoTerminalAgentLinux.hpp\n'}
+[32.570145] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/discovery\n'}
+[32.570243] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/discovery/DiscoveryServerWindows.hpp\n'}
+[32.570340] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/discovery/DiscoveryServerLinux.hpp\n'}
+[32.570437] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/discovery/DiscoveryServer.hpp\n'}
+[32.570533] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/endpoint\n'}
+[32.570629] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/endpoint/CanEndPoint.hpp\n'}
+[32.570725] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/endpoint/MultiSerialEndPoint.hpp\n'}
+[32.570822] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/endpoint/IPv4EndPoint.hpp\n'}
+[32.570920] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/endpoint/IPv6EndPoint.hpp\n'}
+[32.571017] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/endpoint/SerialEndPoint.hpp\n'}
+[32.571113] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/endpoint/CustomEndPoint.hpp\n'}
+[32.571209] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/tcp\n'}
+[32.571305] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/tcp/TCPServerBase.hpp\n'}
+[32.571401] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/tcp/TCPv6AgentWindows.hpp\n'}
+[32.571497] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/tcp/TCPv4AgentLinux.hpp\n'}
+[32.571594] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/tcp/TCPConnection.hpp\n'}
+[32.571793] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/tcp/TCPv6AgentLinux.hpp\n'}
+[32.571908] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/tcp/TCPv4AgentWindows.hpp\n'}
+[32.572011] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/stream_framing\n'}
+[32.572116] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/stream_framing/StreamFramingProtocol.hpp\n'}
+[32.572288] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/transport/Server.hpp\n'}
+[32.572396] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/requester\n'}
+[32.572562] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/requester/Requester.hpp\n'}
+[32.572829] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/utils\n'}
+[32.572899] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/utils/SharedMutex.hpp\n'}
+[32.573134] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/utils/Color.hpp\n'}
+[32.573398] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/utils/Time.hpp\n'}
+[32.573529] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/utils/SharedMutexPriority.hpp\n'}
+[32.573641] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/utils/Conversion.hpp\n'}
+[32.573750] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/utils/Functions.hpp\n'}
+[32.573858] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/utils/TokenBucket.hpp\n'}
+[32.573965] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/utils/ArgumentParser.hpp\n'}
+[32.574071] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/utils/SeqNum.hpp\n'}
+[32.574178] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/datawriter\n'}
+[32.574284] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/datawriter/DataWriter.hpp\n'}
+[32.574390] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/client\n'}
+[32.574495] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/client/session\n'}
+[32.574601] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/client/session/Session.hpp\n'}
+[32.574708] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/client/session/SessionInfo.hpp\n'}
+[32.574814] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/client/session/stream\n'}
+[32.574923] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/client/session/stream/OutputStream.hpp\n'}
+[32.575035] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/client/session/stream/InputStream.hpp\n'}
+[32.575140] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/client/ProxyClient.hpp\n'}
+[32.575389] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets.cmake\n'}
+[32.575500] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets-release.cmake\n'}
+[32.575607] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/bin/MicroXRCEAgent\n'}
+[32.575713] (microxrcedds_agent) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/bin/MicroXRCEAgent" to ""\n'}
+[32.575819] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/agent/config.hpp\n'}
+[32.575925] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microxrcedds_agent/LICENSE\n'}
+[32.576031] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfig.cmake\n'}
+[32.576137] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfigVersion.cmake\n'}
+[32.576243] (microxrcedds_agent) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent\n'}
+[32.576349] (microxrcedds_agent) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib\n'}
+[32.576455] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/libmicrocdr.so.2.0\n'}
+[32.576561] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/libmicrocdr.so\n'}
+[32.576640] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/libmicrocdr.so.2.0.1\n'}
+[32.576687] (microxrcedds_agent) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share\n'}
+[32.576751] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microcdr\n'}
+[32.576793] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microcdr/cmake\n'}
+[32.576844] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microcdr/cmake/microcdrConfigVersion.cmake\n'}
+[32.576949] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microcdr/cmake/microcdrTargets.cmake\n'}
+[32.576992] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microcdr/cmake/microcdrTargets-release.cmake\n'}
+[32.577087] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microcdr/cmake/microcdrConfig.cmake\n'}
+[32.577148] (microxrcedds_agent) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include\n'}
+[32.577323] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/ucdr\n'}
+[32.577380] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/ucdr/config.h\n'}
+[32.577419] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/ucdr/visibility.h\n'}
+[32.577455] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/ucdr/microcdr.h\n'}
+[32.577493] (microxrcedds_agent) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent\n'}
+[32.577528] (microxrcedds_agent) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib\n'}
+[32.577563] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/libmicroxrcedds_client.so\n'}
+[32.577598] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/libmicroxrcedds_client.so.2.4.3\n'}
+[32.577632] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/libmicroxrcedds_client.so.2.4\n'}
+[32.577667] (microxrcedds_agent) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share\n'}
+[32.577701] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microxrcedds_client\n'}
+[32.577735] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microxrcedds_client/cmake\n'}
+[32.577769] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microxrcedds_client/cmake/microxrcedds_clientTargets.cmake\n'}
+[32.577803] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microxrcedds_client/cmake/microxrcedds_clientConfigVersion.cmake\n'}
+[32.577836] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microxrcedds_client/cmake/microxrcedds_clientTargets-release.cmake\n'}
+[32.577869] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/share/microxrcedds_client/cmake/microxrcedds_clientConfig.cmake\n'}
+[32.577902] (microxrcedds_agent) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include\n'}
+[32.577964] (microxrcedds_agent) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr\n'}
+[32.578003] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client\n'}
+[32.578073] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/transport.h\n'}
+[32.578181] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/config.h\n'}
+[32.578287] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/client.h\n'}
+[32.578393] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile\n'}
+[32.578499] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/multithread\n'}
+[32.578604] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/multithread/multithread.h\n'}
+[32.578710] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport\n'}
+[32.578817] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip\n'}
+[32.579045] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/udp\n'}
+[32.579166] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/udp/udp_transport_posix_nopoll.h\n'}
+[32.579274] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/udp/udp_transport_rtems_bsd_net.h\n'}
+[32.579349] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/udp/udp_transport_windows.h\n'}
+[32.579458] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/udp/udp_transport_freertos_plus_tcp.h\n'}
+[32.579565] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/udp/udp_transport_posix.h\n'}
+[32.579670] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/udp/udp_transport.h\n'}
+[32.579777] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/ip.h\n'}
+[32.579970] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/tcp\n'}
+[32.580078] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/tcp/tcp_transport_rtems_bsd_net.h\n'}
+[32.580188] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/tcp/tcp_transport_posix_nopoll.h\n'}
+[32.580285] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/tcp/tcp_transport_freertos_plus_tcp.h\n'}
+[32.580392] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/tcp/tcp_transport_posix.h\n'}
+[32.580496] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/tcp/tcp_transport_windows.h\n'}
+[32.580542] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/ip/tcp/tcp_transport.h\n'}
+[32.580630] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/custom\n'}
+[32.580848] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/custom/custom_transport.h\n'}
+[32.580957] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/can\n'}
+[32.581303] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/can/can_transport_posix.h\n'}
+[32.581419] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/can/can_transport.h\n'}
+[32.581526] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/serial\n'}
+[32.581630] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/serial/serial_transport.h\n'}
+[32.581733] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/serial/serial_transport_posix.h\n'}
+[32.581890] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/serial/serial_transport_platform.h\n'}
+[32.581971] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/serial/serial_transport_rtems_bsd_net.h\n'}
+[32.582078] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/stream_framing\n'}
+[32.582179] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/transport/stream_framing/stream_framing_protocol.h\n'}
+[32.582275] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/discovery\n'}
+[32.582380] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/profile/discovery/discovery.h\n'}
+[32.582492] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core\n'}
+[32.582610] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/type\n'}
+[32.582719] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/type/xrce_types.h\n'}
+[32.582824] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/communication\n'}
+[32.582929] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/communication/communication.h\n'}
+[32.583033] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session\n'}
+[32.583138] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/create_entities_bin.h\n'}
+[32.583216] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/common_create_entities.h\n'}
+[32.583371] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/time_sync.h\n'}
+[32.583596] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/create_entities_ref.h\n'}
+[32.583701] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/object_id.h\n'}
+[32.583803] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/read_access.h\n'}
+[32.583887] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/write_access.h\n'}
+[32.583980] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/create_entities_xml.h\n'}
+[32.584075] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/session.h\n'}
+[32.584245] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/stream\n'}
+[32.584357] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/stream/seq_num.h\n'}
+[32.584579] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/stream/reliable_stream.h\n'}
+[32.584886] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/stream/input_best_effort_stream.h\n'}
+[32.584945] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/stream/output_reliable_stream.h\n'}
+[32.584985] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/stream/stream_id.h\n'}
+[32.585019] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/stream/output_best_effort_stream.h\n'}
+[32.585224] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/stream/input_reliable_stream.h\n'}
+[32.585522] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/stream/stream_storage.h\n'}
+[32.585648] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/core/session/session_info.h\n'}
+[32.585751] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/util\n'}
+[32.585848] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/util/ping.h\n'}
+[32.585928] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/util/time.h\n'}
+[32.586003] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/visibility.h\n'}
+[32.586078] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/uxr/client/defines.h\n'}
+[32.586152] (microxrcedds_agent) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent\n'}
+[32.586227] (microxrcedds_agent) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib\n'}
+[32.586301] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/libspdlog.a\n'}
+[32.586413] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/cmake\n'}
+[32.586498] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/cmake/spdlog\n'}
+[32.586575] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/cmake/spdlog/spdlogConfigTargets-release.cmake\n'}
+[32.586651] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/cmake/spdlog/spdlogConfigTargets.cmake\n'}
+[32.586727] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/cmake/spdlog/spdlogConfig.cmake\n'}
+[32.587076] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/cmake/spdlog/spdlogConfigVersion.cmake\n'}
+[32.587187] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/pkgconfig\n'}
+[32.587371] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/lib/pkgconfig/spdlog.pc\n'}
+[32.587475] (microxrcedds_agent) StdoutLine: {'line': b'-- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include\n'}
+[32.587580] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog\n'}
+[32.587674] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/async.h\n'}
+[32.587715] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/pattern_formatter.h\n'}
+[32.587751] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/tweakme.h\n'}
+[32.588167] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/version.h\n'}
+[32.588265] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks\n'}
+[32.588376] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/syslog_sink.h\n'}
+[32.588475] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/qt_sinks.h\n'}
+[32.588517] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/tcp_sink.h\n'}
+[32.588762] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/mongo_sink.h\n'}
+[32.589272] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/stdout_sinks.h\n'}
+[32.590084] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/ansicolor_sink.h\n'}
+[32.590192] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/rotating_file_sink-inl.h\n'}
+[32.590295] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/sink.h\n'}
+[32.590548] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/dup_filter_sink.h\n'}
+[32.590670] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/base_sink.h\n'}
+[32.590772] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/ostream_sink.h\n'}
+[32.590874] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/msvc_sink.h\n'}
+[32.590975] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/base_sink-inl.h\n'}
+[32.591076] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/wincolor_sink.h\n'}
+[32.591177] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/systemd_sink.h\n'}
+[32.591278] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/sink-inl.h\n'}
+[32.591711] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/dist_sink.h\n'}
+[32.592034] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/hourly_file_sink.h\n'}
+[32.592141] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/basic_file_sink-inl.h\n'}
+[32.592254] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/win_eventlog_sink.h\n'}
+[32.592492] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/basic_file_sink.h\n'}
+[32.592595] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/stdout_sinks-inl.h\n'}
+[32.592699] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/daily_file_sink.h\n'}
+[32.592868] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/android_sink.h\n'}
+[32.592997] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/ringbuffer_sink.h\n'}
+[32.593080] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/rotating_file_sink.h\n'}
+[32.593181] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/wincolor_sink-inl.h\n'}
+[32.593323] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/ansicolor_sink-inl.h\n'}
+[32.593488] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/stdout_color_sinks.h\n'}
+[32.593594] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/stdout_color_sinks-inl.h\n'}
+[32.593696] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/sinks/null_sink.h\n'}
+[32.593798] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/async_logger-inl.h\n'}
+[32.593898] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/formatter.h\n'}
+[32.593998] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/cfg\n'}
+[32.594098] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/cfg/env.h\n'}
+[32.594199] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/cfg/argv.h\n'}
+[32.594300] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/cfg/helpers-inl.h\n'}
+[32.594402] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/cfg/helpers.h\n'}
+[32.594502] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/pattern_formatter-inl.h\n'}
+[32.594701] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt\n'}
+[32.594805] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/fmt.h\n'}
+[32.594909] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/chrono.h\n'}
+[32.595012] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/xchar.h\n'}
+[32.595113] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled\n'}
+[32.595215] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled/os.h\n'}
+[32.595315] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled/format.h\n'}
+[32.595421] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled/core.h\n'}
+[32.595523] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled/chrono.h\n'}
+[32.595622] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled/xchar.h\n'}
+[32.595723] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled/format-inl.h\n'}
+[32.595823] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled/args.h\n'}
+[32.595923] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled/ranges.h\n'}
+[32.596024] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled/color.h\n'}
+[32.596124] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled/ostream.h\n'}
+[32.596223] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled/compile.h\n'}
+[32.596313] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled/printf.h\n'}
+[32.596390] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bundled/locale.h\n'}
+[32.596513] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/bin_to_hex.h\n'}
+[32.596616] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/compile.h\n'}
+[32.596706] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fmt/ostr.h\n'}
+[32.596781] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/logger.h\n'}
+[32.596882] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/stopwatch.h\n'}
+[32.596969] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/logger-inl.h\n'}
+[32.597062] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/spdlog-inl.h\n'}
+[32.597106] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details\n'}
+[32.597192] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/fmt_helper.h\n'}
+[32.597286] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/log_msg.h\n'}
+[32.597387] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/os-inl.h\n'}
+[32.597487] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/os.h\n'}
+[32.597587] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/null_mutex.h\n'}
+[32.597656] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/windows_include.h\n'}
+[32.597755] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/thread_pool-inl.h\n'}
+[32.597856] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/mpmc_blocking_q.h\n'}
+[32.597973] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/synchronous_factory.h\n'}
+[32.598076] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/circular_q.h\n'}
+[32.598188] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/periodic_worker.h\n'}
+[32.598289] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/tcp_client-windows.h\n'}
+[32.598390] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/registry-inl.h\n'}
+[32.598492] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/file_helper.h\n'}
+[32.598595] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/tcp_client.h\n'}
+[32.598695] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/backtracer-inl.h\n'}
+[32.598795] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/log_msg_buffer.h\n'}
+[32.598895] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/file_helper-inl.h\n'}
+[32.598995] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/thread_pool.h\n'}
+[32.599094] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/periodic_worker-inl.h\n'}
+[32.599201] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/console_globals.h\n'}
+[32.599306] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/backtracer.h\n'}
+[32.599423] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/log_msg_buffer-inl.h\n'}
+[32.599529] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/log_msg-inl.h\n'}
+[32.599633] (-) TimerEvent: {}
+[32.599730] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/details/registry.h\n'}
+[32.599817] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/common-inl.h\n'}
+[32.599862] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/spdlog.h\n'}
+[32.599941] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/async_logger.h\n'}
+[32.600065] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/fwd.h\n'}
+[32.600175] (microxrcedds_agent) StdoutLine: {'line': b'-- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/microxrcedds_agent/include/spdlog/common.h\n'}
+[32.600274] (microxrcedds_agent) CommandEnded: {'returncode': 0}
+[32.609670] (microxrcedds_agent) JobEnded: {'identifier': 'microxrcedds_agent', 'rc': 0}
+[32.610572] (-) EventReactorShutdown: {}

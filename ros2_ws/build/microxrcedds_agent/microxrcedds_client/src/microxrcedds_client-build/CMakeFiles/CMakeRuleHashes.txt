@@ -1,0 +1,12 @@
+# Hashes of file build rules.
+a48677a848e66f9d0ddcb6dfacb9cd31 CMakeFiles/microcdr-complete
+ab905500c0431f7efcaffa423d24d1fa microcdr/src/microcdr-stamp/microcdr-build
+a226ce33ca67296806d74c6d5d4cdc2c microcdr/src/microcdr-stamp/microcdr-configure
+a67cca477ec265edf945dbc69b75366c microcdr/src/microcdr-stamp/microcdr-download
+098fdc5d49108afb2bb42874627c712f microcdr/src/microcdr-stamp/microcdr-install
+357613a12a5decdfc85acd82fd441c6e microcdr/src/microcdr-stamp/microcdr-mkdir
+5f1ef5bb3228fe24e1c18d0899502c85 microcdr/src/microcdr-stamp/microcdr-patch
+0bf55e63f5ebe6f4c833417282b9e256 uclient-prefix/src/uclient-stamp/uclient-download
+a1b0c3b8c012ba75d3119a7f7bf6aac8 uclient-prefix/src/uclient-stamp/uclient-mkdir
+a54259c1fc65d6b39f30112ba403f86f uclient-prefix/src/uclient-stamp/uclient-patch
+f68cce9d76ea856432f8259b9b4f4f85 uclient-prefix/src/uclient-stamp/uclient-update

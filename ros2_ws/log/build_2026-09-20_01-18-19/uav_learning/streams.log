@@ -1,0 +1,26 @@
+[0.410s] Invoking command in '/home/yjh/ROS2_manmade/ros2_ws/src/uav_learning': PYTHONPATH=/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uav_learning build --build-base /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build install --record /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/install.log --install-scripts $base/lib/uav_learning --single-version-externally-managed install_data
+[0.558s] running egg_info
+[0.567s] writing ../../build/uav_learning/uav_learning.egg-info/PKG-INFO
+[0.567s] writing dependency_links to ../../build/uav_learning/uav_learning.egg-info/dependency_links.txt
+[0.567s] writing entry points to ../../build/uav_learning/uav_learning.egg-info/entry_points.txt
+[0.567s] writing requirements to ../../build/uav_learning/uav_learning.egg-info/requires.txt
+[0.567s] writing top-level names to ../../build/uav_learning/uav_learning.egg-info/top_level.txt
+[0.586s] reading manifest file '../../build/uav_learning/uav_learning.egg-info/SOURCES.txt'
+[0.586s] adding license file 'LICENSE'
+[0.586s] writing manifest file '../../build/uav_learning/uav_learning.egg-info/SOURCES.txt'
+[0.587s] running build
+[0.587s] running build_py
+[0.587s] copying uav_learning/status_subscriber.py -> /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build/lib/uav_learning
+[0.587s] running install
+[0.591s] running install_lib
+[0.601s] copying /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build/lib/uav_learning/status_subscriber.py -> /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning
+[0.602s] byte-compiling /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning/status_subscriber.py to status_subscriber.cpython-312.pyc
+[0.602s] running install_data
+[0.602s] running install_egg_info
+[0.613s] removing '/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning-0.0.0-py3.12.egg-info' (and everything under it)
+[0.613s] Copying ../../build/uav_learning/uav_learning.egg-info to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning-0.0.0-py3.12.egg-info
+[0.613s] running install_scripts
+[0.677s] Installing status_publisher script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[0.677s] Installing status_subscriber script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+[0.677s] writing list of installed files to '/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/install.log'
+[0.691s] Invoked command in '/home/yjh/ROS2_manmade/ros2_ws/src/uav_learning' returned '0': PYTHONPATH=/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uav_learning build --build-base /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build install --record /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/install.log --install-scripts $base/lib/uav_learning --single-version-externally-managed install_data

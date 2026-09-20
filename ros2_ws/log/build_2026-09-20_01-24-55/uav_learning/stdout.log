@@ -1,0 +1,29 @@
+running egg_info
+writing ../../build/uav_learning/uav_learning.egg-info/PKG-INFO
+writing dependency_links to ../../build/uav_learning/uav_learning.egg-info/dependency_links.txt
+writing entry points to ../../build/uav_learning/uav_learning.egg-info/entry_points.txt
+writing requirements to ../../build/uav_learning/uav_learning.egg-info/requires.txt
+writing top-level names to ../../build/uav_learning/uav_learning.egg-info/top_level.txt
+reading manifest file '../../build/uav_learning/uav_learning.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/uav_learning/uav_learning.egg-info/SOURCES.txt'
+running build
+running build_py
+copying uav_learning/uav_state_publisher.py -> /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build/lib/uav_learning
+copying uav_learning/uav_state_monitor.py -> /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build/lib/uav_learning
+running install
+running install_lib
+copying /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build/lib/uav_learning/uav_state_publisher.py -> /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning
+copying /home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/build/lib/uav_learning/uav_state_monitor.py -> /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning
+byte-compiling /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning/uav_state_publisher.py to uav_state_publisher.cpython-312.pyc
+byte-compiling /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning/uav_state_monitor.py to uav_state_monitor.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/uav_learning/uav_learning.egg-info to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/python3.12/site-packages/uav_learning-0.0.0-py3.12.egg-info
+running install_scripts
+Installing status_publisher script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+Installing status_subscriber script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+Installing uav_state_monitor script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+Installing uav_state_publisher script to /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning
+writing list of installed files to '/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/install.log'

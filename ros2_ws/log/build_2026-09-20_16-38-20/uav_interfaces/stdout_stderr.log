@@ -1,0 +1,31 @@
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found builtin_interfaces: 2.0.4 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (2.0s)
+-- Generating done (0.1s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+
+[0m
+-- Build files have been written to: /home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces
+[  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+failed to create symbolic link '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/ament_cmake_python/uav_interfaces/uav_interfaces' because existing path cannot be removed: Is a directory
+[  3%] [34m[1mGenerating Rust code for ROS interfaces[0m
+gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_uav_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_uav_interfaces] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:471: CMakeFiles/ament_cmake_python_symlink_uav_interfaces.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[  3%] Built target uav_interfaces__rosidl_generator_type_description
+[  3%] Built target uav_interfaces__rs
+gmake: *** [Makefile:146: all] Error 2

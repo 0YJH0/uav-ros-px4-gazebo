@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from uav_interfaces/action/FlyToAltitude.action
+// generated code does not contain a copyright notice
+
+
+module uav_interfaces {
+  module action {
+    struct FlyToAltitude_Goal {
+      float target_altitude;
+    };
+    struct FlyToAltitude_Result {
+      boolean success;
+
+      string message;
+    };
+    struct FlyToAltitude_Feedback {
+      float current_altitude;
+    };
+  };
+};

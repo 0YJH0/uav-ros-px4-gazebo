@@ -1,0 +1,8 @@
+{
+  "package_name": "uav_interfaces",
+  "non_idl_tuples": [
+    "/home/yjh/ROS2_manmade/ros2_ws/src/uav_interfaces:msg/TargetDetection.msg",
+    "/home/yjh/ROS2_manmade/ros2_ws/src/uav_interfaces:srv/SetMode.srv",
+    "/home/yjh/ROS2_manmade/ros2_ws/src/uav_interfaces:action/FlyToAltitude.action"
+  ]
+}

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from uav_interfaces/srv/SetMode.srv
+// generated code does not contain a copyright notice
+
+
+module uav_interfaces {
+  module srv {
+    struct SetMode_Request {
+      string mode;
+    };
+    struct SetMode_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

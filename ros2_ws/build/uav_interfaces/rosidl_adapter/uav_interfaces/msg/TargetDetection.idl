@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from uav_interfaces/msg/TargetDetection.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module uav_interfaces {
+  module msg {
+    struct TargetDetection {
+      builtin_interfaces::msg::Time stamp;
+
+      boolean detected;
+
+      float confidence;
+
+      float center_u;
+
+      float center_v;
+
+      float center_u_norm;
+
+      float center_v_norm;
+
+      float bbox_x;
+
+      float bbox_y;
+
+      float bbox_width;
+
+      float bbox_height;
+
+      float area_ratio;
+    };
+  };
+};

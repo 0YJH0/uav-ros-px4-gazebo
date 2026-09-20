@@ -1,0 +1,241 @@
+[0.009s] Invoking command in '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/cmake --build /home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces -- -j32 -l32
+[0.047s] [  1%] Built target uav_interfaces__rs
+[0.047s] [  3%] Built target uav_interfaces__rosidl_generator_type_description
+[0.054s] [  3%] Built target ament_cmake_python_copy_uav_interfaces
+[0.061s] [  5%] Built target uav_interfaces__cpp
+[0.066s] [ 25%] Built target uav_interfaces__rosidl_generator_c
+[0.086s] [ 34%] Built target uav_interfaces__rosidl_typesupport_fastrtps_c
+[0.086s] [ 43%] Built target uav_interfaces__rosidl_typesupport_c
+[0.087s] [ 52%] Built target uav_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.088s] [ 61%] Built target uav_interfaces__rosidl_typesupport_introspection_c
+[0.089s] [ 70%] Built target uav_interfaces__rosidl_typesupport_cpp
+[0.093s] [ 80%] Built target uav_interfaces__rosidl_typesupport_introspection_cpp
+[0.107s] [ 80%] Built target uav_interfaces
+[0.123s] [ 81%] Built target uav_interfaces__py
+[0.145s] [ 89%] Built target uav_interfaces__rosidl_generator_py
+[0.163s] [ 92%] Built target uav_interfaces_s__rosidl_typesupport_introspection_c
+[0.164s] [ 96%] Built target uav_interfaces_s__rosidl_typesupport_fastrtps_c
+[0.164s] [100%] Built target uav_interfaces_s__rosidl_typesupport_c
+[0.256s] running egg_info
+[0.269s] writing uav_interfaces.egg-info/PKG-INFO
+[0.269s] writing dependency_links to uav_interfaces.egg-info/dependency_links.txt
+[0.269s] writing top-level names to uav_interfaces.egg-info/top_level.txt
+[0.317s] reading manifest file 'uav_interfaces.egg-info/SOURCES.txt'
+[0.318s] writing manifest file 'uav_interfaces.egg-info/SOURCES.txt'
+[0.348s] [100%] Built target ament_cmake_python_build_uav_interfaces_egg
+[0.357s] Invoked command in '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/cmake --build /home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces -- -j32 -l32
+[0.365s] Invoking command in '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/cmake --install /home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces
+[0.371s] -- Install configuration: ""
+[0.372s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/ament_index/resource_index/rosidl_interfaces/uav_interfaces
+[0.372s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/msg/TargetDetection.json
+[0.372s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/srv/SetMode.json
+[0.372s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/action/FlyToAltitude.json
+[0.372s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces
+[0.372s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv
+[0.373s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail
+[0.373s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__type_support.c
+[0.373s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__functions.h
+[0.373s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__struct.h
+[0.373s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__functions.c
+[0.374s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__description.c
+[0.374s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__type_support.h
+[0.374s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/set_mode.h
+[0.374s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg
+[0.375s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail
+[0.375s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__type_support.h
+[0.375s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__type_support.c
+[0.375s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__functions.h
+[0.375s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__functions.c
+[0.375s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__description.c
+[0.376s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__struct.h
+[0.376s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/target_detection.h
+[0.376s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.376s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action
+[0.376s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail
+[0.377s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__functions.h
+[0.377s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__functions.c
+[0.377s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__description.c
+[0.377s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__struct.h
+[0.377s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__type_support.h
+[0.377s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__type_support.c
+[0.377s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/fly_to_altitude.h
+[0.377s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/library_path.sh
+[0.377s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/library_path.dsv
+[0.377s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_generator_c.so
+[0.378s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces
+[0.378s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv
+[0.379s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail
+[0.379s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__rosidl_typesupport_fastrtps_c.h
+[0.379s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg
+[0.379s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail
+[0.379s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__rosidl_typesupport_fastrtps_c.h
+[0.379s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.379s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action
+[0.379s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail
+[0.379s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__rosidl_typesupport_fastrtps_c.h
+[0.379s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.380s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces
+[0.380s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv
+[0.380s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail
+[0.380s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__type_support.c
+[0.380s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__rosidl_typesupport_introspection_c.h
+[0.380s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg
+[0.380s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail
+[0.380s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__rosidl_typesupport_introspection_c.h
+[0.380s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__type_support.c
+[0.381s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.381s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action
+[0.381s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail
+[0.381s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__rosidl_typesupport_introspection_c.h
+[0.381s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__type_support.c
+[0.381s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_introspection_c.so
+[0.381s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_c.so
+[0.381s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces
+[0.381s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv
+[0.381s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail
+[0.382s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__traits.hpp
+[0.382s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__type_support.hpp
+[0.382s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__builder.hpp
+[0.382s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__struct.hpp
+[0.382s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/set_mode.hpp
+[0.382s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg
+[0.382s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail
+[0.382s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__struct.hpp
+[0.382s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__builder.hpp
+[0.382s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__type_support.hpp
+[0.383s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__traits.hpp
+[0.383s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/target_detection.hpp
+[0.383s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.383s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action
+[0.383s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail
+[0.383s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__traits.hpp
+[0.383s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__type_support.hpp
+[0.383s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__struct.hpp
+[0.383s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__builder.hpp
+[0.383s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/fly_to_altitude.hpp
+[0.383s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces
+[0.383s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv
+[0.383s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/dds_fastrtps
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/dds_fastrtps
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__rosidl_typesupport_fastrtps_cpp.hpp
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/dds_fastrtps
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__rosidl_typesupport_fastrtps_cpp.hpp
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail
+[0.384s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__type_support.cpp
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/srv/detail/set_mode__rosidl_typesupport_introspection_cpp.hpp
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__type_support.cpp
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/msg/detail/target_detection__rosidl_typesupport_introspection_cpp.hpp
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__type_support.cpp
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/include/uav_interfaces/uav_interfaces/action/detail/fly_to_altitude__rosidl_typesupport_introspection_cpp.hpp
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_typesupport_cpp.so
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/pythonpath.sh
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/pythonpath.dsv
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces-0.0.0-py3.12.egg-info
+[0.385s] -- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[0.385s] -- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[0.385s] -- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[0.385s] -- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/_uav_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.385s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_c.so
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/srv
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/srv/_set_mode_s.c
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/srv/__init__.py
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/srv/_set_mode.py
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/msg
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/msg/_target_detection.py
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/msg/_target_detection_s.c
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/msg/__init__.py
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/__init__.py
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/_uav_interfaces_s.ep.rosidl_typesupport_c.c
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_introspection_c.so
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/action
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/action/_fly_to_altitude_s.c
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/action/__init__.py
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/action/_fly_to_altitude.py
+[0.386s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/_uav_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.408s] Listing '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces'...
+[0.408s] Listing '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/action'...
+[0.408s] Listing '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/msg'...
+[0.408s] Listing '/home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/srv'...
+[0.412s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[0.412s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_introspection_c.so
+[0.413s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/python3.12/site-packages/uav_interfaces/uav_interfaces_s__rosidl_typesupport_c.so
+[0.413s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/lib/libuav_interfaces__rosidl_generator_py.so
+[0.413s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust
+[0.413s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/build.rs
+[0.414s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/Cargo.toml
+[0.414s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src
+[0.414s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/action.rs
+[0.414s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/msg.rs
+[0.415s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/srv
+[0.415s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/srv/rmw.rs
+[0.415s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/msg
+[0.415s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/msg/rmw.rs
+[0.415s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/srv.rs
+[0.415s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/lib.rs
+[0.415s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/action
+[0.415s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/rust/src/action/rmw.rs
+[0.416s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/msg/TargetDetection.idl
+[0.416s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/srv/SetMode.idl
+[0.416s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/action/FlyToAltitude.idl
+[0.416s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/msg/TargetDetection.msg
+[0.416s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/srv/SetMode.srv
+[0.416s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/action/FlyToAltitude.action
+[0.416s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/ament_index/resource_index/package_run_dependencies/uav_interfaces
+[0.416s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/ament_index/resource_index/parent_prefix_path/uav_interfaces
+[0.416s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/ament_prefix_path.sh
+[0.416s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/ament_prefix_path.dsv
+[0.416s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/path.sh
+[0.416s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/environment/path.dsv
+[0.416s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/local_setup.bash
+[0.417s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/local_setup.sh
+[0.417s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/local_setup.zsh
+[0.417s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/local_setup.dsv
+[0.417s] -- Installing: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/package.dsv
+[0.417s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/ament_index/resource_index/packages/uav_interfaces
+[0.418s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_generator_cExport.cmake
+[0.418s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.418s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.418s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.418s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.419s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.419s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_cExport.cmake
+[0.419s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.419s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_generator_cppExport.cmake
+[0.419s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.420s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.420s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.420s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.420s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_cppExport.cmake
+[0.420s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.421s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_generator_pyExport.cmake
+[0.421s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/export_uav_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[0.421s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.421s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.421s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.422s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.422s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.422s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.422s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.422s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[0.422s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfacesConfig.cmake
+[0.422s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/cmake/uav_interfacesConfig-version.cmake
+[0.422s] -- Up-to-date: /home/yjh/ROS2_manmade/ros2_ws/install/uav_interfaces/share/uav_interfaces/package.xml
+[0.422s] Invoked command in '/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com WSLENV=ELECTRON_RUN_AS_NODE/w: /usr/bin/cmake --install /home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces

@@ -1,0 +1,4 @@
+trial_id,seed,target_x,target_y,target_z,timestamp_s,mission_success,failure_reason,mission_time_s,search_time_s,target_acquisition_time_s,detect_time_s,approach_time_s,mean_abs_pixel_error_px,p95_abs_pixel_error_px,target_lost_count,approach_reacquire_count,approach_start_area_ratio,approach_final_area_ratio,trajectory_length_3d_m,final_home_error_m
+1,20260920,16.35,17.55,2.5,1789900605.486,1,,171.999,33.363,31.503,4.399,103.039,13.988,51.500,3,3,0.002296,0.020107,57.268,0.165
+1,20260920,16.35,17.55,2.5,1789901049.498,1,,170.101,31.212,28.700,7.787,103.900,18.199,71.300,3,3,0.001910,0.020004,57.233,0.099
+2,20260920,14.51,18.5,2.5,1789901533.911,1,,469.727,63.549,31.200,8.798,350.781,18.123,58.500,6,6,0.002345,0.020010,158.731,0.111

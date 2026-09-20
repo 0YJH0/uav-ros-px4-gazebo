@@ -1,0 +1,62 @@
+{
+  "package_name": "uav_interfaces",
+  "output_dir": "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_generator_c/uav_interfaces",
+  "template_dir": "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_adapter/uav_interfaces:msg/TargetDetection.idl",
+    "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_adapter/uav_interfaces:srv/SetMode.idl",
+    "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_adapter/uav_interfaces:action/FlyToAltitude.idl"
+  ],
+  "ros_interface_files": [
+    "/home/yjh/ROS2_manmade/ros2_ws/src/uav_interfaces/msg/TargetDetection.msg",
+    "/home/yjh/ROS2_manmade/ros2_ws/src/uav_interfaces/srv/SetMode.srv",
+    "/home/yjh/ROS2_manmade/ros2_ws/src/uav_interfaces/action/FlyToAltitude.action"
+  ],
+  "ros_interface_dependencies": [
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs/msg/GoalInfo.idl",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs/msg/GoalStatus.idl",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs/msg/GoalStatusArray.idl",
+    "action_msgs:/opt/ros/jazzy/share/action_msgs/srv/CancelGoal.idl",
+    "unique_identifier_msgs:/opt/ros/jazzy/share/unique_identifier_msgs/msg/UUID.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/python3.12/site-packages/rosidl_generator_c/__init__.py",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/action__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/empty__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/full__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__description.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
+    "/opt/ros/jazzy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_adapter/uav_interfaces/msg/TargetDetection.idl",
+    "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_adapter/uav_interfaces/srv/SetMode.idl",
+    "/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_adapter/uav_interfaces/action/FlyToAltitude.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
+    "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl",
+    "/opt/ros/jazzy/share/action_msgs/msg/GoalInfo.idl",
+    "/opt/ros/jazzy/share/action_msgs/msg/GoalStatus.idl",
+    "/opt/ros/jazzy/share/action_msgs/msg/GoalStatusArray.idl",
+    "/opt/ros/jazzy/share/action_msgs/srv/CancelGoal.idl",
+    "/opt/ros/jazzy/share/unique_identifier_msgs/msg/UUID.idl"
+  ],
+  "type_description_tuples": [
+    "msg/TargetDetection.idl:/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_generator_type_description/uav_interfaces/msg/TargetDetection.json",
+    "srv/SetMode.idl:/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_generator_type_description/uav_interfaces/srv/SetMode.json",
+    "action/FlyToAltitude.idl:/home/yjh/ROS2_manmade/ros2_ws/build/uav_interfaces/rosidl_generator_type_description/uav_interfaces/action/FlyToAltitude.json"
+  ]
+}
