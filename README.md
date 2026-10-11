@@ -27,6 +27,7 @@
 
 - [项目总览](PROJECT_OVERVIEW.md) / [PDF](PROJECT_OVERVIEW.pdf)
 - [主要困难与解决方法](PROJECT_CHALLENGES.md) / [PDF](PROJECT_CHALLENGES.pdf)
+- [项目问题复盘报告：核心问题、集成问题与未解决项](PROJECT_ISSUE_REPORT.md) / [PDF](PROJECT_ISSUE_REPORT.pdf)
 - [30 分钟介绍讲稿](PROJECT_PRESENTATION_30MIN.md) / [PDF](PROJECT_PRESENTATION_30MIN.pdf)
 - [运行与验证说明](docs/vehicle_tracking.md)
 - [环境准备与仓库资源](docs/reproduction.md)
