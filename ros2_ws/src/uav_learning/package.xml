@@ -30,6 +30,8 @@
   <depend>
     rclpy
   </depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>rosgraph_msgs</exec_depend>
 
   <depend>
     std_msgs

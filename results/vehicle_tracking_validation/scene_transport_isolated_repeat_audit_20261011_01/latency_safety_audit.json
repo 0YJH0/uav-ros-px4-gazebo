@@ -1,0 +1,897 @@
+{
+  "study": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01",
+  "trials": [
+    {
+      "name": "overtaking_01",
+      "group": "selected_overtaking",
+      "window_wall_s": [
+        60.797779321001144,
+        165.89215639198665
+      ],
+      "observations": 640,
+      "timings": {
+        "processing_s": {
+          "n": 640,
+          "mean_s": 0.14440941065327023,
+          "p95_s": 0.16256273500039242,
+          "max_s": 0.2848908970190678
+        },
+        "target_publish_age_s": {
+          "n": 640,
+          "mean_s": 0.17427439365064856,
+          "p95_s": 0.25919795798836276,
+          "max_s": 0.37120761498226784
+        },
+        "target_publish_s": {
+          "n": 640,
+          "mean_s": 0.0001907814778860484,
+          "p95_s": 0.0002811519952956587,
+          "max_s": 0.0010566609853412956
+        },
+        "vehicles_publish_s": {
+          "n": 640,
+          "mean_s": 5.1210031551818246e-05,
+          "p95_s": 8.387499838136137e-05,
+          "max_s": 0.00026138199609704316
+        },
+        "debug_render_publish_s": {
+          "n": 640,
+          "mean_s": 0.0013053512735496041,
+          "p95_s": 0.0019192349864169955,
+          "max_s": 0.003938553010812029
+        },
+        "queue_wait_s": {
+          "n": 640,
+          "mean_s": 0.031228319307183484,
+          "p95_s": 0.09674838001956232,
+          "max_s": 0.2000742899836041
+        },
+        "full_frame_yolo_s": {
+          "n": 640,
+          "mean_s": 0.13092595343009633,
+          "p95_s": 0.1409407509781886,
+          "max_s": 0.18087371200090274
+        },
+        "gmc_s": {
+          "n": 640,
+          "mean_s": 0.004876650096821322,
+          "p95_s": 0.006819601985625923,
+          "max_s": 0.008667745016282424
+        },
+        "bytetrack_s": {
+          "n": 640,
+          "mean_s": 0.0006353063143706095,
+          "p95_s": 0.001034535001963377,
+          "max_s": 0.0019922770152334124
+        },
+        "roi_yolo_s": {
+          "n": 30,
+          "mean_s": 0.10602290556804898,
+          "p95_s": 0.11378535098629072,
+          "max_s": 0.11764273900189437
+        },
+        "roi_merge_s": {
+          "n": 7,
+          "mean_s": 0.0007542650065650898,
+          "p95_s": 0.0008881350222509354,
+          "max_s": 0.0025823439937084913
+        }
+      },
+      "ulog_safety": {
+        "armed_status_observations": 277,
+        "armed_failsafe_observations": 0,
+        "armed_offboard_flags_observations": 246,
+        "armed_offboard_lost_observations": 0,
+        "auto_land_lost_observations": 10,
+        "dropout_events": 0
+      }
+    },
+    {
+      "name": "overtaking_02",
+      "group": "selected_overtaking",
+      "window_wall_s": [
+        64.11846705302014,
+        171.06766759601305
+      ],
+      "observations": 532,
+      "timings": {
+        "processing_s": {
+          "n": 532,
+          "mean_s": 0.17378709665233755,
+          "p95_s": 0.21372547099599615,
+          "max_s": 0.31039040500763804
+        },
+        "target_publish_age_s": {
+          "n": 532,
+          "mean_s": 0.21889566525274667,
+          "p95_s": 0.3175976699858438,
+          "max_s": 0.4229840080079157
+        },
+        "target_publish_s": {
+          "n": 532,
+          "mean_s": 0.00021622189600939716,
+          "p95_s": 0.00032410401036031544,
+          "max_s": 0.0014482880069408566
+        },
+        "vehicles_publish_s": {
+          "n": 532,
+          "mean_s": 5.7858359913299685e-05,
+          "p95_s": 8.619498112238944e-05,
+          "max_s": 0.0005171420052647591
+        },
+        "debug_render_publish_s": {
+          "n": 532,
+          "mean_s": 0.001337294883711379,
+          "p95_s": 0.002263631991809234,
+          "max_s": 0.005751248012529686
+        },
+        "queue_wait_s": {
+          "n": 532,
+          "mean_s": 0.04651164409793787,
+          "p95_s": 0.14447612498770468,
+          "max_s": 0.25143568799830973
+        },
+        "full_frame_yolo_s": {
+          "n": 532,
+          "mean_s": 0.15872824415725373,
+          "p95_s": 0.18121603000327013,
+          "max_s": 0.20784600701881573
+        },
+        "gmc_s": {
+          "n": 532,
+          "mean_s": 0.005678492637514837,
+          "p95_s": 0.008151946996804327,
+          "max_s": 0.011367872008122504
+        },
+        "bytetrack_s": {
+          "n": 532,
+          "mean_s": 0.0007740032161201729,
+          "p95_s": 0.0013584560074377805,
+          "max_s": 0.006515446002595127
+        },
+        "roi_yolo_s": {
+          "n": 22,
+          "mean_s": 0.12723845736102454,
+          "p95_s": 0.13602366999839433,
+          "max_s": 0.1375586740032304
+        },
+        "roi_merge_s": {
+          "n": 3,
+          "mean_s": 0.0005718483395564059,
+          "p95_s": 0.00039132701931521297,
+          "max_s": 0.0009680920047685504
+        }
+      },
+      "ulog_safety": {
+        "armed_status_observations": 264,
+        "armed_failsafe_observations": 0,
+        "armed_offboard_flags_observations": 233,
+        "armed_offboard_lost_observations": 0,
+        "auto_land_lost_observations": 10,
+        "dropout_events": 0
+      }
+    },
+    {
+      "name": "overtaking_03",
+      "group": "selected_overtaking",
+      "window_wall_s": [
+        74.01908508801716,
+        179.5796663959918
+      ],
+      "observations": 521,
+      "timings": {
+        "processing_s": {
+          "n": 521,
+          "mean_s": 0.17816829272389909,
+          "p95_s": 0.19496223397436552,
+          "max_s": 0.34132785099791363
+        },
+        "target_publish_age_s": {
+          "n": 521,
+          "mean_s": 0.2241702294875394,
+          "p95_s": 0.32277748599881306,
+          "max_s": 0.43573857299634255
+        },
+        "target_publish_s": {
+          "n": 521,
+          "mean_s": 0.00021889975489762517,
+          "p95_s": 0.00031598599161952734,
+          "max_s": 0.0014524509897455573
+        },
+        "vehicles_publish_s": {
+          "n": 521,
+          "mean_s": 6.0278713900234814e-05,
+          "p95_s": 9.82839846983552e-05,
+          "max_s": 0.0007698049885220826
+        },
+        "debug_render_publish_s": {
+          "n": 521,
+          "mean_s": 0.0013703249882899525,
+          "p95_s": 0.0022302170109469444,
+          "max_s": 0.005023948004236445
+        },
+        "queue_wait_s": {
+          "n": 521,
+          "mean_s": 0.04744053404782041,
+          "p95_s": 0.13393243998871185,
+          "max_s": 0.2664297040028032
+        },
+        "full_frame_yolo_s": {
+          "n": 521,
+          "mean_s": 0.16305330529330378,
+          "p95_s": 0.1797082590055652,
+          "max_s": 0.23397907600156032
+        },
+        "gmc_s": {
+          "n": 521,
+          "mean_s": 0.005655861865450233,
+          "p95_s": 0.008009367011254653,
+          "max_s": 0.013354966999031603
+        },
+        "bytetrack_s": {
+          "n": 521,
+          "mean_s": 0.0007891822028717459,
+          "p95_s": 0.0014233939873520285,
+          "max_s": 0.004254532017512247
+        },
+        "roi_yolo_s": {
+          "n": 20,
+          "mean_s": 0.13583005699911155,
+          "p95_s": 0.15312292697490193,
+          "max_s": 0.15785570399020799
+        },
+        "roi_merge_s": {
+          "n": 3,
+          "mean_s": 0.0003764316691861798,
+          "p95_s": 0.00040389399509876966,
+          "max_s": 0.0004440970078576356
+        }
+      },
+      "ulog_safety": {
+        "armed_status_observations": 260,
+        "armed_failsafe_observations": 0,
+        "armed_offboard_flags_observations": 229,
+        "armed_offboard_lost_observations": 0,
+        "auto_land_lost_observations": 9,
+        "dropout_events": 0
+      }
+    },
+    {
+      "name": "overtaking_04",
+      "group": "selected_overtaking",
+      "window_wall_s": [
+        70.01625370100373,
+        174.53302045998862
+      ],
+      "observations": 565,
+      "timings": {
+        "processing_s": {
+          "n": 565,
+          "mean_s": 0.163623191744596,
+          "p95_s": 0.24063014099374413,
+          "max_s": 0.3900621630018577
+        },
+        "target_publish_age_s": {
+          "n": 565,
+          "mean_s": 0.21038398838641154,
+          "p95_s": 0.3146295089973137,
+          "max_s": 0.4173456570133567
+        },
+        "target_publish_s": {
+          "n": 565,
+          "mean_s": 0.00021047174886272874,
+          "p95_s": 0.00029392100987024605,
+          "max_s": 0.0007958240166772157
+        },
+        "vehicles_publish_s": {
+          "n": 565,
+          "mean_s": 5.78849464634318e-05,
+          "p95_s": 8.154197712428868e-05,
+          "max_s": 0.0012654059974011034
+        },
+        "debug_render_publish_s": {
+          "n": 565,
+          "mean_s": 0.0013382204781508947,
+          "p95_s": 0.0020853070018347353,
+          "max_s": 0.006148402986582369
+        },
+        "queue_wait_s": {
+          "n": 565,
+          "mean_s": 0.048164814791541166,
+          "p95_s": 0.13987712998641655,
+          "max_s": 0.2596876070019789
+        },
+        "full_frame_yolo_s": {
+          "n": 565,
+          "mean_s": 0.14903648770599734,
+          "p95_s": 0.16374478198122233,
+          "max_s": 0.36745034699561074
+        },
+        "gmc_s": {
+          "n": 565,
+          "mean_s": 0.005461083082492521,
+          "p95_s": 0.007587030995637178,
+          "max_s": 0.01114484400022775
+        },
+        "bytetrack_s": {
+          "n": 565,
+          "mean_s": 0.000722793528173465,
+          "p95_s": 0.001192622003145516,
+          "max_s": 0.005074353015515953
+        },
+        "roi_yolo_s": {
+          "n": 24,
+          "mean_s": 0.12089249604105134,
+          "p95_s": 0.12797225001850165,
+          "max_s": 0.13100478900014423
+        },
+        "roi_merge_s": {
+          "n": 3,
+          "mean_s": 0.0003476576724400123,
+          "p95_s": 0.00035483299870975316,
+          "max_s": 0.0003678020148072392
+        }
+      },
+      "ulog_safety": {
+        "armed_status_observations": 266,
+        "armed_failsafe_observations": 0,
+        "armed_offboard_flags_observations": 235,
+        "armed_offboard_lost_observations": 0,
+        "auto_land_lost_observations": 10,
+        "dropout_events": 0
+      }
+    },
+    {
+      "name": "overtaking_05",
+      "group": "selected_overtaking",
+      "window_wall_s": [
+        69.77517241000896,
+        176.1636989780236
+      ],
+      "observations": 487,
+      "timings": {
+        "processing_s": {
+          "n": 487,
+          "mean_s": 0.19463498552956857,
+          "p95_s": 0.2710047939908691,
+          "max_s": 0.3633498340204824
+        },
+        "target_publish_age_s": {
+          "n": 487,
+          "mean_s": 0.24575599866466943,
+          "p95_s": 0.3547857119992841,
+          "max_s": 0.4465662850125227
+        },
+        "target_publish_s": {
+          "n": 487,
+          "mean_s": 0.00024244458702903478,
+          "p95_s": 0.0003319120150990784,
+          "max_s": 0.004058454011101276
+        },
+        "vehicles_publish_s": {
+          "n": 487,
+          "mean_s": 6.828125148152959e-05,
+          "p95_s": 0.00010292898514308035,
+          "max_s": 0.0009430380014237016
+        },
+        "debug_render_publish_s": {
+          "n": 487,
+          "mean_s": 0.0014380179209351632,
+          "p95_s": 0.0025652160111349076,
+          "max_s": 0.004653319017961621
+        },
+        "queue_wait_s": {
+          "n": 487,
+          "mean_s": 0.05263547857425384,
+          "p95_s": 0.15532702300697565,
+          "max_s": 0.2864520910079591
+        },
+        "full_frame_yolo_s": {
+          "n": 487,
+          "mean_s": 0.1771819870055436,
+          "p95_s": 0.1976142979983706,
+          "max_s": 0.29475516799720936
+        },
+        "gmc_s": {
+          "n": 487,
+          "mean_s": 0.005969458111852037,
+          "p95_s": 0.009123622992774472,
+          "max_s": 0.012112897995393723
+        },
+        "bytetrack_s": {
+          "n": 487,
+          "mean_s": 0.0007919683835294205,
+          "p95_s": 0.0015014070086181164,
+          "max_s": 0.0033667749958112836
+        },
+        "roi_yolo_s": {
+          "n": 24,
+          "mean_s": 0.14360010616413396,
+          "p95_s": 0.15530344701255672,
+          "max_s": 0.15942331700352952
+        },
+        "roi_merge_s": {
+          "n": 5,
+          "mean_s": 0.0005644428019877523,
+          "p95_s": 0.0006066549976821989,
+          "max_s": 0.000711884000338614
+        }
+      },
+      "ulog_safety": {
+        "armed_status_observations": 252,
+        "armed_failsafe_observations": 0,
+        "armed_offboard_flags_observations": 222,
+        "armed_offboard_lost_observations": 0,
+        "auto_land_lost_observations": 10,
+        "dropout_events": 0
+      }
+    },
+    {
+      "name": "overtaking_06",
+      "group": "selected_overtaking",
+      "window_wall_s": [
+        73.56425833099638,
+        187.815944158996
+      ],
+      "observations": 528,
+      "timings": {
+        "processing_s": {
+          "n": 528,
+          "mean_s": 0.19571404402356138,
+          "p95_s": 0.31938175301183946,
+          "max_s": 0.35171113000251353
+        },
+        "target_publish_age_s": {
+          "n": 528,
+          "mean_s": 0.25154462713395664,
+          "p95_s": 0.3620455829950515,
+          "max_s": 0.43872719001956284
+        },
+        "target_publish_s": {
+          "n": 528,
+          "mean_s": 0.0002431573364888071,
+          "p95_s": 0.00035766299697570503,
+          "max_s": 0.0045807029819116
+        },
+        "vehicles_publish_s": {
+          "n": 528,
+          "mean_s": 6.43650347972818e-05,
+          "p95_s": 9.876198600977659e-05,
+          "max_s": 0.0008276650041807443
+        },
+        "debug_render_publish_s": {
+          "n": 528,
+          "mean_s": 0.0013828173342710325,
+          "p95_s": 0.0022886399819981307,
+          "max_s": 0.004390733985928819
+        },
+        "queue_wait_s": {
+          "n": 528,
+          "mean_s": 0.057285821824321334,
+          "p95_s": 0.1494978069968056,
+          "max_s": 0.22264270900632255
+        },
+        "full_frame_yolo_s": {
+          "n": 528,
+          "mean_s": 0.17579181793861967,
+          "p95_s": 0.1972393089963589,
+          "max_s": 0.3326235139975324
+        },
+        "gmc_s": {
+          "n": 528,
+          "mean_s": 0.005872330638973808,
+          "p95_s": 0.008662565000122413,
+          "max_s": 0.012734857009490952
+        },
+        "bytetrack_s": {
+          "n": 528,
+          "mean_s": 0.0008161291731415655,
+          "p95_s": 0.0015087079955264926,
+          "max_s": 0.003480832005152479
+        },
+        "roi_yolo_s": {
+          "n": 37,
+          "mean_s": 0.13949094502950665,
+          "p95_s": 0.14844384201569483,
+          "max_s": 0.1539401240006555
+        },
+        "roi_merge_s": {
+          "n": 16,
+          "mean_s": 0.00042441999721631873,
+          "p95_s": 0.0006001389992889017,
+          "max_s": 0.0006430769863072783
+        }
+      },
+      "ulog_safety": {
+        "armed_status_observations": 267,
+        "armed_failsafe_observations": 0,
+        "armed_offboard_flags_observations": 235,
+        "armed_offboard_lost_observations": 0,
+        "auto_land_lost_observations": 10,
+        "dropout_events": 0
+      }
+    },
+    {
+      "name": "overtaking_07",
+      "group": "selected_overtaking",
+      "window_wall_s": [
+        74.82526345999213,
+        179.8260598880006
+      ],
+      "observations": 525,
+      "timings": {
+        "processing_s": {
+          "n": 525,
+          "mean_s": 0.18043697043948453,
+          "p95_s": 0.19975041499128565,
+          "max_s": 0.33713784502469935
+        },
+        "target_publish_age_s": {
+          "n": 525,
+          "mean_s": 0.22887886095958362,
+          "p95_s": 0.33608147301129065,
+          "max_s": 0.4754583740141243
+        },
+        "target_publish_s": {
+          "n": 525,
+          "mean_s": 0.00022794164539802642,
+          "p95_s": 0.000331729999743402,
+          "max_s": 0.0009910190128721297
+        },
+        "vehicles_publish_s": {
+          "n": 525,
+          "mean_s": 6.181691047025933e-05,
+          "p95_s": 0.00010653701610863209,
+          "max_s": 0.000284798996290192
+        },
+        "debug_render_publish_s": {
+          "n": 525,
+          "mean_s": 0.001448956935755199,
+          "p95_s": 0.0024264160019811243,
+          "max_s": 0.005029422987718135
+        },
+        "queue_wait_s": {
+          "n": 525,
+          "mean_s": 0.04996053669141561,
+          "p95_s": 0.13930440999683924,
+          "max_s": 0.30178660299861804
+        },
+        "full_frame_yolo_s": {
+          "n": 525,
+          "mean_s": 0.1642619650436765,
+          "p95_s": 0.17790920799598098,
+          "max_s": 0.2164458140032366
+        },
+        "gmc_s": {
+          "n": 525,
+          "mean_s": 0.005895685569405378,
+          "p95_s": 0.008960645995102823,
+          "max_s": 0.01253509198431857
+        },
+        "bytetrack_s": {
+          "n": 525,
+          "mean_s": 0.0008250388520814123,
+          "p95_s": 0.0014879980008117855,
+          "max_s": 0.004162569006439298
+        },
+        "roi_yolo_s": {
+          "n": 22,
+          "mean_s": 0.13979624809078153,
+          "p95_s": 0.15152862400282174,
+          "max_s": 0.15774672001134604
+        },
+        "roi_merge_s": {
+          "n": 3,
+          "mean_s": 0.0006458623392973095,
+          "p95_s": 0.0006693100149277598,
+          "max_s": 0.0006974480056669563
+        }
+      },
+      "ulog_safety": {
+        "armed_status_observations": 256,
+        "armed_failsafe_observations": 0,
+        "armed_offboard_flags_observations": 225,
+        "armed_offboard_lost_observations": 0,
+        "auto_land_lost_observations": 10,
+        "dropout_events": 0
+      }
+    },
+    {
+      "name": "overtaking_08",
+      "group": "selected_overtaking",
+      "window_wall_s": [
+        73.21491899099783,
+        179.41493756402633
+      ],
+      "observations": 505,
+      "timings": {
+        "processing_s": {
+          "n": 505,
+          "mean_s": 0.18392796760602476,
+          "p95_s": 0.20683396700769663,
+          "max_s": 0.3604530529992189
+        },
+        "target_publish_age_s": {
+          "n": 505,
+          "mean_s": 0.23401535527716105,
+          "p95_s": 0.3400386389985215,
+          "max_s": 0.4677322919887956
+        },
+        "target_publish_s": {
+          "n": 505,
+          "mean_s": 0.00022955645771355985,
+          "p95_s": 0.00031728699104860425,
+          "max_s": 0.003794036019826308
+        },
+        "vehicles_publish_s": {
+          "n": 505,
+          "mean_s": 6.440778581038265e-05,
+          "p95_s": 0.00011247899965383112,
+          "max_s": 0.0007009989931248128
+        },
+        "debug_render_publish_s": {
+          "n": 505,
+          "mean_s": 0.0014388008778545968,
+          "p95_s": 0.002424462989438325,
+          "max_s": 0.007091586012393236
+        },
+        "queue_wait_s": {
+          "n": 505,
+          "mean_s": 0.051599762845429414,
+          "p95_s": 0.14713510900037363,
+          "max_s": 0.2941078750009183
+        },
+        "full_frame_yolo_s": {
+          "n": 505,
+          "mean_s": 0.16753298700539312,
+          "p95_s": 0.18370848201448098,
+          "max_s": 0.22707823899690993
+        },
+        "gmc_s": {
+          "n": 505,
+          "mean_s": 0.005955964784278525,
+          "p95_s": 0.008991487993625924,
+          "max_s": 0.013343853002879769
+        },
+        "bytetrack_s": {
+          "n": 505,
+          "mean_s": 0.0007900601059848461,
+          "p95_s": 0.0013323960010893643,
+          "max_s": 0.003928322024876252
+        },
+        "roi_yolo_s": {
+          "n": 22,
+          "mean_s": 0.14029877086365808,
+          "p95_s": 0.15199100400786847,
+          "max_s": 0.15388336099567823
+        },
+        "roi_merge_s": {
+          "n": 6,
+          "mean_s": 0.0004110951607193177,
+          "p95_s": 0.0004704630118794739,
+          "max_s": 0.0006016369734425098
+        }
+      },
+      "ulog_safety": {
+        "armed_status_observations": 257,
+        "armed_failsafe_observations": 0,
+        "armed_offboard_flags_observations": 226,
+        "armed_offboard_lost_observations": 0,
+        "auto_land_lost_observations": 10,
+        "dropout_events": 0
+      }
+    },
+    {
+      "name": "overtaking_09",
+      "group": "selected_overtaking",
+      "window_wall_s": [
+        77.02089137301664,
+        189.4210527400137
+      ],
+      "observations": 524,
+      "timings": {
+        "processing_s": {
+          "n": 524,
+          "mean_s": 0.19530196319845636,
+          "p95_s": 0.3143752710020635,
+          "max_s": 0.364718613011064
+        },
+        "target_publish_age_s": {
+          "n": 524,
+          "mean_s": 0.25348178493920964,
+          "p95_s": 0.3600033709954005,
+          "max_s": 0.48582467398955487
+        },
+        "target_publish_s": {
+          "n": 524,
+          "mean_s": 0.00023307662961768156,
+          "p95_s": 0.0003262140089645982,
+          "max_s": 0.002569790987763554
+        },
+        "vehicles_publish_s": {
+          "n": 524,
+          "mean_s": 6.391631155177055e-05,
+          "p95_s": 9.948000661097467e-05,
+          "max_s": 0.0011624750040937215
+        },
+        "debug_render_publish_s": {
+          "n": 524,
+          "mean_s": 0.0014207964505443087,
+          "p95_s": 0.0025107399851549417,
+          "max_s": 0.005636875983327627
+        },
+        "queue_wait_s": {
+          "n": 524,
+          "mean_s": 0.05967446353254513,
+          "p95_s": 0.15541841799858958,
+          "max_s": 0.3095108440029435
+        },
+        "full_frame_yolo_s": {
+          "n": 524,
+          "mean_s": 0.17560671756471924,
+          "p95_s": 0.19260310899699107,
+          "max_s": 0.21805963100632653
+        },
+        "gmc_s": {
+          "n": 524,
+          "mean_s": 0.005892090725455654,
+          "p95_s": 0.009022021986311302,
+          "max_s": 0.015609106019837782
+        },
+        "bytetrack_s": {
+          "n": 524,
+          "mean_s": 0.0008419037148719013,
+          "p95_s": 0.0017945269937627017,
+          "max_s": 0.003920337010640651
+        },
+        "roi_yolo_s": {
+          "n": 36,
+          "mean_s": 0.13768870488598217,
+          "p95_s": 0.14931369299301878,
+          "max_s": 0.15427559698582627
+        },
+        "roi_merge_s": {
+          "n": 20,
+          "mean_s": 0.000489677993755322,
+          "p95_s": 0.0009616290044505149,
+          "max_s": 0.0018631370039656758
+        }
+      },
+      "ulog_safety": {
+        "armed_status_observations": 266,
+        "armed_failsafe_observations": 0,
+        "armed_offboard_flags_observations": 235,
+        "armed_offboard_lost_observations": 0,
+        "auto_land_lost_observations": 10,
+        "dropout_events": 0
+      }
+    },
+    {
+      "name": "overtaking_10",
+      "group": "selected_overtaking",
+      "window_wall_s": [
+        74.81809285198688,
+        180.2180495299981
+      ],
+      "observations": 498,
+      "timings": {
+        "processing_s": {
+          "n": 498,
+          "mean_s": 0.18899628751843198,
+          "p95_s": 0.21124455897370353,
+          "max_s": 0.38208634802140296
+        },
+        "target_publish_age_s": {
+          "n": 498,
+          "mean_s": 0.24364183338114245,
+          "p95_s": 0.3477286270062905,
+          "max_s": 0.44943393001449294
+        },
+        "target_publish_s": {
+          "n": 498,
+          "mean_s": 0.00023623467032633065,
+          "p95_s": 0.0003444640024099499,
+          "max_s": 0.001989940006751567
+        },
+        "vehicles_publish_s": {
+          "n": 498,
+          "mean_s": 6.176563714776772e-05,
+          "p95_s": 9.310099994763732e-05,
+          "max_s": 0.0006805270095355809
+        },
+        "debug_render_publish_s": {
+          "n": 498,
+          "mean_s": 0.0014620494844586435,
+          "p95_s": 0.0026144329749513417,
+          "max_s": 0.005714739003451541
+        },
+        "queue_wait_s": {
+          "n": 498,
+          "mean_s": 0.05617740109490874,
+          "p95_s": 0.15100239901221357,
+          "max_s": 0.25661869801115245
+        },
+        "full_frame_yolo_s": {
+          "n": 498,
+          "mean_s": 0.17324513016279364,
+          "p95_s": 0.18967339198570698,
+          "max_s": 0.24010774301132187
+        },
+        "gmc_s": {
+          "n": 498,
+          "mean_s": 0.006011570829301549,
+          "p95_s": 0.009022710990393534,
+          "max_s": 0.012348905991530046
+        },
+        "bytetrack_s": {
+          "n": 498,
+          "mean_s": 0.0008069965456580616,
+          "p95_s": 0.0015045320033095777,
+          "max_s": 0.006142897007521242
+        },
+        "roi_yolo_s": {
+          "n": 19,
+          "mean_s": 0.1419575541084142,
+          "p95_s": 0.16950538000673987,
+          "max_s": 0.17193882199353538
+        },
+        "roi_merge_s": {
+          "n": 2,
+          "mean_s": 0.0005403030081652105,
+          "p95_s": 0.0004488700069487095,
+          "max_s": 0.0006317360093817115
+        }
+      },
+      "ulog_safety": {
+        "armed_status_observations": 256,
+        "armed_failsafe_observations": 0,
+        "armed_offboard_flags_observations": 225,
+        "armed_offboard_lost_observations": 0,
+        "auto_land_lost_observations": 9,
+        "dropout_events": 0
+      }
+    }
+  ],
+  "input_sha256": {
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/study_summary.json": "2771b27401ba617c51065fea7b1db08a08c068fb8b67f210913b2680b444392a",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_01/association.jsonl": "3fb7e339b78e25e108ed23a9f3a2295705e507665ff4f68dc4e5e61e54c322d4",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_01/samples.jsonl": "14b2b7c66d46a9dcb0b965f6efc88218f4254111941e710ea163d43a9a9c232c",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_01/flight.ulg": "ffbce209a92ee87e31970c8de0a83f479d4ab6437bb99bccc849904313863a98",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_02/association.jsonl": "d320514c3390858219892c1717f502a5fc683bdd25b87efe2938ca4d7d431bbb",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_02/samples.jsonl": "3e858bd1d29aedc74aaf299a7854ac2ebc2b891f29f9afe3f629fcd9a7bde58e",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_02/flight.ulg": "89e6bcf10d6a42df14aad1b7e6b4c17bb7e551b5dfb7c7768e7d723ab381abb4",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_03/association.jsonl": "e067293a1d640fecdd06d658f1d594b3e62ef6da7d537a9a5b9101e5e9d0aef9",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_03/samples.jsonl": "20508fb24246ff75502328e672d683652d6a19ad41ef23886c8961b21d811385",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_03/flight.ulg": "de0cc1485bde1a628cb9e347d41c214e327b898e2a021cab27a5f0a7f4fb7e9e",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_04/association.jsonl": "e7b8c2068d9d7acc508920d7e15a3a737ff5c9b74b6460f6bf43524a1b23bcf1",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_04/samples.jsonl": "6595ffd391217984c8e4303b2c1316d1d9f50c9d3ebc76d083dee0f19eb6849e",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_04/flight.ulg": "bd6b139429c9bd6b1a3fbd871635195b85ce74cd6cc5f53e01f85e7da78e5632",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_05/association.jsonl": "2cf3b1cc6370cf72cc0873f96b729604dc4c58d14c654cb197fa176eee1d79ee",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_05/samples.jsonl": "5db2749d9b83178edf69cfa834e311be389c1606f5d3945f44bde86bbda97b10",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_05/flight.ulg": "b6b4fb8e8dfe8df173c4e67aef77e22e3747cad1c5b6a1f599a547b1040cda7f",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_06/association.jsonl": "dd6bb0a8b5567f18e22f269dda56ce320f6ca7f9aec94e1d74f19f67a5b7b1a6",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_06/samples.jsonl": "46e4812b3cee2f017e5de595adea223b8bc752779af12979a30a3f2c42ce8b6a",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_06/flight.ulg": "b14ad8cfcb8a4bce7440b2eb4b06d5de1d8bf7f218b753a9c7e36b89fa80cf5b",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_07/association.jsonl": "113ff39253a00990645b8131632bb4c5149919584e6f52a99d4d759a478e81d8",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_07/samples.jsonl": "9dddd90cb0e16d5ed938b671c296dcf604cce03bd0fcc8e9b385c5579c0d3282",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_07/flight.ulg": "713f387d57174dd2656bd7a6b7f2b73c6bc3a4022496fda7d2b4576f701f9a1c",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_08/association.jsonl": "dd69f03e0f5d673e5c9dde61b9cc3be658a64791e6913565bbde0f51e057f9db",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_08/samples.jsonl": "fa998dd597c55b2fbe76f03a9fe2e15fae2e9c8a5657f3c104834572ef118aac",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_08/flight.ulg": "b3d34811c31646cf99acae8e8d8d595c0cd114c674310027ef27dc8c91e8f615",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_09/association.jsonl": "67bab60200269b200a98993a613a7e113082a905335971ee1365f845f86d7307",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_09/samples.jsonl": "7c3aa7fdf47a5014860db029d14978cd6c2542cce8ce7e722f0af499ec4f96ea",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_09/flight.ulg": "f6fad82c9033c87edd9575af0be455b0ff2eee9d715dd826ecf0561cb57d0a21",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_10/association.jsonl": "04e3a33e05c48bdb3d42aabf7fbe60bcdc826b86b7d0c2789633bdf083fc2635",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_10/samples.jsonl": "9e280fafc2fe5fdfe01f76638bbe9dd6c9645ffcbf55dc0eed0baac90fb9796a",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_10/flight.ulg": "95c40b124c6068131e27628c7943a9da728632ae56bbed883b55a0fc51ba78b4"
+  },
+  "limitations": [
+    "Task window follows the study summary: sampled first APPROACH until first RETURN/LAND/DONE.",
+    "processing_s excludes association JSON serialization/publication and terminal logging.",
+    "target_publish_age_s starts at perception subscription receipt, not camera exposure; pre-subscription DDS delay and downstream controller receipt are not measured.",
+    "Stage counts differ because ROI inference/merge are conditional; stage percentiles are not additive.",
+    "ULog mode attribution uses latest preceding status; flags/status streams are sampled, not simultaneous.",
+    "AUTO_LAND offboard-signal loss is separate from armed Offboard loss; no flag absence proves hardware safety.",
+    "One observation per group cannot estimate repeatability or establish a causal coverage benefit."
+  ]
+}

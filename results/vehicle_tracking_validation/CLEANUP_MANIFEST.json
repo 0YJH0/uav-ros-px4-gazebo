@@ -1,0 +1,494 @@
+{
+  "date": "2026-10-11",
+  "user_request": "Delete redundant smoke tests and failed cases; retain code and final effective results.",
+  "scope": "Only obsolete direct entries under results/vehicle_tracking_validation were deleted. Runtime dependencies, source, unit tests, models and build/install files were retained.",
+  "deleted_directory_count": 101,
+  "deleted_file_count": 9,
+  "removed_allocated_bytes_from_du": 8334225408,
+  "retained_directories": [
+    "scene_transport_isolated_repeat_20261011_01",
+    "scene_transport_isolated_repeat_audit_20261011_01"
+  ],
+  "final_batch": {
+    "planned": 10,
+    "attempted": 10,
+    "completed": true,
+    "strict_passes": 10,
+    "all_attempts_preserved": true,
+    "nonplanned_losses": 7
+  },
+  "deletion_integrity_verification": {
+    "source_and_models_before": {
+      "files": 724,
+      "sha256": "e9198e50ac816ae1a13de643edbd57c7aca142b795cff3ffe2d28cc54539982c"
+    },
+    "source_and_models_after": {
+      "files": 724,
+      "sha256": "e9198e50ac816ae1a13de643edbd57c7aca142b795cff3ffe2d28cc54539982c"
+    },
+    "retained_trees_before": {
+      "files": 1554,
+      "sha256": "9e2c510004a41fe0713657024e052e03f0e11528d1fa041f8951a94f9e600dc8"
+    },
+    "retained_trees_immediately_after_deletion": {
+      "files": 1554,
+      "sha256": "9e2c510004a41fe0713657024e052e03f0e11528d1fa041f8951a94f9e600dc8"
+    },
+    "digest_method": "SHA256 of UTF-8 json.dumps(sorted path-to-SHA256 map, sort_keys=True, separators=(',', ':')); symlinks store symlink:<target> instead of content hash.",
+    "all_80_archived_trial_input_hashes_verified": true,
+    "documentation_changes_after_verification": [
+      "PROJECT_OVERVIEW.md",
+      "PROJECT_CHALLENGES.md",
+      "docs/vehicle_tracking.md",
+      "scene_transport_isolated_repeat_audit_20261011_01/FINAL_REPORT.md"
+    ],
+    "note": "The final report received cleanup/provenance annotations only. Experimental JSON/CSV/images/logs/ULog, frozen code and statistical denominator were not modified."
+  },
+  "limitations": [
+    "Historical raw artifacts are no longer available for independent audit or replay.",
+    "Final 10/10 refers only to the retained fixed-scene batch, not all development experiments.",
+    "Original historical paths in frozen provenance JSON were intentionally not rewritten."
+  ],
+  "deleted_entries": [
+    {
+      "path": "results/vehicle_tracking_validation/attempt_01",
+      "allocated_bytes": 778240
+    },
+    {
+      "path": "results/vehicle_tracking_validation/attempt_02",
+      "allocated_bytes": 360448
+    },
+    {
+      "path": "results/vehicle_tracking_validation/attempt_03",
+      "allocated_bytes": 1196032
+    },
+    {
+      "path": "results/vehicle_tracking_validation/backend_comparison_20261010_01",
+      "allocated_bytes": 19324928
+    },
+    {
+      "path": "results/vehicle_tracking_validation/backend_comparison_20261010_02",
+      "allocated_bytes": 95944704
+    },
+    {
+      "path": "results/vehicle_tracking_validation/backend_comparison_20261010_03",
+      "allocated_bytes": 95944704
+    },
+    {
+      "path": "results/vehicle_tracking_validation/backend_comparison_20261010_04",
+      "allocated_bytes": 95944704
+    },
+    {
+      "path": "results/vehicle_tracking_validation/backend_comparison_20261010_05",
+      "allocated_bytes": 95944704
+    },
+    {
+      "path": "results/vehicle_tracking_validation/backend_comparison_20261010_06",
+      "allocated_bytes": 95944704
+    },
+    {
+      "path": "results/vehicle_tracking_validation/backend_comparison_20261010_07",
+      "allocated_bytes": 95944704
+    },
+    {
+      "path": "results/vehicle_tracking_validation/backend_comparison_20261010_08",
+      "allocated_bytes": 95944704
+    },
+    {
+      "path": "results/vehicle_tracking_validation/backend_comparison_summary_20261010_01.json",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "results/vehicle_tracking_validation/backend_wheels_20261010_01",
+      "allocated_bytes": 92409856
+    },
+    {
+      "path": "results/vehicle_tracking_validation/competition_ab_20261010_01",
+      "allocated_bytes": 320397312
+    },
+    {
+      "path": "results/vehicle_tracking_validation/competition_ab_completion_check_20261010_01.json",
+      "allocated_bytes": 49152
+    },
+    {
+      "path": "results/vehicle_tracking_validation/competition_ab_completion_check_20261010_02.json",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "results/vehicle_tracking_validation/competition_ab_replay_20261010_01",
+      "allocated_bytes": 2256896
+    },
+    {
+      "path": "results/vehicle_tracking_validation/competition_replay_20261010_01",
+      "allocated_bytes": 6901760
+    },
+    {
+      "path": "results/vehicle_tracking_validation/competition_replay_20261010_02",
+      "allocated_bytes": 6901760
+    },
+    {
+      "path": "results/vehicle_tracking_validation/competition_replay_20261010_03",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "results/vehicle_tracking_validation/competition_replay_20261010_04",
+      "allocated_bytes": 7090176
+    },
+    {
+      "path": "results/vehicle_tracking_validation/competition_replay_20261010_05",
+      "allocated_bytes": 7094272
+    },
+    {
+      "path": "results/vehicle_tracking_validation/competition_replay_latest_20261010_01",
+      "allocated_bytes": 671744
+    },
+    {
+      "path": "results/vehicle_tracking_validation/competition_replay_latest_20261010_02",
+      "allocated_bytes": 671744
+    },
+    {
+      "path": "results/vehicle_tracking_validation/competition_replay_latest_20261010_03",
+      "allocated_bytes": 696320
+    },
+    {
+      "path": "results/vehicle_tracking_validation/competition_replay_latest_20261010_04",
+      "allocated_bytes": 700416
+    },
+    {
+      "path": "results/vehicle_tracking_validation/continuous_recovery_05",
+      "allocated_bytes": 28672
+    },
+    {
+      "path": "results/vehicle_tracking_validation/continuous_recovery_06",
+      "allocated_bytes": 1286144
+    },
+    {
+      "path": "results/vehicle_tracking_validation/continuous_recovery_07",
+      "allocated_bytes": 1662976
+    },
+    {
+      "path": "results/vehicle_tracking_validation/continuous_recovery_08",
+      "allocated_bytes": 6406144
+    },
+    {
+      "path": "results/vehicle_tracking_validation/continuous_recovery_09",
+      "allocated_bytes": 8409088
+    },
+    {
+      "path": "results/vehicle_tracking_validation/continuous_recovery_10",
+      "allocated_bytes": 10145792
+    },
+    {
+      "path": "results/vehicle_tracking_validation/continuous_recovery_11",
+      "allocated_bytes": 11628544
+    },
+    {
+      "path": "results/vehicle_tracking_validation/continuous_recovery_12",
+      "allocated_bytes": 13008896
+    },
+    {
+      "path": "results/vehicle_tracking_validation/continuous_recovery_13",
+      "allocated_bytes": 151552
+    },
+    {
+      "path": "results/vehicle_tracking_validation/continuous_recovery_14",
+      "allocated_bytes": 12296192
+    },
+    {
+      "path": "results/vehicle_tracking_validation/continuous_recovery_15",
+      "allocated_bytes": 12861440
+    },
+    {
+      "path": "results/vehicle_tracking_validation/continuous_recovery_16",
+      "allocated_bytes": 15032320
+    },
+    {
+      "path": "results/vehicle_tracking_validation/continuous_recovery_17",
+      "allocated_bytes": 9834496
+    },
+    {
+      "path": "results/vehicle_tracking_validation/crossing_gap_competition_disabled_replay_20261010_01",
+      "allocated_bytes": 2670592
+    },
+    {
+      "path": "results/vehicle_tracking_validation/crossing_gap_historical_freeze_check_20261010_01.json",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "results/vehicle_tracking_validation/crossing_gap_historical_replay_20261010_01",
+      "allocated_bytes": 7278592
+    },
+    {
+      "path": "results/vehicle_tracking_validation/crossing_gap_historical_replay_20261010_02",
+      "allocated_bytes": 8114176
+    },
+    {
+      "path": "results/vehicle_tracking_validation/crossing_gap_historical_replay_20261010_03",
+      "allocated_bytes": 8220672
+    },
+    {
+      "path": "results/vehicle_tracking_validation/crossing_gap_latest_replay_20261010_01",
+      "allocated_bytes": 720896
+    },
+    {
+      "path": "results/vehicle_tracking_validation/crossing_gap_latest_replay_20261010_02",
+      "allocated_bytes": 794624
+    },
+    {
+      "path": "results/vehicle_tracking_validation/crossing_gap_latest_replay_20261010_03",
+      "allocated_bytes": 901120
+    },
+    {
+      "path": "results/vehicle_tracking_validation/crossing_gap_replay_20261010_01",
+      "allocated_bytes": 2301952
+    },
+    {
+      "path": "results/vehicle_tracking_validation/crossing_gap_replay_20261010_02",
+      "allocated_bytes": 2568192
+    },
+    {
+      "path": "results/vehicle_tracking_validation/crossing_gap_replay_20261010_03",
+      "allocated_bytes": 2703360
+    },
+    {
+      "path": "results/vehicle_tracking_validation/detector_review_20261010_01",
+      "allocated_bytes": 9322496
+    },
+    {
+      "path": "results/vehicle_tracking_validation/forward_occlusion_04",
+      "allocated_bytes": 2920448
+    },
+    {
+      "path": "results/vehicle_tracking_validation/frozen_crossing_20261008_01",
+      "allocated_bytes": 265240576
+    },
+    {
+      "path": "results/vehicle_tracking_validation/frozen_crossing_79_65_repeat_20261009_01",
+      "allocated_bytes": 1018535936
+    },
+    {
+      "path": "results/vehicle_tracking_validation/frozen_study_20261008_01",
+      "allocated_bytes": 1609355264
+    },
+    {
+      "path": "results/vehicle_tracking_validation/gui_closed_loop_20261010_01",
+      "allocated_bytes": 225280
+    },
+    {
+      "path": "results/vehicle_tracking_validation/gui_closed_loop_20261010_02",
+      "allocated_bytes": 61972480
+    },
+    {
+      "path": "results/vehicle_tracking_validation/gui_recovery_prediction_20261010_01",
+      "allocated_bytes": 1810432
+    },
+    {
+      "path": "results/vehicle_tracking_validation/gui_recovery_prediction_20261010_02",
+      "allocated_bytes": 1851392
+    },
+    {
+      "path": "results/vehicle_tracking_validation/historical_freeze_check_20261010_02.json",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "results/vehicle_tracking_validation/identity_guard_pilot_20261009_01",
+      "allocated_bytes": 138539008
+    },
+    {
+      "path": "results/vehicle_tracking_validation/identity_guard_pilot_20261009_02",
+      "allocated_bytes": 279891968
+    },
+    {
+      "path": "results/vehicle_tracking_validation/identity_guard_pilot_20261009_03",
+      "allocated_bytes": 261844992
+    },
+    {
+      "path": "results/vehicle_tracking_validation/identity_guard_replay_20261009_01",
+      "allocated_bytes": 2437120
+    },
+    {
+      "path": "results/vehicle_tracking_validation/identity_guard_replay_20261009_02",
+      "allocated_bytes": 2433024
+    },
+    {
+      "path": "results/vehicle_tracking_validation/identity_guard_replay_20261009_03",
+      "allocated_bytes": 2433024
+    },
+    {
+      "path": "results/vehicle_tracking_validation/latency_scale_completion_check_20261010_01.json",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "results/vehicle_tracking_validation/latency_scale_historical_freeze_check_20261010_01.json",
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "results/vehicle_tracking_validation/latency_scale_pilot_20261010_01",
+      "allocated_bytes": 107966464
+    },
+    {
+      "path": "results/vehicle_tracking_validation/latency_scale_pilot_20261010_02",
+      "allocated_bytes": 184827904
+    },
+    {
+      "path": "results/vehicle_tracking_validation/latency_scale_pilot_20261010_03",
+      "allocated_bytes": 357650432
+    },
+    {
+      "path": "results/vehicle_tracking_validation/latency_scale_stage_safety_audit_20261010_01.json",
+      "allocated_bytes": 12288
+    },
+    {
+      "path": "results/vehicle_tracking_validation/motion_framing_realtime_final_baseline_20261009_01",
+      "allocated_bytes": 157208576
+    },
+    {
+      "path": "results/vehicle_tracking_validation/motion_framing_realtime_final_crossing_20261009_01",
+      "allocated_bytes": 176889856
+    },
+    {
+      "path": "results/vehicle_tracking_validation/motion_framing_realtime_final_crossing_20261009_02",
+      "allocated_bytes": 178176000
+    },
+    {
+      "path": "results/vehicle_tracking_validation/motion_framing_realtime_pilot_20261009_01",
+      "allocated_bytes": 285622272
+    },
+    {
+      "path": "results/vehicle_tracking_validation/motion_framing_realtime_pilot_20261009_02",
+      "allocated_bytes": 270307328
+    },
+    {
+      "path": "results/vehicle_tracking_validation/motion_framing_realtime_pilot_20261009_03",
+      "allocated_bytes": 297455616
+    },
+    {
+      "path": "results/vehicle_tracking_validation/motion_framing_realtime_pilot_20261009_04",
+      "allocated_bytes": 235089920
+    },
+    {
+      "path": "results/vehicle_tracking_validation/occlusion_01",
+      "allocated_bytes": 1130496
+    },
+    {
+      "path": "results/vehicle_tracking_validation/occlusion_02",
+      "allocated_bytes": 1110016
+    },
+    {
+      "path": "results/vehicle_tracking_validation/occlusion_03",
+      "allocated_bytes": 1175552
+    },
+    {
+      "path": "results/vehicle_tracking_validation/overtaking_color_20261010_01",
+      "allocated_bytes": 58585088
+    },
+    {
+      "path": "results/vehicle_tracking_validation/perception_backend_equivalence_20261010_01",
+      "allocated_bytes": 36864
+    },
+    {
+      "path": "results/vehicle_tracking_validation/perception_backend_profile_20261010_01",
+      "allocated_bytes": 589824
+    },
+    {
+      "path": "results/vehicle_tracking_validation/perception_backend_profile_20261010_02",
+      "allocated_bytes": 593920
+    },
+    {
+      "path": "results/vehicle_tracking_validation/perception_backend_profile_20261010_03",
+      "allocated_bytes": 593920
+    },
+    {
+      "path": "results/vehicle_tracking_validation/perception_backend_profile_20261010_04",
+      "allocated_bytes": 602112
+    },
+    {
+      "path": "results/vehicle_tracking_validation/perception_backend_profile_20261010_05",
+      "allocated_bytes": 598016
+    },
+    {
+      "path": "results/vehicle_tracking_validation/perception_backend_profile_20261010_06",
+      "allocated_bytes": 581632
+    },
+    {
+      "path": "results/vehicle_tracking_validation/perception_thread_profile_20261010_01",
+      "allocated_bytes": 811008
+    },
+    {
+      "path": "results/vehicle_tracking_validation/scale_hold_historical_replay_20261010_01",
+      "allocated_bytes": 8671232
+    },
+    {
+      "path": "results/vehicle_tracking_validation/scale_hold_latest_replay_20261010_01",
+      "allocated_bytes": 937984
+    },
+    {
+      "path": "results/vehicle_tracking_validation/scale_hold_rejected_frames_20261010_01.json",
+      "allocated_bytes": 8192
+    },
+    {
+      "path": "results/vehicle_tracking_validation/scale_hold_replay_20261010_01",
+      "allocated_bytes": 2809856
+    },
+    {
+      "path": "results/vehicle_tracking_validation/scene_transport_isolated_overtaking_20261010_01",
+      "allocated_bytes": 64786432
+    },
+    {
+      "path": "results/vehicle_tracking_validation/scene_transport_isolated_overtaking_20261010_02",
+      "allocated_bytes": 65228800
+    },
+    {
+      "path": "results/vehicle_tracking_validation/scene_transport_native_overtaking_20261010_01",
+      "allocated_bytes": 65449984
+    },
+    {
+      "path": "results/vehicle_tracking_validation/selected_overtaking_repeat_20261010_01",
+      "allocated_bytes": 292327424
+    },
+    {
+      "path": "results/vehicle_tracking_validation/selected_overtaking_repeat_audit_20261010_01",
+      "allocated_bytes": 24576
+    },
+    {
+      "path": "results/vehicle_tracking_validation/tracking_effect_pilot_20261010_01",
+      "allocated_bytes": 108072960
+    },
+    {
+      "path": "results/vehicle_tracking_validation/tracking_effect_pilot_20261010_02",
+      "allocated_bytes": 167870464
+    },
+    {
+      "path": "results/vehicle_tracking_validation/truncated_geometry_framing_baselines_20261010_01",
+      "allocated_bytes": 397312
+    },
+    {
+      "path": "results/vehicle_tracking_validation/truncated_geometry_framing_comparison_20261010_01",
+      "allocated_bytes": 376832
+    },
+    {
+      "path": "results/vehicle_tracking_validation/truncated_geometry_framing_comparison_20261010_02",
+      "allocated_bytes": 565248
+    },
+    {
+      "path": "results/vehicle_tracking_validation/truncated_geometry_historical_replay_20261010_01",
+      "allocated_bytes": 8679424
+    },
+    {
+      "path": "results/vehicle_tracking_validation/truncated_geometry_overtaking_20261010_01",
+      "allocated_bytes": 61816832
+    },
+    {
+      "path": "results/vehicle_tracking_validation/truncated_geometry_overtaking_20261010_02",
+      "allocated_bytes": 58122240
+    },
+    {
+      "path": "results/vehicle_tracking_validation/truncated_geometry_replay_20261010_01",
+      "allocated_bytes": 1679360
+    },
+    {
+      "path": "results/vehicle_tracking_validation/vehicle_openvino_runtime_20261010_01",
+      "allocated_bytes": 171798528
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "interventions": [],
+  "error": null,
+  "perception_python": "/home/yjh/ROS2_manmade/.venv-yolo/bin/python",
+  "gui_config_sha256": "847475bebcc3c57cbbd449be568f63f33b47674e56307636cac3d6247ffdfb7d",
+  "parameter_capture_attempts": [
+    {
+      "node": "perception_node",
+      "ok": true
+    },
+    {
+      "node": "px4_offboard_controller",
+      "ok": true
+    },
+    {
+      "node": "vehicle_scene",
+      "ok": true
+    }
+  ],
+  "parameters_verified": true,
+  "report_passed": true,
+  "landed_disarmed_before_shutdown": true,
+  "duration_s": 235.34054682400892,
+  "process_exit_codes": {
+    "agent": -2,
+    "px4": 0,
+    "gui": 0,
+    "recorder": 0,
+    "crossing": 0,
+    "mission": 0
+  },
+  "freeze_verified": true,
+  "autonomous_passed": true
+}

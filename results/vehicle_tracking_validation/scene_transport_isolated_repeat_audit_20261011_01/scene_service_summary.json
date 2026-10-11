@@ -1,0 +1,988 @@
+{
+  "study": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01",
+  "planned": 10,
+  "attempted": 10,
+  "completed": true,
+  "stop_reason": null,
+  "task_passes": 10,
+  "identity_passes": 10,
+  "strict_passes": 10,
+  "reference": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_overtaking_20261010_02",
+  "total_requests": 8149,
+  "failed_requests": 0,
+  "failed_reasons": {},
+  "request_metrics": {
+    "requests": {
+      "n": 10,
+      "missing": 0,
+      "mean": 814.9,
+      "std_sample": 42.288558999121996,
+      "min": 774,
+      "max": 916,
+      "worst": 916,
+      "worst_trials": [
+        "overtaking_01"
+      ]
+    },
+    "failed": {
+      "n": 10,
+      "missing": 0,
+      "mean": 0,
+      "std_sample": 0.0,
+      "min": 0,
+      "max": 0,
+      "worst": 0,
+      "worst_trials": [
+        "overtaking_01",
+        "overtaking_02",
+        "overtaking_03",
+        "overtaking_04",
+        "overtaking_05",
+        "overtaking_06",
+        "overtaking_07",
+        "overtaking_08",
+        "overtaking_09",
+        "overtaking_10"
+      ]
+    },
+    "mean_ms": {
+      "n": 10,
+      "missing": 0,
+      "mean": 1.4389464137549977,
+      "std_sample": 0.09330354990923877,
+      "min": 1.2465475290603467,
+      "max": 1.5611138462767618,
+      "worst": 1.5611138462767618,
+      "worst_trials": [
+        "overtaking_02"
+      ]
+    },
+    "p95_ms": {
+      "n": 10,
+      "missing": 0,
+      "mean": 2.268747410271316,
+      "std_sample": 0.3125048335481823,
+      "min": 1.7680085002211854,
+      "max": 2.7280690454062997,
+      "worst": 2.7280690454062997,
+      "worst_trials": [
+        "overtaking_03"
+      ]
+    },
+    "max_ms": {
+      "n": 10,
+      "missing": 0,
+      "mean": 197.25735720712692,
+      "std_sample": 36.191667009918504,
+      "min": 102.33536001760513,
+      "max": 246.60884498734958,
+      "worst": 246.60884498734958,
+      "worst_trials": [
+        "overtaking_06"
+      ]
+    }
+  },
+  "motion_metrics": {
+    "vehicle_travel_m": {
+      "n": 10,
+      "missing": 0,
+      "mean": 64.45917456435137,
+      "std_sample": 3.3706944368319545,
+      "min": 61.13075017292795,
+      "max": 72.49172102287854,
+      "worst": 61.13075017292795,
+      "worst_trials": [
+        "overtaking_05"
+      ]
+    },
+    "drone_follow_travel_m": {
+      "n": 10,
+      "missing": 0,
+      "mean": 51.730487676330924,
+      "std_sample": 3.2935296981010125,
+      "min": 48.025331733685036,
+      "max": 59.319430012534355,
+      "worst": 48.025331733685036,
+      "worst_trials": [
+        "overtaking_10"
+      ]
+    }
+  },
+  "log_integrity_errors": [],
+  "trials": [
+    {
+      "name": "overtaking_01",
+      "strict_pass": true,
+      "task_pass": true,
+      "identity_pass": true,
+      "coverage": 0.9234898083731634,
+      "recovery_s": 1.6524712909886148,
+      "outside_panel_losses": 1,
+      "scene_report_errors": 0,
+      "vehicle_travel_m": 72.49172102287854,
+      "drone_follow_travel_m": 59.319430012534355,
+      "safety_event": false,
+      "criteria_failure_causes": [],
+      "requests": 916,
+      "failed": 0,
+      "failed_reasons": {},
+      "mean_ms": 1.2465475290603467,
+      "p95_ms": 1.7680085002211854,
+      "max_ms": 204.14313502260484,
+      "logs": {
+        "scene_service.jsonl": {
+          "requests": 460,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.3799956403090619,
+          "p95_ms": 1.7445823556045068,
+          "max_ms": 204.14313502260484,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [],
+          "services": {
+            "/world/default/create": {
+              "requests": 4,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 51.50915525882738,
+              "p95_ms": 173.61958537076129,
+              "max_ms": 204.14313502260484
+            },
+            "/world/default/set_pose": {
+              "requests": 456,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 0.9402661699711818,
+              "p95_ms": 1.7355182499159127,
+              "max_ms": 5.286797997541726
+            }
+          }
+        },
+        "traffic_service.jsonl": {
+          "requests": 456,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.1119288203445377,
+          "p95_ms": 1.7717067603371106,
+          "max_ms": 101.345464005135,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [
+            2630451
+          ],
+          "services": {
+            "/world/default/create": {
+              "requests": 1,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 101.345464005135,
+              "p95_ms": 101.345464005135,
+              "max_ms": 101.345464005135
+            },
+            "/world/default/set_pose": {
+              "requests": 455,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 0.8916353364219214,
+              "p95_ms": 1.768146001268178,
+              "max_ms": 5.444334005005658
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "overtaking_02",
+      "strict_pass": true,
+      "task_pass": true,
+      "identity_pass": true,
+      "coverage": 0.9227202322766045,
+      "recovery_s": 1.1421617289888673,
+      "outside_panel_losses": 1,
+      "scene_report_errors": 0,
+      "vehicle_travel_m": 64.97132278705529,
+      "drone_follow_travel_m": 53.24716401312699,
+      "safety_event": false,
+      "criteria_failure_causes": [],
+      "requests": 820,
+      "failed": 0,
+      "failed_reasons": {},
+      "mean_ms": 1.5611138462767618,
+      "p95_ms": 2.351995199569501,
+      "max_ms": 202.93488699826412,
+      "logs": {
+        "scene_service.jsonl": {
+          "requests": 413,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.8114883729739264,
+          "p95_ms": 2.3974056122824527,
+          "max_ms": 202.93488699826412,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [],
+          "services": {
+            "/world/default/create": {
+              "requests": 4,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 75.56340824521612,
+              "p95_ms": 187.211221299367,
+              "max_ms": 202.93488699826412
+            },
+            "/world/default/set_pose": {
+              "requests": 409,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.0901982030742472,
+              "p95_ms": 2.254144405014807,
+              "max_ms": 9.159193985396996
+            }
+          }
+        },
+        "traffic_service.jsonl": {
+          "requests": 407,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.3070482946160027,
+          "p95_ms": 2.2665371972834687,
+          "max_ms": 101.20052000274882,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [
+            2637086
+          ],
+          "services": {
+            "/world/default/create": {
+              "requests": 1,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 101.20052000274882,
+              "p95_ms": 101.20052000274882,
+              "max_ms": 101.20052000274882
+            },
+            "/world/default/set_pose": {
+              "requests": 406,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.0610052608521288,
+              "p95_ms": 2.243708229798358,
+              "max_ms": 7.7416189888026565
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "overtaking_03",
+      "strict_pass": true,
+      "task_pass": true,
+      "identity_pass": true,
+      "coverage": 0.9163593213102399,
+      "recovery_s": 1.7849639170162845,
+      "outside_panel_losses": 0,
+      "scene_report_errors": 0,
+      "vehicle_travel_m": 62.891048166834835,
+      "drone_follow_travel_m": 50.1833100946101,
+      "safety_event": false,
+      "criteria_failure_causes": [],
+      "requests": 794,
+      "failed": 0,
+      "failed_reasons": {},
+      "mean_ms": 1.4866781841068568,
+      "p95_ms": 2.7280690454062997,
+      "max_ms": 204.60638002259657,
+      "logs": {
+        "scene_service.jsonl": {
+          "requests": 400,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.6090923234150978,
+          "p95_ms": 2.3833793966332406,
+          "max_ms": 204.60638002259657,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [],
+          "services": {
+            "/world/default/create": {
+              "requests": 4,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 51.85793350392487,
+              "p95_ms": 174.06972666649375,
+              "max_ms": 204.60638002259657
+            },
+            "/world/default/set_pose": {
+              "requests": 396,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.1015282710867162,
+              "p95_ms": 2.3272992475540377,
+              "max_ms": 9.577680000802502
+            }
+          }
+        },
+        "traffic_service.jsonl": {
+          "requests": 394,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.3623998700883382,
+          "p95_ms": 2.7574959953199136,
+          "max_ms": 101.52284099604003,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [
+            2643811
+          ],
+          "services": {
+            "/world/default/create": {
+              "requests": 1,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 101.52284099604003,
+              "p95_ms": 101.52284099604003,
+              "max_ms": 101.52284099604003
+            },
+            "/world/default/set_pose": {
+              "requests": 393,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.1075386967398606,
+              "p95_ms": 2.7453881921246643,
+              "max_ms": 5.599850002909079
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "overtaking_04",
+      "strict_pass": true,
+      "task_pass": true,
+      "identity_pass": true,
+      "coverage": 0.9223356811482286,
+      "recovery_s": 1.5275373799959198,
+      "outside_panel_losses": 0,
+      "scene_report_errors": 0,
+      "vehicle_travel_m": 65.2913577223907,
+      "drone_follow_travel_m": 51.57093819195525,
+      "safety_event": false,
+      "criteria_failure_causes": [],
+      "requests": 826,
+      "failed": 0,
+      "failed_reasons": {},
+      "mean_ms": 1.45574447669435,
+      "p95_ms": 2.6871882437262684,
+      "max_ms": 203.01384801859967,
+      "logs": {
+        "scene_service.jsonl": {
+          "requests": 415,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.597173442623679,
+          "p95_ms": 2.639576597721311,
+          "max_ms": 203.01384801859967,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [],
+          "services": {
+            "/world/default/create": {
+              "requests": 4,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 51.32324625446927,
+              "p95_ms": 172.6922906163963,
+              "max_ms": 203.01384801859967
+            },
+            "/world/default/set_pose": {
+              "requests": 411,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.113221395793065,
+              "p95_ms": 2.587544498965144,
+              "max_ms": 8.864305971655995
+            }
+          }
+        },
+        "traffic_service.jsonl": {
+          "requests": 411,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.3129390731404045,
+          "p95_ms": 2.6569969923002645,
+          "max_ms": 101.36930100270547,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [
+            2650819
+          ],
+          "services": {
+            "/world/default/create": {
+              "requests": 1,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 101.36930100270547,
+              "p95_ms": 101.36930100270547,
+              "max_ms": 101.36930100270547
+            },
+            "/world/default/set_pose": {
+              "requests": 410,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.0688991659951237,
+              "p95_ms": 2.562063299410507,
+              "max_ms": 8.802892989479005
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "overtaking_05",
+      "strict_pass": true,
+      "task_pass": true,
+      "identity_pass": true,
+      "coverage": 0.9132654594991912,
+      "recovery_s": 1.8805410029890481,
+      "outside_panel_losses": 1,
+      "scene_report_errors": 0,
+      "vehicle_travel_m": 61.13075017292795,
+      "drone_follow_travel_m": 49.28901543299479,
+      "safety_event": false,
+      "criteria_failure_causes": [],
+      "requests": 774,
+      "failed": 0,
+      "failed_reasons": {},
+      "mean_ms": 1.4735954768612176,
+      "p95_ms": 2.138509646465531,
+      "max_ms": 204.43988099577837,
+      "logs": {
+        "scene_service.jsonl": {
+          "requests": 389,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.64496142183464,
+          "p95_ms": 2.1820940193720095,
+          "max_ms": 204.43988099577837,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [],
+          "services": {
+            "/world/default/create": {
+              "requests": 4,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 51.569995244790334,
+              "p95_ms": 173.87798894342262,
+              "max_ms": 204.43988099577837
+            },
+            "/world/default/set_pose": {
+              "requests": 385,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.1262597717260094,
+              "p95_ms": 2.0382606191560564,
+              "max_ms": 9.175512997899204
+            }
+          }
+        },
+        "traffic_service.jsonl": {
+          "requests": 385,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.300449106485474,
+          "p95_ms": 2.114972792332991,
+          "max_ms": 101.82220899150707,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [
+            2657677
+          ],
+          "services": {
+            "/world/default/create": {
+              "requests": 1,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 101.82220899150707,
+              "p95_ms": 101.82220899150707,
+              "max_ms": 101.82220899150707
+            },
+            "/world/default/set_pose": {
+              "requests": 384,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.0386736901182303,
+              "p95_ms": 2.09192618349334,
+              "max_ms": 6.061310996301472
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "overtaking_06",
+      "strict_pass": true,
+      "task_pass": true,
+      "identity_pass": true,
+      "coverage": 0.8640561979796371,
+      "recovery_s": 1.867430701997364,
+      "outside_panel_losses": 2,
+      "scene_report_errors": 0,
+      "vehicle_travel_m": 66.57147880763392,
+      "drone_follow_travel_m": 53.8487435611389,
+      "safety_event": false,
+      "criteria_failure_causes": [],
+      "requests": 841,
+      "failed": 0,
+      "failed_reasons": {},
+      "mean_ms": 1.5054938103643762,
+      "p95_ms": 2.3531499900855124,
+      "max_ms": 246.60884498734958,
+      "logs": {
+        "scene_service.jsonl": {
+          "requests": 423,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.7013333219898332,
+          "p95_ms": 2.527748217107728,
+          "max_ms": 246.60884498734958,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [],
+          "services": {
+            "/world/default/create": {
+              "requests": 4,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 62.17812549584778,
+              "p95_ms": 209.730361138645,
+              "max_ms": 246.60884498734958
+            },
+            "/world/default/set_pose": {
+              "requests": 419,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.1239892439577763,
+              "p95_ms": 2.522581798257306,
+              "max_ms": 6.901857006596401
+            }
+          }
+        },
+        "traffic_service.jsonl": {
+          "requests": 418,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.3073117208486629,
+          "p95_ms": 1.98202579485951,
+          "max_ms": 101.42860902124085,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [
+            2664508
+          ],
+          "services": {
+            "/world/default/create": {
+              "requests": 1,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 101.42860902124085,
+              "p95_ms": 101.42860902124085,
+              "max_ms": 101.42860902124085
+            },
+            "/world/default/set_pose": {
+              "requests": 417,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.0672126865551563,
+              "p95_ms": 1.97223080904223,
+              "max_ms": 9.367014979943633
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "overtaking_07",
+      "strict_pass": true,
+      "task_pass": true,
+      "identity_pass": true,
+      "coverage": 0.9196955872992556,
+      "recovery_s": 1.5220977090066299,
+      "outside_panel_losses": 0,
+      "scene_report_errors": 0,
+      "vehicle_travel_m": 61.77086549512515,
+      "drone_follow_travel_m": 48.700191756532206,
+      "safety_event": false,
+      "criteria_failure_causes": [],
+      "requests": 782,
+      "failed": 0,
+      "failed_reasons": {},
+      "mean_ms": 1.4353051230542437,
+      "p95_ms": 2.2166643888340314,
+      "max_ms": 194.82544701895677,
+      "logs": {
+        "scene_service.jsonl": {
+          "requests": 393,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.594657359203992,
+          "p95_ms": 2.480619394918901,
+          "max_ms": 194.82544701895677,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [],
+          "services": {
+            "/world/default/create": {
+              "requests": 4,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 49.3454440147616,
+              "p95_ms": 165.7857639685971,
+              "max_ms": 194.82544701895677
+            },
+            "/world/default/set_pose": {
+              "requests": 389,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.1036466995067415,
+              "p95_ms": 2.420489391079171,
+              "max_ms": 5.002495017834008
+            }
+          }
+        },
+        "traffic_service.jsonl": {
+          "requests": 389,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.2743143034993567,
+          "p95_ms": 1.9603776105213908,
+          "max_ms": 101.5982250100933,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [
+            2671676
+          ],
+          "services": {
+            "/world/default/create": {
+              "requests": 1,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 101.5982250100933,
+              "p95_ms": 101.5982250100933,
+              "max_ms": 101.5982250100933
+            },
+            "/world/default/set_pose": {
+              "requests": 388,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.015747523327723,
+              "p95_ms": 1.9541307672625408,
+              "max_ms": 4.926666006213054
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "overtaking_08",
+      "strict_pass": true,
+      "task_pass": true,
+      "identity_pass": true,
+      "coverage": 0.9123676111521007,
+      "recovery_s": 1.839642148988787,
+      "outside_panel_losses": 1,
+      "scene_report_errors": 0,
+      "vehicle_travel_m": 62.73102356937258,
+      "drone_follow_travel_m": 50.586227933849216,
+      "safety_event": false,
+      "criteria_failure_causes": [],
+      "requests": 793,
+      "failed": 0,
+      "failed_reasons": {},
+      "mean_ms": 1.3121814537258445,
+      "p95_ms": 2.0523275947198263,
+      "max_ms": 102.33536001760513,
+      "logs": {
+        "scene_service.jsonl": {
+          "requests": 399,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.352307749947155,
+          "p95_ms": 2.2422126960009314,
+          "max_ms": 102.33536001760513,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [],
+          "services": {
+            "/world/default/create": {
+              "requests": 4,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 26.94890700513497,
+              "p95_ms": 87.53647746634667,
+              "max_ms": 102.33536001760513
+            },
+            "/world/default/set_pose": {
+              "requests": 395,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.0931016815401897,
+              "p95_ms": 2.1280909772031,
+              "max_ms": 5.957927001873031
+            }
+          }
+        },
+        "traffic_service.jsonl": {
+          "requests": 394,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.271545940547411,
+          "p95_ms": 1.8440134052070785,
+          "max_ms": 101.20873199775815,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [
+            2678605
+          ],
+          "services": {
+            "/world/default/create": {
+              "requests": 1,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 101.20873199775815,
+              "p95_ms": 101.20873199775815,
+              "max_ms": 101.20873199775815
+            },
+            "/world/default/set_pose": {
+              "requests": 393,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.0172528462542538,
+              "p95_ms": 1.8254998023621734,
+              "max_ms": 5.344598001101986
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "overtaking_09",
+      "strict_pass": true,
+      "task_pass": true,
+      "identity_pass": true,
+      "coverage": 0.8604528555635012,
+      "recovery_s": 1.6604921820107847,
+      "outside_panel_losses": 1,
+      "scene_report_errors": 0,
+      "vehicle_travel_m": 65.13134049307618,
+      "drone_follow_travel_m": 52.53452403288237,
+      "safety_event": false,
+      "criteria_failure_causes": [],
+      "requests": 824,
+      "failed": 0,
+      "failed_reasons": {},
+      "mean_ms": 1.4287784722963126,
+      "p95_ms": 1.9210894868592725,
+      "max_ms": 206.19340598932467,
+      "logs": {
+        "scene_service.jsonl": {
+          "requests": 414,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.5863507771937644,
+          "p95_ms": 2.003240351041313,
+          "max_ms": 206.19340598932467,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [],
+          "services": {
+            "/world/default/create": {
+              "requests": 4,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 52.07066324510379,
+              "p95_ms": 175.38771983963662,
+              "max_ms": 206.19340598932467
+            },
+            "/world/default/set_pose": {
+              "requests": 410,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.093820899458057,
+              "p95_ms": 1.9636830416857232,
+              "max_ms": 6.737510993843898
+            }
+          }
+        },
+        "traffic_service.jsonl": {
+          "requests": 410,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.2696688766193736,
+          "p95_ms": 1.8723611356108447,
+          "max_ms": 102.12128798593767,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [
+            2685667
+          ],
+          "services": {
+            "/world/default/create": {
+              "requests": 1,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 102.12128798593767,
+              "p95_ms": 102.12128798593767,
+              "max_ms": 102.12128798593767
+            },
+            "/world/default/set_pose": {
+              "requests": 409,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.0230879008019693,
+              "p95_ms": 1.8560053780674923,
+              "max_ms": 6.3926530128810555
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "overtaking_10",
+      "strict_pass": true,
+      "task_pass": true,
+      "identity_pass": true,
+      "coverage": 0.9144905456639983,
+      "recovery_s": 1.6623295239987783,
+      "outside_panel_losses": 0,
+      "scene_report_errors": 0,
+      "vehicle_travel_m": 61.61083740621859,
+      "drone_follow_travel_m": 48.025331733685036,
+      "safety_event": false,
+      "criteria_failure_causes": [],
+      "requests": 779,
+      "failed": 0,
+      "failed_reasons": {},
+      "mean_ms": 1.4840257651096662,
+      "p95_ms": 2.4704720068257298,
+      "max_ms": 203.47238300018944,
+      "logs": {
+        "scene_service.jsonl": {
+          "requests": 392,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.621023288435583,
+          "p95_ms": 2.467657608212903,
+          "max_ms": 203.47238300018944,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [],
+          "services": {
+            "/world/default/create": {
+              "requests": 4,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 51.39024201344,
+              "p95_ms": 173.07660335209215,
+              "max_ms": 203.47238300018944
+            },
+            "/world/default/set_pose": {
+              "requests": 388,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.107938559311826,
+              "p95_ms": 2.44289540714817,
+              "max_ms": 5.502957996213809
+            }
+          }
+        },
+        "traffic_service.jsonl": {
+          "requests": 387,
+          "failed": 0,
+          "failed_reasons": {},
+          "mean_ms": 1.3452582479423292,
+          "p95_ms": 2.592501699109559,
+          "max_ms": 101.82251298101619,
+          "present": true,
+          "sequence_complete": true,
+          "inconsistent_success_records": 0,
+          "worker_pids": [
+            2692956
+          ],
+          "services": {
+            "/world/default/create": {
+              "requests": 1,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 101.82251298101619,
+              "p95_ms": 101.82251298101619,
+              "max_ms": 101.82251298101619
+            },
+            "/world/default/set_pose": {
+              "requests": 386,
+              "failed": 0,
+              "failed_reasons": {},
+              "mean_ms": 1.084954479203796,
+              "p95_ms": 2.4363437478314154,
+              "max_ms": 5.4104689916130155
+            }
+          }
+        }
+      }
+    }
+  ],
+  "input_sha256": {
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_01/scene_service.jsonl": "f23f4bd9dba45dfae583f810de9c4480e201629cf3c6ad9fe1095f48631d53bc",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_01/traffic_service.jsonl": "26926ec292c470c6f7f5375b1cfc74234d6ae2b351df4a485fc9ba8b83ad260b",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_02/scene_service.jsonl": "947c0047e78087d66ae0201c27f4fa988dab39b229995fb4955205694ea29d44",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_02/traffic_service.jsonl": "625f00866ec7d044bdf2d3d4c7be5221ee2c3eaeb0691390fe180cc7b87942b5",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_03/scene_service.jsonl": "37454883f9b750a4908463898df674e48e20ea3a03185e866ebac4a47a5d2a51",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_03/traffic_service.jsonl": "d9e0249d5f92a42b1308f30ae7a122a4a8fe98599b29bbd2f396519d5d68213c",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_04/scene_service.jsonl": "0a2c5f7a3d29be6523ba7438f59d5fb7a58d36910f5445e3bacb969233087aac",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_04/traffic_service.jsonl": "d537f77ccb22cca64aa0561f632c4ecd315f0fe5e3e2b88ec19894c4e7947f01",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_05/scene_service.jsonl": "8e385a2eecd790ea9d1b552d76d088a8bfedecda10b7049b58ffe9ac18cbe31a",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_05/traffic_service.jsonl": "247ce1d289f5136c9f62357173f64c834e0faf331afc192200fc64a236a9feb0",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_06/scene_service.jsonl": "b915d179b0f059aaaecc6fb31f6fa3c9199acd18fa6cee9cab6ba3e4cfaf95a7",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_06/traffic_service.jsonl": "d42d7ba0c29c171c03802b501d1794a15a9533bbe388cca108c71bd4cf543e69",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_07/scene_service.jsonl": "44c31a4345c5b7966327e516c4eecd503e89975e637a62fae74f6efeadda0696",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_07/traffic_service.jsonl": "5ff314c0bdd08c0077abb650ed285ebcabd296a68fd5f189f61ce2d766ae5de8",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_08/scene_service.jsonl": "a678f49ace79d80448a5475823cd3da4901dc6a76ff82b3eb05c00aeb502cdc0",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_08/traffic_service.jsonl": "4c904b5572041ce35a3a94d764257b4b21553654c12d4f4c9bda5da187500d2b",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_09/scene_service.jsonl": "5a8f8a5a35ebef26d96249ac2ea13fefdb21c40f146506436c83b7eec7afff64",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_09/traffic_service.jsonl": "6c5f25d5928e4692e563b608006e929af92803ce97137bf34e67ec116a19c2db",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_10/scene_service.jsonl": "5ecfdec45e022e9233ff3043695675cb16d9fe9a150a000a126f24db85397235",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_10/traffic_service.jsonl": "8458d04d15c29fc4b1e68bcaa6767ef0f0d0d090f28c8bbd7676f5f823e318be",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/study_summary.json": "2771b27401ba617c51065fea7b1db08a08c068fb8b67f210913b2680b444392a",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/study_status.json": "6928874c66407b73f90337279e058fc3469ebaeb2f0b3340110b2183fd0cd6bb",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/batch_protocol.json": "4dd3f84de7524fc257170fc0523409934ec27030e3433d66ec6abcc705a0219f",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/freeze_manifest.json": "cc3cc784a8d50335b80afaef561a0c180a044b8fe0270e957f6aa218ea075dc6"
+  },
+  "limitations": [
+    "Existing task and identity verdicts are not reclassified.",
+    "Request mean/P95/max describe recorded service calls, not image-to-control latency.",
+    "Missing or incomplete logs are explicit errors, not zero-failure evidence.",
+    "Creation retries remain visible; no failed call is dropped.",
+    "Deterministic different-color overtaking is not same-appearance crossing."
+  ],
+  "analysis_script_sha256": "7a4f699057d08e2516769a350f7a89d082ee30c215c1bdece34eae2ce94a69f8"
+}

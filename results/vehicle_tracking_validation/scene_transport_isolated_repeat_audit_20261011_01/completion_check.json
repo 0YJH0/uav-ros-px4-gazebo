@@ -1,0 +1,213 @@
+{
+  "planned": 10,
+  "attempted": 10,
+  "all_attempts_finished": true,
+  "evidence_complete": true,
+  "integrity_errors": [],
+  "unique_px4_starts": 10,
+  "task_passes": 10,
+  "identity_passes": 10,
+  "strict_passes": 10,
+  "autonomous_landed_trials": 10,
+  "wrong_identity_observations": 0,
+  "failure_counts": {},
+  "reference_coverage": 0.9276450102962037,
+  "trials": [
+    {
+      "name": "overtaking_01",
+      "flight_pass": true,
+      "identity_verified": true,
+      "strict_pass": true,
+      "accepted_truncated_frames": 3,
+      "protected_truncated_frames": 3,
+      "failure_causes": [],
+      "input_sha256": {
+        "report.json": "39a6dddb84c6f8419e6966ed8c605037544a3b0441ce0946ecd2d9c307bf3f94",
+        "identity_report.json": "5875e68654cb62083fd6d48e75132dc8c876f0aada2aeebf16adc97473ded5f0",
+        "supervisor.json": "9316c3b4591e9b8c035b076c4359389427c96a27bd47e1d1cae939c15b1031df",
+        "association.jsonl": "3fb7e339b78e25e108ed23a9f3a2295705e507665ff4f68dc4e5e61e54c322d4",
+        "samples.jsonl": "14b2b7c66d46a9dcb0b965f6efc88218f4254111941e710ea163d43a9a9c232c",
+        "implementation_snapshot.json": "4839acdb27c083003f302ad857636abd0e972be790310d368996bac863d7f6f9",
+        "runtime_parameters.json": "c74c8601e6ff25269e62944fe06fee7a5d67878d5948a36f0eaf367b56a7481c",
+        "flight.ulg": "ffbce209a92ee87e31970c8de0a83f479d4ab6437bb99bccc849904313863a98"
+      }
+    },
+    {
+      "name": "overtaking_02",
+      "flight_pass": true,
+      "identity_verified": true,
+      "strict_pass": true,
+      "accepted_truncated_frames": 2,
+      "protected_truncated_frames": 2,
+      "failure_causes": [],
+      "input_sha256": {
+        "report.json": "760c6a4b5b81349dd45103fdaca43d7899d12c5a12db58a4eff6a394f27cfed5",
+        "identity_report.json": "4ed80c438cea2dbc03c3aa4dc448863baa42ea0337d1143cd64b503d80d9f645",
+        "supervisor.json": "2667efd3a2240953031d85ff58849e92e791b2d519006943ef40f2d496de2cb0",
+        "association.jsonl": "d320514c3390858219892c1717f502a5fc683bdd25b87efe2938ca4d7d431bbb",
+        "samples.jsonl": "3e858bd1d29aedc74aaf299a7854ac2ebc2b891f29f9afe3f629fcd9a7bde58e",
+        "implementation_snapshot.json": "4839acdb27c083003f302ad857636abd0e972be790310d368996bac863d7f6f9",
+        "runtime_parameters.json": "c74c8601e6ff25269e62944fe06fee7a5d67878d5948a36f0eaf367b56a7481c",
+        "flight.ulg": "89e6bcf10d6a42df14aad1b7e6b4c17bb7e551b5dfb7c7768e7d723ab381abb4"
+      }
+    },
+    {
+      "name": "overtaking_03",
+      "flight_pass": true,
+      "identity_verified": true,
+      "strict_pass": true,
+      "accepted_truncated_frames": 1,
+      "protected_truncated_frames": 1,
+      "failure_causes": [],
+      "input_sha256": {
+        "report.json": "a70d7bf5f044ab1f351e77141670e9895b917a34ba685a319d111f544350f633",
+        "identity_report.json": "4bafc32137e127e16a8a88c9f5283c3a18bab1581095982dd5f18c47469f6aa8",
+        "supervisor.json": "22f60e53e6a68b61b30a9417092b5d2aa197bcb1fc9a944af772fe7d9e616142",
+        "association.jsonl": "e067293a1d640fecdd06d658f1d594b3e62ef6da7d537a9a5b9101e5e9d0aef9",
+        "samples.jsonl": "20508fb24246ff75502328e672d683652d6a19ad41ef23886c8961b21d811385",
+        "implementation_snapshot.json": "4839acdb27c083003f302ad857636abd0e972be790310d368996bac863d7f6f9",
+        "runtime_parameters.json": "c74c8601e6ff25269e62944fe06fee7a5d67878d5948a36f0eaf367b56a7481c",
+        "flight.ulg": "de0cc1485bde1a628cb9e347d41c214e327b898e2a021cab27a5f0a7f4fb7e9e"
+      }
+    },
+    {
+      "name": "overtaking_04",
+      "flight_pass": true,
+      "identity_verified": true,
+      "strict_pass": true,
+      "accepted_truncated_frames": 0,
+      "protected_truncated_frames": 0,
+      "failure_causes": [],
+      "input_sha256": {
+        "report.json": "9f5141f3118a604d72a797110366ea313e281a66f3f09bae8e60334ac5a39c3a",
+        "identity_report.json": "f64d77e6b16531988cf2741ea39f7bbcf23fe8000b0fbfa556f5354c2297af39",
+        "supervisor.json": "3cb22ffbfd5c0a0ff5c6e4b5955d51cea4c0614041fa56272190f5183fc1cea5",
+        "association.jsonl": "e7b8c2068d9d7acc508920d7e15a3a737ff5c9b74b6460f6bf43524a1b23bcf1",
+        "samples.jsonl": "6595ffd391217984c8e4303b2c1316d1d9f50c9d3ebc76d083dee0f19eb6849e",
+        "implementation_snapshot.json": "4839acdb27c083003f302ad857636abd0e972be790310d368996bac863d7f6f9",
+        "runtime_parameters.json": "c74c8601e6ff25269e62944fe06fee7a5d67878d5948a36f0eaf367b56a7481c",
+        "flight.ulg": "bd6b139429c9bd6b1a3fbd871635195b85ce74cd6cc5f53e01f85e7da78e5632"
+      }
+    },
+    {
+      "name": "overtaking_05",
+      "flight_pass": true,
+      "identity_verified": true,
+      "strict_pass": true,
+      "accepted_truncated_frames": 3,
+      "protected_truncated_frames": 3,
+      "failure_causes": [],
+      "input_sha256": {
+        "report.json": "8b33a77bdcd9239631e328e71b08f3ba231654aae303ff23c13dd848b4179b98",
+        "identity_report.json": "9a4e88a36ef5434c8113c3d950bb34af81b097921107afee5d05e7af72e9c401",
+        "supervisor.json": "b5009c82ae0fcf3aed5268064fa58570d95862b218fac1fe448d96a0add453c4",
+        "association.jsonl": "2cf3b1cc6370cf72cc0873f96b729604dc4c58d14c654cb197fa176eee1d79ee",
+        "samples.jsonl": "5db2749d9b83178edf69cfa834e311be389c1606f5d3945f44bde86bbda97b10",
+        "implementation_snapshot.json": "4839acdb27c083003f302ad857636abd0e972be790310d368996bac863d7f6f9",
+        "runtime_parameters.json": "c74c8601e6ff25269e62944fe06fee7a5d67878d5948a36f0eaf367b56a7481c",
+        "flight.ulg": "b6b4fb8e8dfe8df173c4e67aef77e22e3747cad1c5b6a1f599a547b1040cda7f"
+      }
+    },
+    {
+      "name": "overtaking_06",
+      "flight_pass": true,
+      "identity_verified": true,
+      "strict_pass": true,
+      "accepted_truncated_frames": 2,
+      "protected_truncated_frames": 2,
+      "failure_causes": [],
+      "input_sha256": {
+        "report.json": "2396037e7b16352fa9becdd2db18a8422f40c0f929f81b3e4f928f89d4e2b57e",
+        "identity_report.json": "5935990cfd4dc7552b6604f14a9e26b7fae6e981167e611707defee10e615a92",
+        "supervisor.json": "1c99a87a236e95cd3c52acf348c609d04342eeedbd578a15bd7ff782e5ed80c7",
+        "association.jsonl": "dd6bb0a8b5567f18e22f269dda56ce320f6ca7f9aec94e1d74f19f67a5b7b1a6",
+        "samples.jsonl": "46e4812b3cee2f017e5de595adea223b8bc752779af12979a30a3f2c42ce8b6a",
+        "implementation_snapshot.json": "4839acdb27c083003f302ad857636abd0e972be790310d368996bac863d7f6f9",
+        "runtime_parameters.json": "c74c8601e6ff25269e62944fe06fee7a5d67878d5948a36f0eaf367b56a7481c",
+        "flight.ulg": "b14ad8cfcb8a4bce7440b2eb4b06d5de1d8bf7f218b753a9c7e36b89fa80cf5b"
+      }
+    },
+    {
+      "name": "overtaking_07",
+      "flight_pass": true,
+      "identity_verified": true,
+      "strict_pass": true,
+      "accepted_truncated_frames": 2,
+      "protected_truncated_frames": 2,
+      "failure_causes": [],
+      "input_sha256": {
+        "report.json": "5755785dbbdb443b57054d7f171661c18f1c58ab030d8cee874307fdbcb62d3c",
+        "identity_report.json": "71c3d3398eb165bd55f8aca1844bc62d2602814d1ad5273b96416eff8e431fc6",
+        "supervisor.json": "9163b40f13fd2d381f83c4a0a063acafdc646ae5992415b6813eb1246aa3ab73",
+        "association.jsonl": "113ff39253a00990645b8131632bb4c5149919584e6f52a99d4d759a478e81d8",
+        "samples.jsonl": "9dddd90cb0e16d5ed938b671c296dcf604cce03bd0fcc8e9b385c5579c0d3282",
+        "implementation_snapshot.json": "4839acdb27c083003f302ad857636abd0e972be790310d368996bac863d7f6f9",
+        "runtime_parameters.json": "c74c8601e6ff25269e62944fe06fee7a5d67878d5948a36f0eaf367b56a7481c",
+        "flight.ulg": "713f387d57174dd2656bd7a6b7f2b73c6bc3a4022496fda7d2b4576f701f9a1c"
+      }
+    },
+    {
+      "name": "overtaking_08",
+      "flight_pass": true,
+      "identity_verified": true,
+      "strict_pass": true,
+      "accepted_truncated_frames": 4,
+      "protected_truncated_frames": 4,
+      "failure_causes": [],
+      "input_sha256": {
+        "report.json": "8acd99b47d84c50a3fbe2de7523d44e9cfafe5cc9f17409ebddcbcac10282535",
+        "identity_report.json": "b818b2956b30faf355bb9aea38fae0a30ef826cb9a318c9ddca784e405c1238e",
+        "supervisor.json": "987f7cb94915b3e6948e1d8bb8d1a44c4c2fac9cb96b35a6f7020a475f5acac3",
+        "association.jsonl": "dd69f03e0f5d673e5c9dde61b9cc3be658a64791e6913565bbde0f51e057f9db",
+        "samples.jsonl": "fa998dd597c55b2fbe76f03a9fe2e15fae2e9c8a5657f3c104834572ef118aac",
+        "implementation_snapshot.json": "4839acdb27c083003f302ad857636abd0e972be790310d368996bac863d7f6f9",
+        "runtime_parameters.json": "c74c8601e6ff25269e62944fe06fee7a5d67878d5948a36f0eaf367b56a7481c",
+        "flight.ulg": "b3d34811c31646cf99acae8e8d8d595c0cd114c674310027ef27dc8c91e8f615"
+      }
+    },
+    {
+      "name": "overtaking_09",
+      "flight_pass": true,
+      "identity_verified": true,
+      "strict_pass": true,
+      "accepted_truncated_frames": 2,
+      "protected_truncated_frames": 2,
+      "failure_causes": [],
+      "input_sha256": {
+        "report.json": "80ba96bc22b628ec8b189bc48ab3a64ba128ae2def2f998548cd32e4b7660023",
+        "identity_report.json": "9f4268c3010e8a4106e999becd3b1c70a3449da93955d6bdad36199ab0c8ac3d",
+        "supervisor.json": "efe312186b4c8192d9803720bfdcb63f35f5282fff47d9446c990cae048c3730",
+        "association.jsonl": "67bab60200269b200a98993a613a7e113082a905335971ee1365f845f86d7307",
+        "samples.jsonl": "7c3aa7fdf47a5014860db029d14978cd6c2542cce8ce7e722f0af499ec4f96ea",
+        "implementation_snapshot.json": "4839acdb27c083003f302ad857636abd0e972be790310d368996bac863d7f6f9",
+        "runtime_parameters.json": "c74c8601e6ff25269e62944fe06fee7a5d67878d5948a36f0eaf367b56a7481c",
+        "flight.ulg": "f6fad82c9033c87edd9575af0be455b0ff2eee9d715dd826ecf0561cb57d0a21"
+      }
+    },
+    {
+      "name": "overtaking_10",
+      "flight_pass": true,
+      "identity_verified": true,
+      "strict_pass": true,
+      "accepted_truncated_frames": 3,
+      "protected_truncated_frames": 3,
+      "failure_causes": [],
+      "input_sha256": {
+        "report.json": "6cfd7e83b2a5f84d859fb378559731e4700918d01927e44da6d9b1290761f019",
+        "identity_report.json": "2d49b56490b1f78936999c1d201158346acd4f4578e62be201027504b26ffa48",
+        "supervisor.json": "ed44251a29a5c39d5e12a6b88aedb97fb0738a300f49a25b33de62467f2c7f62",
+        "association.jsonl": "04e3a33e05c48bdb3d42aabf7fbe60bcdc826b86b7d0c2789633bdf083fc2635",
+        "samples.jsonl": "9e280fafc2fe5fdfe01f76638bbe9dd6c9645ffcbf55dc0eed0baac90fb9796a",
+        "implementation_snapshot.json": "4839acdb27c083003f302ad857636abd0e972be790310d368996bac863d7f6f9",
+        "runtime_parameters.json": "c74c8601e6ff25269e62944fe06fee7a5d67878d5948a36f0eaf367b56a7481c",
+        "flight.ulg": "95c40b124c6068131e27628c7943a9da728632ae56bbed883b55a0fc51ba78b4"
+      }
+    }
+  ],
+  "limitations": [
+    "Deterministic scene repetitions test runtime variability, not scene generalization.",
+    "Calibration and flight counters can persist in PX4 rootfs and are audited, not reset.",
+    "Different-color overtaking is not the old same-appearance crossing benchmark."
+  ],
+  "analysis_script_sha256": "fa3178c46938a720fd74e2276f19ff852aeba7d1a93d4ff96cfe21dc451f88bd"
+}

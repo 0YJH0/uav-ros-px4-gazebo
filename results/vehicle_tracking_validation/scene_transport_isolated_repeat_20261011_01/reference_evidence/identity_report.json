@@ -1,0 +1,41 @@
+{
+  "identity_independently_verified": true,
+  "wrong_identity_observations": 0,
+  "traffic_scenario": "overtaking",
+  "overtaking_observed": true,
+  "minimum_world_lateral_clearance_m": 1.458896028816499,
+  "traffic_started": true,
+  "traffic_completed": true,
+  "phase_counts": {
+    "pre": {
+      "tracked_vehicle": 296,
+      "unconfirmed": 6,
+      "panel_occlusion_unscorable": 24
+    },
+    "during": {
+      "tracked_vehicle": 63
+    },
+    "post": {
+      "tracked_vehicle": 201
+    }
+  },
+  "overlap_observations": 0,
+  "post_crossing_confirmation_sim_s": 0.0,
+  "post_traffic_confirmation_sim_s": 0.0,
+  "after_last_overlap_confirmation_sim_s": null,
+  "after_last_overlap_confirmation_wall_s": null,
+  "scorable_identity_switches": 0,
+  "observations_total": 590,
+  "scorable_observations": 560,
+  "matched_truth_fraction": 1.0,
+  "crossing_started": false,
+  "crossing_completed": false,
+  "errors": [],
+  "limitations": [
+    "Labels use projected mesh bounding volumes, not per-pixel instance masks.",
+    "Overlapping or poorly matched boxes are unscorable, never assumed correct.",
+    "Post-confirmation latency is in simulation seconds; mission recovery uses wall seconds.",
+    "No identity claims are made for unscorable frames or absent scenario evidence.",
+    "Different-color overtaking does not validate same-appearance crossing recovery."
+  ]
+}

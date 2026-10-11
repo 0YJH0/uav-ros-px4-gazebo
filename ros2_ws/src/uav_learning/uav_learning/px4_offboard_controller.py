@@ -21,6 +21,7 @@ from px4_msgs.msg import VehicleLocalPosition
 from px4_msgs.msg import VehicleStatus
 from px4_msgs.msg import VehicleLandDetected
 from std_msgs.msg import String
+from rosgraph_msgs.msg import Clock
 
 from uav_interfaces.msg import TargetDetection
 
@@ -35,6 +36,8 @@ class MissionState(Enum):
     SEARCH = auto()
     DETECT = auto()
     APPROACH = auto()
+    TRACK = auto()
+    RECOVER = auto()
     HOLD = auto()
     RETURN = auto()
     LAND = auto()
@@ -80,11 +83,12 @@ class PX4OffboardController(Node):
         #   horizontal pixel error -> yaw correction
         #   area_ratio             -> approach stop condition
         #
-        # Vertical image error is intentionally not used yet.
+        # Vertical framing constrains range feedback without changing altitude.
         self.declare_parameter('approach_yaw_kp', 0.8)
         self.declare_parameter('approach_max_yaw_rate_deg_s', 20.0)
         self.declare_parameter('approach_yaw_deadband', 0.08)
         self.declare_parameter('approach_heading_tolerance_deg', 8.0)
+        self.declare_parameter('tracking_camera_hfov', 1.204)
 
         self.declare_parameter('approach_forward_speed', 0.30)
         self.declare_parameter('approach_slow_area_ratio', 0.012)
@@ -98,6 +102,43 @@ class PX4OffboardController(Node):
 
         self.declare_parameter('approach_target_lost_timeout', 0.8)
         self.declare_parameter('approach_timeout', 30.0)
+        self.declare_parameter('tracking_enabled', False)
+        self.declare_parameter('tracking_duration', 90.0)
+        self.declare_parameter('tracking_area_deadband', 0.003)
+        self.declare_parameter('tracking_range_ki', 20.0)
+        self.declare_parameter('tracking_lateral_kp', 0.7)
+        self.declare_parameter('tracking_max_lateral_speed', 0.6)
+        self.declare_parameter('tracking_vertical_reference', 0.40)
+        self.declare_parameter('tracking_vertical_deadband', 0.12)
+        self.declare_parameter('tracking_vertical_kp', 1.5)
+        self.declare_parameter('tracking_edge_margin', 0.05)
+        self.declare_parameter('tracking_forward_acceleration', 0.6)
+        self.declare_parameter('tracking_use_sim_clock', False)
+        self.declare_parameter('recovery_timeout', 10.0)
+        self.declare_parameter('recovery_max_speed', 0.8)
+        self.declare_parameter('recovery_max_distance', 4.0)
+        self.declare_parameter('recovery_confirm_frames', 3)
+        self.declare_parameter('observation_gap_timeout', 0.5)
+        self.declare_parameter('smooth_recovery_setpoints', False)
+        self.declare_parameter('short_gap_clear_confidence', 0.5)
+        self.tracking_elapsed = 0.0
+        self.tracking_deadline = None
+        self.approach_deadline = None
+        self.range_feedforward = 0.0
+        self.last_motion = (0.0, 0.0)
+        self.last_follow_sample_us = None
+        self.last_follow_sim_us = None
+        self.sim_motion_clock_us = None
+        self.last_sim_clock_wall_s = -100.0
+        self.follow_clock_reason = 'initializing'
+        self.follow_clock_source = 'navigation'
+        self.recovery_resume_state = None
+        self.recovery_motion = (0.0, 0.0)
+        self.recovery_origin = None
+        self.recovery_positive_count = 0
+        self.recovery_started_at = None
+        self.observation_bearing = None
+        self.observation_yaw_target = None
 
         self.target_height = float(
             self.get_parameter('target_height').value
@@ -209,6 +250,26 @@ class PX4OffboardController(Node):
 
         if self.detection_window <= 0:
             raise ValueError('detection_window must be > 0')
+        for name in ('recovery_timeout', 'recovery_max_speed',
+                     'recovery_max_distance', 'tracking_max_lateral_speed'):
+            if float(self.get_parameter(name).value) <= 0:
+                raise ValueError(f'{name} must be > 0')
+        if int(self.get_parameter('recovery_confirm_frames').value) < 2:
+            raise ValueError('recovery_confirm_frames must be >= 2')
+        if not 0 < float(self.get_parameter('short_gap_clear_confidence').value) <= 1:
+            raise ValueError('short_gap_clear_confidence must be in (0, 1]')
+        if not 0 < float(self.get_parameter('tracking_camera_hfov').value) < math.pi:
+            raise ValueError('tracking_camera_hfov must be in (0, pi) radians')
+        if not -1 < float(self.get_parameter('tracking_vertical_reference').value) < 1:
+            raise ValueError('tracking_vertical_reference must be in (-1, 1)')
+        for name in ('tracking_vertical_deadband', 'tracking_vertical_kp', 'tracking_forward_acceleration'):
+            if float(self.get_parameter(name).value) <= 0:
+                raise ValueError(f'{name} must be positive')
+        if not 0 < float(self.get_parameter('tracking_edge_margin').value) < 0.25:
+            raise ValueError('tracking_edge_margin must be in (0, 0.25)')
+        gap_timeout = float(self.get_parameter('observation_gap_timeout').value)
+        if not 0 <= gap_timeout <= min(1.0, float(self.get_parameter('recovery_timeout').value)):
+            raise ValueError('observation_gap_timeout must be in [0, min(1, recovery_timeout)]')
 
         if (
             self.detection_required <= 0
@@ -316,6 +377,8 @@ class PX4OffboardController(Node):
             self.target_detection_callback,
             10,
         )
+        self.create_subscription(Clock, '/clock', self.motion_clock_callback,
+                                 QoSProfile(depth=1, reliability=ReliabilityPolicy.BEST_EFFORT))
 
         # =========================================================
         # PX4 state
@@ -323,6 +386,7 @@ class PX4OffboardController(Node):
 
         self.vehicle_status = None
         self.local_position = None
+        self.last_position_msg_time = -100.0
         self.land_detected = None
 
         # =========================================================
@@ -469,10 +533,18 @@ class PX4OffboardController(Node):
 
         self.state = new_state
         self.state_enter_time = self.now_s()
+        if new_state == MissionState.TRACK and self.tracking_deadline is None:
+            self.tracking_deadline = self.now_s() + float(
+                self.get_parameter('tracking_duration').value) + 120.0
+        if new_state == MissionState.APPROACH and self.approach_deadline is None:
+            self.approach_deadline = self.now_s() + self.approach_timeout
 
         # SEARCH only uses detections collected during this search.
         if new_state == MissionState.SEARCH:
             self.detection_history.clear()
+        if new_state not in (MissionState.APPROACH, MissionState.TRACK, MissionState.RECOVER):
+            self.recovery_started_at = None
+            self.recovery_positive_count = 0
 
         self.get_logger().info('')
         self.get_logger().info(
@@ -502,16 +574,35 @@ class PX4OffboardController(Node):
 
     def local_position_callback(self, msg):
         self.local_position = msg
+        self.last_position_msg_time = self.now_s()
 
     def land_detected_callback(self, msg):
         self.land_detected = msg
 
     def target_detection_callback(self, msg):
+        was_fresh = self.detection_stream_fresh()
         self.latest_detection = msg
         self.last_detection_msg_time = self.now_s()
 
         detected = bool(msg.detected)
+        self.observation_bearing = None
+        self.observation_yaw_target = None
+        ex = float(msg.center_u_norm)
+        if detected and math.isfinite(ex) and self.follow_position_valid():
+            focal = math.tan(float(self.get_parameter('tracking_camera_hfov').value) / 2)
+            heading = float(self.local_position.heading)
+            offset = math.atan(ex * focal)
+            # Freeze the world bearing for this observation. Reusing a frame
+            # must not keep integrating its error as the camera turns.
+            self.observation_bearing = self.wrap_pi(heading + offset)
+            self.observation_yaw_target = (self.observation_bearing
+                                           if abs(ex) > self.approach_yaw_deadband else heading)
         self.detection_history.append(detected)
+        if self.recovery_started_at is not None:
+            if not was_fresh:
+                self.recovery_positive_count = 0
+            self.recovery_positive_count = (
+                self.recovery_positive_count + 1 if detected else 0)
 
         if detected:
             self.last_target_seen_time = self.now_s()
@@ -662,7 +753,8 @@ class PX4OffboardController(Node):
 
     def hold_current_xy(self):
 
-        if self.local_position is None:
+        if (self.local_position is None or not all(math.isfinite(float(value))
+                for value in (self.local_position.x, self.local_position.y))):
             return
 
         self.target_x = float(self.local_position.x)
@@ -681,30 +773,66 @@ class PX4OffboardController(Node):
         self.target_y = self.search_y
         self.target_z = self.search_z
 
-    def advance_approach_setpoint(self, speed=None):
+    def motion_clock_callback(self, msg):
+        self.sim_motion_clock_us = msg.clock.sec * 1_000_000 + msg.clock.nanosec // 1000
+        self.last_sim_clock_wall_s = self.now_s()
+
+    def follow_step_s(self):
+        if bool(self.get_parameter('tracking_use_sim_clock').value):
+            self.follow_clock_source = 'gazebo_clock'
+            if self.sim_motion_clock_us is None or self.now_s() - self.last_sim_clock_wall_s > 0.5:
+                self.follow_clock_reason = 'stale_sim_clock'
+                self.last_follow_sim_us = None
+                return 0.0
+            sample, previous = self.sim_motion_clock_us, self.last_follow_sim_us
+            self.last_follow_sim_us = sample
+        else:
+            self.follow_clock_source = 'navigation'
+            sample = int(getattr(self.local_position, 'timestamp_sample', 0)
+                         or getattr(self.local_position, 'timestamp', 0))
+            if sample <= 0:
+                self.follow_clock_reason = 'unstamped_navigation'
+                return self.TIMER_PERIOD
+            previous = self.last_follow_sample_us
+            self.last_follow_sample_us = sample
+        if previous is None:
+            self.follow_clock_reason = 'initializing'
+            return self.TIMER_PERIOD
+        step = (sample - previous) / 1e6
+        self.follow_clock_reason = 'sample_time'
+        if step == 0:
+            self.follow_clock_reason = 'duplicate_sample'
+            return 0.0
+        if step < 0 or step > 0.25:
+            self.follow_clock_reason = 'clock_jump'
+            return 0.0
+        return step
+
+    def advance_approach_setpoint(self, speed=None, lateral_speed=0.0, heading=None, step_s=None):
 
         if self.local_position is None:
             return
+        if step_s is None:
+            step_s = self.follow_step_s()
+        if step_s <= 0:
+            return
 
-        # Increment the position setpoint along the current yaw.
-        # This approximates a slow forward motion while keeping
-        # Offboard in position-control mode.
         if speed is None:
             speed = self.approach_forward_speed
-
-        step = (
-            float(speed)
-            * self.TIMER_PERIOD
-        )
+        if heading is None:
+            heading = self.target_yaw
+        vx = float(speed) * math.cos(heading) - lateral_speed * math.sin(heading)
+        vy = float(speed) * math.sin(heading) + lateral_speed * math.cos(heading)
+        self.last_motion = (vx, vy)
 
         proposed_x = (
             self.target_x
-            + step * math.cos(self.target_yaw)
+            + vx * step_s
         )
 
         proposed_y = (
             self.target_y
-            + step * math.sin(self.target_yaw)
+            + vy * step_s
         )
 
         # Prevent the commanded position from running too far ahead
@@ -738,6 +866,220 @@ class PX4OffboardController(Node):
         self.target_x = float(proposed_x)
         self.target_y = float(proposed_y)
         self.target_z = float(self.takeoff_z)
+
+    def visual_follow(self, tracking=False):
+        ex = float(self.latest_detection.center_u_norm)
+        ey = float(self.latest_detection.center_v_norm)
+        area = float(self.latest_detection.area_ratio)
+        if (not self.target_currently_visible() or not self.follow_position_valid()
+                or not math.isfinite(ex + ey + area) or self.observation_bearing is None):
+            self.last_motion = (0.0, 0.0)
+            self.hold_current_xy()
+            return False
+        # Position ramps, gains and slew limits use the same physical clock as
+        # PX4 velocity. Mission deadlines and blind-flight budgets stay wall time.
+        step_s = self.follow_step_s()
+        if step_s <= 0:
+            if self.follow_clock_reason != 'duplicate_sample':
+                self.last_motion = (0.0, 0.0)
+                self.hold_current_xy()
+            # Holding an unchanged goal between healthy physical-clock samples
+            # is still visible tracking; it must not stretch the wall mission.
+            return self.follow_clock_reason == 'duplicate_sample'
+        heading = float(self.local_position.heading)
+        bearing_error = self.wrap_pi(self.observation_bearing - heading)
+        command_error = self.wrap_pi(self.observation_yaw_target - self.target_yaw)
+        yaw_rate = max(-self.approach_max_yaw_rate, min(
+            self.approach_max_yaw_rate, self.approach_yaw_kp * command_error))
+        self.target_yaw = self.wrap_pi(self.target_yaw + yaw_rate * step_s)
+        # Limit commanded yaw lead; do not integrate ahead of a slow airframe.
+        yaw_lead = max(-0.35, min(0.35, self.wrap_pi(self.target_yaw - heading)))
+        self.target_yaw = self.wrap_pi(heading + yaw_lead)
+        half_fov = float(self.get_parameter('tracking_camera_hfov').value) / 2
+        current_ex = math.tan(max(-half_fov, min(half_fov, bearing_error))) / math.tan(half_fov)
+        if abs(ex) > 0.8 or abs(current_ex) > 0.8:
+            self.last_motion = (0.0, 0.0)
+            self.hold_current_xy()
+            return True
+        reference = float(self.get_parameter('tracking_vertical_reference').value)
+        vertical_band = float(self.get_parameter('tracking_vertical_deadband').value)
+        vertical_error = max(0.0, ey - reference - vertical_band)
+        # An upper-edge target is falling out of view too. Use image position
+        # (not its truncated area) to catch up, with the normal speed/slew caps.
+        vertical_error += min(0.0, ey + abs(reference) + vertical_band)
+        edge_margin = float(self.get_parameter('tracking_edge_margin').value)
+        # Recover image height from the pixel and normalized center supplied by
+        # perception. A border-truncated box is not a reliable range sensor.
+        box = self.latest_detection
+        image_height = 2 * float(box.center_v) / (ey + 1) if ey > -0.99 and box.center_v > 0 else None
+        edge = (image_height is not None and box.bbox_height > 0 and
+                (box.bbox_y <= edge_margin * image_height or
+                 box.bbox_y + box.bbox_height >= (1 - edge_margin) * image_height))
+        if tracking:
+            error = self.approach_stop_area_ratio - area
+            deadband = float(self.get_parameter('tracking_area_deadband').value)
+            correction = 100.0 * error if abs(error) > deadband and not edge else 0.0
+            raw_speed = self.range_feedforward + correction
+            # Learn the cruise command only while range feedback is unsaturated.
+            if (not edge and vertical_error == 0 and
+                    -self.approach_slow_speed < raw_speed < self.approach_forward_speed):
+                self.range_feedforward = max(0.0, min(
+                    self.approach_forward_speed,
+                    self.range_feedforward + float(
+                        self.get_parameter('tracking_range_ki').value) * error * step_s))
+            speed = max(-self.approach_slow_speed, min(self.approach_forward_speed,
+                                                      self.range_feedforward + correction))
+        else:
+            speed = (self.approach_slow_speed if area >= self.approach_slow_area_ratio
+                     else self.approach_forward_speed)
+            # Even an off-center close target must not cause continued approach.
+            if area >= self.approach_stop_area_ratio:
+                speed = 0.0
+            elif edge:
+                speed = min(speed, self.approach_slow_speed)
+        speed -= float(self.get_parameter('tracking_vertical_kp').value) * vertical_error
+        speed = max(-self.approach_slow_speed, min(self.approach_forward_speed, speed))
+        speed *= max(0.0, math.cos(yaw_lead)) * max(0.2, 1.0 - abs(current_ex))
+        # Smooth both acceleration and normal braking to avoid pitch-driven
+        # camera excursions. A clearly too-close target can still brake now.
+        previous_speed = self.last_motion[0] * math.cos(heading) + self.last_motion[1] * math.sin(heading)
+        step = float(self.get_parameter('tracking_forward_acceleration').value) * step_s
+        if area < 1.5 * self.approach_stop_area_ratio or edge:
+            speed = max(previous_speed - step, min(previous_speed + step, speed))
+        self.framing_diagnostic = {'center_v_norm': ey, 'edge': bool(edge),
+                                   'vertical_error': vertical_error, 'forward_speed': speed,
+                                   'motion_step_s': step_s, 'clock_reason': self.follow_clock_reason}
+        self.framing_diagnostic['clock_source'] = self.follow_clock_source
+        lateral_limit = float(self.get_parameter('tracking_max_lateral_speed').value)
+        lateral = max(-lateral_limit, min(lateral_limit, float(
+            self.get_parameter('tracking_lateral_kp').value) * current_ex))
+        self.advance_approach_setpoint(speed, lateral, heading, step_s=step_s)
+        return True
+
+    def follow_position_valid(self):
+        p = self.local_position
+        return (p is not None and p.xy_valid and p.z_valid and
+                self.now_s() - self.last_position_msg_time <= 0.5 and
+                all(math.isfinite(float(value)) for value in
+                    (p.x, p.y, p.z, p.heading)))
+
+    def prepare_recovery(self):
+        self.recovery_started_at = self.now_s()
+        self.recovery_positive_count = 0
+        self.recovery_resume_state = self.state
+        self.recovery_motion = self.last_motion
+        self.recovery_origin = ((float(self.local_position.x), float(self.local_position.y))
+                                if self.follow_position_valid() else None)
+
+    def handle_follow_gap(self):
+        visible = self.target_currently_visible()
+        if self.recovery_started_at is None:
+            if visible:
+                return False
+            self.prepare_recovery()
+            self.publish_mission_event(f'{self.state.name}_OBSERVATION_GAP')
+        age = max(0.0, self.now_s() - self.recovery_started_at)
+        required = int(self.get_parameter('recovery_confirm_frames').value)
+        grace = float(self.get_parameter('observation_gap_timeout').value)
+        confidence = float(self.latest_detection.confidence) if visible else 0.0
+        short_confirmed_return = (age < grace and
+                                  self.last_target_seen_time - self.recovery_started_at < grace and
+                                  math.isfinite(confidence) and
+                                  confidence >= float(self.get_parameter(
+                                      'short_gap_clear_confidence').value))
+        # /perception/target is already identity-confirmed, not a raw YOLO hit.
+        # Weak returns and all long gaps retain consecutive-frame confirmation.
+        if visible and (self.recovery_positive_count >= required or short_confirmed_return):
+            self.recovery_started_at = None
+            self.recovery_positive_count = 0
+            self.publish_mission_event('OBSERVATION_GAP_CLEARED')
+            return False
+        if age >= grace:
+            self.begin_recovery()
+            if age >= float(self.get_parameter('recovery_timeout').value):
+                self.recover_target()
+        else:
+            # Debounce is bounded prediction, not a positive target observation.
+            # Its time/distance budget is shared with the subsequent RECOVER.
+            if visible and not bool(self.get_parameter('smooth_recovery_setpoints').value):
+                self.hold_current_xy()
+            else:
+                self.advance_recovery_prediction(age)
+        return True
+
+    def begin_recovery(self):
+        if self.recovery_started_at is None:
+            self.prepare_recovery()
+        self.publish_mission_event(f'{self.state.name}_TARGET_LOST')
+        # Experimental ramps preserve the lead; invalid input still hard stops.
+        unsafe = not self.detection_stream_fresh() or not self.follow_position_valid()
+        if not bool(self.get_parameter('smooth_recovery_setpoints').value) or unsafe:
+            if unsafe:
+                self.last_motion = (0.0, 0.0)
+            self.hold_current_xy()
+        self.transition_to(MissionState.RECOVER)
+
+    def recover_target(self):
+        timeout = float(self.get_parameter('recovery_timeout').value)
+        age = (self.time_in_state() if self.recovery_started_at is None else
+               max(0.0, self.now_s() - self.recovery_started_at))
+        if age >= timeout:
+            self.publish_mission_event('RECOVERY_TIMEOUT')
+            self.last_motion = (0.0, 0.0)
+            self.set_search_anchor_from_current()
+            self.transition_to(MissionState.SEARCH)
+            self.publish_offboard_stream()
+            return
+        required = int(self.get_parameter('recovery_confirm_frames').value)
+        if self.target_currently_visible() and self.recovery_positive_count >= required:
+            self.publish_mission_event('TARGET_RECOVERED')
+            self.recovery_started_at = None
+            self.recovery_positive_count = 0
+            if not bool(self.get_parameter('smooth_recovery_setpoints').value):
+                self.hold_current_xy()
+            self.transition_to(self.recovery_resume_state)
+            self.publish_offboard_stream()
+            return
+        # Experimental ramps use old motion, never the pending return's bearing.
+        if self.target_currently_visible() and not bool(self.get_parameter('smooth_recovery_setpoints').value):
+            self.hold_current_xy()
+        else:
+            self.advance_recovery_prediction(age)
+        self.publish_offboard_stream()
+
+    def advance_recovery_prediction(self, age):
+        timeout = float(self.get_parameter('recovery_timeout').value)
+        if (age < timeout and self.detection_stream_fresh() and self.follow_position_valid()
+                and self.recovery_origin is not None):
+            distance = math.hypot(self.local_position.x - self.recovery_origin[0],
+                                  self.local_position.y - self.recovery_origin[1])
+            max_distance = float(self.get_parameter('recovery_max_distance').value)
+            # Include the remaining setpoint lead in the displacement budget.
+            lead = math.hypot(self.target_x - self.local_position.x,
+                              self.target_y - self.local_position.y)
+            remaining = max(0.0, max_distance - distance - lead)
+            vx, vy = self.recovery_motion
+            speed = math.hypot(vx, vy)
+            step_s = self.follow_step_s()
+            smooth = bool(self.get_parameter('smooth_recovery_setpoints').value)
+            if smooth and step_s == 0 and self.follow_clock_reason == 'duplicate_sample' and remaining > 0:
+                return
+            if speed > 1e-6 and remaining > 0 and step_s > 0:
+                cap = float(self.get_parameter('recovery_max_speed').value)
+                if smooth:
+                    desired = min(speed, cap) * max(0.0, 1.0 - age / timeout)
+                    previous = math.hypot(*self.last_motion)
+                    slew = float(self.get_parameter('tracking_forward_acceleration').value) * step_s
+                    speed = max(previous - slew, min(previous + slew, desired))
+                    speed = min(speed, cap, remaining / step_s)
+                else:
+                    speed = min(speed, cap, remaining / step_s) * max(0.0, 1.0 - age / timeout)
+                self.advance_approach_setpoint(speed, heading=math.atan2(vy, vx), step_s=step_s)
+            else:
+                self.hold_current_xy()
+        else:
+            # Missing camera messages or invalid navigation never permit blind motion.
+            self.hold_current_xy()
 
     def reached_target(self):
 
@@ -934,6 +1276,15 @@ class PX4OffboardController(Node):
     def timer_callback(self):
 
         self.timer_tick += 1
+        deadline = getattr(self, 'tracking_deadline', None)
+        if (deadline is not None and self.now_s() >= deadline and
+                self.state not in (MissionState.RETURN, MissionState.LAND,
+                                   MissionState.DONE)):
+            self.publish_mission_event('TRACK_RECOVERY_TIMEOUT')
+            self.set_target(self.home_x, self.home_y, self.takeoff_z,
+                            yaw=self.home_yaw)
+            self.transition_to(MissionState.RETURN)
+            return
 
         # =========================================================
         # WAIT_FOR_PX4
@@ -1082,10 +1433,13 @@ class PX4OffboardController(Node):
             self.target_y = self.search_y
             self.target_z = self.search_z
 
-            self.target_yaw = self.wrap_pi(
-                self.target_yaw
-                + self.search_yaw_rate * self.TIMER_PERIOD
-            )
+            recovery_hold = (self.tracking_elapsed > 0.0 and
+                             self.time_in_state() < 10.0)
+            if not self.target_currently_visible() and not recovery_hold:
+                self.target_yaw = self.wrap_pi(
+                    self.target_yaw
+                    + self.search_yaw_rate * self.TIMER_PERIOD
+                )
 
             self.publish_offboard_stream()
 
@@ -1135,7 +1489,7 @@ class PX4OffboardController(Node):
 
             self.publish_offboard_stream()
 
-            if not self.target_currently_visible():
+            if not self.target_seen_recently(self.approach_target_lost_timeout):
 
                 self.get_logger().warning(
                     'Target lost during DETECT. '
@@ -1149,21 +1503,25 @@ class PX4OffboardController(Node):
 
             if self.time_in_state() >= self.detect_confirm_duration:
 
-                if self.stable_detection():
+                if self.stable_detection() and self.target_currently_visible():
 
                     self.get_logger().info(
                         'TARGET CONFIRMED.'
                     )
 
+                    resume_tracking = (self.tracking_deadline is not None and
+                                       self.get_parameter('tracking_enabled').value)
                     self.get_logger().info(
-                        'Target confirmed. Starting visual approach.'
-                    )
+                        'Target confirmed. Resuming tracking.' if resume_tracking
+                        else 'Target confirmed. Starting visual approach.')
 
                     # Start APPROACH from the current vehicle position.
                     self.hold_current_xy()
                     self.target_z = self.takeoff_z
 
-                    self.transition_to(MissionState.APPROACH)
+                    if resume_tracking:
+                        self.publish_mission_event('TRACK_REACQUIRED')
+                    self.transition_to(MissionState.TRACK if resume_tracking else MissionState.APPROACH)
                     return
 
                 self.get_logger().warning(
@@ -1184,11 +1542,7 @@ class PX4OffboardController(Node):
         #
         # The sign relationship above was experimentally verified.
         #
-        # If |ex| is large:
-        #   rotate only, do not advance.
-        #
-        # If |ex| is small and the body heading has caught up:
-        #   advance the position setpoint slowly along current yaw.
+        # Translation and yaw are coordinated while observations are valid.
         #
         # Stop when target apparent area reaches the configured
         # threshold. Vertical image error is ignored in V1.
@@ -1204,7 +1558,7 @@ class PX4OffboardController(Node):
             # Mission timeout
             # -----------------------------------------------------
 
-            if self.time_in_state() >= self.approach_timeout:
+            if self.now_s() >= self.approach_deadline:
 
                 self.get_logger().warning(
                     'APPROACH timeout. Returning home.'
@@ -1226,21 +1580,8 @@ class PX4OffboardController(Node):
             # Target loss
             # -----------------------------------------------------
 
-            if not self.target_seen_recently(
-                self.approach_target_lost_timeout
-            ):
-
-                self.get_logger().warning(
-                    'Target lost during APPROACH. '
-                    'Stopping and restarting SEARCH '
-                    'from current position.'
-                )
-
-                self.publish_mission_event('APPROACH_TARGET_LOST')
-
-                self.set_search_anchor_from_current()
-
-                self.transition_to(MissionState.SEARCH)
+            if self.handle_follow_gap():
+                self.publish_offboard_stream()
                 return
 
             # -----------------------------------------------------
@@ -1264,6 +1605,7 @@ class PX4OffboardController(Node):
                 if (
                     area_ratio
                     >= self.approach_stop_area_ratio
+                    and abs(ex) <= self.approach_yaw_deadband
                 ):
 
                     self.hold_current_xy()
@@ -1276,91 +1618,50 @@ class PX4OffboardController(Node):
                     )
 
                     self.publish_mission_event('APPROACH_SUCCESS')
+                    if self.follow_position_valid():
+                        heading = float(self.local_position.heading)
+                        forward = (float(self.local_position.vx) * math.cos(heading)
+                                   + float(self.local_position.vy) * math.sin(heading))
+                        self.range_feedforward = (max(0.0, min(self.approach_forward_speed, forward))
+                                                  if math.isfinite(forward) else 0.0)
 
                     self.transition_to(
-                        MissionState.HOLD
+                        MissionState.TRACK
+                        if self.get_parameter('tracking_enabled').value
+                        else MissionState.HOLD
                     )
 
                     return
 
-                # -------------------------------------------------
-                # Horizontal visual servo: ex -> yaw rate
-                # -------------------------------------------------
-
-                if (
-                    abs(ex)
-                    > self.approach_yaw_deadband
-                ):
-
-                    # Brake translation while re-centering target.
-                    self.hold_current_xy()
-
-                    yaw_rate_cmd = (
-                        self.approach_yaw_kp
-                        * ex
-                    )
-
-                    yaw_rate_cmd = max(
-                        -self.approach_max_yaw_rate,
-                        min(
-                            self.approach_max_yaw_rate,
-                            yaw_rate_cmd,
-                        ),
-                    )
-
-                    self.target_yaw = self.wrap_pi(
-                        self.target_yaw
-                        + yaw_rate_cmd
-                        * self.TIMER_PERIOD
-                    )
-
-                else:
-
-                    # Target is horizontally centered.
-                    # Wait for the real body heading to catch up
-                    # before commanding forward motion.
-                    heading_ready = True
-
-                    if (
-                        self.local_position is not None
-                        and math.isfinite(
-                            self.local_position.heading
-                        )
-                    ):
-
-                        heading_error = self.wrap_pi(
-                            self.target_yaw
-                            - float(
-                                self.local_position.heading
-                            )
-                        )
-
-                        heading_ready = (
-                            abs(heading_error)
-                            <= self.approach_heading_tolerance
-                        )
-
-                    if heading_ready:
-                        forward_speed = self.approach_forward_speed
-
-                        if (
-                            area_ratio
-                            >= self.approach_slow_area_ratio
-                        ):
-                            forward_speed = self.approach_slow_speed
-
-                        self.advance_approach_setpoint(
-                            speed=forward_speed
-                        )
-
-            # If one frame is negative but still within the target-loss
-            # grace period, simply hold the last setpoint.
+                self.visual_follow()
             self.publish_offboard_stream()
 
         # =========================================================
         # HOLD
         # Hold the successful approach pose briefly, then return home.
         # =========================================================
+
+        elif self.state == MissionState.TRACK:
+            if self.handle_follow_gap():
+                self.publish_offboard_stream()
+                return
+            if not self.visual_follow(tracking=True):
+                self.publish_offboard_stream()
+                return
+            self.tracking_elapsed += self.TIMER_PERIOD
+            if self.tracking_elapsed >= float(
+                self.get_parameter('tracking_duration').value
+            ):
+                self.publish_mission_event('TRACK_COMPLETE')
+                self.set_target(self.home_x, self.home_y, self.takeoff_z,
+                                yaw=self.home_yaw)
+                self.transition_to(MissionState.RETURN)
+                return
+
+            self.publish_offboard_stream()
+
+        elif self.state == MissionState.RECOVER:
+            self.recover_target()
 
         elif self.state == MissionState.HOLD:
 

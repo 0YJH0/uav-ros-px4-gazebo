@@ -1,0 +1,119 @@
+{
+  "traffic_scenario": "different_color_overtaking",
+  "trials": 1,
+  "coverage_fraction": 0.9276450102962037,
+  "protected_accepted_truncated_frames_in_task": 2,
+  "accepted_truncated_frames_in_task": 2,
+  "runtime_parameter_differences_from_prior_overtaking": {
+    "perception_node": {},
+    "px4_offboard_controller": {
+      "smooth_recovery_setpoints": {
+        "before": null,
+        "after": false
+      }
+    },
+    "vehicle_scene": {}
+  },
+  "blind_windows": [
+    {
+      "start_wall_s": 74.96835224100505,
+      "end_wall_s": 75.16567062601098,
+      "duration_wall_s": 0.19731838500592858,
+      "terminal": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "start_wall_s": 95.56562886000029,
+      "end_wall_s": 102.73237458901713,
+      "duration_wall_s": 7.166745729016839,
+      "terminal": "TARGET_RECOVERED"
+    },
+    {
+      "start_wall_s": 131.0959465210035,
+      "end_wall_s": 131.2233610380208,
+      "duration_wall_s": 0.1274145170173142,
+      "terminal": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "start_wall_s": 163.99560819700127,
+      "end_wall_s": 164.20396679299301,
+      "duration_wall_s": 0.20835859599174,
+      "terminal": "OBSERVATION_GAP_CLEARED"
+    }
+  ],
+  "maximum_sampled_blind_window_wall_s": 7.166745729016839,
+  "mission_passed": true,
+  "identity_independently_verified": true,
+  "strict_combined_passed": true,
+  "wrong_identity_observations": 0,
+  "planned_track_losses": 1,
+  "unplanned_track_losses": 0,
+  "matched_pose_samples": 8276,
+  "minimum_world_lateral_clearance_all_samples_m": 1.4552779409693861,
+  "overtaking_observed": true,
+  "scene_update_errors": [],
+  "landed_disarmed": true,
+  "supervisor_interventions": [],
+  "armed_failsafe_observations": 0,
+  "armed_offboard_signal_lost_observations": 0,
+  "ulog_dropout_events": 0,
+  "source_hashes_match": true,
+  "source_hash_checks": {
+    "ros2_ws/src/uav_learning/uav_learning/perception_node.py": true,
+    "ros2_ws/src/uav_learning/uav_learning/vehicle_roi_detector.py": true,
+    "ros2_ws/src/uav_learning/uav_learning/vehicle_target_lock.py": true,
+    "ros2_ws/src/uav_learning/uav_learning/vehicle_byte_tracker.py": true,
+    "ros2_ws/src/uav_learning/uav_learning/vehicle_recovery_competition.py": true,
+    "ros2_ws/src/uav_learning/uav_learning/vehicle_detector_backend.py": true,
+    "ros2_ws/src/uav_learning/uav_learning/vehicle_camera_motion.py": true,
+    "ros2_ws/src/uav_learning/uav_learning/vehicle_frame_buffer.py": true,
+    "ros2_ws/src/uav_learning/uav_learning/px4_offboard_controller.py": true,
+    "ros2_ws/src/uav_learning/uav_learning/vehicle_scene.py": true,
+    "ros2_ws/src/uav_learning/uav_learning/vehicle_gazebo_client.py": true,
+    "ros2_ws/src/uav_learning/launch/vehicle_tracking.launch.py": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car/model.sdf": true,
+    "scripts/validate_vehicle_tracking.py": true,
+    "scripts/run_vehicle_tracking_validation.py": true,
+    "scripts/vehicle_crossing_validation.py": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car/ASSET_LICENSE.md": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car/materials/textures/hatchback.png": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car/meshes/hatchback.mtl": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car/meshes/hatchback.obj": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car/metadata.pbtxt": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car/model.config": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car/thumbnails/1.png": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car/thumbnails/2.png": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car/thumbnails/3.png": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car/thumbnails/4.png": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car/thumbnails/5.png": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car_blue/SOURCE.md": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car_blue/materials/textures/hatchback_blue.png": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car_blue/meshes/hatchback_blue.mtl": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car_blue/meshes/hatchback_blue.obj": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car_blue/metadata.pbtxt": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car_blue/model.config": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car_blue/model.sdf": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car_blue/thumbnails/1.png": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car_blue/thumbnails/2.png": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car_blue/thumbnails/3.png": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car_blue/thumbnails/4.png": true,
+    "ros2_ws/src/uav_learning/config/models/tracking_car_blue/thumbnails/5.png": true
+  },
+  "ulog_sha256": "8801126ae64316180266ed3580eee35124d66d9ea8b61fe36ad8acbfefa43f6c",
+  "input_sha256": {
+    "report.json": "7ee0d2ab7fb85adbf4f150f4bc809bdc85f32bcd2c589859790d6eff8c5cdcda",
+    "identity_report.json": "9e049a3527595a0227ada73ab4457921955dc3d97fbd291827e27ea05d576cdc",
+    "supervisor.json": "1372839ad019b78e313acb1df2d16219fa555bb870330e913df1f585c6bedad2",
+    "implementation_snapshot.json": "4839acdb27c083003f302ad857636abd0e972be790310d368996bac863d7f6f9",
+    "identity_poses.jsonl": "a90bed43e396506f065f680b0f7a330884c49d2c7bc07b8705adf4d7a18f6147",
+    "identity_observations.jsonl": "3adbb12841b67e5a4965f73c757ca86810aff5c8e2870762f381b1d295957ab0",
+    "association.jsonl": "752ccd2dc2be7b96466ec9076f96f9e9cf5603bde40bfc8eaa6d41d4d65767e0",
+    "scene_service.jsonl": "0f16bd3ae18a29a4152387142cd9212790d9a887b716f58226307d31787c5d0d",
+    "traffic_service.jsonl": "68e3b04b88ca8326e545cab380f965a7a0e281df056197b98fbc468ab81fbbba"
+  },
+  "limitations": [
+    "One easier scenario trial is not an algorithm improvement or repeatability result.",
+    "Pose samples and projected volumes are not exhaustive contact or pixel-mask truth.",
+    "Scene service errors remain failures; no identity verdict has been overridden.",
+    "Original report and identity files are unchanged."
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "completed": true,
+  "track_complete_event": true,
+  "landed": true,
+  "disarmed": true,
+  "final_status": {
+    "arming_state": 1,
+    "nav_state": 14,
+    "failsafe": false
+  },
+  "failsafe_observed": false,
+  "track_wall_time_s": 91.71667668301961,
+  "follow_wall_time_s": 98.61543739997433,
+  "follow_time_visible_fraction": 0.9223356811482286,
+  "drone_follow_travel_m": 51.57093819195525,
+  "track_detection_fraction": 0.9900398406374502,
+  "track_mean_abs_pixel_error": 6.161056365625566,
+  "track_p95_abs_pixel_error": 13.002868294715881,
+  "vehicle_travel_m": 65.2913577223907,
+  "drone_track_travel_m": 51.56763982285402,
+  "final_home_horizontal_error_m": 0.7368432535399889,
+  "wall_duration_s": 197.333799273998,
+  "transitions": [
+    {
+      "time_s": 2.5440673459961545,
+      "state": "PRESTREAM"
+    },
+    {
+      "time_s": 4.540899910003645,
+      "state": "REQUEST_OFFBOARD"
+    },
+    {
+      "time_s": 4.7423905250034295,
+      "state": "ARMING"
+    },
+    {
+      "time_s": 5.841783495998243,
+      "state": "TAKEOFF"
+    },
+    {
+      "time_s": 64.84247504200903,
+      "state": "HOVER"
+    },
+    {
+      "time_s": 66.94291499900282,
+      "state": "SEARCH"
+    },
+    {
+      "time_s": 68.7439499910106,
+      "state": "DETECT"
+    },
+    {
+      "time_s": 69.84508141299011,
+      "state": "APPROACH"
+    },
+    {
+      "time_s": 75.84347982500913,
+      "state": "TRACK"
+    },
+    {
+      "time_s": 99.44254020601511,
+      "state": "RECOVER"
+    },
+    {
+      "time_s": 106.34107847898849,
+      "state": "TRACK"
+    },
+    {
+      "time_s": 174.45892222001567,
+      "state": "RETURN"
+    },
+    {
+      "time_s": 188.65931335900677,
+      "state": "LAND"
+    },
+    {
+      "time_s": 197.2609972890059,
+      "state": "DONE"
+    }
+  ],
+  "events": [
+    {
+      "time_s": 75.84263010599534,
+      "event": "APPROACH_SUCCESS"
+    },
+    {
+      "time_s": 76.84055118900142,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 77.14002947800327,
+      "event": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "time_s": 98.94050662001246,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 99.440497906995,
+      "event": "TRACK_TARGET_LOST"
+    },
+    {
+      "time_s": 106.34053557700827,
+      "event": "TARGET_RECOVERED"
+    },
+    {
+      "time_s": 131.84056462100125,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 131.94058970399783,
+      "event": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "time_s": 133.74032117100433,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 133.84074771101587,
+      "event": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "time_s": 135.07243445698987,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 135.11908185499487,
+      "event": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "time_s": 149.01949620299274,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 149.12053197299247,
+      "event": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "time_s": 168.06585663498845,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 168.15717481900356,
+      "event": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "time_s": 174.45735746601713,
+      "event": "TRACK_COMPLETE"
+    },
+    {
+      "time_s": 197.26190410900745,
+      "event": "MISSION_DONE"
+    }
+  ],
+  "occlusions": [
+    {
+      "start_wall_s": 98.42668492899975,
+      "state_at_start": "TRACK",
+      "entry_locked": true,
+      "end_wall_s": 104.81300357499276,
+      "recovery_s": 1.1411788570112549,
+      "confirmed_recovery_s": 1.5275373799959198,
+      "negative_observations": 22,
+      "vehicle_travel_during_occlusion_m": 3.0404188177975335
+    }
+  ],
+  "same_vehicle_identity_verified": false,
+  "relative_horizontal_distance_min_m": 11.852947018163249,
+  "relative_horizontal_distance_max_m": 80.7159567082396,
+  "occlusion_recovery_passed": true,
+  "passed": true
+}

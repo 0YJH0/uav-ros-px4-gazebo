@@ -31,6 +31,8 @@ rosidl_generate_interfaces(
   ${PROJECT_NAME}
 
   "msg/TargetDetection.msg"
+  "msg/VehicleObservation.msg"
+  "msg/VehicleDetections.msg"
 
   "srv/SetMode.srv"
 

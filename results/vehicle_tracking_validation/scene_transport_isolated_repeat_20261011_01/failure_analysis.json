@@ -1,0 +1,55 @@
+{
+  "criteria_counts": {},
+  "trials": [
+    {
+      "name": "overtaking_01",
+      "strict_pass": true,
+      "criteria_failure_causes": []
+    },
+    {
+      "name": "overtaking_02",
+      "strict_pass": true,
+      "criteria_failure_causes": []
+    },
+    {
+      "name": "overtaking_03",
+      "strict_pass": true,
+      "criteria_failure_causes": []
+    },
+    {
+      "name": "overtaking_04",
+      "strict_pass": true,
+      "criteria_failure_causes": []
+    },
+    {
+      "name": "overtaking_05",
+      "strict_pass": true,
+      "criteria_failure_causes": []
+    },
+    {
+      "name": "overtaking_06",
+      "strict_pass": true,
+      "criteria_failure_causes": []
+    },
+    {
+      "name": "overtaking_07",
+      "strict_pass": true,
+      "criteria_failure_causes": []
+    },
+    {
+      "name": "overtaking_08",
+      "strict_pass": true,
+      "criteria_failure_causes": []
+    },
+    {
+      "name": "overtaking_09",
+      "strict_pass": true,
+      "criteria_failure_causes": []
+    },
+    {
+      "name": "overtaking_10",
+      "strict_pass": true,
+      "criteria_failure_causes": []
+    }
+  ]
+}

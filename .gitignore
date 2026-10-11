@@ -1,0 +1,28 @@
+# Local environments and machine-specific files.
+/.venv*/
+/.vscode/
+/.agents/
+/.codex/
+/.aws/
+.env
+.env.*
+*.pem
+*.key
+*:Zone.Identifier
+
+# Rebuildable workspace outputs, not the archived final evidence.
+/ros2_ws/build/
+/ros2_ws/install/
+/ros2_ws/log/
+/log/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Keep the selected detector and its frozen experiment copy.
+*.pt
+!/yolo11s.pt
+!/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/frozen_files/yolo11s.pt

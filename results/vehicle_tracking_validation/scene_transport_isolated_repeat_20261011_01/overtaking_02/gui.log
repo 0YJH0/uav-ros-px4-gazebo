@@ -1,0 +1,26 @@
+
+========================================
+ PX4 clean environment loaded
+========================================
+
+python3 : /usr/bin/python3
+cmake   : /usr/bin/cmake
+protoc  : /usr/bin/protoc
+gz      : /usr/bin/gz
+
+ROS_DISTRO=not_set
+CMAKE_PREFIX_PATH=not_set
+AMENT_PREFIX_PATH=not_set
+CONDA_PREFIX=not_set
+
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="x500_perception"]/link[@name="base_link"]/sensor[@name="air_pressure_sensor"]/gz_frame_id:<data-string>:L235]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="x500_perception"]/link[@name="base_link"]/sensor[@name="magnetometer_sensor"]/gz_frame_id:<data-string>:L257]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="x500_perception"]/link[@name="base_link"]/sensor[@name="imu_sensor"]/gz_frame_id:<data-string>:L304]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="x500_perception"]/link[@name="base_link"]/sensor[@name="navsat_sensor"]/gz_frame_id:<data-string>:L309]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="x500_perception"]/link[@name="camera_link"]/sensor[@name="IMX214"]/gz_frame_id:<data-string>:L738]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+libEGL warning: failed to open /dev/dri/renderD128: Permission denied
+
+libEGL warning: failed to open /dev/dri/renderD128: Permission denied
+
+libEGL warning: failed to open /dev/dri/card0: Permission denied
+

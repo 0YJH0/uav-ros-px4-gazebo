@@ -1,0 +1,523 @@
+{
+  "attempted_logs": 10,
+  "available_logs": 10,
+  "rootfs": "/home/yjh/ROS2_manmade/PX4-Autopilot/build/px4_sitl_default/rootfs",
+  "trials": [
+    {
+      "name": "overtaking_01",
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_01",
+      "available": true,
+      "ulog_sha256": "ffbce209a92ee87e31970c8de0a83f479d4ab6437bb99bccc849904313863a98",
+      "source_available": true,
+      "source_path": "/home/yjh/ROS2_manmade/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-10-11/04_42_29.ulg",
+      "recorded_initial_parameters": 1000,
+      "initial_parameter_sha256": "ece32c6c0c7a05e018405402a9f8330fdc5794270ca7d767bb1bcc59e24e0e74",
+      "differences_from_first_attempt": {},
+      "bookkeeping_differences": {},
+      "calibration_differences": {},
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3724000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3724000,
+          "name": "CAL_BARO0_OFF",
+          "value": 1.220703125
+        },
+        {
+          "timestamp_us": 3724000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ],
+      "dropout_events": 0
+    },
+    {
+      "name": "overtaking_02",
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_02",
+      "available": true,
+      "ulog_sha256": "89e6bcf10d6a42df14aad1b7e6b4c17bb7e551b5dfb7c7768e7d723ab381abb4",
+      "source_available": true,
+      "source_path": "/home/yjh/ROS2_manmade/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-10-11/04_46_21.ulg",
+      "recorded_initial_parameters": 1000,
+      "initial_parameter_sha256": "2957fb8af3f0d78aab6ec12078c6364c2202ada09a6264edcbca9fcfffc62fbc",
+      "differences_from_first_attempt": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": 1834082816
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 150
+        }
+      },
+      "bookkeeping_differences": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": 1834082816
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 150
+        }
+      },
+      "calibration_differences": {},
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4040000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4040000,
+          "name": "CAL_BARO0_OFF",
+          "value": 1.220703125
+        },
+        {
+          "timestamp_us": 4040000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ],
+      "dropout_events": 0
+    },
+    {
+      "name": "overtaking_03",
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_03",
+      "available": true,
+      "ulog_sha256": "de0cc1485bde1a628cb9e347d41c214e327b898e2a021cab27a5f0a7f4fb7e9e",
+      "source_available": true,
+      "source_path": "/home/yjh/ROS2_manmade/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-10-11/04_50_17.ulg",
+      "recorded_initial_parameters": 1000,
+      "initial_parameter_sha256": "ba24fa3206167247850092b8ceed944450b8daf3b91877aa1ac5cfaa4272d78b",
+      "differences_from_first_attempt": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": 1964026816
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 151
+        }
+      },
+      "bookkeeping_differences": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": 1964026816
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 151
+        }
+      },
+      "calibration_differences": {},
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3992000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3992000,
+          "name": "CAL_BARO0_OFF",
+          "value": 1.220703125
+        },
+        {
+          "timestamp_us": 3992000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ],
+      "dropout_events": 0
+    },
+    {
+      "name": "overtaking_04",
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_04",
+      "available": true,
+      "ulog_sha256": "bd6b139429c9bd6b1a3fbd871635195b85ce74cd6cc5f53e01f85e7da78e5632",
+      "source_available": true,
+      "source_path": "/home/yjh/ROS2_manmade/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-10-11/04_54_19.ulg",
+      "recorded_initial_parameters": 1000,
+      "initial_parameter_sha256": "cc80b25cb70348daf3e787ed6662d24d2c47b70b123a65724b75d673fbe5aba2",
+      "differences_from_first_attempt": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": 2091746816
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 152
+        }
+      },
+      "bookkeeping_differences": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": 2091746816
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 152
+        }
+      },
+      "calibration_differences": {},
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4040000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4040000,
+          "name": "CAL_BARO0_OFF",
+          "value": -1.220703125
+        },
+        {
+          "timestamp_us": 4040000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ],
+      "dropout_events": 0
+    },
+    {
+      "name": "overtaking_05",
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_05",
+      "available": true,
+      "ulog_sha256": "b6b4fb8e8dfe8df173c4e67aef77e22e3747cad1c5b6a1f599a547b1040cda7f",
+      "source_available": true,
+      "source_path": "/home/yjh/ROS2_manmade/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-10-11/04_58_17.ulg",
+      "recorded_initial_parameters": 1000,
+      "initial_parameter_sha256": "b18a99a8c088e3f0b352c2881167935864878d4757fe3262cc71015b12fcb957",
+      "differences_from_first_attempt": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": -2072200480
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 153
+        }
+      },
+      "bookkeeping_differences": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": -2072200480
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 153
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3916000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3916000,
+          "name": "CAL_BARO0_OFF",
+          "value": 1.220703125
+        },
+        {
+          "timestamp_us": 3916000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ],
+      "dropout_events": 0
+    },
+    {
+      "name": "overtaking_06",
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_06",
+      "available": true,
+      "ulog_sha256": "b14ad8cfcb8a4bce7440b2eb4b06d5de1d8bf7f218b753a9c7e36b89fa80cf5b",
+      "source_available": true,
+      "source_path": "/home/yjh/ROS2_manmade/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-10-11/05_02_11.ulg",
+      "recorded_initial_parameters": 1000,
+      "initial_parameter_sha256": "4c7125f2cee723809a272999927773445617224664aa5957401f7e44ee903c07",
+      "differences_from_first_attempt": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": -1948112480
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 154
+        }
+      },
+      "bookkeeping_differences": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": -1948112480
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 154
+        }
+      },
+      "calibration_differences": {},
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3984000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3984000,
+          "name": "CAL_BARO0_OFF",
+          "value": -1.220703125
+        },
+        {
+          "timestamp_us": 3984000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ],
+      "dropout_events": 0
+    },
+    {
+      "name": "overtaking_07",
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_07",
+      "available": true,
+      "ulog_sha256": "713f387d57174dd2656bd7a6b7f2b73c6bc3a4022496fda7d2b4576f701f9a1c",
+      "source_available": true,
+      "source_path": "/home/yjh/ROS2_manmade/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-10-11/05_06_26.ulg",
+      "recorded_initial_parameters": 1000,
+      "initial_parameter_sha256": "29947922548dfbd6ca79a816d5458ae2e424da1da09f0ee5f9c65bfabbabda1c",
+      "differences_from_first_attempt": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": -1816692480
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 155
+        }
+      },
+      "bookkeeping_differences": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": -1816692480
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 155
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3968000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3968000,
+          "name": "CAL_BARO0_OFF",
+          "value": 1.220703125
+        },
+        {
+          "timestamp_us": 3968000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ],
+      "dropout_events": 0
+    },
+    {
+      "name": "overtaking_08",
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_08",
+      "available": true,
+      "ulog_sha256": "b3d34811c31646cf99acae8e8d8d595c0cd114c674310027ef27dc8c91e8f615",
+      "source_available": true,
+      "source_path": "/home/yjh/ROS2_manmade/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-10-11/05_10_29.ulg",
+      "recorded_initial_parameters": 1000,
+      "initial_parameter_sha256": "0fec5a53c38894537f589c92473bdca25193450429a7ba5ef46ac08e6b549ad4",
+      "differences_from_first_attempt": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": -1690720480
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 156
+        }
+      },
+      "bookkeeping_differences": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": -1690720480
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 156
+        }
+      },
+      "calibration_differences": {},
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4024000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4024000,
+          "name": "CAL_BARO0_OFF",
+          "value": 1.220703125
+        },
+        {
+          "timestamp_us": 4024000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ],
+      "dropout_events": 0
+    },
+    {
+      "name": "overtaking_09",
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_09",
+      "available": true,
+      "ulog_sha256": "f6fad82c9033c87edd9575af0be455b0ff2eee9d715dd826ecf0561cb57d0a21",
+      "source_available": true,
+      "source_path": "/home/yjh/ROS2_manmade/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-10-11/05_14_32.ulg",
+      "recorded_initial_parameters": 1000,
+      "initial_parameter_sha256": "ff9a643611a55b85f2e6651ce2639b39b6a052e5d0bcb217f6ece6dcb0eceb67",
+      "differences_from_first_attempt": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": -1564080480
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 157
+        }
+      },
+      "bookkeeping_differences": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": -1564080480
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 157
+        }
+      },
+      "calibration_differences": {},
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4060000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4060000,
+          "name": "CAL_BARO0_OFF",
+          "value": -1.220703125
+        },
+        {
+          "timestamp_us": 4060000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ],
+      "dropout_events": 0
+    },
+    {
+      "name": "overtaking_10",
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_10",
+      "available": true,
+      "ulog_sha256": "95c40b124c6068131e27628c7943a9da728632ae56bbed883b55a0fc51ba78b4",
+      "source_available": true,
+      "source_path": "/home/yjh/ROS2_manmade/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-10-11/05_18_46.ulg",
+      "recorded_initial_parameters": 1000,
+      "initial_parameter_sha256": "06301d4b87dc33220265a4ea25fafdef9e2863581a3381f579424ba57287e0fa",
+      "differences_from_first_attempt": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": -1433072480
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 158
+        }
+      },
+      "bookkeeping_differences": {
+        "LND_FLIGHT_T_LO": {
+          "reference": 1697354816,
+          "observed": -1433072480
+        },
+        "COM_FLIGHT_UUID": {
+          "reference": 149,
+          "observed": 158
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3996000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3996000,
+          "name": "CAL_BARO0_OFF",
+          "value": -3.662109375
+        },
+        {
+          "timestamp_us": 3996000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ],
+      "dropout_events": 0
+    }
+  ],
+  "limitations": [
+    "This is a retrospective audit, not a start-time enforcement mechanism.",
+    "Parameters not emitted into ULog cannot be independently compared.",
+    "Updates after the log header may occur during startup, before arming; they are not automatically in-flight updates.",
+    "Parameter-set differences may include used-set changes and startup calibration; inspect values before attributing control changes.",
+    "A retained archive can be audited after its source log disappears; source_available makes this explicit."
+  ]
+}

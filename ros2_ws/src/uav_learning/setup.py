@@ -21,6 +21,12 @@ setup(
 
     data_files=[
 
+        *[
+            (os.path.join('share', package_name, root),
+             [os.path.join(root, name) for name in files])
+            for root, _, files in os.walk('config')
+        ],
+
         (
             'share/ament_index/resource_index/packages',
             [
@@ -72,6 +78,8 @@ setup(
     entry_points={
 
         'console_scripts': [
+
+            'vehicle_scene = uav_learning.vehicle_scene:main',
 
             'status_publisher = '
             'uav_learning.status_publisher:main',

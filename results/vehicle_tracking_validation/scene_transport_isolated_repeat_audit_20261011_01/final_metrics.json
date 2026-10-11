@@ -1,0 +1,559 @@
+{
+  "batch": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01",
+  "planned": 10,
+  "attempted": 10,
+  "task_passes": 10,
+  "identity_passes": 10,
+  "strict_passes": 10,
+  "summary": {
+    "planned": 10,
+    "attempted": 10,
+    "not_attempted": 0,
+    "successes": 10,
+    "failures": 0,
+    "success_rate": 1.0,
+    "success_rate_wilson_95": [
+      0.7224672001371107,
+      0.9999999999999999
+    ],
+    "safety_event_trials": 0,
+    "interventions": 0,
+    "metrics": {
+      "visibility": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.9069233300265921,
+        "std_sample": 0.023893097428207423,
+        "min": 0.8604528555635012,
+        "max": 0.9234898083731634,
+        "worst": 0.8604528555635012,
+        "worst_trials": [
+          "overtaking_09"
+        ]
+      },
+      "unplanned_losses": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.7,
+        "std_sample": 0.6749485577105528,
+        "min": 0,
+        "max": 2,
+        "worst": 2,
+        "worst_trials": [
+          "overtaking_06"
+        ]
+      },
+      "planned_recovery_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 1.653966758598108,
+        "std_sample": 0.2221039109240181,
+        "min": 1.1421617289888673,
+        "max": 1.8805410029890481,
+        "worst": 1.8805410029890481,
+        "worst_trials": [
+          "overtaking_05"
+        ]
+      },
+      "unplanned_recovery_mean_s": {
+        "n": 6,
+        "missing": 4,
+        "mean": 1.9507889069112327,
+        "std_sample": 2.6234876828185327,
+        "min": 0.2004888860101346,
+        "max": 6.700277864001691,
+        "worst": 6.700277864001691,
+        "worst_trials": [
+          "overtaking_09"
+        ]
+      },
+      "mean_pixel_error": {
+        "n": 10,
+        "missing": 0,
+        "mean": 16.073896466229066,
+        "std_sample": 5.861162785618394,
+        "min": 5.967820022348315,
+        "max": 22.12638046308239,
+        "worst": 22.12638046308239,
+        "worst_trials": [
+          "overtaking_02"
+        ]
+      },
+      "p95_pixel_error": {
+        "n": 10,
+        "missing": 0,
+        "mean": 31.36981165409088,
+        "std_sample": 10.38006581129391,
+        "min": 11.364807486534119,
+        "max": 40.01202464103699,
+        "worst": 40.01202464103699,
+        "worst_trials": [
+          "overtaking_02"
+        ]
+      },
+      "processing_mean_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.17990002100896305,
+        "std_sample": 0.016222626108800185,
+        "min": 0.14440941065327023,
+        "max": 0.19571404402356138,
+        "worst": 0.19571404402356138,
+        "worst_trials": [
+          "overtaking_06"
+        ]
+      },
+      "processing_p95_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.23344713399419562,
+        "std_sample": 0.052310620259146456,
+        "min": 0.16256273500039242,
+        "max": 0.31938175301183946,
+        "worst": 0.31938175301183946,
+        "worst_trials": [
+          "overtaking_06"
+        ]
+      },
+      "processing_max_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.34861281391058585,
+        "std_sample": 0.03192190854581929,
+        "min": 0.2848908970190678,
+        "max": 0.3900621630018577,
+        "worst": 0.3900621630018577,
+        "worst_trials": [
+          "overtaking_04"
+        ]
+      },
+      "frame_interval_p95_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.32931866589933634,
+        "std_sample": 0.02885960387777428,
+        "min": 0.2557442869874649,
+        "max": 0.35844039998482913,
+        "worst": 0.35844039998482913,
+        "worst_trials": [
+          "overtaking_10"
+        ]
+      },
+      "follow_wall_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 100.74536398028722,
+        "std_sample": 3.084412102228037,
+        "min": 98.61543739997433,
+        "max": 107.05239896700368,
+        "worst": 107.05239896700368,
+        "worst_trials": [
+          "overtaking_06"
+        ]
+      },
+      "home_error_m": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.687980466085542,
+        "std_sample": 0.048830589826755776,
+        "min": 0.610509846243242,
+        "max": 0.7531758171081256,
+        "worst": 0.7531758171081256,
+        "worst_trials": [
+          "overtaking_03"
+        ]
+      },
+      "blind_window_max_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 7.666016746696551,
+        "std_sample": 0.5337177111135868,
+        "min": 6.702814001997467,
+        "max": 8.299418120004702,
+        "worst": 8.299418120004702,
+        "worst_trials": [
+          "overtaking_05"
+        ]
+      },
+      "blind_command_distance_max_m": {
+        "n": 10,
+        "missing": 0,
+        "mean": 2.0138924859410112,
+        "std_sample": 0.293691820819067,
+        "min": 1.4401922707520496,
+        "max": 2.372124717767168,
+        "worst": 2.372124717767168,
+        "worst_trials": [
+          "overtaking_09"
+        ]
+      },
+      "gmc_mean_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.005726918834154587,
+        "std_sample": 0.0003448417392707966,
+        "min": 0.004876650096821322,
+        "max": 0.006011570829301549,
+        "worst": 0.006011570829301549,
+        "worst_trials": [
+          "overtaking_10"
+        ]
+      },
+      "full_frame_yolo_mean_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.1635364595307397,
+        "std_sample": 0.01449095081029743,
+        "min": 0.13092595343009633,
+        "max": 0.1771819870055436,
+        "worst": 0.1771819870055436,
+        "worst_trials": [
+          "overtaking_05"
+        ]
+      },
+      "bytetrack_mean_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.0007793382036803201,
+        "std_sample": 6.005912298217901e-05,
+        "min": 0.0006353063143706095,
+        "max": 0.0008419037148719013,
+        "worst": 0.0008419037148719013,
+        "worst_trials": [
+          "overtaking_09"
+        ]
+      },
+      "appearance_mean_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.00017271253497887272,
+        "std_sample": 1.2346360427159774e-05,
+        "min": 0.00014425134882003476,
+        "max": 0.00018690234122221313,
+        "worst": 0.00018690234122221313,
+        "worst_trials": [
+          "overtaking_07"
+        ]
+      },
+      "identity_association_mean_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.00044060595189257296,
+        "std_sample": 2.973757452801335e-05,
+        "min": 0.0003713106362738472,
+        "max": 0.00046556795490915203,
+        "worst": 0.00046556795490915203,
+        "worst_trials": [
+          "overtaking_05"
+        ]
+      },
+      "roi_mean_when_run_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.1334113833725668,
+        "std_sample": 0.011882296677046178,
+        "min": 0.10620774699976512,
+        "max": 0.1437296924984063,
+        "worst": 0.1437296924984063,
+        "worst_trials": [
+          "overtaking_05"
+        ]
+      },
+      "frame_age_p95_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.33301616480166557,
+        "std_sample": 0.030607502105318266,
+        "min": 0.26048478900338523,
+        "max": 0.3635160919802729,
+        "worst": 0.3635160919802729,
+        "worst_trials": [
+          "overtaking_06"
+        ]
+      },
+      "queue_wait_p95_s": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.14127192409941927,
+        "std_sample": 0.01714866627055412,
+        "min": 0.09674838001956232,
+        "max": 0.15541841799858958,
+        "worst": 0.15541841799858958,
+        "worst_trials": [
+          "overtaking_09"
+        ]
+      },
+      "vertical_error_std": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.12066880383892815,
+        "std_sample": 0.006785606309819821,
+        "min": 0.10541453827839638,
+        "max": 0.13167940913946585,
+        "worst": 0.13167940913946585,
+        "worst_trials": [
+          "overtaking_06"
+        ]
+      },
+      "vertical_bottom_p95": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.9336378592031973,
+        "std_sample": 0.01076316641545533,
+        "min": 0.9098250777633102,
+        "max": 0.9490709092881945,
+        "worst": 0.9490709092881945,
+        "worst_trials": [
+          "overtaking_04"
+        ]
+      },
+      "vertical_edge_fraction": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.03432606145263974,
+        "std_sample": 0.009486498783031806,
+        "min": 0.022267206477732792,
+        "max": 0.05027932960893855,
+        "worst": 0.05027932960893855,
+        "worst_trials": [
+          "overtaking_04"
+        ]
+      },
+      "outside_panel_losses": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0.7,
+        "std_sample": 0.6749485577105528,
+        "min": 0,
+        "max": 2,
+        "worst": 2,
+        "worst_trials": [
+          "overtaking_06"
+        ]
+      },
+      "scene_update_errors": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0,
+        "std_sample": 0.0,
+        "min": 0,
+        "max": 0,
+        "worst": 0,
+        "worst_trials": [
+          "overtaking_01",
+          "overtaking_02",
+          "overtaking_03",
+          "overtaking_04",
+          "overtaking_05",
+          "overtaking_06",
+          "overtaking_07",
+          "overtaking_08",
+          "overtaking_09",
+          "overtaking_10"
+        ]
+      },
+      "wrong_identity_observations": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0,
+        "std_sample": 0.0,
+        "min": 0,
+        "max": 0,
+        "worst": 0,
+        "worst_trials": [
+          "overtaking_01",
+          "overtaking_02",
+          "overtaking_03",
+          "overtaking_04",
+          "overtaking_05",
+          "overtaking_06",
+          "overtaking_07",
+          "overtaking_08",
+          "overtaking_09",
+          "overtaking_10"
+        ]
+      },
+      "scorable_identity_switches": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0,
+        "std_sample": 0.0,
+        "min": 0,
+        "max": 0,
+        "worst": 0,
+        "worst_trials": [
+          "overtaking_01",
+          "overtaking_02",
+          "overtaking_03",
+          "overtaking_04",
+          "overtaking_05",
+          "overtaking_06",
+          "overtaking_07",
+          "overtaking_08",
+          "overtaking_09",
+          "overtaking_10"
+        ]
+      },
+      "armed_failsafe_observations": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0,
+        "std_sample": 0.0,
+        "min": 0,
+        "max": 0,
+        "worst": 0,
+        "worst_trials": [
+          "overtaking_01",
+          "overtaking_02",
+          "overtaking_03",
+          "overtaking_04",
+          "overtaking_05",
+          "overtaking_06",
+          "overtaking_07",
+          "overtaking_08",
+          "overtaking_09",
+          "overtaking_10"
+        ]
+      },
+      "armed_offboard_lost_observations": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0,
+        "std_sample": 0.0,
+        "min": 0,
+        "max": 0,
+        "worst": 0,
+        "worst_trials": [
+          "overtaking_01",
+          "overtaking_02",
+          "overtaking_03",
+          "overtaking_04",
+          "overtaking_05",
+          "overtaking_06",
+          "overtaking_07",
+          "overtaking_08",
+          "overtaking_09",
+          "overtaking_10"
+        ]
+      },
+      "ulog_dropout_events": {
+        "n": 10,
+        "missing": 0,
+        "mean": 0,
+        "std_sample": 0.0,
+        "min": 0,
+        "max": 0,
+        "worst": 0,
+        "worst_trials": [
+          "overtaking_01",
+          "overtaking_02",
+          "overtaking_03",
+          "overtaking_04",
+          "overtaking_05",
+          "overtaking_06",
+          "overtaking_07",
+          "overtaking_08",
+          "overtaking_09",
+          "overtaking_10"
+        ]
+      }
+    }
+  },
+  "total_scene_requests": 8149,
+  "failed_scene_requests": 0,
+  "creation_requests": 50,
+  "motion_metrics": {
+    "vehicle_travel_m": {
+      "n": 10,
+      "missing": 0,
+      "mean": 64.45917456435137,
+      "std_sample": 3.3706944368319545,
+      "min": 61.13075017292795,
+      "max": 72.49172102287854,
+      "worst": 61.13075017292795,
+      "worst_trials": [
+        "overtaking_05"
+      ]
+    },
+    "drone_follow_travel_m": {
+      "n": 10,
+      "missing": 0,
+      "mean": 51.730487676330924,
+      "std_sample": 3.2935296981010125,
+      "min": 48.025331733685036,
+      "max": 59.319430012534355,
+      "worst": 48.025331733685036,
+      "worst_trials": [
+        "overtaking_10"
+      ]
+    }
+  },
+  "nonplanned_loss_episodes": 7,
+  "episode_recovery_metrics": {
+    "n": 7,
+    "missing": 0,
+    "mean": 2.1580078812798353,
+    "std_sample": 2.9412571957737144,
+    "min": 0.2004888860101346,
+    "max": 6.700277864001691,
+    "worst": 6.700277864001691,
+    "worst_trials": [
+      "overtaking_09_loss_01"
+    ]
+  },
+  "unique_service_workers": 10,
+  "worker_pids": [
+    2630451,
+    2637086,
+    2643811,
+    2650819,
+    2657677,
+    2664508,
+    2671676,
+    2678605,
+    2685667,
+    2692956
+  ],
+  "calibration_differences": {
+    "overtaking_05": {
+      "CAL_BARO0_OFF": {
+        "reference": 1.220703125,
+        "observed": -1.220703125
+      }
+    },
+    "overtaking_07": {
+      "CAL_BARO0_OFF": {
+        "reference": 1.220703125,
+        "observed": -1.220703125
+      }
+    },
+    "overtaking_10": {
+      "CAL_BARO0_OFF": {
+        "reference": 1.220703125,
+        "observed": -1.220703125
+      }
+    }
+  },
+  "other_recorded_px4_parameter_differences": {},
+  "safety_totals": {
+    "armed_failsafe_observations": 0,
+    "armed_offboard_lost_observations": 0,
+    "ulog_dropout_events": 0,
+    "interventions": 0
+  },
+  "input_sha256": {
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/study_summary.json": "2771b27401ba617c51065fea7b1db08a08c068fb8b67f210913b2680b444392a",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/study_status.json": "6928874c66407b73f90337279e058fc3469ebaeb2f0b3340110b2183fd0cd6bb",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/px4_parameter_audit.json": "9e77fbdb0d183ab7db4f0ba7faa5944d47f38c23127e67fcdfa9f9cd0e8af515",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_audit_20261011_01/completion_check.json": "8b549d54514498117f7c5800cc2180f9ecf26a64a7a4d195d2b916e12ac159e1",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_audit_20261011_01/scene_service_summary.json": "0a888e18659bf8922c6a9694c91a43b9379f9d2f7984c0277bef104cfa9b6f19",
+    "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_audit_20261011_01/loss_windows/nonplanned_loss_audit.json": "8537d527dc7df8bcac854382abe8046d28da2b55ca72e3fd26eb90123b17fd47"
+  },
+  "analysis_script_sha256": "0fdc736d2035dfa03595f7e0007f9c6f6dd1f929527b7b3d85e111d0410ca451",
+  "limitations": [
+    "Event-level recovery N=7 differs from per-trial conditional recovery N=6.",
+    "Four trials had no nonplanned loss; their recovery is not imputed as zero.",
+    "Freeze enforces code, weights and ROS configuration, not all persistent PX4 calibration.",
+    "No flight evidence or verdicts were rewritten."
+  ]
+}

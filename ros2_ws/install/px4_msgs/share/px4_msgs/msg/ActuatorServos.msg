@@ -1,1 +1,0 @@
-/home/yjh/ROS2_manmade/ros2_ws/src/px4_msgs/msg/ActuatorServos.msg

@@ -1,1 +1,0 @@
-/home/yjh/ROS2_manmade/ros2_ws/build/uav_learning/launch/uav_system.launch.py

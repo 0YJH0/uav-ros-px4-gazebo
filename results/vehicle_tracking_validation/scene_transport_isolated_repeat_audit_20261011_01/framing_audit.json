@@ -1,0 +1,484 @@
+{
+  "trials": [
+    {
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_01",
+      "window_wall_s": [
+        60.725561450002715,
+        165.8184725989995
+      ],
+      "coverage_fraction": 0.9234898083731634,
+      "observation_gaps": 7,
+      "accepted_frames": 607,
+      "accepted_vertical_truncated_frames": 3,
+      "accepted_truncated_geometry_protected": 3,
+      "matched_pitch_frames": 641,
+      "abs_body_pitch_deg": {
+        "n": 641,
+        "mean": 1.5525256002946919,
+        "p95": 4.280311225294461,
+        "max": 9.940923339329476
+      },
+      "near_gap_abs_body_pitch_deg": {
+        "n": 100,
+        "mean": 2.702194173724592,
+        "p95": 8.820214028917329,
+        "max": 9.940923339329476
+      },
+      "accepted_abs_vertical_reference_error": {
+        "n": 607,
+        "mean": 0.10310064989984111,
+        "p95": 0.2410149468315973,
+        "max": 0.46361117892795145
+      },
+      "target_publish_age_s": {
+        "n": 641,
+        "mean": 0.1742395684717829,
+        "p95": 0.25919795798836276,
+        "max": 0.37120761498226784
+      },
+      "input_sha256": {
+        "report.json": "39a6dddb84c6f8419e6966ed8c605037544a3b0441ce0946ecd2d9c307bf3f94",
+        "association.jsonl": "3fb7e339b78e25e108ed23a9f3a2295705e507665ff4f68dc4e5e61e54c322d4",
+        "identity_poses.jsonl": "1062816a3b6a95e045fe83cc814bdc94b62ddab2be03d54a1e5840a496b92a9e"
+      },
+      "limitations": [
+        "Pitch uses matched Gazebo body poses, not a gimbal angle or continuous ULog attitude.",
+        "Gap windows are +/-1.5 wall seconds; counts depend on observed gaps and frame cadence.",
+        "Accepted-box metrics include only confirmed detections, not invisible full-body truth.",
+        "Cross-trial statistics do not isolate individual fixes or prove repeatability."
+      ]
+    },
+    {
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_02",
+      "window_wall_s": [
+        64.0835167960031,
+        171.02936551801395
+      ],
+      "coverage_fraction": 0.9227202322766045,
+      "observation_gaps": 8,
+      "accepted_frames": 506,
+      "accepted_vertical_truncated_frames": 2,
+      "accepted_truncated_geometry_protected": 2,
+      "matched_pitch_frames": 532,
+      "abs_body_pitch_deg": {
+        "n": 532,
+        "mean": 1.6990189041908808,
+        "p95": 4.363613577887608,
+        "max": 6.053081397353108
+      },
+      "near_gap_abs_body_pitch_deg": {
+        "n": 107,
+        "mean": 2.4646601376049335,
+        "p95": 4.79255974255835,
+        "max": 6.053081397353108
+      },
+      "accepted_abs_vertical_reference_error": {
+        "n": 506,
+        "mean": 0.11443114606689488,
+        "p95": 0.27599396882233795,
+        "max": 0.42068029333043977
+      },
+      "target_publish_age_s": {
+        "n": 532,
+        "mean": 0.21889566525274667,
+        "p95": 0.3175976699858438,
+        "max": 0.4229840080079157
+      },
+      "input_sha256": {
+        "report.json": "760c6a4b5b81349dd45103fdaca43d7899d12c5a12db58a4eff6a394f27cfed5",
+        "association.jsonl": "d320514c3390858219892c1717f502a5fc683bdd25b87efe2938ca4d7d431bbb",
+        "identity_poses.jsonl": "cb472a7d6bd87041ee6a8c443a77ff1a2b7eb4973b3308084162778714abb1dd"
+      },
+      "limitations": [
+        "Pitch uses matched Gazebo body poses, not a gimbal angle or continuous ULog attitude.",
+        "Gap windows are +/-1.5 wall seconds; counts depend on observed gaps and frame cadence.",
+        "Accepted-box metrics include only confirmed detections, not invisible full-body truth.",
+        "Cross-trial statistics do not isolate individual fixes or prove repeatability."
+      ]
+    },
+    {
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_03",
+      "window_wall_s": [
+        73.98602410199237,
+        179.44549338100478
+      ],
+      "coverage_fraction": 0.9163593213102399,
+      "observation_gaps": 6,
+      "accepted_frames": 493,
+      "accepted_vertical_truncated_frames": 1,
+      "accepted_truncated_geometry_protected": 1,
+      "matched_pitch_frames": 520,
+      "abs_body_pitch_deg": {
+        "n": 520,
+        "mean": 1.5996058064236132,
+        "p95": 3.9832164209172025,
+        "max": 8.717907295972646
+      },
+      "near_gap_abs_body_pitch_deg": {
+        "n": 88,
+        "mean": 2.007397175137016,
+        "p95": 5.328482001091963,
+        "max": 8.717907295972646
+      },
+      "accepted_abs_vertical_reference_error": {
+        "n": 493,
+        "mean": 0.11623179450274033,
+        "p95": 0.25800182201244215,
+        "max": 0.4663150363498264
+      },
+      "target_publish_age_s": {
+        "n": 520,
+        "mean": 0.2240747763692455,
+        "p95": 0.32277748599881306,
+        "max": 0.43573857299634255
+      },
+      "input_sha256": {
+        "report.json": "a70d7bf5f044ab1f351e77141670e9895b917a34ba685a319d111f544350f633",
+        "association.jsonl": "e067293a1d640fecdd06d658f1d594b3e62ef6da7d537a9a5b9101e5e9d0aef9",
+        "identity_poses.jsonl": "0063556701cd9043923216a3f8e1bc1ccb7f4585191508c210ff419a649cbb50"
+      },
+      "limitations": [
+        "Pitch uses matched Gazebo body poses, not a gimbal angle or continuous ULog attitude.",
+        "Gap windows are +/-1.5 wall seconds; counts depend on observed gaps and frame cadence.",
+        "Accepted-box metrics include only confirmed detections, not invisible full-body truth.",
+        "Cross-trial statistics do not isolate individual fixes or prove repeatability."
+      ]
+    },
+    {
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_04",
+      "window_wall_s": [
+        69.84508141299011,
+        174.45892222001567
+      ],
+      "coverage_fraction": 0.9223356811482286,
+      "observation_gaps": 7,
+      "accepted_frames": 537,
+      "accepted_vertical_truncated_frames": 0,
+      "accepted_truncated_geometry_protected": 0,
+      "matched_pitch_frames": 565,
+      "abs_body_pitch_deg": {
+        "n": 565,
+        "mean": 1.5297703068963522,
+        "p95": 4.154650064539916,
+        "max": 8.901585594946125
+      },
+      "near_gap_abs_body_pitch_deg": {
+        "n": 90,
+        "mean": 1.9463221927416747,
+        "p95": 5.322780460426166,
+        "max": 8.901585594946125
+      },
+      "accepted_abs_vertical_reference_error": {
+        "n": 537,
+        "mean": 0.1216549516127055,
+        "p95": 0.2800545021339699,
+        "max": 0.43788734718605327
+      },
+      "target_publish_age_s": {
+        "n": 565,
+        "mean": 0.21005846758463742,
+        "p95": 0.31418841399136,
+        "max": 0.4173456570133567
+      },
+      "input_sha256": {
+        "report.json": "9f5141f3118a604d72a797110366ea313e281a66f3f09bae8e60334ac5a39c3a",
+        "association.jsonl": "e7b8c2068d9d7acc508920d7e15a3a737ff5c9b74b6460f6bf43524a1b23bcf1",
+        "identity_poses.jsonl": "4b2f299d21cfcbb97e43fa489cd796273418fa941364b19de2ca73cf1e2aab3e"
+      },
+      "limitations": [
+        "Pitch uses matched Gazebo body poses, not a gimbal angle or continuous ULog attitude.",
+        "Gap windows are +/-1.5 wall seconds; counts depend on observed gaps and frame cadence.",
+        "Accepted-box metrics include only confirmed detections, not invisible full-body truth.",
+        "Cross-trial statistics do not isolate individual fixes or prove repeatability."
+      ]
+    },
+    {
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_05",
+      "window_wall_s": [
+        69.63557632401353,
+        176.12477917701472
+      ],
+      "coverage_fraction": 0.9132654594991912,
+      "observation_gaps": 7,
+      "accepted_frames": 459,
+      "accepted_vertical_truncated_frames": 2,
+      "accepted_truncated_geometry_protected": 2,
+      "matched_pitch_frames": 487,
+      "abs_body_pitch_deg": {
+        "n": 487,
+        "mean": 1.7472511948656912,
+        "p95": 3.9329018709802486,
+        "max": 7.843939197947939
+      },
+      "near_gap_abs_body_pitch_deg": {
+        "n": 75,
+        "mean": 2.1033205757373414,
+        "p95": 5.674219925880682,
+        "max": 7.843939197947939
+      },
+      "accepted_abs_vertical_reference_error": {
+        "n": 459,
+        "mean": 0.11230485544148536,
+        "p95": 0.28309687861689803,
+        "max": 0.4611000343605324
+      },
+      "target_publish_age_s": {
+        "n": 487,
+        "mean": 0.24575599866466943,
+        "p95": 0.3547857119992841,
+        "max": 0.4465662850125227
+      },
+      "input_sha256": {
+        "report.json": "8b33a77bdcd9239631e328e71b08f3ba231654aae303ff23c13dd848b4179b98",
+        "association.jsonl": "2cf3b1cc6370cf72cc0873f96b729604dc4c58d14c654cb197fa176eee1d79ee",
+        "identity_poses.jsonl": "926d58d64188224e900931f8e4bae56444c612ab5d3456ae4e6b7d53a8e02cf7"
+      },
+      "limitations": [
+        "Pitch uses matched Gazebo body poses, not a gimbal angle or continuous ULog attitude.",
+        "Gap windows are +/-1.5 wall seconds; counts depend on observed gaps and frame cadence.",
+        "Accepted-box metrics include only confirmed detections, not invisible full-body truth.",
+        "Cross-trial statistics do not isolate individual fixes or prove repeatability."
+      ]
+    },
+    {
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_06",
+      "window_wall_s": [
+        73.53285221298574,
+        187.78429273198708
+      ],
+      "coverage_fraction": 0.8640561979796371,
+      "observation_gaps": 7,
+      "accepted_frames": 485,
+      "accepted_vertical_truncated_frames": 2,
+      "accepted_truncated_geometry_protected": 2,
+      "matched_pitch_frames": 528,
+      "abs_body_pitch_deg": {
+        "n": 528,
+        "mean": 1.517272865874808,
+        "p95": 4.432826043223212,
+        "max": 8.785983383134
+      },
+      "near_gap_abs_body_pitch_deg": {
+        "n": 74,
+        "mean": 2.952016409559639,
+        "p95": 7.857168757842639,
+        "max": 8.785983383134
+      },
+      "accepted_abs_vertical_reference_error": {
+        "n": 485,
+        "mean": 0.11549493289348868,
+        "p95": 0.26555288809317135,
+        "max": 0.4651477955005786
+      },
+      "target_publish_age_s": {
+        "n": 528,
+        "mean": 0.25154462713395664,
+        "p95": 0.3620455829950515,
+        "max": 0.43872719001956284
+      },
+      "input_sha256": {
+        "report.json": "2396037e7b16352fa9becdd2db18a8422f40c0f929f81b3e4f928f89d4e2b57e",
+        "association.jsonl": "dd6bb0a8b5567f18e22f269dda56ce320f6ca7f9aec94e1d74f19f67a5b7b1a6",
+        "identity_poses.jsonl": "40d2b3484af5a6779cbed51e869aebe71ba9a28963deb6be4bee45867764f17a"
+      },
+      "limitations": [
+        "Pitch uses matched Gazebo body poses, not a gimbal angle or continuous ULog attitude.",
+        "Gap windows are +/-1.5 wall seconds; counts depend on observed gaps and frame cadence.",
+        "Accepted-box metrics include only confirmed detections, not invisible full-body truth.",
+        "Cross-trial statistics do not isolate individual fixes or prove repeatability."
+      ]
+    },
+    {
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_07",
+      "window_wall_s": [
+        74.74813509100932,
+        179.74517187301535
+      ],
+      "coverage_fraction": 0.9196955872992556,
+      "observation_gaps": 5,
+      "accepted_frames": 499,
+      "accepted_vertical_truncated_frames": 2,
+      "accepted_truncated_geometry_protected": 2,
+      "matched_pitch_frames": 525,
+      "abs_body_pitch_deg": {
+        "n": 525,
+        "mean": 1.5893250936030179,
+        "p95": 4.04396591362397,
+        "max": 8.749390635262436
+      },
+      "near_gap_abs_body_pitch_deg": {
+        "n": 69,
+        "mean": 2.420846605289583,
+        "p95": 6.869825968494231,
+        "max": 8.749390635262436
+      },
+      "accepted_abs_vertical_reference_error": {
+        "n": 499,
+        "mean": 0.11220031480060814,
+        "p95": 0.25842307761863414,
+        "max": 0.464030287000868
+      },
+      "target_publish_age_s": {
+        "n": 525,
+        "mean": 0.22887886095958362,
+        "p95": 0.33608147301129065,
+        "max": 0.4754583740141243
+      },
+      "input_sha256": {
+        "report.json": "5755785dbbdb443b57054d7f171661c18f1c58ab030d8cee874307fdbcb62d3c",
+        "association.jsonl": "113ff39253a00990645b8131632bb4c5149919584e6f52a99d4d759a478e81d8",
+        "identity_poses.jsonl": "107cdef0654dffab59c04bd1eb946748dce1a4d0e8ec175e5eb34c8dcf22cac3"
+      },
+      "limitations": [
+        "Pitch uses matched Gazebo body poses, not a gimbal angle or continuous ULog attitude.",
+        "Gap windows are +/-1.5 wall seconds; counts depend on observed gaps and frame cadence.",
+        "Accepted-box metrics include only confirmed detections, not invisible full-body truth.",
+        "Cross-trial statistics do not isolate individual fixes or prove repeatability."
+      ]
+    },
+    {
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_08",
+      "window_wall_s": [
+        73.14305664401036,
+        179.23774053301895
+      ],
+      "coverage_fraction": 0.9123676111521007,
+      "observation_gaps": 4,
+      "accepted_frames": 477,
+      "accepted_vertical_truncated_frames": 4,
+      "accepted_truncated_geometry_protected": 4,
+      "matched_pitch_frames": 505,
+      "abs_body_pitch_deg": {
+        "n": 505,
+        "mean": 1.6663946265068383,
+        "p95": 4.048099093936161,
+        "max": 8.01926234138829
+      },
+      "near_gap_abs_body_pitch_deg": {
+        "n": 48,
+        "mean": 2.0864681087681856,
+        "p95": 5.254509174270081,
+        "max": 5.943266693919541
+      },
+      "accepted_abs_vertical_reference_error": {
+        "n": 477,
+        "mean": 0.11627194896063843,
+        "p95": 0.25365555374710647,
+        "max": 0.45970775462962965
+      },
+      "target_publish_age_s": {
+        "n": 505,
+        "mean": 0.23401535527716105,
+        "p95": 0.3400386389985215,
+        "max": 0.4677322919887956
+      },
+      "input_sha256": {
+        "report.json": "8acd99b47d84c50a3fbe2de7523d44e9cfafe5cc9f17409ebddcbcac10282535",
+        "association.jsonl": "dd69f03e0f5d673e5c9dde61b9cc3be658a64791e6913565bbde0f51e057f9db",
+        "identity_poses.jsonl": "b38fd4a399060ae3fa3c8a2c442cc27d607b2219f0c872227688f399ed805d5b"
+      },
+      "limitations": [
+        "Pitch uses matched Gazebo body poses, not a gimbal angle or continuous ULog attitude.",
+        "Gap windows are +/-1.5 wall seconds; counts depend on observed gaps and frame cadence.",
+        "Accepted-box metrics include only confirmed detections, not invisible full-body truth.",
+        "Cross-trial statistics do not isolate individual fixes or prove repeatability."
+      ]
+    },
+    {
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_09",
+      "window_wall_s": [
+        76.87914901701151,
+        189.3766843920166
+      ],
+      "coverage_fraction": 0.8604528555635012,
+      "observation_gaps": 5,
+      "accepted_frames": 475,
+      "accepted_vertical_truncated_frames": 2,
+      "accepted_truncated_geometry_protected": 2,
+      "matched_pitch_frames": 524,
+      "abs_body_pitch_deg": {
+        "n": 524,
+        "mean": 1.6605918454553121,
+        "p95": 4.37062242924589,
+        "max": 9.850225772751099
+      },
+      "near_gap_abs_body_pitch_deg": {
+        "n": 61,
+        "mean": 3.1248201971140395,
+        "p95": 8.192436819965687,
+        "max": 8.811928614241749
+      },
+      "accepted_abs_vertical_reference_error": {
+        "n": 475,
+        "mean": 0.1085529413948282,
+        "p95": 0.22282274034288185,
+        "max": 0.4705659089265045
+      },
+      "target_publish_age_s": {
+        "n": 524,
+        "mean": 0.25348178493920964,
+        "p95": 0.3600033709954005,
+        "max": 0.48582467398955487
+      },
+      "input_sha256": {
+        "report.json": "80ba96bc22b628ec8b189bc48ab3a64ba128ae2def2f998548cd32e4b7660023",
+        "association.jsonl": "67bab60200269b200a98993a613a7e113082a905335971ee1365f845f86d7307",
+        "identity_poses.jsonl": "8e01e9670ba93c3cb90c97622fbc569ce5d0da2084dea68ebbbd3d192ef9eefa"
+      },
+      "limitations": [
+        "Pitch uses matched Gazebo body poses, not a gimbal angle or continuous ULog attitude.",
+        "Gap windows are +/-1.5 wall seconds; counts depend on observed gaps and frame cadence.",
+        "Accepted-box metrics include only confirmed detections, not invisible full-body truth.",
+        "Cross-trial statistics do not isolate individual fixes or prove repeatability."
+      ]
+    },
+    {
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/overtaking_10",
+      "window_wall_s": [
+        74.74922947198502,
+        180.14263638999546
+      ],
+      "coverage_fraction": 0.9144905456639983,
+      "observation_gaps": 7,
+      "accepted_frames": 472,
+      "accepted_vertical_truncated_frames": 3,
+      "accepted_truncated_geometry_protected": 3,
+      "matched_pitch_frames": 498,
+      "abs_body_pitch_deg": {
+        "n": 498,
+        "mean": 1.5857936259585375,
+        "p95": 4.132976311212705,
+        "max": 8.944733437229711
+      },
+      "near_gap_abs_body_pitch_deg": {
+        "n": 83,
+        "mean": 2.918239918616892,
+        "p95": 7.38775397656272,
+        "max": 8.944733437229711
+      },
+      "accepted_abs_vertical_reference_error": {
+        "n": 472,
+        "mean": 0.11284141229221226,
+        "p95": 0.26253662109375,
+        "max": 0.4643542254412615
+      },
+      "target_publish_age_s": {
+        "n": 498,
+        "mean": 0.24355737472653863,
+        "p95": 0.3477286270062905,
+        "max": 0.44943393001449294
+      },
+      "input_sha256": {
+        "report.json": "6cfd7e83b2a5f84d859fb378559731e4700918d01927e44da6d9b1290761f019",
+        "association.jsonl": "04e3a33e05c48bdb3d42aabf7fbe60bcdc826b86b7d0c2789633bdf083fc2635",
+        "identity_poses.jsonl": "4d2e97ddd4cfeb4d442f46ba3bf3e6a2c4cc9f8ce390a120d01817c7b411439e"
+      },
+      "limitations": [
+        "Pitch uses matched Gazebo body poses, not a gimbal angle or continuous ULog attitude.",
+        "Gap windows are +/-1.5 wall seconds; counts depend on observed gaps and frame cadence.",
+        "Accepted-box metrics include only confirmed detections, not invisible full-body truth.",
+        "Cross-trial statistics do not isolate individual fixes or prove repeatability."
+      ]
+    }
+  ]
+}
