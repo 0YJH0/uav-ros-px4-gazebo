@@ -1,0 +1,2434 @@
+{
+  "name": "lane_change_02",
+  "group": "lane_change",
+  "strict_joint_passed": true,
+  "task_passed": true,
+  "identity_verified": true,
+  "coverage_percent": 91.74685342519187,
+  "failure_reasons": [],
+  "failed_services": [],
+  "recovery_episodes": [
+    {
+      "loss_wall_s": 98.59969455603277,
+      "planned_occlusion": true,
+      "confirmation_wall_s": 105.54821348102996,
+      "duration_s": 6.948518924997188,
+      "censored": false,
+      "censor_lower_bound_s": null,
+      "recovery_timeout": false,
+      "association_frames_in_task_loss": 24,
+      "panel_start_wall_s": 97.47957932302961,
+      "panel_end_wall_s": 103.87823428801494,
+      "panel_end_to_confirmed_recovery_s": 1.6699848379939795,
+      "frames_with_independent_target_candidate": 5,
+      "frames_with_rejected_independent_target_candidate": 2,
+      "correct_candidate_rejection_reason_counts": {
+        "pending_confirmation": 2
+      },
+      "onboard_reason_counts": {
+        "no_candidates": 18,
+        "stale_inference_result": 1,
+        "pending_confirmation": 2,
+        "confirmed": 3
+      },
+      "gmc_reason_counts": {
+        "unavailable": 20,
+        "applied": 4
+      },
+      "no_candidate_frames": 19,
+      "context_start_wall_s": 97.09969455603277,
+      "context_end_wall_s": 105.79821348102996,
+      "context": [
+        {
+          "wall_s": 97.10317940602545,
+          "stamp": {
+            "sec": 77,
+            "nanosec": 252000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 2,
+          "candidate_summaries": [
+            {
+              "track_id": 9,
+              "bbox": [
+                402.1259765625,
+                353.66278076171875,
+                516.7828979492188,
+                455.812255859375
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            },
+            {
+              "track_id": 11,
+              "bbox": [
+                625.1483154296875,
+                339.91558837890625,
+                750.3074951171875,
+                423.5430908203125
+              ],
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 9,
+              "accepted": true,
+              "confidence": 0.8268622756004333,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.0005665947570582739,
+              "center_gate": 0.04660052557504969,
+              "log_scale_error": 0.0007067279701835627,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9997202485994007,
+              "mahalanobis_distance": 0.0028501119631732137,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                114.72366209143391,
+                102.22169250487231
+              ],
+              "bbox": [
+                402.1259765625,
+                353.66278076171875,
+                516.7828979492188,
+                455.812255859375
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 74,
+            "matches": 78,
+            "forward_backward_rejected": 1,
+            "inliers": 77,
+            "inlier_ratio": 0.9871794871794872,
+            "residual_median_px": 0.2761686867363265,
+            "residual_p90_px": 0.5622542714177644,
+            "occupied_cells": 11,
+            "span": [
+              0.91875,
+              0.7518518518518519
+            ],
+            "support_rms_normalized": 0.17044778402673774,
+            "spatial_conditioning": 1.7516696733102317,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              1.0038378289264929,
+              -0.00019971788949278702,
+              -1.9160100314595434
+            ],
+            [
+              0.00019971788949278702,
+              1.0038378289264929,
+              -2.1511530557585647
+            ]
+          ],
+          "processing_s": 0.26468107203254476,
+          "target_publish_age_s": 0.3344313430134207,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 97.29747814300936,
+          "stamp": {
+            "sec": 77,
+            "nanosec": 400000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 2,
+          "candidate_summaries": [
+            {
+              "track_id": 9,
+              "bbox": [
+                401.08343505859375,
+                353.028564453125,
+                516.3764038085938,
+                449.495849609375
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            },
+            {
+              "track_id": 11,
+              "bbox": [
+                625.7760009765625,
+                338.854736328125,
+                751.5941162109375,
+                423.0250244140625
+              ],
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 9,
+              "accepted": true,
+              "confidence": 0.7734490633010864,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.0030192050821938607,
+              "center_gate": 0.04490721789974487,
+              "log_scale_error": 0.05785730982946635,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9997201908205472,
+              "mahalanobis_distance": 0.4384856813633312,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                114.37761498802783,
+                102.21324280988613
+              ],
+              "bbox": [
+                401.08343505859375,
+                353.028564453125,
+                516.3764038085938,
+                449.495849609375
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 80,
+            "matches": 74,
+            "forward_backward_rejected": 0,
+            "inliers": 74,
+            "inlier_ratio": 1.0,
+            "residual_median_px": 0.3706764623021531,
+            "residual_p90_px": 0.8358590622213911,
+            "occupied_cells": 11,
+            "span": [
+              0.9666666666666667,
+              0.7518518518518519
+            ],
+            "support_rms_normalized": 0.17055047107636745,
+            "spatial_conditioning": 1.966766805687859,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              1.0049750115453278,
+              -0.0004847024892836757,
+              -2.571912339331584
+            ],
+            [
+              0.0004847024892836757,
+              1.0049750115453278,
+              -3.1829727334261655
+            ]
+          ],
+          "processing_s": 0.1938818299677223,
+          "target_publish_age_s": 0.29528793902136385,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 97.46206019201782,
+          "stamp": {
+            "sec": 77,
+            "nanosec": 552000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 2,
+          "candidate_summaries": [
+            {
+              "track_id": 9,
+              "bbox": [
+                401.94073486328125,
+                351.6331787109375,
+                515.9804077148438,
+                451.3748779296875
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            },
+            {
+              "track_id": 11,
+              "bbox": [
+                626.3349609375,
+                337.88983154296875,
+                753.466796875,
+                422.94366455078125
+              ],
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 9,
+              "accepted": true,
+              "confidence": 0.8690451979637146,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.002016293573344637,
+              "center_gate": 0.04412785587541294,
+              "log_scale_error": 0.004747930480914153,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.999671407395658,
+              "mahalanobis_distance": 0.04136467937753433,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                114.58241271632683,
+                100.11650566644454
+              ],
+              "bbox": [
+                401.94073486328125,
+                351.6331787109375,
+                515.9804077148438,
+                451.3748779296875
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 77,
+            "matches": 79,
+            "forward_backward_rejected": 1,
+            "inliers": 77,
+            "inlier_ratio": 0.9746835443037974,
+            "residual_median_px": 0.3691041977809678,
+            "residual_p90_px": 0.9195238878324475,
+            "occupied_cells": 12,
+            "span": [
+              0.96875,
+              0.7185185185185186
+            ],
+            "support_rms_normalized": 0.16598726076893403,
+            "spatial_conditioning": 2.064125451102357,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              1.0053261247694616,
+              -0.0007726551299358013,
+              -2.494370596521558
+            ],
+            [
+              0.0007726551299358013,
+              1.0053261247694616,
+              -3.187110103216168
+            ]
+          ],
+          "processing_s": 0.16488938400289044,
+          "target_publish_age_s": 0.2363749950309284,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 97.62971447198652,
+          "stamp": {
+            "sec": 77,
+            "nanosec": 652000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 2,
+          "candidate_summaries": [
+            {
+              "track_id": 9,
+              "bbox": [
+                402.0439453125,
+                350.98944091796875,
+                515.8519287109375,
+                452.49798583984375
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            },
+            {
+              "track_id": 11,
+              "bbox": [
+                626.4112548828125,
+                338.5506286621094,
+                754.5364990234375,
+                423.4947814941406
+              ],
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 9,
+              "accepted": true,
+              "confidence": 0.849233865737915,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.0023659050632088615,
+              "center_gate": 0.04411168697464746,
+              "log_scale_error": 0.01830573369069488,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9997673085129941,
+              "mahalanobis_distance": 0.09050960593382752,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                114.1358298078423,
+                99.66726097554003
+              ],
+              "bbox": [
+                402.0439453125,
+                350.98944091796875,
+                515.8519287109375,
+                452.49798583984375
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 70,
+            "matches": 76,
+            "forward_backward_rejected": 1,
+            "inliers": 74,
+            "inlier_ratio": 0.9736842105263158,
+            "residual_median_px": 0.30064583901218744,
+            "residual_p90_px": 0.6425755485461535,
+            "occupied_cells": 12,
+            "span": [
+              0.9375,
+              0.7666666666666667
+            ],
+            "support_rms_normalized": 0.17171069070597134,
+            "spatial_conditioning": 1.8117688488895625,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              1.0039270548815071,
+              -0.000412065030252855,
+              -1.9219766534117197
+            ],
+            [
+              0.000412065030252855,
+              1.0039270548815071,
+              -1.198629328880559
+            ]
+          ],
+          "processing_s": 0.16723987297154963,
+          "target_publish_age_s": 0.25844619201961905,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 97.80548125103815,
+          "stamp": {
+            "sec": 77,
+            "nanosec": 800000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 2,
+          "candidate_summaries": [
+            {
+              "track_id": 9,
+              "bbox": [
+                400.947509765625,
+                351.816162109375,
+                515.67333984375,
+                450.842529296875
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            },
+            {
+              "track_id": 11,
+              "bbox": [
+                627.087890625,
+                339.130859375,
+                755.66552734375,
+                425.4698486328125
+              ],
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 9,
+              "accepted": true,
+              "confidence": 0.8562119603157043,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.000838417345741248,
+              "center_gate": 0.04440498367534019,
+              "log_scale_error": 0.010571399866492026,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9996588727354283,
+              "mahalanobis_distance": 0.025143105865712452,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                113.86646285064396,
+                100.07876738315626
+              ],
+              "bbox": [
+                400.947509765625,
+                351.816162109375,
+                515.67333984375,
+                450.842529296875
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 76,
+            "matches": 69,
+            "forward_backward_rejected": 1,
+            "inliers": 69,
+            "inlier_ratio": 1.0,
+            "residual_median_px": 0.43228383916606866,
+            "residual_p90_px": 0.885398876675367,
+            "occupied_cells": 12,
+            "span": [
+              0.975,
+              0.7185185185185186
+            ],
+            "support_rms_normalized": 0.166123386524013,
+            "spatial_conditioning": 2.053728588883184,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              1.0054627473662354,
+              -0.0004898567872185548,
+              -2.7192291270621167
+            ],
+            [
+              0.0004898567872185548,
+              1.0054627473662354,
+              -1.6346899153667303
+            ]
+          ],
+          "processing_s": 0.174092857982032,
+          "target_publish_age_s": 0.20050006703240797,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 98.05335204600124,
+          "stamp": {
+            "sec": 77,
+            "nanosec": 852000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 6,
+            "matches": 0,
+            "forward_backward_rejected": 76
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.24864895397331566,
+          "target_publish_age_s": 0.3730441960506141,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 98.46651028300403,
+          "stamp": {
+            "sec": 78,
+            "nanosec": 152000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_features",
+            "features": 6
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.3183563119964674,
+          "target_publish_age_s": 0.3172286620247178,
+          "roi_yolo_s": 0.14821887598372996
+        },
+        {
+          "wall_s": 98.73703386698617,
+          "stamp": {
+            "sec": 78,
+            "nanosec": 300000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_features",
+            "features": 5
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.2671681449864991,
+          "target_publish_age_s": 0.3825813269941136,
+          "roi_yolo_s": 0.1144146510050632
+        },
+        {
+          "wall_s": 98.99566194100771,
+          "stamp": {
+            "sec": 78,
+            "nanosec": 500000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_features",
+            "features": 5
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.25900031899800524,
+          "target_publish_age_s": 0.3057936090044677,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 99.3089703930309,
+          "stamp": {
+            "sec": 78,
+            "nanosec": 600000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_features",
+            "features": 4
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.31164888601051643,
+          "target_publish_age_s": 0.4469328369596042,
+          "roi_yolo_s": 0.1463646109914407
+        },
+        {
+          "wall_s": 99.5954492110177,
+          "stamp": {
+            "sec": 78,
+            "nanosec": 852000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_features",
+            "features": 1
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.28708683198783547,
+          "target_publish_age_s": 0.30525482102530077,
+          "roi_yolo_s": 0.12900464498670772
+        },
+        {
+          "wall_s": 99.99641849001637,
+          "stamp": {
+            "sec": 79,
+            "nanosec": 0
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_features",
+            "features": 1
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.39929356903303415,
+          "target_publish_age_s": 0.4759108310099691,
+          "roi_yolo_s": 0.19885389099363238
+        },
+        {
+          "wall_s": 100.30004812899278,
+          "stamp": {
+            "sec": 79,
+            "nanosec": 252000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_features",
+            "features": 0
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.3040252550272271,
+          "target_publish_age_s": 0.36691440700087696,
+          "roi_yolo_s": 0.12994266097666696
+        },
+        {
+          "wall_s": 100.62907765200362,
+          "stamp": {
+            "sec": 79,
+            "nanosec": 452000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_features",
+            "features": 71
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.3288935960154049,
+          "target_publish_age_s": 0.4108651829883456,
+          "roi_yolo_s": 0.1356761620263569
+        },
+        {
+          "wall_s": 100.89309894602047,
+          "stamp": {
+            "sec": 79,
+            "nanosec": 700000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 70,
+            "matches": 0,
+            "forward_backward_rejected": 71
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.26157527399482206,
+          "target_publish_age_s": 0.29258771799504757,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 101.18743061699206,
+          "stamp": {
+            "sec": 79,
+            "nanosec": 852000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 69,
+            "matches": 0,
+            "forward_backward_rejected": 70
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.2951670809998177,
+          "target_publish_age_s": 0.3405560689861886,
+          "roi_yolo_s": 0.13402359298197553
+        },
+        {
+          "wall_s": 101.48093309998512,
+          "stamp": {
+            "sec": 80,
+            "nanosec": 0
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 71,
+            "matches": 0,
+            "forward_backward_rejected": 69
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.29326591902645305,
+          "target_publish_age_s": 0.3529225380043499,
+          "roi_yolo_s": 0.12130268098553643
+        },
+        {
+          "wall_s": 101.67794869898353,
+          "stamp": {
+            "sec": 80,
+            "nanosec": 152000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 75,
+            "matches": 0,
+            "forward_backward_rejected": 71
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.19615869101835415,
+          "target_publish_age_s": 0.30687518598278984,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 101.90579186502146,
+          "stamp": {
+            "sec": 80,
+            "nanosec": 300000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 73,
+            "matches": 0,
+            "forward_backward_rejected": 75
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.2260950690251775,
+          "target_publish_age_s": 0.3014100539730862,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 102.19415355200181,
+          "stamp": {
+            "sec": 80,
+            "nanosec": 452000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 71,
+            "matches": 0,
+            "forward_backward_rejected": 73
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.2892680439981632,
+          "target_publish_age_s": 0.3072218169691041,
+          "roi_yolo_s": 0.14154558500740677
+        },
+        {
+          "wall_s": 102.53703980502905,
+          "stamp": {
+            "sec": 80,
+            "nanosec": 652000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 73,
+            "matches": 0,
+            "forward_backward_rejected": 71
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.34271681698737666,
+          "target_publish_age_s": 0.3602106439648196,
+          "roi_yolo_s": 0.13168659998336807
+        },
+        {
+          "wall_s": 102.81218730803812,
+          "stamp": {
+            "sec": 80,
+            "nanosec": 900000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 72,
+            "matches": 0,
+            "forward_backward_rejected": 73
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.2645828550448641,
+          "target_publish_age_s": 0.2627031500451267,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 103.1494336979813,
+          "stamp": {
+            "sec": 81,
+            "nanosec": 52000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 73,
+            "matches": 0,
+            "forward_backward_rejected": 72
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.33600392600055784,
+          "target_publish_age_s": 0.3430358750047162,
+          "roi_yolo_s": 0.1410374499973841
+        },
+        {
+          "wall_s": 103.48061814898392,
+          "stamp": {
+            "sec": 81,
+            "nanosec": 200000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 71,
+            "matches": 0,
+            "forward_backward_rejected": 73
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.3312083230121061,
+          "target_publish_age_s": 0.4309310139506124,
+          "roi_yolo_s": 0.14625130203785375
+        },
+        {
+          "wall_s": 103.86453582800459,
+          "stamp": {
+            "sec": 81,
+            "nanosec": 400000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "stale_inference_result",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 71,
+            "matches": 0,
+            "forward_backward_rejected": 71
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.3726401969906874,
+          "target_publish_age_s": 0.5103160280268639,
+          "roi_yolo_s": 0.2097264500334859
+        },
+        {
+          "wall_s": 104.15877958200872,
+          "stamp": {
+            "sec": 81,
+            "nanosec": 700000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "panel_occlusion_unscorable",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 70,
+            "matches": 0,
+            "forward_backward_rejected": 71
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.3038111719652079,
+          "target_publish_age_s": 0.32070927001768723,
+          "roi_yolo_s": 0.11987875698832795
+        },
+        {
+          "wall_s": 104.47537395101972,
+          "stamp": {
+            "sec": 81,
+            "nanosec": 900000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "pending_confirmation",
+          "independent_label": "unconfirmed",
+          "candidate_count": 3,
+          "candidate_summaries": [
+            {
+              "track_id": null,
+              "bbox": [
+                643.7913818359375,
+                403.01898193359375,
+                801.2696533203125,
+                510.86505126953125
+              ],
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            },
+            {
+              "track_id": null,
+              "bbox": [
+                404.5543212890625,
+                398.6741027832031,
+                509.70025634765625,
+                486.0265808105469
+              ],
+              "reason": "pending_confirmation",
+              "rejection_reasons": [],
+              "confirmation_count": 1,
+              "confirmation_required": 3,
+              "overlap_confirmation_preserved": null
+            },
+            {
+              "track_id": null,
+              "bbox": [
+                643.794921875,
+                403.4794921875,
+                959.6123046875,
+                535.859375
+              ],
+              "reason": "weak_idless_anchor_expired",
+              "rejection_reasons": [
+                "weak_idless_anchor_expired",
+                "center_gate",
+                "scale_gate",
+                "appearance_gate",
+                "mahalanobis_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 1,
+              "track_id": null,
+              "accepted": false,
+              "confidence": 0.7376109957695007,
+              "reason": "pending_confirmation",
+              "rejection_reasons": [],
+              "center_error": 0.13618333092435192,
+              "center_gate": 0.18,
+              "log_scale_error": 0.07027229283377823,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9999056319050261,
+              "mahalanobis_distance": 0.636554850540921,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                107.92722345652163,
+                93.71176090435195
+              ],
+              "bbox": [
+                404.5543212890625,
+                398.6741027832031,
+                509.70025634765625,
+                486.0265808105469
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "unavailable",
+          "gmc_quality": {
+            "reason": "insufficient_matches",
+            "features": 60,
+            "matches": 0,
+            "forward_backward_rejected": 70
+          },
+          "gmc_warp_px": null,
+          "processing_s": 0.3163987130392343,
+          "target_publish_age_s": 0.3580086839501746,
+          "roi_yolo_s": 0.12096756702521816
+        },
+        {
+          "wall_s": 104.86337189300684,
+          "stamp": {
+            "sec": 82,
+            "nanosec": 152000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "pending_confirmation",
+          "independent_label": "unconfirmed",
+          "candidate_count": 3,
+          "candidate_summaries": [
+            {
+              "track_id": 18,
+              "bbox": [
+                404.9632568359375,
+                394.47235107421875,
+                510.68072509765625,
+                486.2852783203125
+              ],
+              "reason": "pending_confirmation",
+              "rejection_reasons": [],
+              "confirmation_count": 2,
+              "confirmation_required": 3,
+              "overlap_confirmation_preserved": null
+            },
+            {
+              "track_id": 17,
+              "bbox": [
+                644.3741455078125,
+                400.6239013671875,
+                803.2452392578125,
+                508.9788818359375
+              ],
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            },
+            {
+              "track_id": null,
+              "bbox": [
+                644.1870727539062,
+                400.432861328125,
+                959.7881469726562,
+                535.4490966796875
+              ],
+              "reason": "weak_idless_anchor_expired",
+              "rejection_reasons": [
+                "weak_idless_anchor_expired",
+                "center_gate",
+                "scale_gate",
+                "appearance_gate",
+                "mahalanobis_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 18,
+              "accepted": false,
+              "confidence": 0.7410982251167297,
+              "reason": "pending_confirmation",
+              "rejection_reasons": [],
+              "center_error": 0.14261838877467972,
+              "center_gate": 0.18,
+              "log_scale_error": 0.02420881942625952,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9998678625039721,
+              "mahalanobis_distance": 0.5342549933847293,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                108.30799362422493,
+                94.04209343092884
+              ],
+              "bbox": [
+                404.9632568359375,
+                394.47235107421875,
+                510.68072509765625,
+                486.2852783203125
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 59,
+            "matches": 59,
+            "forward_backward_rejected": 1,
+            "inliers": 59,
+            "inlier_ratio": 1.0,
+            "residual_median_px": 0.30786595960662927,
+            "residual_p90_px": 0.7387574990717266,
+            "occupied_cells": 8,
+            "span": [
+              0.7854166666666667,
+              0.5740740740740741
+            ],
+            "support_rms_normalized": 0.14763074440348214,
+            "spatial_conditioning": 2.5771958206268426,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              1.0035529608099554,
+              -0.0004300894115059767,
+              -1.886835471705408
+            ],
+            [
+              0.0004300894115059767,
+              1.0035529608099554,
+              -5.088763864459142
+            ]
+          ],
+          "processing_s": 0.38646626501576975,
+          "target_publish_age_s": 0.38951630296651274,
+          "roi_yolo_s": 0.2258481389726512
+        },
+        {
+          "wall_s": 105.15789306402439,
+          "stamp": {
+            "sec": 82,
+            "nanosec": 352000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 3,
+          "candidate_summaries": [
+            {
+              "track_id": 18,
+              "bbox": [
+                405.72943115234375,
+                380.5100402832031,
+                508.94268798828125,
+                472.3019714355469
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": 3,
+              "confirmation_required": 3,
+              "overlap_confirmation_preserved": false
+            },
+            {
+              "track_id": 17,
+              "bbox": [
+                642.7236938476562,
+                387.75457763671875,
+                800.3814086914062,
+                494.94879150390625
+              ],
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            },
+            {
+              "track_id": null,
+              "bbox": [
+                642.7618408203125,
+                387.25604248046875,
+                959.0579833984375,
+                540.0
+              ],
+              "reason": "weak_idless_anchor_expired",
+              "rejection_reasons": [
+                "weak_idless_anchor_expired",
+                "center_gate",
+                "scale_gate",
+                "appearance_gate",
+                "mahalanobis_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 18,
+              "accepted": true,
+              "confidence": 0.7861675024032593,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.14351194804248055,
+              "center_gate": 0.18,
+              "log_scale_error": 0.04727437017565217,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9998936561586663,
+              "mahalanobis_distance": 0.5051056843230751,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                108.20977157998412,
+                93.95665677497013
+              ],
+              "bbox": [
+                405.72943115234375,
+                380.5100402832031,
+                508.94268798828125,
+                472.3019714355469
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 61,
+            "matches": 58,
+            "forward_backward_rejected": 1,
+            "inliers": 58,
+            "inlier_ratio": 1.0,
+            "residual_median_px": 0.33226173445980683,
+            "residual_p90_px": 1.1689698232430636,
+            "occupied_cells": 8,
+            "span": [
+              0.7916666666666666,
+              0.6185185185185185
+            ],
+            "support_rms_normalized": 0.14986424391980893,
+            "spatial_conditioning": 2.502273726790424,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              0.9991045002137535,
+              -0.0019590324394294797,
+              0.47290970270958804
+            ],
+            [
+              0.0019590324394294797,
+              0.9991045002137535,
+              -13.623951314748052
+            ]
+          ],
+          "processing_s": 0.28967923199525103,
+          "target_publish_age_s": 0.37422311503905803,
+          "roi_yolo_s": 0.11566443799529225
+        },
+        {
+          "wall_s": 105.30752703698818,
+          "stamp": {
+            "sec": 82,
+            "nanosec": 552000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 3,
+          "candidate_summaries": [
+            {
+              "track_id": 18,
+              "bbox": [
+                404.9449462890625,
+                366.147705078125,
+                508.0609130859375,
+                450.7913818359375
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            },
+            {
+              "track_id": 17,
+              "bbox": [
+                640.7379760742188,
+                375.2549743652344,
+                797.7997436523438,
+                479.9342346191406
+              ],
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            },
+            {
+              "track_id": null,
+              "bbox": [
+                640.800537109375,
+                375.6177978515625,
+                958.760009765625,
+                539.4397583007812
+              ],
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "scale_gate",
+                "appearance_gate",
+                "mahalanobis_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 18,
+              "accepted": true,
+              "confidence": 0.7980080246925354,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.009710880650410604,
+              "center_gate": 0.04382562497543404,
+              "log_scale_error": 0.08148863559628516,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.999904445276676,
+              "mahalanobis_distance": 1.1812948143808193,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                103.43321015067603,
+                91.83000010033416
+              ],
+              "bbox": [
+                404.9449462890625,
+                366.147705078125,
+                508.0609130859375,
+                450.7913818359375
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 69,
+            "matches": 61,
+            "forward_backward_rejected": 0,
+            "inliers": 60,
+            "inlier_ratio": 0.9836065573770492,
+            "residual_median_px": 0.45641330282166437,
+            "residual_p90_px": 0.9922458815480087,
+            "occupied_cells": 9,
+            "span": [
+              0.9145833333333333,
+              0.7037037037037037
+            ],
+            "support_rms_normalized": 0.1567851817337765,
+            "spatial_conditioning": 2.5447712395294606,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              0.9987528842866386,
+              -0.0023676213824320226,
+              0.43969484238132306
+            ],
+            [
+              0.0023676213824320226,
+              0.9987528842866386,
+              -14.673261063967447
+            ]
+          ],
+          "processing_s": 0.1534312500152737,
+          "target_publish_age_s": 0.20587938703829423,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 105.4803475009976,
+          "stamp": {
+            "sec": 82,
+            "nanosec": 652000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 3,
+          "candidate_summaries": [
+            {
+              "track_id": 18,
+              "bbox": [
+                405.85357666015625,
+                358.41522216796875,
+                505.46051025390625,
+                445.126708984375
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            },
+            {
+              "track_id": 17,
+              "bbox": [
+                640.150146484375,
+                368.352783203125,
+                795.1485595703125,
+                473.68212890625
+              ],
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            },
+            {
+              "track_id": null,
+              "bbox": [
+                639.2327270507812,
+                368.17315673828125,
+                958.9927368164062,
+                538.5905151367188
+              ],
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "scale_gate",
+                "appearance_gate",
+                "mahalanobis_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 18,
+              "accepted": true,
+              "confidence": 0.7184177041053772,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.007144637506605505,
+              "center_gate": 0.044298421925341246,
+              "log_scale_error": 0.03513816022499361,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9998912623853919,
+              "mahalanobis_distance": 0.5392529440481615,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                103.16915645203673,
+                88.06255066283262
+              ],
+              "bbox": [
+                405.85357666015625,
+                358.41522216796875,
+                505.46051025390625,
+                445.126708984375
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 66,
+            "matches": 68,
+            "forward_backward_rejected": 1,
+            "inliers": 68,
+            "inlier_ratio": 1.0,
+            "residual_median_px": 0.2392810951044303,
+            "residual_p90_px": 0.6326632862407392,
+            "occupied_cells": 8,
+            "span": [
+              0.8625,
+              0.674074074074074
+            ],
+            "support_rms_normalized": 0.1479492058305771,
+            "spatial_conditioning": 2.4377577822839926,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              0.9995332920281429,
+              -0.0014792908136306178,
+              0.12572738924524302
+            ],
+            [
+              0.0014792908136306178,
+              0.9995332920281429,
+              -6.734288375235038
+            ]
+          ],
+          "processing_s": 0.17083565302891657,
+          "target_publish_age_s": 0.22649938199901953,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 105.64822139800526,
+          "stamp": {
+            "sec": 82,
+            "nanosec": 752000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 2,
+          "candidate_summaries": [
+            {
+              "track_id": 18,
+              "bbox": [
+                405.21673583984375,
+                353.82501220703125,
+                506.14276123046875,
+                439.70233154296875
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            },
+            {
+              "track_id": 17,
+              "bbox": [
+                638.8233032226562,
+                364.89813232421875,
+                793.8374633789062,
+                468.56451416015625
+              ],
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": null
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 18,
+              "accepted": true,
+              "confidence": 0.7917273640632629,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.003708242749635904,
+              "center_gate": 0.04426551815035055,
+              "log_scale_error": 0.01681116406996397,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9997791479503214,
+              "mahalanobis_distance": 0.14120746833832704,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                101.65429880858504,
+                87.33322044926716
+              ],
+              "bbox": [
+                405.21673583984375,
+                353.82501220703125,
+                506.14276123046875,
+                439.70233154296875
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 77,
+            "matches": 66,
+            "forward_backward_rejected": 0,
+            "inliers": 66,
+            "inlier_ratio": 1.0,
+            "residual_median_px": 0.19817616221913845,
+            "residual_p90_px": 0.5359809365970877,
+            "occupied_cells": 9,
+            "span": [
+              0.8895833333333333,
+              0.6888888888888889
+            ],
+            "support_rms_normalized": 0.1501078346238,
+            "spatial_conditioning": 2.708512821922671,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              0.9991337437959206,
+              -0.0013467443556127417,
+              0.044505186168758426
+            ],
+            [
+              0.0013467443556127417,
+              0.9991337437959206,
+              -5.621933344373784
+            ]
+          ],
+          "processing_s": 0.16970120597397909,
+          "target_publish_age_s": 0.25061482802266255,
+          "roi_yolo_s": null
+        }
+      ]
+    },
+    {
+      "loss_wall_s": 124.2481686139945,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 124.34844058699673,
+      "duration_s": 0.10027197300223634,
+      "censored": false,
+      "censor_lower_bound_s": null,
+      "recovery_timeout": false,
+      "association_frames_in_task_loss": 1,
+      "panel_start_wall_s": null,
+      "panel_end_wall_s": null,
+      "panel_end_to_confirmed_recovery_s": null,
+      "frames_with_independent_target_candidate": 1,
+      "frames_with_rejected_independent_target_candidate": 0,
+      "correct_candidate_rejection_reason_counts": {},
+      "onboard_reason_counts": {
+        "confirmed": 1
+      },
+      "gmc_reason_counts": {
+        "applied": 1
+      },
+      "no_candidate_frames": 0,
+      "context_start_wall_s": 122.7481686139945,
+      "context_end_wall_s": 124.59844058699673,
+      "context": [
+        {
+          "wall_s": 122.74828620901098,
+          "stamp": {
+            "sec": 93,
+            "nanosec": 952000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 1,
+          "candidate_summaries": [
+            {
+              "track_id": 18,
+              "bbox": [
+                391.1609802246094,
+                377.8509826660156,
+                519.9779052734375,
+                484.8106384277344
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 18,
+              "accepted": true,
+              "confidence": 0.5328054428100586,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.005132206505463809,
+              "center_gate": 0.0473334726257599,
+              "log_scale_error": 0.0464240515971559,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9998409457642824,
+              "mahalanobis_distance": 0.4905585956215105,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                126.05154255442885,
+                112.04222016298883
+              ],
+              "bbox": [
+                391.1609802246094,
+                377.8509826660156,
+                519.9779052734375,
+                484.8106384277344
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 62,
+            "matches": 60,
+            "forward_backward_rejected": 2,
+            "inliers": 54,
+            "inlier_ratio": 0.9,
+            "residual_median_px": 0.3745398769932654,
+            "residual_p90_px": 0.6724219037065835,
+            "occupied_cells": 10,
+            "span": [
+              0.7145833333333333,
+              0.6481481481481481
+            ],
+            "support_rms_normalized": 0.1366430424230056,
+            "spatial_conditioning": 1.7755353383903913,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              1.0069814440347429,
+              6.963266289605299e-05,
+              -4.597914197972409
+            ],
+            [
+              -6.963266289605299e-05,
+              1.0069814440347429,
+              0.6969155098116245
+            ]
+          ],
+          "processing_s": 0.2950919650029391,
+          "target_publish_age_s": 0.33354512299411,
+          "roi_yolo_s": 0.12399562000064179
+        },
+        {
+          "wall_s": 123.0467359580216,
+          "stamp": {
+            "sec": 94,
+            "nanosec": 152000000
+          },
+          "identity_confirmed": false,
+          "onboard_reason": "no_candidates",
+          "independent_label": "unconfirmed",
+          "candidate_count": 0,
+          "candidate_summaries": [],
+          "independently_supported_target_candidates": [],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 63,
+            "matches": 57,
+            "forward_backward_rejected": 5,
+            "inliers": 53,
+            "inlier_ratio": 0.9298245614035088,
+            "residual_median_px": 0.5484743262406192,
+            "residual_p90_px": 1.0049000308615819,
+            "occupied_cells": 10,
+            "span": [
+              0.71875,
+              0.6481481481481481
+            ],
+            "support_rms_normalized": 0.14274376497986732,
+            "spatial_conditioning": 1.6349608131602025,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              1.0093972508561848,
+              0.0003306030297246,
+              -6.8914730775729485
+            ],
+            [
+              -0.0003306030297246,
+              1.0093972508561848,
+              0.11427396787868631
+            ]
+          ],
+          "processing_s": 0.29807037103455514,
+          "target_publish_age_s": 0.3371461220085621,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 123.20765511802165,
+          "stamp": {
+            "sec": 94,
+            "nanosec": 352000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 1,
+          "candidate_summaries": [
+            {
+              "track_id": 18,
+              "bbox": [
+                386.773681640625,
+                383.1181335449219,
+                515.6240234375,
+                497.6541442871094
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 18,
+              "accepted": true,
+              "confidence": 0.5686242580413818,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.0037663884005844053,
+              "center_gate": 0.05157791599980556,
+              "log_scale_error": 0.029414240465525765,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9998404405335559,
+              "mahalanobis_distance": 0.15614470986949025,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                129.06332454635552,
+                111.21608686230005
+              ],
+              "bbox": [
+                386.773681640625,
+                383.1181335449219,
+                515.6240234375,
+                497.6541442871094
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 56,
+            "matches": 55,
+            "forward_backward_rejected": 7,
+            "inliers": 54,
+            "inlier_ratio": 0.9818181818181818,
+            "residual_median_px": 0.5817025408072507,
+            "residual_p90_px": 0.9027548224686666,
+            "occupied_cells": 9,
+            "span": [
+              0.7791666666666667,
+              0.674074074074074
+            ],
+            "support_rms_normalized": 0.14981964913909268,
+            "spatial_conditioning": 1.7093203463058062,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              1.0088311051956727,
+              0.0008449737559394732,
+              -6.695627730180769
+            ],
+            [
+              -0.0008449737559394732,
+              1.0088311051956727,
+              -0.3853505655576777
+            ]
+          ],
+          "processing_s": 0.1607901540119201,
+          "target_publish_age_s": 0.18492595601128414,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 123.81274869298795,
+          "stamp": {
+            "sec": 94,
+            "nanosec": 752000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 1,
+          "candidate_summaries": [
+            {
+              "track_id": 18,
+              "bbox": [
+                383.05584716796875,
+                380.62237548828125,
+                517.4491577148438,
+                487.71685791015625
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 18,
+              "accepted": true,
+              "confidence": 0.49274590611457825,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.007697014044333451,
+              "center_gate": 0.05508852277474944,
+              "log_scale_error": 0.06040654834765191,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9998054348622158,
+              "mahalanobis_distance": 0.5353826253673148,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                130.44877750107338,
+                113.76307615934748
+              ],
+              "bbox": [
+                383.05584716796875,
+                380.62237548828125,
+                517.4491577148438,
+                487.71685791015625
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 57,
+            "matches": 56,
+            "forward_backward_rejected": 0,
+            "inliers": 54,
+            "inlier_ratio": 0.9642857142857143,
+            "residual_median_px": 0.6865886216681265,
+            "residual_p90_px": 1.300016872117077,
+            "occupied_cells": 10,
+            "span": [
+              0.7333333333333333,
+              0.6814814814814815
+            ],
+            "support_rms_normalized": 0.14672809242434123,
+            "spatial_conditioning": 1.577354814321127,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              1.014440794885917,
+              0.0017314131481112089,
+              -9.809041730051394
+            ],
+            [
+              -0.0017314131481112089,
+              1.014440794885917,
+              -6.221448306880493
+            ]
+          ],
+          "processing_s": 0.3123124919948168,
+          "target_publish_age_s": 0.3112753549939953,
+          "roi_yolo_s": 0.14676179003436118
+        },
+        {
+          "wall_s": 124.07847192301415,
+          "stamp": {
+            "sec": 94,
+            "nanosec": 952000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 1,
+          "candidate_summaries": [
+            {
+              "track_id": 18,
+              "bbox": [
+                384.5567626953125,
+                379.63323974609375,
+                516.537841796875,
+                494.33599853515625
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 18,
+              "accepted": true,
+              "confidence": 0.1276402622461319,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.005108482254383335,
+              "center_gate": 0.046665565475123,
+              "log_scale_error": 0.04716066794888096,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9998150640569258,
+              "mahalanobis_distance": 0.35481371149056207,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                133.936423036449,
+                109.41887511090434
+              ],
+              "bbox": [
+                384.5567626953125,
+                379.63323974609375,
+                516.537841796875,
+                494.33599853515625
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 56,
+            "matches": 56,
+            "forward_backward_rejected": 1,
+            "inliers": 54,
+            "inlier_ratio": 0.9642857142857143,
+            "residual_median_px": 0.3054956513636333,
+            "residual_p90_px": 0.6927667936944636,
+            "occupied_cells": 11,
+            "span": [
+              0.74375,
+              0.6666666666666666
+            ],
+            "support_rms_normalized": 0.1480949518480102,
+            "spatial_conditioning": 1.5591132607663558,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              1.0062905654358956,
+              0.0005320281737768749,
+              -3.6760703334463853
+            ],
+            [
+              -0.0005320281737768749,
+              1.0062905654358956,
+              -2.0719977778233916
+            ]
+          ],
+          "processing_s": 0.2644384780433029,
+          "target_publish_age_s": 0.2784049699548632,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 124.26877130102366,
+          "stamp": {
+            "sec": 95,
+            "nanosec": 0
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 1,
+          "candidate_summaries": [
+            {
+              "track_id": 18,
+              "bbox": [
+                384.10272216796875,
+                379.997314453125,
+                516.807861328125,
+                495.6651611328125
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 18,
+              "accepted": true,
+              "confidence": 0.2137492448091507,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.004166458675229075,
+              "center_gate": 0.044744582725106744,
+              "log_scale_error": 0.03388155308161056,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9997869049973573,
+              "mahalanobis_distance": 0.23976535149322095,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                133.33258922655915,
+                111.81448790055974
+              ],
+              "bbox": [
+                384.10272216796875,
+                379.997314453125,
+                516.807861328125,
+                495.6651611328125
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 57,
+            "matches": 56,
+            "forward_backward_rejected": 0,
+            "inliers": 56,
+            "inlier_ratio": 1.0,
+            "residual_median_px": 0.14628526931017985,
+            "residual_p90_px": 0.33152509560514515,
+            "occupied_cells": 11,
+            "span": [
+              0.75,
+              0.7296296296296296
+            ],
+            "support_rms_normalized": 0.1657164806177252,
+            "spatial_conditioning": 1.3003480431211207,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              1.0018790501310166,
+              0.00011468508273303069,
+              -1.0446814031063498
+            ],
+            [
+              -0.00011468508273303069,
+              1.0018790501310166,
+              -0.5348333696298151
+            ]
+          ],
+          "processing_s": 0.1901755029684864,
+          "target_publish_age_s": 0.39436794200446457,
+          "roi_yolo_s": null
+        },
+        {
+          "wall_s": 124.42893309000647,
+          "stamp": {
+            "sec": 95,
+            "nanosec": 200000000
+          },
+          "identity_confirmed": true,
+          "onboard_reason": "confirmed",
+          "independent_label": "tracked_vehicle",
+          "candidate_count": 1,
+          "candidate_summaries": [
+            {
+              "track_id": 18,
+              "bbox": [
+                384.98583984375,
+                429.013671875,
+                516.5972900390625,
+                533.3975830078125
+              ],
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "confirmation_count": null,
+              "confirmation_required": null,
+              "overlap_confirmation_preserved": false
+            }
+          ],
+          "independently_supported_target_candidates": [
+            {
+              "index": 0,
+              "track_id": 18,
+              "accepted": true,
+              "confidence": 0.4590661823749542,
+              "reason": "confirmed",
+              "rejection_reasons": [],
+              "center_error": 0.007252152227927711,
+              "center_gate": 0.04402174854971236,
+              "log_scale_error": 0.09772604721316869,
+              "log_scale_gate": 0.6931471805599453,
+              "appearance_similarity": 0.9998052464273359,
+              "mahalanobis_distance": 1.469626499937729,
+              "mahalanobis_gate": 18.5,
+              "predicted_size_px": [
+                135.18900773661264,
+                115.100033049217
+              ],
+              "bbox": [
+                384.98583984375,
+                429.013671875,
+                516.5972900390625,
+                533.3975830078125
+              ],
+              "vertical_truncated": false
+            }
+          ],
+          "gmc_reason": "applied",
+          "gmc_quality": {
+            "reason": "applied",
+            "features": 48,
+            "matches": 48,
+            "forward_backward_rejected": 7,
+            "inliers": 40,
+            "inlier_ratio": 0.8333333333333334,
+            "residual_median_px": 0.9551205796487189,
+            "residual_p90_px": 2.142377704461512,
+            "occupied_cells": 8,
+            "span": [
+              0.7333333333333333,
+              0.3962962962962963
+            ],
+            "support_rms_normalized": 0.09296643915649842,
+            "spatial_conditioning": 3.4842030457330764,
+            "model": "similarity"
+          },
+          "gmc_warp_px": [
+            [
+              1.0155064616049565,
+              0.01009064182851487,
+              -10.027518938728123
+            ],
+            [
+              -0.01009064182851487,
+              1.0155064616049565,
+              46.273142366264196
+            ]
+          ],
+          "processing_s": 0.16029985895147547,
+          "target_publish_age_s": 0.24742205499205738,
+          "roi_yolo_s": null
+        }
+      ]
+    }
+  ],
+  "service_receipt_integrity": {
+    "scene": {
+      "count": 419,
+      "first": 1,
+      "last": 419,
+      "complete_from_one": true,
+      "missing": [],
+      "duplicates": []
+    },
+    "traffic": {
+      "count": 413,
+      "first": 1,
+      "last": 413,
+      "complete_from_one": true,
+      "missing": [],
+      "duplicates": []
+    }
+  },
+  "recorded_service_count": 832,
+  "all_association_reason_counts": {
+    "pending_confirmation": 9,
+    "confirmed": 772,
+    "stale_inference_result": 3,
+    "all_candidates_rejected": 100,
+    "no_candidates": 34
+  },
+  "all_candidate_rejection_counts": {
+    "center_gate": 917,
+    "mahalanobis_gate": 810,
+    "stale_inference_result": 3,
+    "scale_gate": 363,
+    "weak_idless_anchor_expired": 16,
+    "appearance_gate": 53,
+    "confidence_gate": 13,
+    "min_area_gate": 1
+  },
+  "all_association_gmc_quality_counts": {
+    "initializing": 1,
+    "applied": 866,
+    "insufficient_inliers": 6,
+    "insufficient_matches": 23,
+    "insufficient_features": 15,
+    "poor_spatial_coverage": 4,
+    "perspective_bounds": 2,
+    "warp_bounds": 1
+  },
+  "input_sha256": {
+    "batch_audit.json": "69c8e6c99aecbcbfcbee5db3d3f9fa11871cbfe561cca93e623e6143d1f6a4da",
+    "report.json": "b3cb05a91c7280280767751c70bbdcd61ee01783dec1e933570aacf658c40252",
+    "association.jsonl": "dbd81ec49909fa5ff72f03b3d5379f0201ea0fa10903a9909833006cdb4fffcf",
+    "identity_observations.jsonl": "23127227454a4ab2e11d3a9b50d588f29a10c26811956a242c08b0c7bf897d38",
+    "scene_service.jsonl": "fcfc5645a80775d6068ca62c875de8a545eab98ff2b362d6efae8b0d4c17168c",
+    "traffic_service.jsonl": "3dc47d143646076b920865fda2534023e0261e88e29ec56334eeb12768894a0d"
+  },
+  "diagnostic_script_sha256": "6fdae6e5433e4b3f4e262e4b1afc86a1e0c3a4a7f78b7c4d6ac9088e765c26b0"
+}

@@ -1,0 +1,36 @@
+{
+  "trials": [
+    {
+      "name": "lane_change_pilot",
+      "available": true,
+      "initial_parameter_sha256": "96699cb2ffdb1e92abec679453d5ac606fbde1a42e9ab298ecfb9b93d7a9228d",
+      "bookkeeping_differences": {},
+      "calibration_differences": {},
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3976000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3976000,
+          "name": "CAL_BARO0_OFF",
+          "value": -1.220703125
+        },
+        {
+          "timestamp_us": 3976000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    }
+  ],
+  "available_logs": 1,
+  "comparison_reference": "lane_change_pilot",
+  "limitations": [
+    "Frozen launch files do not imply identical runtime calibration or flight counters.",
+    "Initial ULog values are the used parameter set; unrecorded defaults are not verified.",
+    "Startup parameter updates are not automatically in-flight updates."
+  ]
+}

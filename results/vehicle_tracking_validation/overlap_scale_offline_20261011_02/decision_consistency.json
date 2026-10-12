@@ -1,0 +1,22 @@
+{
+  "prior_result": "results/vehicle_tracking_validation/overlap_scale_offline_20261011_01",
+  "current_result": "results/vehicle_tracking_validation/overlap_scale_offline_20261011_02",
+  "compared_fields": [
+    "identity_confirmed",
+    "accepted_box",
+    "locked_track_id",
+    "reason",
+    "label",
+    "identity_reason"
+  ],
+  "arms": {
+    "frozen": {"rows": 812, "decision_disagreement_indices": []},
+    "current_disabled": {"rows": 812, "decision_disagreement_indices": []},
+    "overlap_only": {"rows": 812, "decision_disagreement_indices": []},
+    "scale_only": {"rows": 812, "decision_disagreement_indices": []},
+    "both": {"rows": 812, "decision_disagreement_indices": []}
+  },
+  "frozen_matches_original_log": true,
+  "current_disabled_matches_original_log": true,
+  "candidate_sha256": "b8c2fa56717523d006ecb34801404560585c1a31490c0e99bf6ff4475e12bf63"
+}

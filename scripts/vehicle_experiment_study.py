@@ -94,7 +94,7 @@ def freeze(root, directory, model, backend_artifacts=None):
     files.update(path for path in (root / 'PX4-Autopilot/Tools/simulation/gz/worlds').rglob('*') if path.is_file())
     for name in ('run_vehicle_tracking_validation.py', 'validate_vehicle_tracking.py',
                  'vehicle_experiment_study.py', 'px4_env.sh', 'analyze_vehicle_association.py',
-                 'vehicle_crossing_validation.py'):
+                 'vehicle_crossing_validation.py', 'vehicle_lane_change.py'):
         files.add(root / 'scripts' / name)
     files.add(root / 'PX4-Autopilot/build/px4_sitl_default/bin/px4')
     files.update(path for path in (root / 'PX4-Autopilot/build/px4_sitl_default/etc').rglob('*') if path.is_file())
@@ -136,6 +136,9 @@ def verify_parameters(captured, scenario, expected=None):
                                    'occlusion_start': scenario['occlusion_start'],
                                    'occlusion_duration': scenario['occlusion_duration'],
                                    'occlusion_enabled': True}}
+    for key in ('traffic_scenario', 'distractor_color', 'parked_vehicle_y'):
+        if key in scenario:
+            overrides['vehicle_scene'][key] = scenario[key]
     if 'recovery_competition_enabled' in scenario:
         overrides['perception_node'] = {
             'recovery_competition_enabled': scenario['recovery_competition_enabled']}

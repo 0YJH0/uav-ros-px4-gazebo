@@ -14,9 +14,20 @@ import xml.etree.ElementTree as ET
 import numpy as np
 from scipy.spatial.transform import Rotation
 
+from vehicle_lane_change import (START as LANE_START, END as LANE_END,
+                                 lane_change_pose, lane_change_phase,
+                                 lane_change_geometry, lane_change_evidence)
+
 ROOT = Path(__file__).resolve().parents[1]
 NAMES = ('x500_perception_0', 'tracked_vehicle', 'parked_vehicle', 'crossing_vehicle')
 START, DURATION = 35.0, 8.0
+IDENTITY_EVALUATION_VERSION = 'exclusive_projection_v2'
+IDENTITY_CRITERIA = {
+    'minimum_match_iou': 0.4,
+    'minimum_match_margin': 0.2,
+    'projection_overlap_event_iou': 0.1,
+    'exclusive_majority': 0.5,
+}
 
 
 def overtaking_pose(target, motion):
@@ -71,40 +82,141 @@ def iou(a, b):
     return intersection / union if union > 0 else 0.0
 
 
-def classify_identity(accepted, boxes):
+def valid_box(box):
+    return (box is not None and len(box) == 4 and
+            all(value is not None and math.isfinite(value) for value in box) and
+            box[2] > box[0] and box[3] > box[1])
+
+
+def box_intersection(a, b):
+    return [max(a[0], b[0]), max(a[1], b[1]), min(a[2], b[2]), min(a[3], b[3])]
+
+
+def box_area(box):
+    return max(0., box[2] - box[0]) * max(0., box[3] - box[1])
+
+
+def exclusive_area(box, others, accepted=None):
+    """Area inside a box (and optional detection), outside the union of rivals."""
+    region = box_intersection(box, accepted) if accepted is not None else box
+    if box_area(region) == 0:
+        return 0.
+    clipped = [box_intersection(region, other) for other in others]
+    clipped = [other for other in clipped if box_area(other) > 0]
+    # Rectangle boundaries partition the region into cells with constant membership.
+    xs = sorted({region[0], region[2], *(x for other in clipped for x in (other[0], other[2]))})
+    ys = sorted({region[1], region[3], *(y for other in clipped for y in (other[1], other[3]))})
+    area = 0.
+    for x1, x2 in zip(xs, xs[1:]):
+        for y1, y2 in zip(ys, ys[1:]):
+            x, y = (x1 + x2) / 2, (y1 + y2) / 2
+            if not any(other[0] < x < other[2] and other[1] < y < other[3] for other in clipped):
+                area += (x2 - x1) * (y2 - y1)
+    return area
+
+
+def target_projection_overlap(boxes):
     target = boxes.get('tracked_vehicle')
-    others = [name for name in boxes if name != 'tracked_vehicle']
-    if any(iou(target, boxes[name]) > 0.1 for name in others):
-        return 'overlap_unscorable', {}
-    scores = {name: iou(accepted, box) for name, box in boxes.items() if box is not None}
+    if not valid_box(target):
+        return 0.
+    return max((iou(target, box) for name, box in boxes.items()
+                if name != 'tracked_vehicle' and valid_box(box)), default=0.)
+
+
+def evaluate_identity(accepted, boxes):
+    """Independent box evidence, not a detector ID or a pixel-visibility claim."""
+    result = {
+        'identity_evaluation_version': IDENTITY_EVALUATION_VERSION,
+        'label': 'projection_unscorable', 'scores': {}, 'reason': '',
+        'target_projection_overlap_iou': target_projection_overlap(boxes),
+        'exclusive_evidence': {},
+    }
     if accepted is None:
-        return 'unconfirmed', scores
+        result.update(label='unconfirmed', reason='no_accepted_box')
+        return result
+    if not valid_box(accepted) or any(box is not None and not valid_box(box) for box in boxes.values()):
+        result['reason'] = 'invalid_box_geometry'
+        return result
+    projected = {name: box for name, box in boxes.items() if box is not None}
+    scores = {name: iou(accepted, box) for name, box in projected.items()}
+    result['scores'] = scores
     order = sorted(scores, key=scores.get, reverse=True)
-    if not order or scores[order[0]] < 0.4 or (len(order) > 1 and scores[order[0]]-scores[order[1]] < 0.2):
-        return 'projection_unscorable', scores
-    return order[0], scores
+    if not order or scores[order[0]] < IDENTITY_CRITERIA['minimum_match_iou']:
+        result['reason'] = 'insufficient_match_iou'
+        return result
+    winner = order[0]
+    if len(order) > 1 and scores[winner] - scores[order[1]] < IDENTITY_CRITERIA['minimum_match_margin']:
+        overlap = iou(projected[winner], projected[order[1]]) > 0
+        result.update(label='overlap_unscorable' if overlap else 'projection_unscorable',
+                      reason='insufficient_match_margin')
+        return result
+    for name, box in projected.items():
+        rivals = [other for other_name, other in projected.items() if name != other_name]
+        area = exclusive_area(box, rivals)
+        covered = exclusive_area(box, rivals, accepted)
+        result['exclusive_evidence'][name] = {
+            'area_px2': area,
+            'fraction_of_projected_box': area / box_area(box),
+            'accepted_coverage_fraction': covered / area if area > 0 else None,
+        }
+    majority = IDENTITY_CRITERIA['exclusive_majority']
+    evidence = result['exclusive_evidence'][winner]
+    if evidence['fraction_of_projected_box'] <= majority:
+        result.update(label='overlap_unscorable', reason='insufficient_exclusive_projection')
+        return result
+    if evidence['accepted_coverage_fraction'] <= majority:
+        result.update(label='projection_unscorable', reason='insufficient_exclusive_support')
+        return result
+    for name in order[1:]:
+        rival = result['exclusive_evidence'][name]
+        coverage = rival['accepted_coverage_fraction']
+        if coverage is None and iou(accepted, projected[name]) > 0:
+            result.update(label='overlap_unscorable', reason='contained_competitor_ambiguous')
+            return result
+        if coverage is not None and coverage >= majority:
+            result.update(label='overlap_unscorable', reason='multiple_vehicle_support')
+            return result
+    result.update(label=winner, reason='unique_projection_support')
+    return result
+
+
+def classify_identity(accepted, boxes):
+    result = evaluate_identity(accepted, boxes)
+    return result['label'], result['scores']
+
+
+def has_projection_overlap(row):
+    if 'projected_boxes' in row:
+        return target_projection_overlap(row['projected_boxes']) > IDENTITY_CRITERIA['projection_overlap_event_iou']
+    return row.get('label') == 'overlap_unscorable'
 
 
 def image_capture_reason(row, last_saved_sim):
     if row['label'] in ('crossing_vehicle', 'parked_vehicle'):
         return 'wrong_identity'
-    if (START-3 <= row['motion_time'] <= START+DURATION+5
+    start, end = ((LANE_START, LANE_END) if row.get('traffic_scenario') == 'lane_change_overtaking'
+                  else (START, START + DURATION))
+    if (start-3 <= row['motion_time'] <= end+5
             and row['sim_s']-last_saved_sim >= 1.):
         return 'periodic_crossing'
     return None
 
 
-def identity_summary(rows, events, errors, scenario='crossing'):
+def identity_summary(rows, events, errors, scenario='crossing', distractor_color='auto'):
+    if distractor_color not in ('auto', 'red', 'blue'):
+        raise ValueError('distractor_color must be auto, red or blue')
+    if distractor_color == 'auto':
+        distractor_color = 'blue' if scenario == 'overtaking' else 'red'
     phases = {phase: Counter(row.get('label') for row in rows if row.get('phase') == phase)
               for phase in ('pre', 'during', 'post')}
     actual_start = next((event for event in events if event['event'] == scenario + '_started'), None)
     actual_end = next((event for event in events if event['event'] == scenario + '_completed'), None)
     wrong = sum(row.get('label') in ('crossing_vehicle', 'parked_vehicle') for row in rows)
-    overlap = sum(row.get('label') == 'overlap_unscorable' and row.get('phase') == 'during' for row in rows)
+    overlap_rows = [row for row in rows if row.get('phase') == 'during' and has_projection_overlap(row)]
+    overlap = len(overlap_rows)
     post = [row for row in rows if row.get('phase') == 'post' and row.get('label') == 'tracked_vehicle'
             and actual_end and row['sim_s'] >= actual_end['sim_s']]
     delay = post[0]['sim_s']-actual_end['sim_s'] if post and actual_end else None
-    overlap_rows = [row for row in rows if row.get('label') == 'overlap_unscorable' and row.get('phase') == 'during']
     recovered = next((row for row in rows if overlap_rows and row['sim_s'] > overlap_rows[-1]['sim_s']
                       and row.get('label') == 'tracked_vehicle'), None)
     recovery_sim = recovered['sim_s']-overlap_rows[-1]['sim_s'] if recovered else None
@@ -121,13 +233,22 @@ def identity_summary(rows, events, errors, scenario='crossing'):
     passed = bool(len(during) >= 10 and
                   min(row['relative_longitudinal_m'] for row in during) < -4.1 and
                   max(row['relative_longitudinal_m'] for row in geometry) > 4.1)
-    scenario_evidence = (overlap >= 3 if scenario == 'crossing' else
+    lane_evidence = lane_change_evidence(rows) if scenario == 'lane_change_overtaking' else None
+    scenario_evidence = (lane_evidence['maneuver_observed'] if lane_evidence is not None else
+                         overlap >= 3 if scenario == 'crossing' else
                          passed and minimum_clearance is not None and minimum_clearance >= .5)
     verified = bool(actual_start and actual_end and scenario_evidence and
                     phases['pre']['tracked_vehicle'] >= 10 and phases['post']['tracked_vehicle'] >= 10
                     and matched_fraction >= .9 and wrong == 0 and not errors)
     return {'identity_independently_verified': verified, 'wrong_identity_observations': wrong,
-            'traffic_scenario': scenario, 'overtaking_observed': passed if scenario == 'overtaking' else None,
+            'identity_evaluation_version': IDENTITY_EVALUATION_VERSION,
+            'identity_criteria': dict(IDENTITY_CRITERIA),
+            'identity_reason_counts': dict(Counter(row['reason'] for row in rows if 'reason' in row)),
+            'target_color': 'red', 'distractor_color': distractor_color,
+            'traffic_scenario': scenario,
+            'overtaking_observed': (lane_evidence['maneuver_observed'] if lane_evidence is not None else
+                                   passed if scenario == 'overtaking' else None),
+            'lane_change': lane_evidence,
             'minimum_world_lateral_clearance_m': minimum_clearance,
             'traffic_started': bool(actual_start), 'traffic_completed': bool(actual_end),
             'phase_counts': {key: dict(value) for key, value in phases.items()},
@@ -142,10 +263,15 @@ def identity_summary(rows, events, errors, scenario='crossing'):
             'crossing_completed': scenario == 'crossing' and bool(actual_end),
             'errors': errors, 'limitations': [
                 'Labels use projected mesh bounding volumes, not per-pixel instance masks.',
-                'Overlapping or poorly matched boxes are unscorable, never assumed correct.',
+                'Partial projection overlap is scored only with unique majority support; merged or ambiguous boxes remain unscorable.',
+                'Projected exclusive areas are geometric box evidence, not visible pixel instance masks.',
                 'Post-confirmation latency is in simulation seconds; mission recovery uses wall seconds.',
                 'No identity claims are made for unscorable frames or absent scenario evidence.',
-                'Different-color overtaking does not validate same-appearance crossing recovery.']}
+                ('Different-color overtaking does not validate same-appearance crossing recovery.'
+                 if scenario == 'overtaking' and distractor_color == 'blue' else
+                 'Same-appearance separate-lane overtaking does not validate overlapping crossing recovery.'
+                 if scenario == 'overtaking' else
+                 'Identity claims apply only to the tested traffic geometry and appearance configuration.')]}
 
 
 def main():
@@ -158,12 +284,14 @@ def main():
     from std_msgs.msg import String
     from gz.transport13 import Node as GzNode
     from gz.msgs10.pose_v_pb2 import Pose_V
-    from uav_learning.vehicle_scene import car_sdf
+    from uav_learning.vehicle_scene import car_sdf, distractor_model_file
     from uav_learning.vehicle_gazebo_client import IsolatedGazeboSceneClient
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', required=True, type=Path)
-    parser.add_argument('--scenario', choices=('crossing', 'overtaking'), default='crossing')
+    parser.add_argument('--scenario', choices=('crossing', 'overtaking', 'lane_change_overtaking'),
+                        default='crossing')
+    parser.add_argument('--distractor-color', choices=('auto', 'red', 'blue'), default='auto')
     parser.add_argument('--vehicle-speed', type=float, default=.8)
     args = parser.parse_args()
     if not math.isfinite(args.vehicle_speed) or args.vehicle_speed <= 0:
@@ -188,8 +316,7 @@ def main():
             self.gazebo_client = IsolatedGazeboSceneClient(record=self.record_service, client='traffic')
             self.gz_node.subscribe(Pose_V, '/world/default/pose/info', self.queue_pose)
             self.model = ROOT / 'ros2_ws/src/uav_learning/config/models/tracking_car/model.sdf'
-            self.distractor_model = (self.model.parent.parent / 'tracking_car_blue/model.sdf'
-                                    if args.scenario == 'overtaking' else self.model)
+            self.distractor_model = distractor_model_file(self.model, args.scenario, args.distractor_color)
             self.corners = mesh_corners(self.model)
             if not np.allclose(self.corners, mesh_corners(self.distractor_model), atol=1e-8):
                 raise ValueError('Identity projections require matching vehicle geometry.')
@@ -197,6 +324,7 @@ def main():
             self.rows, self.events, self.errors = [], [], []
             self.info, self.gt, self.spawned = None, None, False
             self.started, self.completed, self.final_pose = False, False, None
+            self.last_maneuver_phase = None
             self.state = ''
             self.start_wall = time.monotonic()
             self.create_subscription(CameraInfo, '/camera/camera_info', self.camera_info, qos_profile_sensor_data)
@@ -277,13 +405,18 @@ def main():
                 phase = ('pre' if crossing_start is None or sim_s < crossing_start else
                          'post' if crossing_end is not None and sim_s >= crossing_end else 'during')
                 row = {'sim_s': sim_s, 'stamp': data['stamp'], 'wall_s': wall_s, 'motion_time': motion, 'phase': phase,
-                       'pose_age_sim_s': age, 'locked_track_id': data.get('locked_track_id')}
-                if args.scenario == 'overtaking' and age <= .15 and all(
+                       'pose_age_sim_s': age, 'locked_track_id': data.get('locked_track_id'),
+                       'traffic_scenario': args.scenario}
+                if args.scenario in ('overtaking', 'lane_change_overtaking') and age <= .15 and all(
                         name in poses for name in ('tracked_vehicle', 'crossing_vehicle')):
                     row['world_lateral_clearance_m'] = lateral_clearance(
                         self.corners, poses['tracked_vehicle'], poses['crossing_vehicle'])
                     row['relative_longitudinal_m'] = (
                         poses['crossing_vehicle']['p'][0] - poses['tracked_vehicle']['p'][0])
+                    if args.scenario == 'lane_change_overtaking':
+                        row['maneuver_phase'] = lane_change_phase(motion)
+                        row.update(lane_change_geometry(
+                            self.corners, poses['tracked_vehicle'], poses['crossing_vehicle']))
                 if age > 0.15 or not all(name in poses for name in ('x500_perception_0', 'tracked_vehicle', 'camera_link')):
                     row['label'] = 'missing_matched_truth'
                 elif np.linalg.norm(poses['camera_link']['p']) > 1.0:
@@ -295,7 +428,7 @@ def main():
                         poses['camera_link'], self.info.k, self.info.width, self.info.height)
                         for name in NAMES[1:] if name in poses}
                     accepted = next((item['bbox'] for item in data.get('candidates', []) if item.get('accepted')), None)
-                    row['label'], row['scores'] = classify_identity(accepted, boxes)
+                    row.update(evaluate_identity(accepted, boxes))
                     row.update(projected_boxes=boxes, accepted_box=accepted)
                 self.rows.append(row)
                 self.record(self.output, row)
@@ -335,16 +468,21 @@ def main():
 
         def tick(self):
             if not self.spawned:
+                initial_x, initial_y = ((-12, 0) if args.scenario == 'lane_change_overtaking' else
+                                        (-12, 4) if args.scenario == 'overtaking' else (16, -15))
                 self.spawned = self.request('create', 'gz.msgs.EntityFactory',
                     'sdf: '+json.dumps(car_sdf(self.distractor_model, 'crossing_vehicle',
-                        -12 if args.scenario == 'overtaking' else 16,
-                        4 if args.scenario == 'overtaking' else -15)))
+                                             initial_x, initial_y)))
                 return
             if not self.gt or (args.scenario == 'crossing' and (
                     self.gt['motion_time'] < START or self.completed)):
                 return
-            progress = min(1., (self.gt['motion_time']-START)/DURATION)
-            if args.scenario == 'overtaking':
+            start, end = ((LANE_START, LANE_END) if args.scenario == 'lane_change_overtaking'
+                          else (START, START + DURATION))
+            progress = min(1., (self.gt['motion_time']-start)/(end-start))
+            if args.scenario == 'lane_change_overtaking':
+                x, y, yaw = lane_change_pose(self.gt, self.gt['motion_time'], args.vehicle_speed)
+            elif args.scenario == 'overtaking':
                 x, y, yaw = overtaking_pose(self.gt, self.gt['motion_time'])
             else:
                 x, y = self.gt['x']-2., self.gt['y']-4.5+9.*progress
@@ -354,7 +492,12 @@ def main():
             if not self.request('set_pose', 'gz.msgs.Pose', request):
                 self.errors.append('crossing_pose_update_failed')
                 return
-            if not self.started and self.gt['motion_time'] >= START:
+            if args.scenario == 'lane_change_overtaking':
+                phase = lane_change_phase(self.gt['motion_time'])
+                if phase != self.last_maneuver_phase:
+                    self.event('lane_change_' + phase)
+                    self.last_maneuver_phase = phase
+            if not self.started and self.gt['motion_time'] >= start:
                 self.started = True
                 self.event(args.scenario + '_started')
             if progress == 1. and not self.completed:
@@ -365,7 +508,7 @@ def main():
             self.gazebo_client.close()
             self.gz_node.unsubscribe('/world/default/pose/info')
             self.drain_poses()
-            result = identity_summary(self.rows, self.events, self.errors, args.scenario)
+            result = identity_summary(self.rows, self.events, self.errors, args.scenario, args.distractor_color)
             (directory / 'identity_report.json').write_text(json.dumps(result, indent=2)+'\n')
             for stream in (self.output, self.poses_output, self.event_output, self.image_output, self.service_output):
                 stream.close()

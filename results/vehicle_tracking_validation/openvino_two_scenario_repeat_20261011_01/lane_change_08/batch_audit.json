@@ -1,0 +1,196 @@
+{
+  "name": "lane_change_08",
+  "group": "lane_change",
+  "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/openvino_two_scenario_repeat_20261011_01/lane_change_08",
+  "traffic_scenario": "lane_change_overtaking",
+  "attempted": true,
+  "completed": true,
+  "task_passed": true,
+  "identity_verified": true,
+  "scenario_verified": true,
+  "strict_joint_passed": true,
+  "failure_reasons": [],
+  "coverage_percent": 93.5933142552824,
+  "track_losses": 1,
+  "unplanned_losses": 0,
+  "planned_losses": 1,
+  "recovery_episodes": [
+    {
+      "loss_wall_s": 76.66567283699987,
+      "planned_occlusion": true,
+      "confirmation_wall_s": 82.22239070700016,
+      "duration_s": 5.556717870000284,
+      "censored": false,
+      "censor_lower_bound_s": null,
+      "recovery_timeout": false
+    }
+  ],
+  "unplanned_recovery_mean_s": null,
+  "unplanned_recovery_max_s": null,
+  "unplanned_recovery_censored_count": 0,
+  "recovery_timeout_count": 0,
+  "planned_recovery_mean_s": 1.2102779389824718,
+  "planned_recovery_max_s": 1.2102779389824718,
+  "planned_occlusion_recoveries_s": [
+    1.2102779389824718
+  ],
+  "wrong_identity_observations": 0,
+  "scorable_identity_switches": 0,
+  "identity_scorable_fraction": 0.951417004048583,
+  "post_identity_frames": 227,
+  "identity_phase_counts": {
+    "pre": {
+      "unconfirmed": 8,
+      "tracked_vehicle": 224,
+      "panel_occlusion_unscorable": 23
+    },
+    "during": {
+      "tracked_vehicle": 254,
+      "unconfirmed": 5
+    },
+    "post": {
+      "tracked_vehicle": 227
+    }
+  },
+  "identity_reason_counts": {
+    "no_accepted_box": 13,
+    "unique_projection_support": 705
+  },
+  "scene_requests": {
+    "total": 1032,
+    "failures": 0,
+    "receipt_errors": 0,
+    "client_sequences": {
+      "scene": {
+        "count": 518,
+        "first": 1,
+        "last": 518,
+        "complete_from_one": true,
+        "missing": [],
+        "duplicates": []
+      },
+      "traffic": {
+        "count": 514,
+        "first": 1,
+        "last": 514,
+        "complete_from_one": true,
+        "missing": [],
+        "duplicates": []
+      }
+    },
+    "files": {
+      "scene_service.jsonl": {
+        "rows": 518,
+        "malformed_lines": [],
+        "sha256": "02adca34582e195183c5287167dc2ecf826292b18a6467aada3e2cfe19b7b223"
+      },
+      "traffic_service.jsonl": {
+        "rows": 514,
+        "malformed_lines": [],
+        "sha256": "6362460a78557cd5be13b75b164edda47fca72952a6702a74bdda1e4419041bd"
+      }
+    },
+    "errors": [],
+    "passed": true
+  },
+  "scene_request_failures": 0,
+  "ulog_safety": {
+    "armed_failsafe_observations": 0,
+    "armed_offboard_lost_observations": 0,
+    "ulog_dropout_events": 0
+  },
+  "safety_event_observations": 0,
+  "px4_initial_parameter_sha256": "28e420d7dd951e52b2323b18dedbe623dc04c33d0ed33328de91057407fef6d5",
+  "ulog_sha256": "081f8a001fcd0fb2d580eca171e4beb5dbd8ba7893e380666b817762e621bcb8",
+  "integrity": {
+    "passed": true,
+    "errors": [],
+    "verified_source_files": 40,
+    "model_sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5"
+  },
+  "geometry_evidence": {
+    "maneuver_observed": true,
+    "lane_change_scenario_observed": true,
+    "lane_change_checks": {
+      "same_lane_rear_follow_observed": true,
+      "left_lane_change_observed": true,
+      "left_lane_pass_observed": true,
+      "center_lane_return_observed": true,
+      "same_lane_ahead_follow_observed": true,
+      "vehicle_clearance_and_road_margin_verified": true
+    },
+    "maneuver_phase_counts": {
+      "rear_follow": 253,
+      "change_left": 79,
+      "left_pass": 100,
+      "merge_center": 80,
+      "ahead_follow": 229
+    },
+    "minimum_world_horizontal_clearance_m": 1.2761333676513815,
+    "minimum_distractor_road_margin_m": 0.258111852270944
+  },
+  "association_frames": 1193,
+  "association_frame_integrity": true,
+  "timing_all_recorded_associations": {
+    "processing_s": {
+      "count": 1193,
+      "mean": 0.12845314732184424,
+      "sample_std": 0.02804307368477254,
+      "min": 0.0900544950272888,
+      "max": 0.24420860200189054,
+      "p95": 0.21541951721301295,
+      "worst": 0.24420860200189054
+    },
+    "target_publish_age_s": {
+      "count": 1193,
+      "mean": 0.1590463386553188,
+      "sample_std": 0.05113738720265381,
+      "min": 0.09757843503030017,
+      "max": 0.3880510170129128,
+      "p95": 0.2640970357926562,
+      "worst": 0.3880510170129128
+    },
+    "queue_wait_s": {
+      "count": 1193,
+      "mean": 0.03176563344770935,
+      "sample_std": 0.03642369421681477,
+      "min": 0.00020377396140247583,
+      "max": 0.1999005480320193,
+      "p95": 0.10041973240440698,
+      "worst": 0.1999005480320193
+    },
+    "full_frame_yolo_s": {
+      "count": 1193,
+      "mean": 0.11253682399104792,
+      "sample_std": 0.0070184800133478034,
+      "min": 0.08212990401079878,
+      "max": 0.14342313195811585,
+      "p95": 0.12382838018238543,
+      "worst": 0.14342313195811585
+    }
+  },
+  "interventions": [],
+  "safe_to_continue": true,
+  "input_sha256": {
+    "report.json": "4c026f9e8ae64cb580458923e6002e219ac411efcdeb6e96ab65133695794edf",
+    "identity_report.json": "f52bfab844650cbe18badc5d5826eb46c212a8c62c783334f761d99fb5d11404",
+    "supervisor.json": "065dc5ca8dff045afc28023c877abf0e0ccd9456f5533f0a619a8d80b59ca635",
+    "runtime_parameters.json": "1ea279cc2e4a7b8c8f2429b70b66bf6434e6038dffe56e5f05bfae6af3bacb8b",
+    "implementation_snapshot.json": "36ce17f111269f0642ba80ba605fca9ef69f644bf89ed37cb469354219525896",
+    "association.jsonl": "d9da9c5a1a4e8103a118424101395624854830dd5fa9b33f1e6c6c688299a5c1"
+  },
+  "audit_script_sha256": "79384a55b3054af0c4b34e904e2fdc1a7c251279d7e28b7a1686a1120dfa690f",
+  "track_mean_abs_pixel_error": 13.913104011833633,
+  "track_p95_abs_pixel_error": 34.94372606277466,
+  "final_home_horizontal_error_m": 0.7664755004515563,
+  "drone_follow_travel_m": 67.57110243468108,
+  "wall_duration_s": 175.7886687690043,
+  "processing_mean_s": 0.12845314732184424,
+  "processing_p95_s": 0.21541951721301295,
+  "target_publish_age_mean_s": 0.1590463386553188,
+  "target_publish_age_p95_s": 0.2640970357926562,
+  "queue_wait_mean_s": 0.03176563344770935,
+  "queue_wait_p95_s": 0.10041973240440698,
+  "full_frame_yolo_mean_s": 0.11253682399104792,
+  "full_frame_yolo_p95_s": 0.12382838018238543
+}

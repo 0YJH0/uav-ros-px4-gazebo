@@ -1,0 +1,244 @@
+{
+  "scenario": {
+    "vehicle_speed": 0.8,
+    "occlusion_start": 15.0,
+    "occlusion_duration": 4.0,
+    "recovery_competition_enabled": false,
+    "predict_box_scale_velocity": true,
+    "overlap_confirmation_continuity": true,
+    "smooth_recovery_setpoints": false,
+    "cpu_inference_threads": 0,
+    "detector_backend": "torch",
+    "backend_artifacts": "",
+    "gui": true,
+    "distractor_color": "red",
+    "parked_vehicle_y": -4.4,
+    "crossing": false,
+    "overtaking": false,
+    "lane_change_overtaking": true,
+    "traffic_scenario": "lane_change_overtaking"
+  },
+  "task_passed": true,
+  "maneuver_observed": true,
+  "identity_verified": true,
+  "identity_evaluation_version": "exclusive_projection_v2",
+  "strict_joint_passed": true,
+  "failure_reasons": [],
+  "coverage_percent": 91.75165885595149,
+  "track_losses": 2,
+  "planned_losses": 1,
+  "unplanned_losses": 1,
+  "observation_gap_events": 8,
+  "recovery_episodes": [
+    {
+      "loss_wall_s": 100.56958806497278,
+      "planned_occlusion": true,
+      "confirmation_wall_s": 107.16576084599365,
+      "loss_to_confirmation_wall_s": 6.596172781020869,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 174.65925356198568,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 174.95808059099363,
+      "loss_to_confirmation_wall_s": 0.29882702900795266,
+      "recovery_timeout": false
+    }
+  ],
+  "occlusion_confirmed_recovery_wall_s": [
+    1.3103091210359707
+  ],
+  "wrong_identity_observations": 0,
+  "scorable_identity_switches": 0,
+  "identity_phase_counts": {
+    "pre": {
+      "unconfirmed": 7,
+      "tracked_vehicle": 210,
+      "panel_occlusion_unscorable": 25
+    },
+    "during": {
+      "tracked_vehicle": 253,
+      "unconfirmed": 2
+    },
+    "post": {
+      "tracked_vehicle": 53,
+      "unconfirmed": 2
+    }
+  },
+  "identity_scorable_observations": 516,
+  "identity_observations_total": 552,
+  "drone_follow_travel_m": 49.11921792465613,
+  "track_mean_abs_pixel_error": 19.291488602483536,
+  "track_p95_abs_pixel_error": 37.24014401435852,
+  "final_home_horizontal_error_m": 0.7248103436662249,
+  "geometry_evidence": {
+    "maneuver_observed": true,
+    "lane_change_scenario_observed": true,
+    "lane_change_checks": {
+      "same_lane_rear_follow_observed": true,
+      "left_lane_change_observed": true,
+      "left_lane_pass_observed": true,
+      "center_lane_return_observed": true,
+      "same_lane_ahead_follow_observed": true,
+      "vehicle_clearance_and_road_margin_verified": true
+    },
+    "maneuver_phase_counts": {
+      "rear_follow": 4510,
+      "change_left": 600,
+      "left_pass": 717,
+      "merge_center": 598,
+      "ahead_follow": 1405
+    },
+    "minimum_world_horizontal_clearance_m": 1.2761333676513817,
+    "minimum_distractor_road_margin_m": 0.25811185227094224
+  },
+  "scene_requests": {
+    "total": 804,
+    "failures": 0,
+    "by_service": {
+      "/world/default/create": 5,
+      "/world/default/set_pose": 799
+    },
+    "receipt_errors": 0,
+    "sequence_errors": [],
+    "client_sequences": {
+      "scene": {
+        "count": 404,
+        "first": 1,
+        "last": 404,
+        "missing": [],
+        "duplicates": [],
+        "increasing": true
+      },
+      "traffic": {
+        "count": 400,
+        "first": 1,
+        "last": 400,
+        "missing": [],
+        "duplicates": [],
+        "increasing": true
+      }
+    },
+    "files": {
+      "scene_service.jsonl": {
+        "rows": 404,
+        "sha256": "63f68ecec50d71428736d9de4594366e89eade32798a985ea0184fab5dac1c2f"
+      },
+      "traffic_service.jsonl": {
+        "rows": 400,
+        "sha256": "893f7686498736e617ed350b4e6088a36ff521197406601097d4d861672b1041"
+      }
+    }
+  },
+  "ulog_safety": {
+    "armed_failsafe_observations": 0,
+    "armed_offboard_lost_observations": 0,
+    "ulog_dropout_events": 0
+  },
+  "ulog_sha256": "dafa9207ebbc8e046431b0d9ccacf61b91dcc97ba1e97e4497fc07fa703cd7ca",
+  "source_snapshot_files_verified": 40,
+  "required_parameters": {
+    "perception_node": {
+      "overlap_candidate_recovery": true,
+      "bounded_scale_prediction": true,
+      "overlap_confirmation_continuity": true,
+      "target_reacquire_timeout": 10.0
+    },
+    "px4_offboard_controller": {
+      "recovery_timeout": 10.0,
+      "recovery_max_distance": 4.0,
+      "recovery_max_speed": 0.8
+    },
+    "vehicle_scene": {
+      "distractor_color": "red",
+      "parked_vehicle_y": -4.4,
+      "traffic_scenario": "lane_change_overtaking",
+      "vehicle_speed": 0.8,
+      "occlusion_start": 15.0,
+      "occlusion_duration": 4.0
+    }
+  },
+  "parameter_errors": [],
+  "parameter_comparison": {
+    "reference": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/runtime_parameters.json",
+    "reference_sha256": "adc10e3463a533fea9b7b06f9050101ea1e2ad228058406d1368038816aabe5c",
+    "only_requested_continuity_addition": true,
+    "differences": [
+      {
+        "node": "perception_node",
+        "parameter": "overlap_confirmation_continuity",
+        "before_present": false,
+        "before": null,
+        "after": true
+      }
+    ]
+  },
+  "timing_all_recorded_associations": {
+    "processing_s": {
+      "count": 968,
+      "mean_s": 0.1818217338013635,
+      "p95_s": 0.29067073002515825,
+      "maximum_s": 0.3413793020299636
+    },
+    "target_publish_age_s": {
+      "count": 968,
+      "mean_s": 0.23299207419239049,
+      "p95_s": 0.34617296504729894,
+      "maximum_s": 0.4308188370196149
+    },
+    "queue_wait_s": {
+      "count": 968,
+      "mean_s": 0.052644331273076814,
+      "p95_s": 0.14689211263903415,
+      "maximum_s": 0.22778844996355474
+    },
+    "full_frame_yolo_s": {
+      "count": 968,
+      "mean_s": 0.16304302367541462,
+      "p95_s": 0.17961711415846365,
+      "maximum_s": 0.202722409972921
+    }
+  },
+  "association_frame_integrity": {
+    "records": 968,
+    "unique_image_stamps": 968,
+    "duplicate_image_stamps": 0,
+    "non_increasing_image_stamps": 0,
+    "first_image_stamp": [
+      16,
+      500000000
+    ],
+    "last_image_stamp": [
+      146,
+      52000000
+    ],
+    "confirmed_frames": 809,
+    "locked_tracker_ids": [
+      1,
+      13,
+      34
+    ],
+    "frame_key": "image stamp (sec, nanosec); tracker ID is not a frame ID"
+  },
+  "input_sha256": {
+    "report.json": "16e254bf54536187e5e5b688c31b3cc8ccc1540d080776d3d09ddbb0b4687c12",
+    "identity_report.json": "44d1e22ec11ceefde71edaa3100b9c8953becf6bf4fa99babe9626abd8875b75",
+    "supervisor.json": "daae2746148bf3556367a0e4e83ac16b00587eee65cc51832974e9f77c37b9ad",
+    "implementation_snapshot.json": "7099776895222055194bf0682f53243495032328e16a25eb9a6e1c985ce95944",
+    "runtime_parameters.json": "02ec03f353d3530e7953b0cb9808bad971e5d7df1cd545455bd7cee7e2a168bf",
+    "full_pose_geometry_audit.json": "35edbfb34282e8045be0b0436a5ab6a2610069cd68ead392b8159b1cb0d14648",
+    "association.jsonl": "3b9dbce90ed15c64400ef3d17b7f3b4b32bc2c46817593c95ca62435c2156d27"
+  },
+  "audit_script_sha256": "f8ca40bc4bcfda8d128ae57b69da0082bbdeb4933eb5e6f00ad9a839e3074fcd",
+  "limitations": [
+    "One independent restart, not a repeated benchmark or proof of general improvement.",
+    "Only the continuity runtime flag is added, but trajectories and processing latency may differ between runs.",
+    "Coverage is time-weighted onboard target confirmation, not detector mAP or verified identity accuracy.",
+    "Partial-overlap identity scoring uses projected volumes and exclusive regions, not instance masks.",
+    "Unscorable frames are not assumed to have correct identity; zero wrong identities applies to scored frames.",
+    "Recovery durations use wall seconds; traffic phases and independent identity latency use simulation seconds.",
+    "Mesh-box separation and ULog counters do not certify absence of all possible physical collisions.",
+    "Timing statistics cover every recorded association, not just the TRACK state.",
+    "Independent identity comes from identity_report.json, not the placeholder in report.json."
+  ]
+}

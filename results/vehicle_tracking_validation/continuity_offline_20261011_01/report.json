@@ -1,0 +1,2748 @@
+{
+  "trials": {
+    "overlap_scale_gui_20261011_01": {
+      "source_trial": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/overlap_scale_gui_20261011_01",
+      "seed_index": 305,
+      "seed_wall_s": 70.6678911219933,
+      "rows_per_arm": 671,
+      "truth_reconstruction": {
+        "reconstructed_frames": 399,
+        "calibration_checked_boxes": 1147,
+        "calibration_max_error_px": 0.0,
+        "limitation": "Model-derived K validated against archived projections; bounding volumes, not instance masks."
+      },
+      "implementation_sha256": {
+        "executed": "b8c2fa56717523d006ecb34801404560585c1a31490c0e99bf6ff4475e12bf63",
+        "previous": "b8c2fa56717523d006ecb34801404560585c1a31490c0e99bf6ff4475e12bf63",
+        "disabled": "b9a5a8b559b6cae52a82a4b047f4fa93b069277be99485ba673e489f19f00482",
+        "candidate": "b9a5a8b559b6cae52a82a4b047f4fa93b069277be99485ba673e489f19f00482"
+      },
+      "input_sha256": {
+        "association.jsonl": "5ba6df1740cf91949bc449e11fcf6507279a437a5e4cea7a127377567048931d",
+        "identity_observations.jsonl": "22bd00569f86a105898837062be5fd462dc930d1d33fd34729287d6cb403078d",
+        "identity_poses.jsonl": "64c0cec88f6ae41e5e16596dc9830938975560089d4fbe09e58a23b4816e787b",
+        "runtime_parameters.json": "adc10e3463a533fea9b7b06f9050101ea1e2ad228058406d1368038816aabe5c",
+        "report.json": "e76916c2cedd83341cc8424ac03cec2e274083524cfa7b1abd6ea8cdc2b51de6"
+      },
+      "summaries": {
+        "executed": {
+          "implementation_settings": {
+            "acquisition_center_gate": 0.35,
+            "confidence_threshold": 0.25,
+            "weak_idless_confirm_frames": 3,
+            "weak_idless_max_age": 2.0,
+            "recovery_competition_enabled": false,
+            "predict_box_scale_velocity": true,
+            "recovery_timeout": 10.0,
+            "acquisition_confirm_frames": 1,
+            "overlap_candidate_recovery": true,
+            "bounded_scale_prediction": true
+          },
+          "frozen_confirmation_disagreement_indices": [],
+          "frozen_selected_box_disagreement_indices": [],
+          "historical_follow_window_wall_s": [
+            79.309082164953,
+            190.7337679209886
+          ],
+          "fixed_reference_unchanged": true,
+          "all_frame_labels": {
+            "tracked_vehicle": 431,
+            "unconfirmed": 135,
+            "panel_occlusion_unscorable": 24,
+            "overlap_unscorable": 81
+          },
+          "observations": 530,
+          "confirmed_frames": 465,
+          "independent_labels": {
+            "tracked_vehicle": 387,
+            "unconfirmed": 42,
+            "panel_occlusion_unscorable": 24,
+            "overlap_unscorable": 77
+          },
+          "strong_correct_candidate_frames": 423,
+          "correct_target_confirmed_frames": 387,
+          "first_correct_confirmation_wall_s": 79.45406071399339,
+          "first_correct_confirmation_delay_from_window_start_s": 0.14497854904038832,
+          "accepted_merged_ambiguous_frames": 77,
+          "correct_candidate_rejection_reasons": {
+            "mahalanobis_gate": 4,
+            "center_gate": 1,
+            "scale_gate": 1
+          },
+          "predicted_height_px_range": [
+            62.51419338466212,
+            122.32388013006977
+          ],
+          "predicted_log_scale_error_to_correct_median": 0.01642584400407654,
+          "predicted_log_scale_error_to_correct_max": 0.7885795400740696,
+          "window_wall_s": 111.42468575603561,
+          "confirmed_wall_s_proxy": 96.15735519101145,
+          "wrong_identity_wall_s_proxy": 0.0,
+          "confirmation_time_fraction_proxy": 0.8629807168722737,
+          "unplanned_loss_windows": [
+            {
+              "gap_start_wall_s": 80.30608626198955,
+              "loss_wall_s": 80.90617022599326,
+              "original_recovered_wall_s": 81.40666302695172,
+              "observations": 4,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 1,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 80.81334650295321,
+              "first_correct_confirmation_delay_from_window_start_s": 0.5072602409636602,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {
+                "mahalanobis_gate": 1
+              },
+              "predicted_height_px_range": [
+                106.82467846157442,
+                110.183347755064
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.04618703958478054,
+              "predicted_log_scale_error_to_correct_max": 0.4666669989520278
+            },
+            {
+              "gap_start_wall_s": 97.26093457097886,
+              "loss_wall_s": 97.7611202049884,
+              "original_recovered_wall_s": 98.26072934496915,
+              "observations": 4,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 1,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 97.81069003499579,
+              "first_correct_confirmation_delay_from_window_start_s": 0.5497554640169255,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {
+                "center_gate": 1,
+                "scale_gate": 1,
+                "mahalanobis_gate": 1
+              },
+              "predicted_height_px_range": [
+                121.28333650673375,
+                122.32388013006977
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.29771524742186684,
+              "predicted_log_scale_error_to_correct_max": 0.7885795400740696
+            },
+            {
+              "gap_start_wall_s": 163.03281443100423,
+              "loss_wall_s": 163.53316929499852,
+              "original_recovered_wall_s": 163.8332633379614,
+              "observations": 4,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 1,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 163.48397904797457,
+              "first_correct_confirmation_delay_from_window_start_s": 0.4511646169703454,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                99.76240523908848,
+                102.98335494025162
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.009985131048312335,
+              "predicted_log_scale_error_to_correct_max": 0.0380132202582526
+            },
+            {
+              "gap_start_wall_s": 165.83345293498132,
+              "loss_wall_s": 166.43321172898868,
+              "original_recovered_wall_s": 167.03290233999724,
+              "observations": 6,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 3,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 6,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 166.63027874898398,
+              "first_correct_confirmation_delay_from_window_start_s": 0.7968258140026592,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                93.19254047215941,
+                101.16515305284759
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.07534321443358494,
+              "predicted_log_scale_error_to_correct_max": 0.11368909787548565
+            },
+            {
+              "gap_start_wall_s": 167.23312389297644,
+              "loss_wall_s": 167.73562593699899,
+              "original_recovered_wall_s": 169.33318226598203,
+              "observations": 10,
+              "confirmed_frames": 5,
+              "independent_labels": {
+                "unconfirmed": 5,
+                "tracked_vehicle": 5
+              },
+              "strong_correct_candidate_frames": 10,
+              "correct_target_confirmed_frames": 5,
+              "first_correct_confirmation_wall_s": 167.90528095996706,
+              "first_correct_confirmation_delay_from_window_start_s": 0.6721570669906214,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                83.30156839636174,
+                91.26178244439677
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.026996925372243075,
+              "predicted_log_scale_error_to_correct_max": 0.08693980897547893
+            },
+            {
+              "gap_start_wall_s": 170.33332075900398,
+              "loss_wall_s": 170.93293982598698,
+              "original_recovered_wall_s": 173.5331694879569,
+              "observations": 15,
+              "confirmed_frames": 5,
+              "independent_labels": {
+                "unconfirmed": 10,
+                "tracked_vehicle": 5
+              },
+              "strong_correct_candidate_frames": 14,
+              "correct_target_confirmed_frames": 5,
+              "first_correct_confirmation_wall_s": 172.19976860500174,
+              "first_correct_confirmation_delay_from_window_start_s": 1.8664478459977545,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                68.0975189620334,
+                82.18578523813721
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.06612479107691771,
+              "predicted_log_scale_error_to_correct_max": 0.11396962299019142
+            },
+            {
+              "gap_start_wall_s": 173.7328525079647,
+              "loss_wall_s": 174.23304901295342,
+              "original_recovered_wall_s": 175.8333498709835,
+              "observations": 11,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 8,
+                "overlap_unscorable": 3
+              },
+              "strong_correct_candidate_frames": 3,
+              "correct_target_confirmed_frames": 0,
+              "first_correct_confirmation_wall_s": null,
+              "first_correct_confirmation_delay_from_window_start_s": null,
+              "accepted_merged_ambiguous_frames": 3,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                62.51419338466212,
+                86.46760101923144
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.11488857209872516,
+              "predicted_log_scale_error_to_correct_max": 0.11730312638352824
+            }
+          ],
+          "unconfirmed_gap_proxy": {
+            "definition": "Unconfirmed intervals >= debounce, using frozen receipt times and positive TTL; not controller RECOVER states.",
+            "positive_ttl_s": 0.5,
+            "debounce_s": 0.5,
+            "episode_count": 9,
+            "nonplanned_episode_count": 8,
+            "maximum_duration_s": 6.7354451709543355,
+            "episodes": [
+              {
+                "start_wall_s": 80.23853451397736,
+                "end_wall_s": 80.81334650295321,
+                "duration_s": 0.5748119889758527,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 97.23840702098096,
+                "end_wall_s": 97.81069003499579,
+                "duration_s": 0.572283014014829,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 103.76663157000439,
+                "end_wall_s": 110.50207674095873,
+                "duration_s": 6.7354451709543355,
+                "intersects_planned_occlusion": true
+              },
+              {
+                "start_wall_s": 162.9501075829612,
+                "end_wall_s": 163.48397904797457,
+                "duration_s": 0.5338714650133625,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 165.8081623959588,
+                "end_wall_s": 166.63027874898398,
+                "duration_s": 0.8221163530251943,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 167.2264315719949,
+                "end_wall_s": 167.90528095996706,
+                "duration_s": 0.67884938797215,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 168.2995597939589,
+                "end_wall_s": 168.8261113659828,
+                "duration_s": 0.5265515720238909,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 170.31710997695336,
+                "end_wall_s": 172.19976860500174,
+                "duration_s": 1.8826586280483752,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 173.63449983095052,
+                "end_wall_s": 175.37280389096122,
+                "duration_s": 1.7383040600107051,
+                "intersects_planned_occlusion": false
+              }
+            ]
+          },
+          "phase_counts": {
+            "pre": {
+              "tracked_vehicle": 197,
+              "unconfirmed": 6,
+              "panel_occlusion_unscorable": 24
+            },
+            "during": {
+              "tracked_vehicle": 229,
+              "unconfirmed": 19
+            },
+            "post": {
+              "unconfirmed": 17,
+              "tracked_vehicle": 5,
+              "overlap_unscorable": 77
+            }
+          },
+          "post_correct_evidence_frames": 5,
+          "post_ten_frame_evidence_requirement_met_on_frozen_trajectory": false
+        },
+        "previous": {
+          "implementation_settings": {
+            "acquisition_center_gate": 0.35,
+            "confidence_threshold": 0.25,
+            "weak_idless_confirm_frames": 3,
+            "weak_idless_max_age": 2.0,
+            "recovery_competition_enabled": false,
+            "predict_box_scale_velocity": true,
+            "recovery_timeout": 10.0,
+            "acquisition_confirm_frames": 1,
+            "overlap_candidate_recovery": true,
+            "bounded_scale_prediction": true
+          },
+          "frozen_confirmation_disagreement_indices": [],
+          "frozen_selected_box_disagreement_indices": [],
+          "historical_follow_window_wall_s": [
+            79.309082164953,
+            190.7337679209886
+          ],
+          "fixed_reference_unchanged": true,
+          "all_frame_labels": {
+            "tracked_vehicle": 431,
+            "unconfirmed": 135,
+            "panel_occlusion_unscorable": 24,
+            "overlap_unscorable": 81
+          },
+          "observations": 530,
+          "confirmed_frames": 465,
+          "independent_labels": {
+            "tracked_vehicle": 387,
+            "unconfirmed": 42,
+            "panel_occlusion_unscorable": 24,
+            "overlap_unscorable": 77
+          },
+          "strong_correct_candidate_frames": 423,
+          "correct_target_confirmed_frames": 387,
+          "first_correct_confirmation_wall_s": 79.45406071399339,
+          "first_correct_confirmation_delay_from_window_start_s": 0.14497854904038832,
+          "accepted_merged_ambiguous_frames": 77,
+          "correct_candidate_rejection_reasons": {
+            "mahalanobis_gate": 4,
+            "center_gate": 1,
+            "scale_gate": 1
+          },
+          "predicted_height_px_range": [
+            62.51419338466212,
+            122.32388013006977
+          ],
+          "predicted_log_scale_error_to_correct_median": 0.01642584400407654,
+          "predicted_log_scale_error_to_correct_max": 0.7885795400740696,
+          "window_wall_s": 111.42468575603561,
+          "confirmed_wall_s_proxy": 96.15735519101145,
+          "wrong_identity_wall_s_proxy": 0.0,
+          "confirmation_time_fraction_proxy": 0.8629807168722737,
+          "unplanned_loss_windows": [
+            {
+              "gap_start_wall_s": 80.30608626198955,
+              "loss_wall_s": 80.90617022599326,
+              "original_recovered_wall_s": 81.40666302695172,
+              "observations": 4,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 1,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 80.81334650295321,
+              "first_correct_confirmation_delay_from_window_start_s": 0.5072602409636602,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {
+                "mahalanobis_gate": 1
+              },
+              "predicted_height_px_range": [
+                106.82467846157442,
+                110.183347755064
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.04618703958478054,
+              "predicted_log_scale_error_to_correct_max": 0.4666669989520278
+            },
+            {
+              "gap_start_wall_s": 97.26093457097886,
+              "loss_wall_s": 97.7611202049884,
+              "original_recovered_wall_s": 98.26072934496915,
+              "observations": 4,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 1,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 97.81069003499579,
+              "first_correct_confirmation_delay_from_window_start_s": 0.5497554640169255,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {
+                "center_gate": 1,
+                "scale_gate": 1,
+                "mahalanobis_gate": 1
+              },
+              "predicted_height_px_range": [
+                121.28333650673375,
+                122.32388013006977
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.29771524742186684,
+              "predicted_log_scale_error_to_correct_max": 0.7885795400740696
+            },
+            {
+              "gap_start_wall_s": 163.03281443100423,
+              "loss_wall_s": 163.53316929499852,
+              "original_recovered_wall_s": 163.8332633379614,
+              "observations": 4,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 1,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 163.48397904797457,
+              "first_correct_confirmation_delay_from_window_start_s": 0.4511646169703454,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                99.76240523908848,
+                102.98335494025162
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.009985131048312335,
+              "predicted_log_scale_error_to_correct_max": 0.0380132202582526
+            },
+            {
+              "gap_start_wall_s": 165.83345293498132,
+              "loss_wall_s": 166.43321172898868,
+              "original_recovered_wall_s": 167.03290233999724,
+              "observations": 6,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 3,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 6,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 166.63027874898398,
+              "first_correct_confirmation_delay_from_window_start_s": 0.7968258140026592,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                93.19254047215941,
+                101.16515305284759
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.07534321443358494,
+              "predicted_log_scale_error_to_correct_max": 0.11368909787548565
+            },
+            {
+              "gap_start_wall_s": 167.23312389297644,
+              "loss_wall_s": 167.73562593699899,
+              "original_recovered_wall_s": 169.33318226598203,
+              "observations": 10,
+              "confirmed_frames": 5,
+              "independent_labels": {
+                "unconfirmed": 5,
+                "tracked_vehicle": 5
+              },
+              "strong_correct_candidate_frames": 10,
+              "correct_target_confirmed_frames": 5,
+              "first_correct_confirmation_wall_s": 167.90528095996706,
+              "first_correct_confirmation_delay_from_window_start_s": 0.6721570669906214,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                83.30156839636174,
+                91.26178244439677
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.026996925372243075,
+              "predicted_log_scale_error_to_correct_max": 0.08693980897547893
+            },
+            {
+              "gap_start_wall_s": 170.33332075900398,
+              "loss_wall_s": 170.93293982598698,
+              "original_recovered_wall_s": 173.5331694879569,
+              "observations": 15,
+              "confirmed_frames": 5,
+              "independent_labels": {
+                "unconfirmed": 10,
+                "tracked_vehicle": 5
+              },
+              "strong_correct_candidate_frames": 14,
+              "correct_target_confirmed_frames": 5,
+              "first_correct_confirmation_wall_s": 172.19976860500174,
+              "first_correct_confirmation_delay_from_window_start_s": 1.8664478459977545,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                68.0975189620334,
+                82.18578523813721
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.06612479107691771,
+              "predicted_log_scale_error_to_correct_max": 0.11396962299019142
+            },
+            {
+              "gap_start_wall_s": 173.7328525079647,
+              "loss_wall_s": 174.23304901295342,
+              "original_recovered_wall_s": 175.8333498709835,
+              "observations": 11,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 8,
+                "overlap_unscorable": 3
+              },
+              "strong_correct_candidate_frames": 3,
+              "correct_target_confirmed_frames": 0,
+              "first_correct_confirmation_wall_s": null,
+              "first_correct_confirmation_delay_from_window_start_s": null,
+              "accepted_merged_ambiguous_frames": 3,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                62.51419338466212,
+                86.46760101923144
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.11488857209872516,
+              "predicted_log_scale_error_to_correct_max": 0.11730312638352824
+            }
+          ],
+          "unconfirmed_gap_proxy": {
+            "definition": "Unconfirmed intervals >= debounce, using frozen receipt times and positive TTL; not controller RECOVER states.",
+            "positive_ttl_s": 0.5,
+            "debounce_s": 0.5,
+            "episode_count": 9,
+            "nonplanned_episode_count": 8,
+            "maximum_duration_s": 6.7354451709543355,
+            "episodes": [
+              {
+                "start_wall_s": 80.23853451397736,
+                "end_wall_s": 80.81334650295321,
+                "duration_s": 0.5748119889758527,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 97.23840702098096,
+                "end_wall_s": 97.81069003499579,
+                "duration_s": 0.572283014014829,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 103.76663157000439,
+                "end_wall_s": 110.50207674095873,
+                "duration_s": 6.7354451709543355,
+                "intersects_planned_occlusion": true
+              },
+              {
+                "start_wall_s": 162.9501075829612,
+                "end_wall_s": 163.48397904797457,
+                "duration_s": 0.5338714650133625,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 165.8081623959588,
+                "end_wall_s": 166.63027874898398,
+                "duration_s": 0.8221163530251943,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 167.2264315719949,
+                "end_wall_s": 167.90528095996706,
+                "duration_s": 0.67884938797215,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 168.2995597939589,
+                "end_wall_s": 168.8261113659828,
+                "duration_s": 0.5265515720238909,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 170.31710997695336,
+                "end_wall_s": 172.19976860500174,
+                "duration_s": 1.8826586280483752,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 173.63449983095052,
+                "end_wall_s": 175.37280389096122,
+                "duration_s": 1.7383040600107051,
+                "intersects_planned_occlusion": false
+              }
+            ]
+          },
+          "phase_counts": {
+            "pre": {
+              "tracked_vehicle": 197,
+              "unconfirmed": 6,
+              "panel_occlusion_unscorable": 24
+            },
+            "during": {
+              "tracked_vehicle": 229,
+              "unconfirmed": 19
+            },
+            "post": {
+              "unconfirmed": 17,
+              "tracked_vehicle": 5,
+              "overlap_unscorable": 77
+            }
+          },
+          "post_correct_evidence_frames": 5,
+          "post_ten_frame_evidence_requirement_met_on_frozen_trajectory": false
+        },
+        "disabled": {
+          "implementation_settings": {
+            "acquisition_center_gate": 0.35,
+            "confidence_threshold": 0.25,
+            "weak_idless_confirm_frames": 3,
+            "weak_idless_max_age": 2.0,
+            "recovery_competition_enabled": false,
+            "predict_box_scale_velocity": true,
+            "recovery_timeout": 10.0,
+            "acquisition_confirm_frames": 1,
+            "overlap_candidate_recovery": true,
+            "bounded_scale_prediction": true,
+            "overlap_confirmation_continuity": false
+          },
+          "frozen_confirmation_disagreement_indices": [],
+          "frozen_selected_box_disagreement_indices": [],
+          "historical_follow_window_wall_s": [
+            79.309082164953,
+            190.7337679209886
+          ],
+          "fixed_reference_unchanged": true,
+          "all_frame_labels": {
+            "tracked_vehicle": 431,
+            "unconfirmed": 135,
+            "panel_occlusion_unscorable": 24,
+            "overlap_unscorable": 81
+          },
+          "observations": 530,
+          "confirmed_frames": 465,
+          "independent_labels": {
+            "tracked_vehicle": 387,
+            "unconfirmed": 42,
+            "panel_occlusion_unscorable": 24,
+            "overlap_unscorable": 77
+          },
+          "strong_correct_candidate_frames": 423,
+          "correct_target_confirmed_frames": 387,
+          "first_correct_confirmation_wall_s": 79.45406071399339,
+          "first_correct_confirmation_delay_from_window_start_s": 0.14497854904038832,
+          "accepted_merged_ambiguous_frames": 77,
+          "correct_candidate_rejection_reasons": {
+            "mahalanobis_gate": 4,
+            "center_gate": 1,
+            "scale_gate": 1
+          },
+          "predicted_height_px_range": [
+            62.51419338466212,
+            122.32388013006977
+          ],
+          "predicted_log_scale_error_to_correct_median": 0.01642584400407654,
+          "predicted_log_scale_error_to_correct_max": 0.7885795400740696,
+          "window_wall_s": 111.42468575603561,
+          "confirmed_wall_s_proxy": 96.15735519101145,
+          "wrong_identity_wall_s_proxy": 0.0,
+          "confirmation_time_fraction_proxy": 0.8629807168722737,
+          "unplanned_loss_windows": [
+            {
+              "gap_start_wall_s": 80.30608626198955,
+              "loss_wall_s": 80.90617022599326,
+              "original_recovered_wall_s": 81.40666302695172,
+              "observations": 4,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 1,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 80.81334650295321,
+              "first_correct_confirmation_delay_from_window_start_s": 0.5072602409636602,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {
+                "mahalanobis_gate": 1
+              },
+              "predicted_height_px_range": [
+                106.82467846157442,
+                110.183347755064
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.04618703958478054,
+              "predicted_log_scale_error_to_correct_max": 0.4666669989520278
+            },
+            {
+              "gap_start_wall_s": 97.26093457097886,
+              "loss_wall_s": 97.7611202049884,
+              "original_recovered_wall_s": 98.26072934496915,
+              "observations": 4,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 1,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 97.81069003499579,
+              "first_correct_confirmation_delay_from_window_start_s": 0.5497554640169255,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {
+                "center_gate": 1,
+                "scale_gate": 1,
+                "mahalanobis_gate": 1
+              },
+              "predicted_height_px_range": [
+                121.28333650673375,
+                122.32388013006977
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.29771524742186684,
+              "predicted_log_scale_error_to_correct_max": 0.7885795400740696
+            },
+            {
+              "gap_start_wall_s": 163.03281443100423,
+              "loss_wall_s": 163.53316929499852,
+              "original_recovered_wall_s": 163.8332633379614,
+              "observations": 4,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 1,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 163.48397904797457,
+              "first_correct_confirmation_delay_from_window_start_s": 0.4511646169703454,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                99.76240523908848,
+                102.98335494025162
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.009985131048312335,
+              "predicted_log_scale_error_to_correct_max": 0.0380132202582526
+            },
+            {
+              "gap_start_wall_s": 165.83345293498132,
+              "loss_wall_s": 166.43321172898868,
+              "original_recovered_wall_s": 167.03290233999724,
+              "observations": 6,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 3,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 6,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 166.63027874898398,
+              "first_correct_confirmation_delay_from_window_start_s": 0.7968258140026592,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                93.19254047215941,
+                101.16515305284759
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.07534321443358494,
+              "predicted_log_scale_error_to_correct_max": 0.11368909787548565
+            },
+            {
+              "gap_start_wall_s": 167.23312389297644,
+              "loss_wall_s": 167.73562593699899,
+              "original_recovered_wall_s": 169.33318226598203,
+              "observations": 10,
+              "confirmed_frames": 5,
+              "independent_labels": {
+                "unconfirmed": 5,
+                "tracked_vehicle": 5
+              },
+              "strong_correct_candidate_frames": 10,
+              "correct_target_confirmed_frames": 5,
+              "first_correct_confirmation_wall_s": 167.90528095996706,
+              "first_correct_confirmation_delay_from_window_start_s": 0.6721570669906214,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                83.30156839636174,
+                91.26178244439677
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.026996925372243075,
+              "predicted_log_scale_error_to_correct_max": 0.08693980897547893
+            },
+            {
+              "gap_start_wall_s": 170.33332075900398,
+              "loss_wall_s": 170.93293982598698,
+              "original_recovered_wall_s": 173.5331694879569,
+              "observations": 15,
+              "confirmed_frames": 5,
+              "independent_labels": {
+                "unconfirmed": 10,
+                "tracked_vehicle": 5
+              },
+              "strong_correct_candidate_frames": 14,
+              "correct_target_confirmed_frames": 5,
+              "first_correct_confirmation_wall_s": 172.19976860500174,
+              "first_correct_confirmation_delay_from_window_start_s": 1.8664478459977545,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                68.0975189620334,
+                82.18578523813721
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.06612479107691771,
+              "predicted_log_scale_error_to_correct_max": 0.11396962299019142
+            },
+            {
+              "gap_start_wall_s": 173.7328525079647,
+              "loss_wall_s": 174.23304901295342,
+              "original_recovered_wall_s": 175.8333498709835,
+              "observations": 11,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 8,
+                "overlap_unscorable": 3
+              },
+              "strong_correct_candidate_frames": 3,
+              "correct_target_confirmed_frames": 0,
+              "first_correct_confirmation_wall_s": null,
+              "first_correct_confirmation_delay_from_window_start_s": null,
+              "accepted_merged_ambiguous_frames": 3,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                62.51419338466212,
+                86.46760101923144
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.11488857209872516,
+              "predicted_log_scale_error_to_correct_max": 0.11730312638352824
+            }
+          ],
+          "unconfirmed_gap_proxy": {
+            "definition": "Unconfirmed intervals >= debounce, using frozen receipt times and positive TTL; not controller RECOVER states.",
+            "positive_ttl_s": 0.5,
+            "debounce_s": 0.5,
+            "episode_count": 9,
+            "nonplanned_episode_count": 8,
+            "maximum_duration_s": 6.7354451709543355,
+            "episodes": [
+              {
+                "start_wall_s": 80.23853451397736,
+                "end_wall_s": 80.81334650295321,
+                "duration_s": 0.5748119889758527,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 97.23840702098096,
+                "end_wall_s": 97.81069003499579,
+                "duration_s": 0.572283014014829,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 103.76663157000439,
+                "end_wall_s": 110.50207674095873,
+                "duration_s": 6.7354451709543355,
+                "intersects_planned_occlusion": true
+              },
+              {
+                "start_wall_s": 162.9501075829612,
+                "end_wall_s": 163.48397904797457,
+                "duration_s": 0.5338714650133625,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 165.8081623959588,
+                "end_wall_s": 166.63027874898398,
+                "duration_s": 0.8221163530251943,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 167.2264315719949,
+                "end_wall_s": 167.90528095996706,
+                "duration_s": 0.67884938797215,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 168.2995597939589,
+                "end_wall_s": 168.8261113659828,
+                "duration_s": 0.5265515720238909,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 170.31710997695336,
+                "end_wall_s": 172.19976860500174,
+                "duration_s": 1.8826586280483752,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 173.63449983095052,
+                "end_wall_s": 175.37280389096122,
+                "duration_s": 1.7383040600107051,
+                "intersects_planned_occlusion": false
+              }
+            ]
+          },
+          "phase_counts": {
+            "pre": {
+              "tracked_vehicle": 197,
+              "unconfirmed": 6,
+              "panel_occlusion_unscorable": 24
+            },
+            "during": {
+              "tracked_vehicle": 229,
+              "unconfirmed": 19
+            },
+            "post": {
+              "unconfirmed": 17,
+              "tracked_vehicle": 5,
+              "overlap_unscorable": 77
+            }
+          },
+          "post_correct_evidence_frames": 5,
+          "post_ten_frame_evidence_requirement_met_on_frozen_trajectory": false
+        },
+        "candidate": {
+          "implementation_settings": {
+            "acquisition_center_gate": 0.35,
+            "confidence_threshold": 0.25,
+            "weak_idless_confirm_frames": 3,
+            "weak_idless_max_age": 2.0,
+            "recovery_competition_enabled": false,
+            "predict_box_scale_velocity": true,
+            "recovery_timeout": 10.0,
+            "acquisition_confirm_frames": 1,
+            "overlap_candidate_recovery": true,
+            "bounded_scale_prediction": true,
+            "overlap_confirmation_continuity": true
+          },
+          "frozen_confirmation_disagreement_indices": [
+            752,
+            753,
+            755,
+            756,
+            757,
+            758,
+            762,
+            763,
+            764,
+            767,
+            768,
+            769,
+            777,
+            778,
+            779,
+            780,
+            781,
+            785,
+            788,
+            789,
+            793
+          ],
+          "frozen_selected_box_disagreement_indices": [
+            752,
+            753,
+            755,
+            756,
+            757,
+            758,
+            762,
+            763,
+            764,
+            767,
+            768,
+            769,
+            777,
+            778,
+            779,
+            780,
+            781,
+            785,
+            788,
+            789,
+            793
+          ],
+          "historical_follow_window_wall_s": [
+            79.309082164953,
+            190.7337679209886
+          ],
+          "fixed_reference_unchanged": true,
+          "all_frame_labels": {
+            "tracked_vehicle": 452,
+            "unconfirmed": 114,
+            "panel_occlusion_unscorable": 24,
+            "overlap_unscorable": 81
+          },
+          "observations": 530,
+          "confirmed_frames": 486,
+          "independent_labels": {
+            "tracked_vehicle": 408,
+            "unconfirmed": 21,
+            "panel_occlusion_unscorable": 24,
+            "overlap_unscorable": 77
+          },
+          "strong_correct_candidate_frames": 423,
+          "correct_target_confirmed_frames": 408,
+          "first_correct_confirmation_wall_s": 79.45406071399339,
+          "first_correct_confirmation_delay_from_window_start_s": 0.14497854904038832,
+          "accepted_merged_ambiguous_frames": 77,
+          "correct_candidate_rejection_reasons": {
+            "mahalanobis_gate": 4,
+            "center_gate": 1,
+            "scale_gate": 1
+          },
+          "predicted_height_px_range": [
+            63.173617647745345,
+            122.32388013006977
+          ],
+          "predicted_log_scale_error_to_correct_median": 0.015701757402784233,
+          "predicted_log_scale_error_to_correct_max": 0.7885795400740696,
+          "window_wall_s": 111.42468575603561,
+          "confirmed_wall_s_proxy": 100.48747153615113,
+          "wrong_identity_wall_s_proxy": 0.0,
+          "confirmation_time_fraction_proxy": 0.9018420905055858,
+          "unplanned_loss_windows": [
+            {
+              "gap_start_wall_s": 80.30608626198955,
+              "loss_wall_s": 80.90617022599326,
+              "original_recovered_wall_s": 81.40666302695172,
+              "observations": 4,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 1,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 80.81334650295321,
+              "first_correct_confirmation_delay_from_window_start_s": 0.5072602409636602,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {
+                "mahalanobis_gate": 1
+              },
+              "predicted_height_px_range": [
+                106.82467846157442,
+                110.183347755064
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.04618703958478054,
+              "predicted_log_scale_error_to_correct_max": 0.4666669989520278
+            },
+            {
+              "gap_start_wall_s": 97.26093457097886,
+              "loss_wall_s": 97.7611202049884,
+              "original_recovered_wall_s": 98.26072934496915,
+              "observations": 4,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 1,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 97.81069003499579,
+              "first_correct_confirmation_delay_from_window_start_s": 0.5497554640169255,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {
+                "center_gate": 1,
+                "scale_gate": 1,
+                "mahalanobis_gate": 1
+              },
+              "predicted_height_px_range": [
+                121.28333650673375,
+                122.32388013006977
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.29771524742186684,
+              "predicted_log_scale_error_to_correct_max": 0.7885795400740696
+            },
+            {
+              "gap_start_wall_s": 163.03281443100423,
+              "loss_wall_s": 163.53316929499852,
+              "original_recovered_wall_s": 163.8332633379614,
+              "observations": 4,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 1,
+                "tracked_vehicle": 3
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 3,
+              "first_correct_confirmation_wall_s": 163.48397904797457,
+              "first_correct_confirmation_delay_from_window_start_s": 0.4511646169703454,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                99.76240523908848,
+                102.98335494025162
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.009985131048312335,
+              "predicted_log_scale_error_to_correct_max": 0.0380132202582526
+            },
+            {
+              "gap_start_wall_s": 165.83345293498132,
+              "loss_wall_s": 166.43321172898868,
+              "original_recovered_wall_s": 167.03290233999724,
+              "observations": 6,
+              "confirmed_frames": 6,
+              "independent_labels": {
+                "tracked_vehicle": 6
+              },
+              "strong_correct_candidate_frames": 6,
+              "correct_target_confirmed_frames": 6,
+              "first_correct_confirmation_wall_s": 165.9976768719498,
+              "first_correct_confirmation_delay_from_window_start_s": 0.16422393696848303,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                90.6305677041496,
+                98.84234556318643
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.01762497032159871,
+              "predicted_log_scale_error_to_correct_max": 0.052561169108619854
+            },
+            {
+              "gap_start_wall_s": 167.23312389297644,
+              "loss_wall_s": 167.73562593699899,
+              "original_recovered_wall_s": 169.33318226598203,
+              "observations": 10,
+              "confirmed_frames": 10,
+              "independent_labels": {
+                "tracked_vehicle": 10
+              },
+              "strong_correct_candidate_frames": 10,
+              "correct_target_confirmed_frames": 10,
+              "first_correct_confirmation_wall_s": 167.445953722985,
+              "first_correct_confirmation_delay_from_window_start_s": 0.21282983000855893,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                81.60161235986561,
+                86.50339901537791
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.03400471075588285,
+              "predicted_log_scale_error_to_correct_max": 0.06711809641265609
+            },
+            {
+              "gap_start_wall_s": 170.33332075900398,
+              "loss_wall_s": 170.93293982598698,
+              "original_recovered_wall_s": 173.5331694879569,
+              "observations": 15,
+              "confirmed_frames": 12,
+              "independent_labels": {
+                "tracked_vehicle": 12,
+                "unconfirmed": 3
+              },
+              "strong_correct_candidate_frames": 14,
+              "correct_target_confirmed_frames": 12,
+              "first_correct_confirmation_wall_s": 170.51854682900012,
+              "first_correct_confirmation_delay_from_window_start_s": 0.18522606999613345,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                67.30570707388347,
+                78.96452296279938
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.030194912057752488,
+              "predicted_log_scale_error_to_correct_max": 0.06461926363572568
+            },
+            {
+              "gap_start_wall_s": 173.7328525079647,
+              "loss_wall_s": 174.23304901295342,
+              "original_recovered_wall_s": 175.8333498709835,
+              "observations": 11,
+              "confirmed_frames": 3,
+              "independent_labels": {
+                "unconfirmed": 8,
+                "overlap_unscorable": 3
+              },
+              "strong_correct_candidate_frames": 3,
+              "correct_target_confirmed_frames": 0,
+              "first_correct_confirmation_wall_s": null,
+              "first_correct_confirmation_delay_from_window_start_s": null,
+              "accepted_merged_ambiguous_frames": 3,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                63.173617647745345,
+                86.25624527473576
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.10562263797723781,
+              "predicted_log_scale_error_to_correct_max": 0.1071614914286898
+            }
+          ],
+          "unconfirmed_gap_proxy": {
+            "definition": "Unconfirmed intervals >= debounce, using frozen receipt times and positive TTL; not controller RECOVER states.",
+            "positive_ttl_s": 0.5,
+            "debounce_s": 0.5,
+            "episode_count": 6,
+            "nonplanned_episode_count": 5,
+            "maximum_duration_s": 6.7354451709543355,
+            "episodes": [
+              {
+                "start_wall_s": 80.23853451397736,
+                "end_wall_s": 80.81334650295321,
+                "duration_s": 0.5748119889758527,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 97.23840702098096,
+                "end_wall_s": 97.81069003499579,
+                "duration_s": 0.572283014014829,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 103.76663157000439,
+                "end_wall_s": 110.50207674095873,
+                "duration_s": 6.7354451709543355,
+                "intersects_planned_occlusion": true
+              },
+              {
+                "start_wall_s": 162.9501075829612,
+                "end_wall_s": 163.48397904797457,
+                "duration_s": 0.5338714650133625,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 171.40276446100324,
+                "end_wall_s": 171.95912119495915,
+                "duration_s": 0.5563567339559086,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 173.92074598697945,
+                "end_wall_s": 175.37280389096122,
+                "duration_s": 1.4520579039817676,
+                "intersects_planned_occlusion": false
+              }
+            ]
+          },
+          "phase_counts": {
+            "pre": {
+              "tracked_vehicle": 197,
+              "unconfirmed": 6,
+              "panel_occlusion_unscorable": 24
+            },
+            "during": {
+              "tracked_vehicle": 244,
+              "unconfirmed": 4
+            },
+            "post": {
+              "tracked_vehicle": 11,
+              "unconfirmed": 11,
+              "overlap_unscorable": 77
+            }
+          },
+          "post_correct_evidence_frames": 11,
+          "post_ten_frame_evidence_requirement_met_on_frozen_trajectory": true
+        }
+      },
+      "comparisons_to_previous_two_fix_version": {
+        "disabled": {
+          "new_correct_indices": [],
+          "lost_correct_indices": [],
+          "new_wrong_indices": [],
+          "new_merged_ambiguous_indices": [],
+          "removed_merged_ambiguous_indices": [],
+          "all_decision_disagreement_indices": []
+        },
+        "candidate": {
+          "new_correct_indices": [
+            752,
+            753,
+            755,
+            756,
+            757,
+            758,
+            762,
+            763,
+            764,
+            767,
+            768,
+            769,
+            777,
+            778,
+            779,
+            780,
+            781,
+            785,
+            788,
+            789,
+            793
+          ],
+          "lost_correct_indices": [],
+          "new_wrong_indices": [],
+          "new_merged_ambiguous_indices": [],
+          "removed_merged_ambiguous_indices": [],
+          "all_decision_disagreement_indices": [
+            752,
+            753,
+            755,
+            756,
+            757,
+            758,
+            762,
+            763,
+            764,
+            767,
+            768,
+            769,
+            777,
+            778,
+            779,
+            780,
+            781,
+            785,
+            788,
+            789,
+            793
+          ]
+        }
+      }
+    },
+    "red_lane_change_gui_20261011_01": {
+      "source_trial": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/red_lane_change_gui_20261011_01",
+      "seed_index": 328,
+      "seed_wall_s": 65.54617490898818,
+      "rows_per_arm": 812,
+      "truth_reconstruction": {
+        "reconstructed_frames": 438,
+        "calibration_checked_boxes": 1411,
+        "calibration_max_error_px": 0.0,
+        "limitation": "Model-derived K validated against archived projections; bounding volumes, not instance masks."
+      },
+      "implementation_sha256": {
+        "executed": "7f441515d90add11e2c58df3ae50a96b951b9d6d3370a6ac0e70295659bdd041",
+        "previous": "b8c2fa56717523d006ecb34801404560585c1a31490c0e99bf6ff4475e12bf63",
+        "disabled": "b9a5a8b559b6cae52a82a4b047f4fa93b069277be99485ba673e489f19f00482",
+        "candidate": "b9a5a8b559b6cae52a82a4b047f4fa93b069277be99485ba673e489f19f00482"
+      },
+      "input_sha256": {
+        "association.jsonl": "59b1365de9b02b60569bc5d796634446c572379cf159e9ca56688b6cefcc4005",
+        "identity_observations.jsonl": "51c629d577a70c62810aacd1b1cfb5f6291fe0e6172e39c54d2a83074b03a662",
+        "identity_poses.jsonl": "b0c78507ffa98de26c87cc8055c72bd51fc51dc20e17b083f6d18a11ddee1049",
+        "runtime_parameters.json": "0c592b06a6664f65f8dce825ea6365937a0ba1acfa0d56e830a539756ebb0b47",
+        "report.json": "f191e8c29453e8a74ad1c0dfad91572e152a9f22e08f89c89be02bd6dac23a66"
+      },
+      "summaries": {
+        "executed": {
+          "implementation_settings": {
+            "acquisition_center_gate": 0.35,
+            "confidence_threshold": 0.25,
+            "weak_idless_confirm_frames": 3,
+            "weak_idless_max_age": 2.0,
+            "recovery_competition_enabled": false,
+            "predict_box_scale_velocity": true,
+            "recovery_timeout": 10.0,
+            "acquisition_confirm_frames": 1
+          },
+          "frozen_confirmation_disagreement_indices": [],
+          "frozen_selected_box_disagreement_indices": [],
+          "historical_follow_window_wall_s": [
+            73.38238677300978,
+            203.4074192160042
+          ],
+          "fixed_reference_unchanged": true,
+          "all_frame_labels": {
+            "tracked_vehicle": 449,
+            "unconfirmed": 231,
+            "panel_occlusion_unscorable": 22,
+            "overlap_unscorable": 109,
+            "projection_unscorable": 1
+          },
+          "observations": 658,
+          "confirmed_frames": 513,
+          "independent_labels": {
+            "tracked_vehicle": 404,
+            "unconfirmed": 123,
+            "panel_occlusion_unscorable": 22,
+            "overlap_unscorable": 109
+          },
+          "strong_correct_candidate_frames": 511,
+          "correct_target_confirmed_frames": 404,
+          "first_correct_confirmation_wall_s": 73.51866169599816,
+          "first_correct_confirmation_delay_from_window_start_s": 0.1362749229883775,
+          "accepted_merged_ambiguous_frames": 108,
+          "correct_candidate_rejection_reasons": {
+            "mahalanobis_gate": 7,
+            "similar_vehicle_overlap": 67,
+            "scale_gate": 30,
+            "overlap_recovery_requires_strong": 2,
+            "center_gate": 4
+          },
+          "predicted_height_px_range": [
+            43.710025089426495,
+            366.84291386845337
+          ],
+          "predicted_log_scale_error_to_correct_median": 0.022147025377185825,
+          "predicted_log_scale_error_to_correct_max": 2.0244477505601775,
+          "window_wall_s": 130.02503244299442,
+          "confirmed_wall_s_proxy": 97.02393156389007,
+          "wrong_identity_wall_s_proxy": 0.0,
+          "confirmation_time_fraction_proxy": 0.7461942499912647,
+          "unplanned_loss_windows": [
+            {
+              "gap_start_wall_s": 148.26849124697037,
+              "loss_wall_s": 148.76850379700772,
+              "original_recovered_wall_s": 162.77036842302186,
+              "observations": 73,
+              "confirmed_frames": 13,
+              "independent_labels": {
+                "unconfirmed": 60,
+                "tracked_vehicle": 1,
+                "overlap_unscorable": 12
+              },
+              "strong_correct_candidate_frames": 57,
+              "correct_target_confirmed_frames": 1,
+              "first_correct_confirmation_wall_s": 160.7251880110125,
+              "first_correct_confirmation_delay_from_window_start_s": 12.456696764042135,
+              "accepted_merged_ambiguous_frames": 12,
+              "correct_candidate_rejection_reasons": {
+                "similar_vehicle_overlap": 53
+              },
+              "predicted_height_px_range": [
+                65.59128805473881,
+                110.28181693986278
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.11226274223024335,
+              "predicted_log_scale_error_to_correct_max": 0.5182755103844439
+            },
+            {
+              "gap_start_wall_s": 174.96811863500625,
+              "loss_wall_s": 175.46871395898052,
+              "original_recovered_wall_s": 177.56867338699521,
+              "observations": 14,
+              "confirmed_frames": 5,
+              "independent_labels": {
+                "unconfirmed": 9,
+                "overlap_unscorable": 5
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 0,
+              "first_correct_confirmation_wall_s": null,
+              "first_correct_confirmation_delay_from_window_start_s": null,
+              "accepted_merged_ambiguous_frames": 5,
+              "correct_candidate_rejection_reasons": {
+                "similar_vehicle_overlap": 4,
+                "overlap_recovery_requires_strong": 1,
+                "center_gate": 1,
+                "scale_gate": 1
+              },
+              "predicted_height_px_range": [
+                83.45025170230122,
+                96.91092672757077
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.27728913283157564,
+              "predicted_log_scale_error_to_correct_max": 0.34900088485334346
+            },
+            {
+              "gap_start_wall_s": 185.30571977602085,
+              "loss_wall_s": 185.90571801702026,
+              "original_recovered_wall_s": 198.20897949201753,
+              "observations": 56,
+              "confirmed_frames": 16,
+              "independent_labels": {
+                "unconfirmed": 40,
+                "tracked_vehicle": 16
+              },
+              "strong_correct_candidate_frames": 53,
+              "correct_target_confirmed_frames": 16,
+              "first_correct_confirmation_wall_s": 195.49259254999924,
+              "first_correct_confirmation_delay_from_window_start_s": 10.186872773978394,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {
+                "similar_vehicle_overlap": 7,
+                "scale_gate": 27,
+                "overlap_recovery_requires_strong": 1,
+                "center_gate": 3
+              },
+              "predicted_height_px_range": [
+                45.297232945070846,
+                366.84291386845337
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.6772811629516892,
+              "predicted_log_scale_error_to_correct_max": 2.0244477505601775
+            }
+          ],
+          "unconfirmed_gap_proxy": {
+            "definition": "Unconfirmed intervals >= debounce, using frozen receipt times and positive TTL; not controller RECOVER states.",
+            "positive_ttl_s": 0.5,
+            "debounce_s": 0.5,
+            "episode_count": 5,
+            "nonplanned_episode_count": 4,
+            "maximum_duration_s": 12.484842616016977,
+            "episodes": [
+              {
+                "start_wall_s": 95.2479798530112,
+                "end_wall_s": 102.04550848400686,
+                "duration_s": 6.797528630995657,
+                "intersects_planned_occlusion": true
+              },
+              {
+                "start_wall_s": 148.24034539499553,
+                "end_wall_s": 160.7251880110125,
+                "duration_s": 12.484842616016977,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 174.89398672798416,
+                "end_wall_s": 175.84444823296508,
+                "duration_s": 0.9504615049809217,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 176.20957641297719,
+                "end_wall_s": 177.19528345699655,
+                "duration_s": 0.9857070440193638,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 185.24108123598853,
+                "end_wall_s": 195.49259254999924,
+                "duration_s": 10.251511314010713,
+                "intersects_planned_occlusion": false
+              }
+            ]
+          },
+          "phase_counts": {
+            "pre": {
+              "tracked_vehicle": 197,
+              "unconfirmed": 7,
+              "panel_occlusion_unscorable": 22
+            },
+            "during": {
+              "tracked_vehicle": 194,
+              "unconfirmed": 49
+            },
+            "post": {
+              "unconfirmed": 67,
+              "tracked_vehicle": 55,
+              "overlap_unscorable": 109
+            }
+          },
+          "post_correct_evidence_frames": 55,
+          "post_ten_frame_evidence_requirement_met_on_frozen_trajectory": true
+        },
+        "previous": {
+          "implementation_settings": {
+            "acquisition_center_gate": 0.35,
+            "confidence_threshold": 0.25,
+            "weak_idless_confirm_frames": 3,
+            "weak_idless_max_age": 2.0,
+            "recovery_competition_enabled": false,
+            "predict_box_scale_velocity": true,
+            "recovery_timeout": 10.0,
+            "acquisition_confirm_frames": 1,
+            "overlap_candidate_recovery": true,
+            "bounded_scale_prediction": true
+          },
+          "frozen_confirmation_disagreement_indices": [
+            752,
+            753,
+            754,
+            755,
+            756,
+            757,
+            758,
+            759,
+            760,
+            761,
+            762,
+            763,
+            764,
+            765,
+            766,
+            767,
+            768,
+            769,
+            770,
+            771,
+            772,
+            773,
+            774,
+            775,
+            776,
+            777,
+            778,
+            779,
+            780,
+            781,
+            782,
+            783,
+            784,
+            785,
+            786,
+            787,
+            788,
+            789,
+            790,
+            791,
+            792,
+            793,
+            794,
+            795,
+            796,
+            797,
+            798,
+            799,
+            800,
+            801,
+            802,
+            812,
+            813,
+            814,
+            815,
+            898,
+            947,
+            948,
+            949,
+            950,
+            956,
+            957,
+            958,
+            959,
+            960,
+            961,
+            962,
+            963,
+            964,
+            965,
+            966,
+            967,
+            968,
+            969,
+            973,
+            974,
+            975,
+            976,
+            977,
+            978,
+            979,
+            980,
+            981,
+            982,
+            983,
+            984,
+            985
+          ],
+          "frozen_selected_box_disagreement_indices": [
+            752,
+            753,
+            754,
+            755,
+            756,
+            757,
+            758,
+            759,
+            760,
+            761,
+            762,
+            763,
+            764,
+            765,
+            766,
+            767,
+            768,
+            769,
+            770,
+            771,
+            772,
+            773,
+            774,
+            775,
+            776,
+            777,
+            778,
+            779,
+            780,
+            781,
+            782,
+            783,
+            784,
+            785,
+            786,
+            787,
+            788,
+            789,
+            790,
+            791,
+            792,
+            793,
+            794,
+            795,
+            796,
+            797,
+            798,
+            799,
+            800,
+            801,
+            802,
+            812,
+            813,
+            814,
+            815,
+            898,
+            947,
+            948,
+            949,
+            950,
+            956,
+            957,
+            958,
+            959,
+            960,
+            961,
+            962,
+            963,
+            964,
+            965,
+            966,
+            967,
+            968,
+            969,
+            973,
+            974,
+            975,
+            976,
+            977,
+            978,
+            979,
+            980,
+            981,
+            982,
+            983,
+            984,
+            985
+          ],
+          "historical_follow_window_wall_s": [
+            73.38238677300978,
+            203.4074192160042
+          ],
+          "fixed_reference_unchanged": true,
+          "all_frame_labels": {
+            "tracked_vehicle": 532,
+            "unconfirmed": 152,
+            "panel_occlusion_unscorable": 22,
+            "overlap_unscorable": 105,
+            "projection_unscorable": 1
+          },
+          "observations": 658,
+          "confirmed_frames": 592,
+          "independent_labels": {
+            "tracked_vehicle": 487,
+            "unconfirmed": 44,
+            "panel_occlusion_unscorable": 22,
+            "overlap_unscorable": 105
+          },
+          "strong_correct_candidate_frames": 511,
+          "correct_target_confirmed_frames": 487,
+          "first_correct_confirmation_wall_s": 73.51866169599816,
+          "first_correct_confirmation_delay_from_window_start_s": 0.1362749229883775,
+          "accepted_merged_ambiguous_frames": 104,
+          "correct_candidate_rejection_reasons": {
+            "mahalanobis_gate": 7,
+            "scale_gate": 3,
+            "overlap_recovery_requires_strong": 1,
+            "center_gate": 1
+          },
+          "predicted_height_px_range": [
+            43.706796185586086,
+            121.6006904637959
+          ],
+          "predicted_log_scale_error_to_correct_median": 0.019121626861549612,
+          "predicted_log_scale_error_to_correct_max": 0.598721293665772,
+          "window_wall_s": 130.02503244299442,
+          "confirmed_wall_s_proxy": 113.80773826490622,
+          "wrong_identity_wall_s_proxy": 0.0,
+          "confirmation_time_fraction_proxy": 0.8752755998334537,
+          "unplanned_loss_windows": [
+            {
+              "gap_start_wall_s": 148.26849124697037,
+              "loss_wall_s": 148.76850379700772,
+              "original_recovered_wall_s": 162.77036842302186,
+              "observations": 73,
+              "confirmed_frames": 60,
+              "independent_labels": {
+                "unconfirmed": 13,
+                "tracked_vehicle": 52,
+                "overlap_unscorable": 8
+              },
+              "strong_correct_candidate_frames": 57,
+              "correct_target_confirmed_frames": 52,
+              "first_correct_confirmation_wall_s": 148.55478868697537,
+              "first_correct_confirmation_delay_from_window_start_s": 0.2862974400050007,
+              "accepted_merged_ambiguous_frames": 8,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                63.557796114242365,
+                100.75461265518504
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.02743484281239361,
+              "predicted_log_scale_error_to_correct_max": 0.10490047836434391
+            },
+            {
+              "gap_start_wall_s": 174.96811863500625,
+              "loss_wall_s": 175.46871395898052,
+              "original_recovered_wall_s": 177.56867338699521,
+              "observations": 14,
+              "confirmed_frames": 6,
+              "independent_labels": {
+                "unconfirmed": 8,
+                "overlap_unscorable": 5,
+                "tracked_vehicle": 1
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 1,
+              "first_correct_confirmation_wall_s": 176.72327108099125,
+              "first_correct_confirmation_delay_from_window_start_s": 1.7551524459850043,
+              "accepted_merged_ambiguous_frames": 5,
+              "correct_candidate_rejection_reasons": {
+                "overlap_recovery_requires_strong": 1,
+                "center_gate": 1,
+                "scale_gate": 1
+              },
+              "predicted_height_px_range": [
+                77.29644148534851,
+                95.1050746285431
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.2710350706032827,
+              "predicted_log_scale_error_to_correct_max": 0.34077627205612426
+            },
+            {
+              "gap_start_wall_s": 185.30571977602085,
+              "loss_wall_s": 185.90571801702026,
+              "original_recovered_wall_s": 198.20897949201753,
+              "observations": 56,
+              "confirmed_frames": 47,
+              "independent_labels": {
+                "unconfirmed": 9,
+                "tracked_vehicle": 47
+              },
+              "strong_correct_candidate_frames": 53,
+              "correct_target_confirmed_frames": 47,
+              "first_correct_confirmation_wall_s": 185.55629921896616,
+              "first_correct_confirmation_delay_from_window_start_s": 0.250579442945309,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                46.48382891923984,
+                83.45115565186472
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.029786516561289167,
+              "predicted_log_scale_error_to_correct_max": 0.2855750574965108
+            }
+          ],
+          "unconfirmed_gap_proxy": {
+            "definition": "Unconfirmed intervals >= debounce, using frozen receipt times and positive TTL; not controller RECOVER states.",
+            "positive_ttl_s": 0.5,
+            "debounce_s": 0.5,
+            "episode_count": 7,
+            "nonplanned_episode_count": 6,
+            "maximum_duration_s": 6.797528630995657,
+            "episodes": [
+              {
+                "start_wall_s": 95.2479798530112,
+                "end_wall_s": 102.04550848400686,
+                "duration_s": 6.797528630995657,
+                "intersects_planned_occlusion": true
+              },
+              {
+                "start_wall_s": 158.2535893659806,
+                "end_wall_s": 160.7251880110125,
+                "duration_s": 2.471598645031918,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 160.8855472599971,
+                "end_wall_s": 161.64639902999625,
+                "duration_s": 0.7608517699991353,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 174.89398672798416,
+                "end_wall_s": 175.84444823296508,
+                "duration_s": 0.9504615049809217,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 176.20957641297719,
+                "end_wall_s": 176.72327108099125,
+                "duration_s": 0.5136946680140682,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 186.33716008701595,
+                "end_wall_s": 187.6380012119771,
+                "duration_s": 1.3008411249611527,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 191.23469583597034,
+                "end_wall_s": 192.18669540801784,
+                "duration_s": 0.9519995720474981,
+                "intersects_planned_occlusion": false
+              }
+            ]
+          },
+          "phase_counts": {
+            "pre": {
+              "tracked_vehicle": 197,
+              "unconfirmed": 7,
+              "panel_occlusion_unscorable": 22
+            },
+            "during": {
+              "tracked_vehicle": 239,
+              "unconfirmed": 4
+            },
+            "post": {
+              "tracked_vehicle": 93,
+              "unconfirmed": 33,
+              "overlap_unscorable": 105
+            }
+          },
+          "post_correct_evidence_frames": 93,
+          "post_ten_frame_evidence_requirement_met_on_frozen_trajectory": true
+        },
+        "disabled": {
+          "implementation_settings": {
+            "acquisition_center_gate": 0.35,
+            "confidence_threshold": 0.25,
+            "weak_idless_confirm_frames": 3,
+            "weak_idless_max_age": 2.0,
+            "recovery_competition_enabled": false,
+            "predict_box_scale_velocity": true,
+            "recovery_timeout": 10.0,
+            "acquisition_confirm_frames": 1,
+            "overlap_candidate_recovery": true,
+            "bounded_scale_prediction": true,
+            "overlap_confirmation_continuity": false
+          },
+          "frozen_confirmation_disagreement_indices": [
+            752,
+            753,
+            754,
+            755,
+            756,
+            757,
+            758,
+            759,
+            760,
+            761,
+            762,
+            763,
+            764,
+            765,
+            766,
+            767,
+            768,
+            769,
+            770,
+            771,
+            772,
+            773,
+            774,
+            775,
+            776,
+            777,
+            778,
+            779,
+            780,
+            781,
+            782,
+            783,
+            784,
+            785,
+            786,
+            787,
+            788,
+            789,
+            790,
+            791,
+            792,
+            793,
+            794,
+            795,
+            796,
+            797,
+            798,
+            799,
+            800,
+            801,
+            802,
+            812,
+            813,
+            814,
+            815,
+            898,
+            947,
+            948,
+            949,
+            950,
+            956,
+            957,
+            958,
+            959,
+            960,
+            961,
+            962,
+            963,
+            964,
+            965,
+            966,
+            967,
+            968,
+            969,
+            973,
+            974,
+            975,
+            976,
+            977,
+            978,
+            979,
+            980,
+            981,
+            982,
+            983,
+            984,
+            985
+          ],
+          "frozen_selected_box_disagreement_indices": [
+            752,
+            753,
+            754,
+            755,
+            756,
+            757,
+            758,
+            759,
+            760,
+            761,
+            762,
+            763,
+            764,
+            765,
+            766,
+            767,
+            768,
+            769,
+            770,
+            771,
+            772,
+            773,
+            774,
+            775,
+            776,
+            777,
+            778,
+            779,
+            780,
+            781,
+            782,
+            783,
+            784,
+            785,
+            786,
+            787,
+            788,
+            789,
+            790,
+            791,
+            792,
+            793,
+            794,
+            795,
+            796,
+            797,
+            798,
+            799,
+            800,
+            801,
+            802,
+            812,
+            813,
+            814,
+            815,
+            898,
+            947,
+            948,
+            949,
+            950,
+            956,
+            957,
+            958,
+            959,
+            960,
+            961,
+            962,
+            963,
+            964,
+            965,
+            966,
+            967,
+            968,
+            969,
+            973,
+            974,
+            975,
+            976,
+            977,
+            978,
+            979,
+            980,
+            981,
+            982,
+            983,
+            984,
+            985
+          ],
+          "historical_follow_window_wall_s": [
+            73.38238677300978,
+            203.4074192160042
+          ],
+          "fixed_reference_unchanged": true,
+          "all_frame_labels": {
+            "tracked_vehicle": 532,
+            "unconfirmed": 152,
+            "panel_occlusion_unscorable": 22,
+            "overlap_unscorable": 105,
+            "projection_unscorable": 1
+          },
+          "observations": 658,
+          "confirmed_frames": 592,
+          "independent_labels": {
+            "tracked_vehicle": 487,
+            "unconfirmed": 44,
+            "panel_occlusion_unscorable": 22,
+            "overlap_unscorable": 105
+          },
+          "strong_correct_candidate_frames": 511,
+          "correct_target_confirmed_frames": 487,
+          "first_correct_confirmation_wall_s": 73.51866169599816,
+          "first_correct_confirmation_delay_from_window_start_s": 0.1362749229883775,
+          "accepted_merged_ambiguous_frames": 104,
+          "correct_candidate_rejection_reasons": {
+            "mahalanobis_gate": 7,
+            "scale_gate": 3,
+            "overlap_recovery_requires_strong": 1,
+            "center_gate": 1
+          },
+          "predicted_height_px_range": [
+            43.706796185586086,
+            121.6006904637959
+          ],
+          "predicted_log_scale_error_to_correct_median": 0.019121626861549612,
+          "predicted_log_scale_error_to_correct_max": 0.598721293665772,
+          "window_wall_s": 130.02503244299442,
+          "confirmed_wall_s_proxy": 113.80773826490622,
+          "wrong_identity_wall_s_proxy": 0.0,
+          "confirmation_time_fraction_proxy": 0.8752755998334537,
+          "unplanned_loss_windows": [
+            {
+              "gap_start_wall_s": 148.26849124697037,
+              "loss_wall_s": 148.76850379700772,
+              "original_recovered_wall_s": 162.77036842302186,
+              "observations": 73,
+              "confirmed_frames": 60,
+              "independent_labels": {
+                "unconfirmed": 13,
+                "tracked_vehicle": 52,
+                "overlap_unscorable": 8
+              },
+              "strong_correct_candidate_frames": 57,
+              "correct_target_confirmed_frames": 52,
+              "first_correct_confirmation_wall_s": 148.55478868697537,
+              "first_correct_confirmation_delay_from_window_start_s": 0.2862974400050007,
+              "accepted_merged_ambiguous_frames": 8,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                63.557796114242365,
+                100.75461265518504
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.02743484281239361,
+              "predicted_log_scale_error_to_correct_max": 0.10490047836434391
+            },
+            {
+              "gap_start_wall_s": 174.96811863500625,
+              "loss_wall_s": 175.46871395898052,
+              "original_recovered_wall_s": 177.56867338699521,
+              "observations": 14,
+              "confirmed_frames": 6,
+              "independent_labels": {
+                "unconfirmed": 8,
+                "overlap_unscorable": 5,
+                "tracked_vehicle": 1
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 1,
+              "first_correct_confirmation_wall_s": 176.72327108099125,
+              "first_correct_confirmation_delay_from_window_start_s": 1.7551524459850043,
+              "accepted_merged_ambiguous_frames": 5,
+              "correct_candidate_rejection_reasons": {
+                "overlap_recovery_requires_strong": 1,
+                "center_gate": 1,
+                "scale_gate": 1
+              },
+              "predicted_height_px_range": [
+                77.29644148534851,
+                95.1050746285431
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.2710350706032827,
+              "predicted_log_scale_error_to_correct_max": 0.34077627205612426
+            },
+            {
+              "gap_start_wall_s": 185.30571977602085,
+              "loss_wall_s": 185.90571801702026,
+              "original_recovered_wall_s": 198.20897949201753,
+              "observations": 56,
+              "confirmed_frames": 47,
+              "independent_labels": {
+                "unconfirmed": 9,
+                "tracked_vehicle": 47
+              },
+              "strong_correct_candidate_frames": 53,
+              "correct_target_confirmed_frames": 47,
+              "first_correct_confirmation_wall_s": 185.55629921896616,
+              "first_correct_confirmation_delay_from_window_start_s": 0.250579442945309,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                46.48382891923984,
+                83.45115565186472
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.029786516561289167,
+              "predicted_log_scale_error_to_correct_max": 0.2855750574965108
+            }
+          ],
+          "unconfirmed_gap_proxy": {
+            "definition": "Unconfirmed intervals >= debounce, using frozen receipt times and positive TTL; not controller RECOVER states.",
+            "positive_ttl_s": 0.5,
+            "debounce_s": 0.5,
+            "episode_count": 7,
+            "nonplanned_episode_count": 6,
+            "maximum_duration_s": 6.797528630995657,
+            "episodes": [
+              {
+                "start_wall_s": 95.2479798530112,
+                "end_wall_s": 102.04550848400686,
+                "duration_s": 6.797528630995657,
+                "intersects_planned_occlusion": true
+              },
+              {
+                "start_wall_s": 158.2535893659806,
+                "end_wall_s": 160.7251880110125,
+                "duration_s": 2.471598645031918,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 160.8855472599971,
+                "end_wall_s": 161.64639902999625,
+                "duration_s": 0.7608517699991353,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 174.89398672798416,
+                "end_wall_s": 175.84444823296508,
+                "duration_s": 0.9504615049809217,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 176.20957641297719,
+                "end_wall_s": 176.72327108099125,
+                "duration_s": 0.5136946680140682,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 186.33716008701595,
+                "end_wall_s": 187.6380012119771,
+                "duration_s": 1.3008411249611527,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 191.23469583597034,
+                "end_wall_s": 192.18669540801784,
+                "duration_s": 0.9519995720474981,
+                "intersects_planned_occlusion": false
+              }
+            ]
+          },
+          "phase_counts": {
+            "pre": {
+              "tracked_vehicle": 197,
+              "unconfirmed": 7,
+              "panel_occlusion_unscorable": 22
+            },
+            "during": {
+              "tracked_vehicle": 239,
+              "unconfirmed": 4
+            },
+            "post": {
+              "tracked_vehicle": 93,
+              "unconfirmed": 33,
+              "overlap_unscorable": 105
+            }
+          },
+          "post_correct_evidence_frames": 93,
+          "post_ten_frame_evidence_requirement_met_on_frozen_trajectory": true
+        },
+        "candidate": {
+          "implementation_settings": {
+            "acquisition_center_gate": 0.35,
+            "confidence_threshold": 0.25,
+            "weak_idless_confirm_frames": 3,
+            "weak_idless_max_age": 2.0,
+            "recovery_competition_enabled": false,
+            "predict_box_scale_velocity": true,
+            "recovery_timeout": 10.0,
+            "acquisition_confirm_frames": 1,
+            "overlap_candidate_recovery": true,
+            "bounded_scale_prediction": true,
+            "overlap_confirmation_continuity": true
+          },
+          "frozen_confirmation_disagreement_indices": [
+            752,
+            753,
+            754,
+            755,
+            756,
+            757,
+            758,
+            759,
+            760,
+            761,
+            762,
+            763,
+            764,
+            765,
+            766,
+            767,
+            768,
+            769,
+            770,
+            771,
+            772,
+            773,
+            774,
+            775,
+            776,
+            777,
+            778,
+            779,
+            780,
+            781,
+            782,
+            783,
+            784,
+            785,
+            786,
+            787,
+            788,
+            789,
+            790,
+            791,
+            792,
+            793,
+            794,
+            795,
+            796,
+            797,
+            798,
+            799,
+            800,
+            801,
+            802,
+            812,
+            813,
+            814,
+            815,
+            898,
+            947,
+            948,
+            949,
+            950,
+            955,
+            956,
+            957,
+            958,
+            959,
+            960,
+            961,
+            962,
+            963,
+            964,
+            965,
+            966,
+            967,
+            968,
+            969,
+            972,
+            973,
+            974,
+            975,
+            976,
+            977,
+            978,
+            979,
+            980,
+            981,
+            982,
+            983,
+            984,
+            985
+          ],
+          "frozen_selected_box_disagreement_indices": [
+            752,
+            753,
+            754,
+            755,
+            756,
+            757,
+            758,
+            759,
+            760,
+            761,
+            762,
+            763,
+            764,
+            765,
+            766,
+            767,
+            768,
+            769,
+            770,
+            771,
+            772,
+            773,
+            774,
+            775,
+            776,
+            777,
+            778,
+            779,
+            780,
+            781,
+            782,
+            783,
+            784,
+            785,
+            786,
+            787,
+            788,
+            789,
+            790,
+            791,
+            792,
+            793,
+            794,
+            795,
+            796,
+            797,
+            798,
+            799,
+            800,
+            801,
+            802,
+            812,
+            813,
+            814,
+            815,
+            898,
+            947,
+            948,
+            949,
+            950,
+            955,
+            956,
+            957,
+            958,
+            959,
+            960,
+            961,
+            962,
+            963,
+            964,
+            965,
+            966,
+            967,
+            968,
+            969,
+            972,
+            973,
+            974,
+            975,
+            976,
+            977,
+            978,
+            979,
+            980,
+            981,
+            982,
+            983,
+            984,
+            985
+          ],
+          "historical_follow_window_wall_s": [
+            73.38238677300978,
+            203.4074192160042
+          ],
+          "fixed_reference_unchanged": true,
+          "all_frame_labels": {
+            "tracked_vehicle": 534,
+            "unconfirmed": 150,
+            "panel_occlusion_unscorable": 22,
+            "overlap_unscorable": 105,
+            "projection_unscorable": 1
+          },
+          "observations": 658,
+          "confirmed_frames": 594,
+          "independent_labels": {
+            "tracked_vehicle": 489,
+            "unconfirmed": 42,
+            "panel_occlusion_unscorable": 22,
+            "overlap_unscorable": 105
+          },
+          "strong_correct_candidate_frames": 511,
+          "correct_target_confirmed_frames": 489,
+          "first_correct_confirmation_wall_s": 73.51866169599816,
+          "first_correct_confirmation_delay_from_window_start_s": 0.1362749229883775,
+          "accepted_merged_ambiguous_frames": 104,
+          "correct_candidate_rejection_reasons": {
+            "mahalanobis_gate": 7,
+            "scale_gate": 3,
+            "overlap_recovery_requires_strong": 1,
+            "center_gate": 1
+          },
+          "predicted_height_px_range": [
+            43.70683858520192,
+            121.6006904637959
+          ],
+          "predicted_log_scale_error_to_correct_median": 0.01901678590818956,
+          "predicted_log_scale_error_to_correct_max": 0.598721293665772,
+          "window_wall_s": 130.02503244299442,
+          "confirmed_wall_s_proxy": 114.32234114292078,
+          "wrong_identity_wall_s_proxy": 0.0,
+          "confirmation_time_fraction_proxy": 0.8792333214224883,
+          "unplanned_loss_windows": [
+            {
+              "gap_start_wall_s": 148.26849124697037,
+              "loss_wall_s": 148.76850379700772,
+              "original_recovered_wall_s": 162.77036842302186,
+              "observations": 73,
+              "confirmed_frames": 60,
+              "independent_labels": {
+                "unconfirmed": 13,
+                "tracked_vehicle": 52,
+                "overlap_unscorable": 8
+              },
+              "strong_correct_candidate_frames": 57,
+              "correct_target_confirmed_frames": 52,
+              "first_correct_confirmation_wall_s": 148.55478868697537,
+              "first_correct_confirmation_delay_from_window_start_s": 0.2862974400050007,
+              "accepted_merged_ambiguous_frames": 8,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                63.557796114242365,
+                100.75461265518504
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.02743484281239361,
+              "predicted_log_scale_error_to_correct_max": 0.10490047836434391
+            },
+            {
+              "gap_start_wall_s": 174.96811863500625,
+              "loss_wall_s": 175.46871395898052,
+              "original_recovered_wall_s": 177.56867338699521,
+              "observations": 14,
+              "confirmed_frames": 6,
+              "independent_labels": {
+                "unconfirmed": 8,
+                "overlap_unscorable": 5,
+                "tracked_vehicle": 1
+              },
+              "strong_correct_candidate_frames": 4,
+              "correct_target_confirmed_frames": 1,
+              "first_correct_confirmation_wall_s": 176.72327108099125,
+              "first_correct_confirmation_delay_from_window_start_s": 1.7551524459850043,
+              "accepted_merged_ambiguous_frames": 5,
+              "correct_candidate_rejection_reasons": {
+                "overlap_recovery_requires_strong": 1,
+                "center_gate": 1,
+                "scale_gate": 1
+              },
+              "predicted_height_px_range": [
+                77.29644148534851,
+                95.1050746285431
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.2710350706032827,
+              "predicted_log_scale_error_to_correct_max": 0.34077627205612426
+            },
+            {
+              "gap_start_wall_s": 185.30571977602085,
+              "loss_wall_s": 185.90571801702026,
+              "original_recovered_wall_s": 198.20897949201753,
+              "observations": 56,
+              "confirmed_frames": 49,
+              "independent_labels": {
+                "unconfirmed": 7,
+                "tracked_vehicle": 49
+              },
+              "strong_correct_candidate_frames": 53,
+              "correct_target_confirmed_frames": 49,
+              "first_correct_confirmation_wall_s": 185.55629921896616,
+              "first_correct_confirmation_delay_from_window_start_s": 0.250579442945309,
+              "accepted_merged_ambiguous_frames": 0,
+              "correct_candidate_rejection_reasons": {},
+              "predicted_height_px_range": [
+                46.481644703307325,
+                83.45115565186472
+              ],
+              "predicted_log_scale_error_to_correct_median": 0.03287382356270041,
+              "predicted_log_scale_error_to_correct_max": 0.2855750574965108
+            }
+          ],
+          "unconfirmed_gap_proxy": {
+            "definition": "Unconfirmed intervals >= debounce, using frozen receipt times and positive TTL; not controller RECOVER states.",
+            "positive_ttl_s": 0.5,
+            "debounce_s": 0.5,
+            "episode_count": 7,
+            "nonplanned_episode_count": 6,
+            "maximum_duration_s": 6.797528630995657,
+            "episodes": [
+              {
+                "start_wall_s": 95.2479798530112,
+                "end_wall_s": 102.04550848400686,
+                "duration_s": 6.797528630995657,
+                "intersects_planned_occlusion": true
+              },
+              {
+                "start_wall_s": 158.2535893659806,
+                "end_wall_s": 160.7251880110125,
+                "duration_s": 2.471598645031918,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 160.8855472599971,
+                "end_wall_s": 161.64639902999625,
+                "duration_s": 0.7608517699991353,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 174.89398672798416,
+                "end_wall_s": 175.84444823296508,
+                "duration_s": 0.9504615049809217,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 176.20957641297719,
+                "end_wall_s": 176.72327108099125,
+                "duration_s": 0.5136946680140682,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 186.33716008701595,
+                "end_wall_s": 187.3971683169948,
+                "duration_s": 1.0600082299788482,
+                "intersects_planned_occlusion": false
+              },
+              {
+                "start_wall_s": 191.23469583597034,
+                "end_wall_s": 191.9129254249856,
+                "duration_s": 0.6782295890152454,
+                "intersects_planned_occlusion": false
+              }
+            ]
+          },
+          "phase_counts": {
+            "pre": {
+              "tracked_vehicle": 197,
+              "unconfirmed": 7,
+              "panel_occlusion_unscorable": 22
+            },
+            "during": {
+              "tracked_vehicle": 239,
+              "unconfirmed": 4
+            },
+            "post": {
+              "tracked_vehicle": 95,
+              "unconfirmed": 31,
+              "overlap_unscorable": 105
+            }
+          },
+          "post_correct_evidence_frames": 95,
+          "post_ten_frame_evidence_requirement_met_on_frozen_trajectory": true
+        }
+      },
+      "comparisons_to_previous_two_fix_version": {
+        "disabled": {
+          "new_correct_indices": [],
+          "lost_correct_indices": [],
+          "new_wrong_indices": [],
+          "new_merged_ambiguous_indices": [],
+          "removed_merged_ambiguous_indices": [],
+          "all_decision_disagreement_indices": []
+        },
+        "candidate": {
+          "new_correct_indices": [
+            955,
+            972
+          ],
+          "lost_correct_indices": [],
+          "new_wrong_indices": [],
+          "new_merged_ambiguous_indices": [],
+          "removed_merged_ambiguous_indices": [],
+          "all_decision_disagreement_indices": [
+            955,
+            972
+          ]
+        }
+      }
+    }
+  },
+  "continuity_flag": "overlap_confirmation_continuity",
+  "limitations": [
+    "Frozen detections, tracker IDs, GMC, receipt times and aircraft trajectories; not another flight.",
+    "Association clock exactly reconstructed from original elapsed_since_confirmed_s, unaffected by candidate confirmations.",
+    "Original seed after airborne reset is supplied; acquisition is not retested.",
+    "Histogram proxies preserve only original fixed-reference correlation; no template updates are permitted.",
+    "Independent projected truth is only used for evaluation after association decisions.",
+    "Gap episode proxy is not controller RECOVER count: it does not simulate 10 Hz control ticks or recovery confirmation.",
+    "Confirmation time percentage is a fixed-trajectory proxy, not actual new coverage or safety evidence."
+  ]
+}

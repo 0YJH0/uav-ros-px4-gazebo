@@ -4,6 +4,7 @@ from pathlib import Path
 import sys
 
 import numpy as np
+import pytest
 
 from uav_learning.vehicle_target_lock import VehicleTargetLock
 
@@ -46,7 +47,7 @@ def test_expired_prediction_uses_last_view_without_advancing_filter():
 
 
 def test_recorded_elapsed_clock_reconstructs_exact_residuals_after_miss(tmp_path, monkeypatch):
-    lock = VehicleTargetLock()
+    lock = VehicleTargetLock(bounded_scale_prediction=False)
     frames = []
     for index, now in enumerate((0., .2, .5, .7)):
         candidates = [] if index == 1 else [(7, 10000., .9,
@@ -62,7 +63,8 @@ def test_recorded_elapsed_clock_reconstructs_exact_residuals_after_miss(tmp_path
     (tmp_path / 'identity_observations.jsonl').write_text('')
     (tmp_path / 'report.json').write_text(json.dumps({'transitions': [{'state': 'SEARCH', 'time_s': 9.}]}))
     (tmp_path / 'runtime_parameters.json').write_text(json.dumps({'perception_node': {
-        'predict_box_scale_velocity': True, 'target_reacquire_timeout': 10.}}))
+        'predict_box_scale_velocity': True, 'target_reacquire_timeout': 10.,
+        'bounded_scale_prediction': False}}))
     module = 'ros2_ws/src/uav_learning/uav_learning/vehicle_target_lock.py'
     (tmp_path / 'implementation_snapshot.json').write_text(json.dumps({
         'source_sha256': {module: audit.digest(audit.ROOT / module)}}))
@@ -71,3 +73,44 @@ def test_recorded_elapsed_clock_reconstructs_exact_residuals_after_miss(tmp_path
     assert len(rows) == 4
     assert rows[1]['predicted_box'] is not None
     assert all(value['max_abs_error'] == 0. for value in validation['residual_validation'].values())
+
+
+@pytest.mark.parametrize('now', [.500001, 5., 10.])
+def test_direct_legacy_predict_rejects_bounded_gap_without_mutating_filter(now):
+    lock = VehicleTargetLock()
+    view = np.array([[.5], [.5], [-2.], [-2.]])
+    lock.reset_prediction(view, 0.)
+    lock.last_seen, lock.last_measurement = 0., view.copy()
+    state = lock.filter.statePost.copy()
+    state[6:, 0] = [.1, -.1]
+    lock.filter.statePost = state
+    covariance = lock.filter.errorCovPost.copy()
+    with pytest.raises(ValueError, match='Legacy CV prediction cannot reconstruct bounded'):
+        audit.predict(lock, now)
+    np.testing.assert_array_equal(lock.filter.statePost, state)
+    np.testing.assert_array_equal(lock.filter.errorCovPost, covariance)
+    assert lock.last_predict == lock.last_seen == 0.
+
+
+@pytest.mark.parametrize('configuration', [{'bounded_scale_prediction': True}, {}])
+def test_reconstruction_rejects_enabled_or_unknown_bounded_model_before_reading_frames(tmp_path,
+                                                                                     configuration):
+    settings = {'predict_box_scale_velocity': True, 'target_reacquire_timeout': 10.,
+                **configuration}
+    (tmp_path / 'runtime_parameters.json').write_text(json.dumps({'perception_node': settings}))
+    with pytest.raises(ValueError, match='requires explicit bounded_scale_prediction=false'):
+        audit.reconstruct(tmp_path)
+    assert sorted(path.name for path in tmp_path.iterdir()) == ['runtime_parameters.json']
+
+
+@pytest.mark.parametrize('geometry', ['horizontal_only', 'vertical_only', 'protected', 'unknown'])
+def test_reconstruction_rejects_unsupported_corrected_geometry_before_truth_lookup(tmp_path, geometry):
+    (tmp_path / 'runtime_parameters.json').write_text(json.dumps({'perception_node': {
+        'predict_box_scale_velocity': True, 'target_reacquire_timeout': 10.,
+        'bounded_scale_prediction': False}}))
+    (tmp_path / 'association.jsonl').write_text(json.dumps({
+        'candidates': [{'accepted': True, 'geometry_update': geometry}]}) + '\n')
+    with pytest.raises(ValueError, match='does not support masked geometry corrections'):
+        audit.reconstruct(tmp_path)
+    assert sorted(path.name for path in tmp_path.iterdir()) == [
+        'association.jsonl', 'runtime_parameters.json']

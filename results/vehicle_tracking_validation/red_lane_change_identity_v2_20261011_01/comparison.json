@@ -1,0 +1,178 @@
+{
+  "trial": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/red_lane_change_gui_20261011_01",
+  "identity_evaluation_version": "exclusive_projection_v2",
+  "evaluation_only": true,
+  "new_flight": false,
+  "tracking_performance_changed": false,
+  "original_identity_verified": false,
+  "reassessed_identity_verified": true,
+  "original_phase_counts": {
+    "pre": {
+      "unconfirmed": 9,
+      "tracked_vehicle": 197,
+      "panel_occlusion_unscorable": 22
+    },
+    "during": {
+      "tracked_vehicle": 192,
+      "unconfirmed": 2,
+      "overlap_unscorable": 49
+    },
+    "post": {
+      "overlap_unscorable": 231
+    }
+  },
+  "reassessed_phase_counts": {
+    "pre": {
+      "unconfirmed": 9,
+      "tracked_vehicle": 197,
+      "panel_occlusion_unscorable": 22
+    },
+    "during": {
+      "tracked_vehicle": 194,
+      "unconfirmed": 49
+    },
+    "post": {
+      "unconfirmed": 67,
+      "tracked_vehicle": 55,
+      "overlap_unscorable": 109
+    }
+  },
+  "label_changes": {
+    "overlap_unscorable -> tracked_vehicle": 57,
+    "overlap_unscorable -> unconfirmed": 114
+  },
+  "changed_observations": 171,
+  "observation_handling": {
+    "reassessed": 680,
+    "preserved_masked_or_unmatched": 22
+  },
+  "onboard_accepted_boxes_before": 555,
+  "onboard_accepted_boxes_after": 555,
+  "task_passed": false,
+  "recorded_task_passed": false,
+  "coverage_percent": 74.60685501259896,
+  "recorded_coverage_percent": 74.60685501259896,
+  "recorded_failure_reasons": [
+    "confirmed_coverage_below_0_8",
+    "no_scorable_original_identity_after_merge"
+  ],
+  "recorded_safety": {
+    "armed_failsafe_observations": 0,
+    "armed_offboard_lost_observations": 0,
+    "ulog_dropout_events": 0
+  },
+  "recorded_scene_requests": {
+    "total": 1055,
+    "failures": 0,
+    "by_service": {
+      "/world/default/set_pose": 1054,
+      "/world/default/create": 1
+    },
+    "receipt_errors": 0,
+    "sequence_errors": [
+      "scene"
+    ]
+  },
+  "service_receipt_audit": {
+    "scene": {
+      "status": "unknown",
+      "records": 528,
+      "first_sequence": 5,
+      "last_sequence": 532,
+      "missing_sequences": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "duplicate_sequences": [],
+      "failed_receipts": 0,
+      "unknown_receipts": 0
+    },
+    "traffic": {
+      "status": "pass",
+      "records": 527,
+      "first_sequence": 1,
+      "last_sequence": 527,
+      "missing_sequences": [],
+      "duplicate_sequences": [],
+      "failed_receipts": 0,
+      "unknown_receipts": 0
+    }
+  },
+  "recorded_supervisor": {
+    "interventions": [],
+    "error": null,
+    "perception_python": "/home/yjh/ROS2_manmade/.venv-yolo/bin/python",
+    "gui_config_sha256": "847475bebcc3c57cbbd449be568f63f33b47674e56307636cac3d6247ffdfb7d",
+    "parameter_capture_attempts": [
+      {
+        "node": "perception_node",
+        "ok": true
+      },
+      {
+        "node": "px4_offboard_controller",
+        "ok": true
+      },
+      {
+        "node": "vehicle_scene",
+        "ok": true
+      }
+    ],
+    "parameters_verified": true,
+    "report_passed": false,
+    "landed_disarmed_before_shutdown": true,
+    "duration_s": 258.84964109101566,
+    "process_exit_codes": {
+      "agent": -2,
+      "px4": 0,
+      "gui": 0,
+      "recorder": 0,
+      "crossing": 0,
+      "mission": 0
+    },
+    "autonomous_passed": false
+  },
+  "joint_check_status": {
+    "task": "fail",
+    "identity": "pass",
+    "scenario": "pass",
+    "supervision": "pass",
+    "services": "unknown",
+    "recorded_safety": "pass"
+  },
+  "strict_joint_passed": false,
+  "strict_failure_reasons": [
+    "task_fail",
+    "services_unknown"
+  ],
+  "input_sha256": {
+    "identity_observations.jsonl": "51c629d577a70c62810aacd1b1cfb5f6291fe0e6172e39c54d2a83074b03a662",
+    "identity_report.json": "6d5a25756842266bc12ea2205ef4698d8ae71fb0b4625f2b74eb3d8f7c178095",
+    "crossing_events.jsonl": "9441a8a3e538bb4e26b2805978eed078e3a3b0d43889412cc59fe4cfaa688255",
+    "validation_summary.json": "0a022062d36a61faa1025cc47038ea6afa30056d4462b21171f0d891f36b1f0d",
+    "report.json": "f191e8c29453e8a74ad1c0dfad91572e152a9f22e08f89c89be02bd6dac23a66",
+    "supervisor.json": "8f56c476a63a815acac12f5ff9b75c0c3a8c9a1875c1fcf265e451419b240f40",
+    "scene_service.jsonl": "b4a9f66365230e9bc998722cb3ff5e74695b1ba0e93e3d9e390c611e07c52dfb",
+    "traffic_service.jsonl": "76ad91ef54d0bfb1518a02b8caaea921267a920a4253256ddf4040e8c4f589d8",
+    "flight.ulg": "e7c1a20cca6192feede737d16e67844d2377412223f8db3367aa915919c4cf75",
+    "implementation_snapshot.json": "0b13e9fb05d8b3930d136c8f8b1cf520519397a37f6052651734cd4939ea5572"
+  },
+  "missing_inputs": [],
+  "source_sha256": {
+    "scripts/reassess_vehicle_identity.py": "4967094ca99afd3a39c4def6c9f7a9b35709f138b6f1cd8079f9405305683302",
+    "scripts/vehicle_crossing_validation.py": "7caa1ca7e901ff311fbef70615bd1fa64c4718b785ff202d06a27ad2db8297cd",
+    "scripts/vehicle_lane_change.py": "184bd20eda9356d9cc2cbdf870ba2aca97274bcaf4aecfb216313baef9208c33"
+  },
+  "dependencies": {
+    "numpy": "1.26.4",
+    "scipy": "1.11.4"
+  },
+  "limitations": [
+    "This changes only evaluation criteria; it is not a new flight or tracking-performance improvement.",
+    "Original task, coverage, service and safety evidence is retained, not repaired by identity reassessment.",
+    "Safety counters are from the recorded audit; the retained ULog hash is checked, not parsed again.",
+    "Missing receipts, masked frames and unavailable truth remain missing evidence, not successful observations.",
+    "Bounding-volume evidence is not per-pixel identity ground truth or a complete collision audit."
+  ]
+}

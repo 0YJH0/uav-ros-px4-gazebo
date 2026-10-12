@@ -1,6 +1,7 @@
 import math
 
 import numpy as np
+import pytest
 
 from uav_learning.vehicle_target_lock import VehicleTargetLock
 
@@ -27,7 +28,9 @@ def test_identical_car_overlap_does_not_update_target_or_refresh_blind_anchor():
     assert lock.overlap_guard_active and lock.overlap_guard_reason == 'similar_vehicle_overlap'
     assert lock.last_seen == lock.last_strong_seen == 0.0 and lock.target_id == 6
     np.testing.assert_array_equal(lock.last_measurement, measurement)
-    assert all('similar_vehicle_overlap' in row['rejection_reasons'] for row in lock.diagnostics)
+    assert lock.diagnostics[0]['reason'] == 'pending_confirmation'
+    assert lock.diagnostics[0]['confirmation_count'] == 1
+    assert lock.diagnostics[1]['rejection_reasons']
 
 
 def test_single_merged_box_is_rejected_after_nearby_rival_disappears():
@@ -106,13 +109,18 @@ def test_scale_hold_still_corrects_real_size_changes_and_camera_zoom():
     assert np.isclose(np.exp(lock.last_measurement[2, 0]), .2244)
 
 
-def test_split_car_requires_three_frames_even_with_original_bytetrack_id():
+@pytest.mark.parametrize('continuity', [False, True])
+def test_split_car_requires_three_valid_frames_without_double_counting_overlap(continuity):
     lock, target = acquired()
+    lock.overlap_confirmation_continuity = continuity
     lock.select([target, vehicle(9, 55, 85)], [APPEARANCE] * 2, 100, 100, 0.1)
-    for index in range(3):
+    required_after_split = 2 if continuity else 3
+    for index in range(required_after_split):
         result = lock.select([target], [APPEARANCE], 100, 100, 0.2 + index * 0.1)
-        assert (result is not None) == (index == 2)
+        assert (result is not None) == (index == required_after_split - 1)
         assert lock.diagnostics[0]['confirmation_required'] == 3
+        if result is None:
+            assert lock.last_seen == 0.
     assert not lock.overlap_guard_active and lock.target_id == 6
 
 

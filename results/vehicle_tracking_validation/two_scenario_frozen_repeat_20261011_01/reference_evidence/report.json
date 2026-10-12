@@ -1,0 +1,200 @@
+{
+  "completed": true,
+  "track_complete_event": true,
+  "landed": true,
+  "disarmed": true,
+  "final_status": {
+    "arming_state": 1,
+    "nav_state": 14,
+    "failsafe": false
+  },
+  "failsafe_observed": false,
+  "track_wall_time_s": 92.67514597496483,
+  "follow_wall_time_s": 99.57551276800223,
+  "follow_time_visible_fraction": 0.9175165885595149,
+  "drone_follow_travel_m": 49.11921792465613,
+  "track_detection_fraction": 0.9849785407725322,
+  "track_mean_abs_pixel_error": 19.291488602483536,
+  "track_p95_abs_pixel_error": 37.24014401435852,
+  "vehicle_travel_m": 63.53114156384483,
+  "drone_track_travel_m": 49.116425625734394,
+  "final_home_horizontal_error_m": 0.7248103436662249,
+  "wall_duration_s": 197.9382667680038,
+  "transitions": [
+    {
+      "time_s": 3.189335630973801,
+      "state": "PRESTREAM"
+    },
+    {
+      "time_s": 5.1862667970126495,
+      "state": "REQUEST_OFFBOARD"
+    },
+    {
+      "time_s": 5.384452275000513,
+      "state": "ARMING"
+    },
+    {
+      "time_s": 6.384293923969381,
+      "state": "TAKEOFF"
+    },
+    {
+      "time_s": 64.88453737401869,
+      "state": "HOVER"
+    },
+    {
+      "time_s": 66.98478004697245,
+      "state": "SEARCH"
+    },
+    {
+      "time_s": 68.68472519301577,
+      "state": "DETECT"
+    },
+    {
+      "time_s": 69.6881396700046,
+      "state": "APPROACH"
+    },
+    {
+      "time_s": 76.78550366900163,
+      "state": "TRACK"
+    },
+    {
+      "time_s": 100.57123009400675,
+      "state": "RECOVER"
+    },
+    {
+      "time_s": 107.16689290001523,
+      "state": "TRACK"
+    },
+    {
+      "time_s": 174.66059960599523,
+      "state": "RECOVER"
+    },
+    {
+      "time_s": 174.9593321409775,
+      "state": "TRACK"
+    },
+    {
+      "time_s": 176.36102003901033,
+      "state": "RETURN"
+    },
+    {
+      "time_s": 189.36038712598383,
+      "state": "LAND"
+    },
+    {
+      "time_s": 197.90679717896273,
+      "state": "DONE"
+    }
+  ],
+  "events": [
+    {
+      "time_s": 72.18334189796587,
+      "event": "APPROACH_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 72.285793129995,
+      "event": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "time_s": 76.78422330500325,
+      "event": "APPROACH_SUCCESS"
+    },
+    {
+      "time_s": 77.68444113596343,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 77.98285248700995,
+      "event": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "time_s": 97.8804862970137,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 97.9647926769685,
+      "event": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "time_s": 99.96511715196539,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 100.56958806497278,
+      "event": "TRACK_TARGET_LOST"
+    },
+    {
+      "time_s": 107.16576084599365,
+      "event": "TARGET_RECOVERED"
+    },
+    {
+      "time_s": 130.8509773290134,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 130.91042649699375,
+      "event": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "time_s": 155.8114030699944,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 156.2102104749647,
+      "event": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "time_s": 163.89112732099602,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 164.05795653897803,
+      "event": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "time_s": 170.95830530801322,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 171.05808998196153,
+      "event": "OBSERVATION_GAP_CLEARED"
+    },
+    {
+      "time_s": 174.16289122600574,
+      "event": "TRACK_OBSERVATION_GAP"
+    },
+    {
+      "time_s": 174.65925356198568,
+      "event": "TRACK_TARGET_LOST"
+    },
+    {
+      "time_s": 174.95808059099363,
+      "event": "TARGET_RECOVERED"
+    },
+    {
+      "time_s": 176.35843775997637,
+      "event": "TRACK_COMPLETE"
+    },
+    {
+      "time_s": 197.90778875199612,
+      "event": "MISSION_DONE"
+    }
+  ],
+  "occlusions": [
+    {
+      "start_wall_s": 99.26602324901614,
+      "state_at_start": "TRACK",
+      "entry_locked": true,
+      "end_wall_s": 105.85545751597965,
+      "recovery_s": 0.9386039770324714,
+      "confirmed_recovery_s": 1.3103091210359707,
+      "negative_observations": 23,
+      "vehicle_travel_during_occlusion_m": 3.0404188177975335
+    }
+  ],
+  "same_vehicle_identity_verified": false,
+  "relative_horizontal_distance_min_m": 12.131044400156142,
+  "relative_horizontal_distance_max_m": 78.96607144015842,
+  "occlusion_recovery_passed": true,
+  "passed": true
+}

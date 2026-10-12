@@ -1,0 +1,199 @@
+{
+  "name": "left_overtaking_10",
+  "group": "left_overtaking",
+  "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/two_scenario_frozen_repeat_20261011_01/left_overtaking_10",
+  "traffic_scenario": "overtaking",
+  "attempted": true,
+  "completed": true,
+  "task_passed": true,
+  "identity_verified": true,
+  "scenario_verified": true,
+  "strict_joint_passed": true,
+  "failure_reasons": [],
+  "coverage_percent": 90.4638376862384,
+  "track_losses": 3,
+  "unplanned_losses": 2,
+  "planned_losses": 1,
+  "recovery_episodes": [
+    {
+      "loss_wall_s": 96.40015040902654,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 96.90027924103197,
+      "duration_s": 0.50012883200543,
+      "censored": false,
+      "censor_lower_bound_s": null,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 123.48188267298974,
+      "planned_occlusion": true,
+      "confirmation_wall_s": 131.581130932027,
+      "duration_s": 8.099248259037267,
+      "censored": false,
+      "censor_lower_bound_s": null,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 164.18416685098782,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 164.58173020003596,
+      "duration_s": 0.3975633490481414,
+      "censored": false,
+      "censor_lower_bound_s": null,
+      "recovery_timeout": false
+    }
+  ],
+  "unplanned_recovery_mean_s": 0.4488460905267857,
+  "unplanned_recovery_max_s": 0.50012883200543,
+  "unplanned_recovery_censored_count": 0,
+  "recovery_timeout_count": 0,
+  "planned_recovery_mean_s": 1.8255145570146851,
+  "planned_recovery_max_s": 1.8255145570146851,
+  "planned_occlusion_recoveries_s": [
+    1.8255145570146851
+  ],
+  "wrong_identity_observations": 0,
+  "scorable_identity_switches": 0,
+  "identity_scorable_fraction": 0.9296703296703297,
+  "post_identity_frames": 105,
+  "identity_phase_counts": {
+    "pre": {
+      "tracked_vehicle": 258,
+      "unconfirmed": 8,
+      "panel_occlusion_unscorable": 23
+    },
+    "during": {
+      "tracked_vehicle": 60,
+      "unconfirmed": 1
+    },
+    "post": {
+      "tracked_vehicle": 105
+    }
+  },
+  "identity_reason_counts": {
+    "unique_projection_support": 423,
+    "no_accepted_box": 9
+  },
+  "scene_requests": {
+    "total": 724,
+    "failures": 0,
+    "receipt_errors": 0,
+    "client_sequences": {
+      "scene": {
+        "count": 365,
+        "first": 1,
+        "last": 365,
+        "complete_from_one": true,
+        "missing": [],
+        "duplicates": []
+      },
+      "traffic": {
+        "count": 359,
+        "first": 1,
+        "last": 359,
+        "complete_from_one": true,
+        "missing": [],
+        "duplicates": []
+      }
+    },
+    "files": {
+      "scene_service.jsonl": {
+        "rows": 365,
+        "malformed_lines": [],
+        "sha256": "f4520ba9ad071385c5f0d1b5a06335709f713143b60718c00d1e4fc4a272388e"
+      },
+      "traffic_service.jsonl": {
+        "rows": 359,
+        "malformed_lines": [],
+        "sha256": "98da3175dfb11cc5166c6ff2c6fee30a98fe44c812b80f61732749164f9c762c"
+      }
+    },
+    "errors": [],
+    "passed": true
+  },
+  "scene_request_failures": 0,
+  "ulog_safety": {
+    "armed_failsafe_observations": 0,
+    "armed_offboard_lost_observations": 0,
+    "ulog_dropout_events": 0
+  },
+  "safety_event_observations": 0,
+  "px4_initial_parameter_sha256": "8e52298becd48b9e4611895f72518919c61f81ad9bd85a924d83e28bb19b89da",
+  "ulog_sha256": "eef8f01b62cb753bb8a443086a0fa6001ba2c8e966d7d3c61973be0374ab3504",
+  "integrity": {
+    "passed": true,
+    "errors": [],
+    "verified_source_files": 40,
+    "model_sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5"
+  },
+  "geometry_evidence": {
+    "traffic_started": true,
+    "traffic_completed": true,
+    "overtaking_observed": true,
+    "minimum_world_lateral_clearance_m": 1.458896028816499
+  },
+  "association_frames": 840,
+  "association_frame_integrity": true,
+  "timing_all_recorded_associations": {
+    "processing_s": {
+      "count": 840,
+      "mean": 0.25138068808744374,
+      "sample_std": 0.052864398815030786,
+      "min": 0.1432889110292308,
+      "max": 0.4855044319992885,
+      "p95": 0.35333380783267776,
+      "worst": 0.4855044319992885
+    },
+    "target_publish_age_s": {
+      "count": 840,
+      "mean": 0.3143508113928311,
+      "sample_std": 0.07208146438887814,
+      "min": 0.16702774300938472,
+      "max": 0.5548363159759901,
+      "p95": 0.4485123461287003,
+      "worst": 0.5548363159759901
+    },
+    "queue_wait_s": {
+      "count": 840,
+      "mean": 0.06481391163535938,
+      "sample_std": 0.05362883509413734,
+      "min": 0.00028333597583696246,
+      "max": 0.2880666779819876,
+      "p95": 0.175504517214722,
+      "worst": 0.2880666779819876
+    },
+    "full_frame_yolo_s": {
+      "count": 840,
+      "mean": 0.2295170651500008,
+      "sample_std": 0.04364202916529895,
+      "min": 0.13267470098799095,
+      "max": 0.4130215869517997,
+      "p95": 0.294574344943976,
+      "worst": 0.4130215869517997
+    }
+  },
+  "interventions": [],
+  "safe_to_continue": true,
+  "input_sha256": {
+    "report.json": "a736b8cfca389b899fdad0e19567d3e0608192fdca00202c751407b8fea4ed3d",
+    "identity_report.json": "1dbe549774b6f0ba175f86656cba14e6c6f09a5e00432e206af222111fbcd882",
+    "supervisor.json": "9fcf04760c35c9190fab561f279a0c36688672c10220ee92b3513758920d4bc5",
+    "runtime_parameters.json": "fe10fb652514ee839a5cac233860a1b365850803f195752da0b6c5bca973254e",
+    "implementation_snapshot.json": "f4c3b2125a98da81d943132c0962f1925d6b2dc6ebd5abc1f9f941e0372f7d5a",
+    "association.jsonl": "f7012a2523e26a6411b95482ee9cd88c0f17cd2a5d4c1923b17f0c0584743f06"
+  },
+  "audit_script_sha256": "d6f34c64786549960b8f26a487d42aac9824acc5236953909a2172eb2ce1247f",
+  "track_mean_abs_pixel_error": 13.007271149577573,
+  "track_p95_abs_pixel_error": 37.11828589439392,
+  "final_home_horizontal_error_m": 0.6416135705785716,
+  "drone_follow_travel_m": 45.66069837626884,
+  "wall_duration_s": 221.5020330310217,
+  "processing_mean_s": 0.25138068808744374,
+  "processing_p95_s": 0.35333380783267776,
+  "target_publish_age_mean_s": 0.3143508113928311,
+  "target_publish_age_p95_s": 0.4485123461287003,
+  "queue_wait_mean_s": 0.06481391163535938,
+  "queue_wait_p95_s": 0.175504517214722,
+  "full_frame_yolo_mean_s": 0.2295170651500008,
+  "full_frame_yolo_p95_s": 0.294574344943976
+}

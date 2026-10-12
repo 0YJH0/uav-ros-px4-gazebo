@@ -1,0 +1,16 @@
+{"wall_s": 10.209527650033124, "debug_image": "00010.2_TAKEOFF.jpg", "raw_image": "00010.2_TAKEOFF_raw.png", "stamp": {"sec": 17, "nanosec": 52000000}}
+{"wall_s": 20.4957650739816, "debug_image": "00020.5_TAKEOFF.jpg", "raw_image": null, "stamp": {"sec": 26, "nanosec": 752000000}}
+{"wall_s": 30.663278174994048, "debug_image": "00030.7_TAKEOFF.jpg", "raw_image": "00030.7_TAKEOFF_raw.png", "stamp": {"sec": 36, "nanosec": 352000000}}
+{"wall_s": 40.850991907995194, "debug_image": "00040.8_TAKEOFF.jpg", "raw_image": "00040.8_TAKEOFF_raw.png", "stamp": {"sec": 45, "nanosec": 952000000}}
+{"wall_s": 51.52811133803334, "debug_image": "00051.5_HOVER.jpg", "raw_image": "00051.5_HOVER_raw.png", "stamp": {"sec": 55, "nanosec": 952000000}}
+{"wall_s": 61.664703988994006, "debug_image": "00061.7_TRACK.jpg", "raw_image": "00061.7_TRACK_raw.png", "stamp": {"sec": 65, "nanosec": 352000000}}
+{"wall_s": 72.09650935302489, "debug_image": "00072.1_TRACK.jpg", "raw_image": "00072.1_TRACK_raw.png", "stamp": {"sec": 74, "nanosec": 652000000}}
+{"wall_s": 82.16807439900003, "debug_image": "00082.2_TRACK.jpg", "raw_image": "00082.2_TRACK_raw.png", "stamp": {"sec": 83, "nanosec": 200000000}}
+{"wall_s": 92.29598807502771, "debug_image": "00092.3_TRACK.jpg", "raw_image": "00092.3_TRACK_raw.png", "stamp": {"sec": 92, "nanosec": 100000000}}
+{"wall_s": 102.37774858099874, "debug_image": "00102.4_TRACK.jpg", "raw_image": "00102.4_TRACK_raw.png", "stamp": {"sec": 100, "nanosec": 600000000}}
+{"wall_s": 112.54648213501787, "debug_image": "00112.5_TRACK.jpg", "raw_image": "00112.5_TRACK_raw.png", "stamp": {"sec": 109, "nanosec": 900000000}}
+{"wall_s": 122.5862853450235, "debug_image": "00122.6_TRACK.jpg", "raw_image": "00122.6_TRACK_raw.png", "stamp": {"sec": 118, "nanosec": 952000000}}
+{"wall_s": 132.68526783800917, "debug_image": "00132.7_TRACK.jpg", "raw_image": "00132.7_TRACK_raw.png", "stamp": {"sec": 127, "nanosec": 900000000}}
+{"wall_s": 142.77518609701656, "debug_image": "00142.8_TRACK.jpg", "raw_image": null, "stamp": {"sec": 136, "nanosec": 852000000}}
+{"wall_s": 152.82820151402848, "debug_image": "00152.8_TRACK.jpg", "raw_image": "00152.8_TRACK_raw.png", "stamp": {"sec": 145, "nanosec": 400000000}}
+{"wall_s": 163.35849101102212, "debug_image": "00163.3_RETURN.jpg", "raw_image": "00163.3_RETURN_raw.png", "stamp": {"sec": 154, "nanosec": 700000000}}

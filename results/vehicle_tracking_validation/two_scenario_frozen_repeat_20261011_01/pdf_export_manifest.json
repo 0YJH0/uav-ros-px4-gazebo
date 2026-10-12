@@ -1,0 +1,54 @@
+{
+  "font": "/mnt/c/Windows/Fonts/NotoSansSC-VF.ttf",
+  "documents": [
+    {
+      "source": "PROJECT_OVERVIEW.md",
+      "source_sha256": "107c2bfc4dc3d79cf23df31a92aa6134387d879bc5827ca7506f4f2a05279312",
+      "pdf": "PROJECT_OVERVIEW.pdf",
+      "pdf_sha256": "f9b3e9b39ae1dccf1ccb6b2d9b68c0a1b8ca2bfff562651f743d4de7ac967db2",
+      "pages": 7,
+      "bytes": 189080,
+      "chinese_source": 3736,
+      "chinese_pdf": 3835,
+      "image_pages": []
+    },
+    {
+      "source": "PROJECT_CHALLENGES.md",
+      "source_sha256": "f978b74da8ca7683ec5bcfe38d8fbf28777b8f11045d21df45f081513280aa2c",
+      "pdf": "PROJECT_CHALLENGES.pdf",
+      "pdf_sha256": "0ab6506f592e5fd7454af2f754853320860f276575b416921f6fe70ac8a3dda2",
+      "pages": 5,
+      "bytes": 183239,
+      "chinese_source": 3241,
+      "chinese_pdf": 3426,
+      "image_pages": []
+    },
+    {
+      "source": "PROJECT_PRESENTATION_30MIN.md",
+      "source_sha256": "31729b21bbb5836e33e3d6b84c475caf2619ef8f02f2ffd05774bb8c3dfa5d5a",
+      "pdf": "PROJECT_PRESENTATION_30MIN.pdf",
+      "pdf_sha256": "ab2ffc50b2d9d7ed3c01113bd00ffb90062f6ee6e3f90db7a2f383ff8206d9b0",
+      "pages": 16,
+      "bytes": 605125,
+      "chinese_source": 10505,
+      "chinese_pdf": 10624,
+      "image_pages": [
+        3,
+        4,
+        9,
+        13
+      ]
+    },
+    {
+      "source": "PROJECT_ISSUE_REPORT.md",
+      "source_sha256": "058280641c10ef494ccf5ba5be731b12de24620fc1ad2cbf7705472f3dd77bb6",
+      "pdf": "PROJECT_ISSUE_REPORT.pdf",
+      "pdf_sha256": "80f0da26ef9b6761fa07a54ba43b86d2584d0f567e29d31b1285d0ee00ec50a0",
+      "pages": 13,
+      "bytes": 311676,
+      "chinese_source": 9815,
+      "chinese_pdf": 9942,
+      "image_pages": []
+    }
+  ]
+}

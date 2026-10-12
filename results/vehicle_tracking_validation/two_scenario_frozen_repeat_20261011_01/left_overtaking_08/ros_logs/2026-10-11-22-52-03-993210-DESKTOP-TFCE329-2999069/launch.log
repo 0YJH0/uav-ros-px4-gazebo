@@ -1,0 +1,28 @@
+1791730323.9961677 [INFO] [launch]: All log files can be found below /home/yjh/ROS2_manmade/results/vehicle_tracking_validation/two_scenario_frozen_repeat_20261011_01/left_overtaking_08/ros_logs/2026-10-11-22-52-03-993210-DESKTOP-TFCE329-2999069
+1791730323.9963281 [INFO] [launch]: Default logging verbosity is set to INFO
+1791730324.1413980 [INFO] [image_bridge-1]: process started with pid [2999151]
+1791730324.1415796 [INFO] [parameter_bridge-2]: process started with pid [2999152]
+1791730324.1416397 [INFO] [parameter_bridge-3]: process started with pid [2999153]
+1791730324.1416864 [INFO] [vehicle_scene-4]: process started with pid [2999154]
+1791730324.1417253 [INFO] [python-5]: process started with pid [2999203]
+1791730324.1417568 [INFO] [px4_offboard_controller-6]: process started with pid [2999204]
+1791730324.2324469 [parameter_bridge-3] [INFO] [1791730324.232145079] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+1791730510.3214393 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1791730510.3297081 [INFO] [px4_offboard_controller-6]: sending signal 'SIGINT' to process[px4_offboard_controller-6]
+1791730510.3306332 [INFO] [python-5]: sending signal 'SIGINT' to process[python-5]
+1791730510.3311594 [INFO] [vehicle_scene-4]: sending signal 'SIGINT' to process[vehicle_scene-4]
+1791730510.3316433 [INFO] [parameter_bridge-3]: sending signal 'SIGINT' to process[parameter_bridge-3]
+1791730510.3324239 [INFO] [parameter_bridge-2]: sending signal 'SIGINT' to process[parameter_bridge-2]
+1791730510.3330741 [INFO] [image_bridge-1]: sending signal 'SIGINT' to process[image_bridge-1]
+1791730510.3335192 [parameter_bridge-3] [INFO] [1791730510.320816713] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791730510.3347204 [parameter_bridge-3] [INFO] [1791730510.331858287] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1791730510.3988523 [ERROR] [px4_offboard_controller-6]: process has died [pid 2999204, exit code -2, cmd '/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning/px4_offboard_controller --ros-args --params-file /tmp/launch_params_y3burelr'].
+1791730510.4047022 [ERROR] [vehicle_scene-4]: process has died [pid 2999154, exit code -2, cmd '/home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning/vehicle_scene --ros-args --params-file /tmp/launch_params_os0bn0r1'].
+1791730510.4343622 [INFO] [parameter_bridge-3]: process has finished cleanly [pid 2999153]
+1791730510.4352734 [INFO] [parameter_bridge-2]: process has finished cleanly [pid 2999152]
+1791730510.4568210 [INFO] [image_bridge-1]: process has finished cleanly [pid 2999151]
+1791730515.3345237 [ERROR] [python-5]: process[python-5] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1791730515.3348870 [INFO] [python-5]: sending signal 'SIGTERM' to process[python-5]
+1791730520.3309994 [ERROR] [python-5]: process[python-5] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1791730520.3313382 [INFO] [python-5]: sending signal 'SIGKILL' to process[python-5]
+1791730520.3474135 [ERROR] [python-5]: process has died [pid 2999203, exit code -9, cmd '/home/yjh/ROS2_manmade/.venv-yolo/bin/python /home/yjh/ROS2_manmade/ros2_ws/install/uav_learning/lib/uav_learning/perception_node --ros-args --params-file /tmp/launch_params_r05frv87'].

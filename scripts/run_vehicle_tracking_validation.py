@@ -5,6 +5,7 @@ import argparse
 import hashlib
 import importlib.metadata
 import json
+import math
 import os
 from pathlib import Path
 import shlex
@@ -117,20 +118,33 @@ def main():
     parser.add_argument('--freeze-manifest', type=Path)
     traffic = parser.add_mutually_exclusive_group()
     traffic.add_argument('--crossing', action='store_true')
-    traffic.add_argument('--overtaking', action='store_true', help='Blue distractor overtakes in a separate lane.')
+    traffic.add_argument('--overtaking', action='store_true', help='Distractor overtakes in a separate lane.')
+    traffic.add_argument('--lane-change-overtaking', action='store_true',
+                         help='Same-lane rear approach, left-lane pass, then merge back ahead.')
+    parser.add_argument('--distractor-color', choices=('auto', 'red', 'blue'), default='auto',
+                        help='Color of moving and parked distractors; auto is blue for fixed-lane overtaking, red otherwise.')
+    parser.add_argument('--parked-y', type=float, default=-12.0,
+                        help='Parked vehicle lateral position in meters; -4.4 is curbside on the overtaking road.')
     parser.add_argument('--gui', action='store_true', help='Open Gazebo on the local graphical desktop.')
     parser.add_argument('--gui-config', type=Path, help='Optional Gazebo GUI configuration; requires --gui.')
     parser.add_argument('--recovery-competition', action='store_true')
     parser.add_argument('--hold-box-scale', action='store_true')
+    parser.add_argument('--no-overlap-confirmation-continuity', action='store_true')
     parser.add_argument('--smooth-recovery-setpoints', action='store_true', help='Experimental recovery ramps; not promoted by the failed pilot.')
     parser.add_argument('--cpu-inference-threads', type=int, default=0)
     parser.add_argument('--detector-backend', choices=('torch', 'openvino'), default='torch')
     parser.add_argument('--backend-artifacts', type=Path)
     parser.add_argument('--perception-python', type=Path)
     args = parser.parse_args()
+    scenario = ('lane_change_overtaking' if args.lane_change_overtaking else
+                'overtaking' if args.overtaking else 'crossing')
+    if args.distractor_color == 'auto':
+        args.distractor_color = 'blue' if args.overtaking else 'red'
     root = Path(__file__).resolve().parents[1]
     if args.vehicle_speed <= 0 or args.occlusion_duration <= 0 or args.occlusion_start < 0:
         raise ValueError('Invalid scene parameters.')
+    if not math.isfinite(args.parked_y):
+        raise ValueError('parked-y must be finite.')
     if not 0 <= args.cpu_inference_threads <= 32:
         raise ValueError('cpu-inference-threads must be in [0, 32].')
     if args.freeze_manifest:
@@ -171,6 +185,7 @@ def main():
         'ros2_ws/src/uav_learning/config/models/tracking_car/model.sdf',
         'scripts/validate_vehicle_tracking.py', 'scripts/run_vehicle_tracking_validation.py',
         'scripts/vehicle_crossing_validation.py',
+        'scripts/vehicle_lane_change.py',
     ]
     source_paths.extend(str(path.relative_to(root)) for path in sorted(
         (root / 'ros2_ws/src/uav_learning/config/models').rglob('*'))
@@ -187,13 +202,17 @@ def main():
                              'occlusion_duration': args.occlusion_duration,
                              'recovery_competition_enabled': args.recovery_competition,
                              'predict_box_scale_velocity': not args.hold_box_scale,
+                             'overlap_confirmation_continuity': not args.no_overlap_confirmation_continuity,
                              'smooth_recovery_setpoints': args.smooth_recovery_setpoints,
                              'cpu_inference_threads': args.cpu_inference_threads,
                              'detector_backend': args.detector_backend,
                              'backend_artifacts': str(args.backend_artifacts.resolve()) if args.backend_artifacts else '',
                              'gui': args.gui,
+                             'distractor_color': args.distractor_color,
+                             'parked_vehicle_y': args.parked_y,
                              'crossing': args.crossing, 'overtaking': args.overtaking,
-                             'traffic_scenario': 'overtaking' if args.overtaking else 'crossing'},
+                             'lane_change_overtaking': args.lane_change_overtaking,
+                             'traffic_scenario': scenario},
                 'limitation': 'Source hashes establish provenance, not successful detection or identity.'}
     if args.backend_artifacts:
         snapshot['backend_artifact_sha256'] = {
@@ -302,18 +321,22 @@ def main():
         launch('recorder', ros_prefix + shlex.quote(str(root / '.venv-yolo/bin/python'))
                + ' scripts/validate_vehicle_tracking.py --output ' + shlex.quote(str(directory)))
         time.sleep(2)
-        if args.crossing or args.overtaking:
+        if args.crossing or args.overtaking or args.lane_change_overtaking:
             launch('crossing', ros_prefix + shlex.quote(str(root / '.venv-yolo/bin/python'))
                    + ' scripts/vehicle_crossing_validation.py --output ' + shlex.quote(str(directory))
-                   + (' --scenario overtaking' if args.overtaking else '')
+                   + f' --scenario {scenario}'
+                   + f' --distractor-color {args.distractor_color}'
                    + f' --vehicle-speed {args.vehicle_speed}')
         launch('mission', ros_prefix + 'ros2 launch uav_learning vehicle_tracking.launch.py '
                + 'model_path:=' + shlex.quote(str(model_path))
                + ' perception_python:=' + shlex.quote(perception_python)
                + ' start_controller:=true occlusion_enabled:=true '
-               + ('traffic_scenario:=overtaking ' if args.overtaking else '')
+               + f'traffic_scenario:={scenario} '
+               + f'distractor_color:={args.distractor_color} '
+               + f'parked_vehicle_y:={args.parked_y} '
                + 'recovery_competition_enabled:=' + str(args.recovery_competition).lower() + ' '
                + 'predict_box_scale_velocity:=' + str(not args.hold_box_scale).lower() + ' '
+               + 'overlap_confirmation_continuity:=' + str(not args.no_overlap_confirmation_continuity).lower() + ' '
                + 'smooth_recovery_setpoints:=' + str(args.smooth_recovery_setpoints).lower() + ' '
                + f'cpu_inference_threads:={args.cpu_inference_threads} '
                + f'detector_backend:={args.detector_backend} '

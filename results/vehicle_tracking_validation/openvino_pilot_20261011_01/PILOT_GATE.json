@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "trial": "lane_change_pilot",
+  "strict_joint_passed": true,
+  "safe_to_continue": true,
+  "runtime_unchanged": true,
+  "batch_audit_sha256": "484ac70499ed8471ac5a89ee3b7c88d34aad436a95d407ddb1e6feb7ef69efe6",
+  "failure_reasons": []
+}

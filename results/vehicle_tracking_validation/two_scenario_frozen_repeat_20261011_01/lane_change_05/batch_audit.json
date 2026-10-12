@@ -1,0 +1,236 @@
+{
+  "name": "lane_change_05",
+  "group": "lane_change",
+  "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/two_scenario_frozen_repeat_20261011_01/lane_change_05",
+  "traffic_scenario": "lane_change_overtaking",
+  "attempted": true,
+  "completed": true,
+  "task_passed": true,
+  "identity_verified": true,
+  "scenario_verified": true,
+  "strict_joint_passed": true,
+  "failure_reasons": [],
+  "coverage_percent": 88.25671620474279,
+  "track_losses": 5,
+  "unplanned_losses": 4,
+  "planned_losses": 1,
+  "recovery_episodes": [
+    {
+      "loss_wall_s": 85.04945544700604,
+      "planned_occlusion": true,
+      "confirmation_wall_s": 90.65070204302901,
+      "duration_s": 5.601246596022975,
+      "censored": false,
+      "censor_lower_bound_s": null,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 139.91047861101106,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 140.4100031220005,
+      "duration_s": 0.4995245109894313,
+      "censored": false,
+      "censor_lower_bound_s": null,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 149.8100847940077,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 150.60999953601277,
+      "duration_s": 0.7999147420050576,
+      "censored": false,
+      "censor_lower_bound_s": null,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 151.50996713899076,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 153.01759880798636,
+      "duration_s": 1.5076316689956002,
+      "censored": false,
+      "censor_lower_bound_s": null,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 158.71021051501157,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 160.67043190199183,
+      "duration_s": 1.9602213869802654,
+      "censored": false,
+      "censor_lower_bound_s": null,
+      "recovery_timeout": false
+    }
+  ],
+  "unplanned_recovery_mean_s": 1.1918230772425886,
+  "unplanned_recovery_max_s": 1.9602213869802654,
+  "unplanned_recovery_censored_count": 0,
+  "recovery_timeout_count": 0,
+  "planned_recovery_mean_s": 1.2167052900185809,
+  "planned_recovery_max_s": 1.2167052900185809,
+  "planned_occlusion_recoveries_s": [
+    1.2167052900185809
+  ],
+  "wrong_identity_observations": 0,
+  "scorable_identity_switches": 0,
+  "identity_scorable_fraction": 0.7604017216642754,
+  "post_identity_frames": 83,
+  "identity_phase_counts": {
+    "pre": {
+      "unconfirmed": 5,
+      "tracked_vehicle": 206,
+      "panel_occlusion_unscorable": 23
+    },
+    "during": {
+      "tracked_vehicle": 241,
+      "unconfirmed": 6,
+      "overlap_unscorable": 6
+    },
+    "post": {
+      "unconfirmed": 32,
+      "overlap_unscorable": 95,
+      "tracked_vehicle": 83
+    }
+  },
+  "identity_reason_counts": {
+    "no_accepted_box": 43,
+    "unique_projection_support": 530,
+    "multiple_vehicle_support": 101
+  },
+  "scene_requests": {
+    "total": 998,
+    "failures": 0,
+    "receipt_errors": 0,
+    "client_sequences": {
+      "scene": {
+        "count": 502,
+        "first": 1,
+        "last": 502,
+        "complete_from_one": true,
+        "missing": [],
+        "duplicates": []
+      },
+      "traffic": {
+        "count": 496,
+        "first": 1,
+        "last": 496,
+        "complete_from_one": true,
+        "missing": [],
+        "duplicates": []
+      }
+    },
+    "files": {
+      "scene_service.jsonl": {
+        "rows": 502,
+        "malformed_lines": [],
+        "sha256": "60ac9a3abb848e034d99d68e1080ee7cfae006a17a1ab1007bb070e465c383c3"
+      },
+      "traffic_service.jsonl": {
+        "rows": 496,
+        "malformed_lines": [],
+        "sha256": "c639e0d912c027bfeaa6b1419744c09bc74228d1e478079d1811c4d7b2e62799"
+      }
+    },
+    "errors": [],
+    "passed": true
+  },
+  "scene_request_failures": 0,
+  "ulog_safety": {
+    "armed_failsafe_observations": 0,
+    "armed_offboard_lost_observations": 0,
+    "ulog_dropout_events": 0
+  },
+  "safety_event_observations": 0,
+  "px4_initial_parameter_sha256": "016506028fa3a38c6c916d0f60dea2f62c538f002919b818f9031145c91137cd",
+  "ulog_sha256": "615ae4e1cc04b7e416b98546460f816a250980655c59997a91ae046e9bcc8731",
+  "integrity": {
+    "passed": true,
+    "errors": [],
+    "verified_source_files": 40,
+    "model_sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5"
+  },
+  "geometry_evidence": {
+    "maneuver_observed": true,
+    "lane_change_scenario_observed": true,
+    "lane_change_checks": {
+      "same_lane_rear_follow_observed": true,
+      "left_lane_change_observed": true,
+      "left_lane_pass_observed": true,
+      "center_lane_return_observed": true,
+      "same_lane_ahead_follow_observed": true,
+      "vehicle_clearance_and_road_margin_verified": true
+    },
+    "maneuver_phase_counts": {
+      "rear_follow": 230,
+      "change_left": 82,
+      "left_pass": 94,
+      "merge_center": 80,
+      "ahead_follow": 211
+    },
+    "minimum_world_horizontal_clearance_m": 1.2761333676513817,
+    "minimum_distractor_road_margin_m": 0.258111852270944
+  },
+  "association_frames": 1139,
+  "association_frame_integrity": true,
+  "timing_all_recorded_associations": {
+    "processing_s": {
+      "count": 1139,
+      "mean": 0.14919863061336933,
+      "sample_std": 0.03428999218674975,
+      "min": 0.11171578400535509,
+      "max": 0.533597476023715,
+      "p95": 0.2397085328353568,
+      "worst": 0.533597476023715
+    },
+    "target_publish_age_s": {
+      "count": 1139,
+      "mean": 0.188619949457882,
+      "sample_std": 0.05587546910174437,
+      "min": 0.11103497800650075,
+      "max": 0.5725317539763637,
+      "p95": 0.30002377189230156,
+      "worst": 0.5725317539763637
+    },
+    "queue_wait_s": {
+      "count": 1139,
+      "mean": 0.04063386822458074,
+      "sample_std": 0.041805598005233056,
+      "min": 0.00021020398708060384,
+      "max": 0.23975810495903715,
+      "p95": 0.11668776111328036,
+      "worst": 0.23975810495903715
+    },
+    "full_frame_yolo_s": {
+      "count": 1139,
+      "mean": 0.13311432974176526,
+      "sample_std": 0.01826761675613996,
+      "min": 0.10480986000038683,
+      "max": 0.5265808379626833,
+      "p95": 0.15095521947951054,
+      "worst": 0.5265808379626833
+    }
+  },
+  "interventions": [],
+  "safe_to_continue": true,
+  "input_sha256": {
+    "report.json": "2b66c523b974d26e0d1db4cd74e26341183ff1e030703d5c50e211be4ebe265b",
+    "identity_report.json": "bcfb04e4fd87d22e9f5f47c3459175429b76c59cd105c304a86e53cfacc6a8bd",
+    "supervisor.json": "5fd5240ec54e2e1014c460c5fc1781dcf523867961d86dad8977808bd009ca85",
+    "runtime_parameters.json": "02ec03f353d3530e7953b0cb9808bad971e5d7df1cd545455bd7cee7e2a168bf",
+    "implementation_snapshot.json": "fe0c084b9d8bd1958274369511b4d284a0099d63c945b4f81cde2c53d190305e",
+    "association.jsonl": "80cef8f8050ff5ff63b0b8e5a1e17cb9a57d54f19f5eadb4d6f4bef91d627dc6"
+  },
+  "audit_script_sha256": "d6f34c64786549960b8f26a487d42aac9824acc5236953909a2172eb2ce1247f",
+  "track_mean_abs_pixel_error": 7.416669832865327,
+  "track_p95_abs_pixel_error": 15.949280261993408,
+  "final_home_horizontal_error_m": 0.7567268947904173,
+  "drone_follow_travel_m": 62.14079768911094,
+  "wall_duration_s": 191.13932275300613,
+  "processing_mean_s": 0.14919863061336933,
+  "processing_p95_s": 0.2397085328353568,
+  "target_publish_age_mean_s": 0.188619949457882,
+  "target_publish_age_p95_s": 0.30002377189230156,
+  "queue_wait_mean_s": 0.04063386822458074,
+  "queue_wait_p95_s": 0.11668776111328036,
+  "full_frame_yolo_mean_s": 0.13311432974176526,
+  "full_frame_yolo_p95_s": 0.15095521947951054
+}

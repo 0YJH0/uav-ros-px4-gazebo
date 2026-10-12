@@ -1,0 +1,23 @@
+[
+  {
+    "name": "lane_change_pilot",
+    "group": "lane_change",
+    "vehicle_speed": 0.8,
+    "occlusion_start": 15.0,
+    "occlusion_duration": 4.0,
+    "traffic_scenario": "lane_change_overtaking",
+    "crossing": false,
+    "overtaking": false,
+    "lane_change_overtaking": true,
+    "distractor_color": "red",
+    "parked_vehicle_y": -4.4,
+    "recovery_competition_enabled": false,
+    "predict_box_scale_velocity": true,
+    "overlap_confirmation_continuity": true,
+    "smooth_recovery_setpoints": false,
+    "cpu_inference_threads": 0,
+    "detector_backend": "openvino",
+    "backend_artifacts": "/home/yjh/ROS2_manmade/runtime_artifacts/yolo11s_openvino_fp32_20261011_01",
+    "gui": false
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "source_archive": "../frozen_files",
+  "ulog_source": "/home/yjh/ROS2_manmade/PX4-Autopilot/build/px4_sitl_default/rootfs/log/2026-10-11/15_55_59.ulg",
+  "ulog_sha256": "de51a1a1e07fc5cfae4711c89a07b22f48f03be9fe8bfe94907875c5ef5f0dfe",
+  "model_sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+  "implementation_snapshot_sha256": "36ce17f111269f0642ba80ba605fca9ef69f644bf89ed37cb469354219525896"
+}

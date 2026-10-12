@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-10-11T15:33:20.149232+00:00",
+  "phase": "pilot",
+  "planned": 1,
+  "reference": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/continuity_gui_20261011_01",
+  "pilot_excluded_from_repeat_statistics": true,
+  "detector_backend": "openvino",
+  "backend_artifacts": "/home/yjh/ROS2_manmade/runtime_artifacts/yolo11s_openvino_fp32_20261011_01",
+  "backend_runtime": {
+    "interpreter": "/home/yjh/ROS2_manmade/.venv-yolo-backends/bin/python",
+    "interpreter_sha256": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+    "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "packages": {
+      "openvino": "2026.4.1",
+      "ultralytics": "8.4.174",
+      "torch": "2.14.1+cpu",
+      "torchvision": "0.29.1+cpu",
+      "numpy": "1.26.4",
+      "opencv-python": "4.11.0.86"
+    }
+  },
+  "model_path": "/home/yjh/ROS2_manmade/yolo11s.pt",
+  "model_sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+  "gui": false,
+  "px4_rootfs": "/home/yjh/ROS2_manmade/PX4-Autopilot/build/px4_sitl_default/rootfs",
+  "freeze_manifest_sha256": "2827657005532f8c442afeb2b47bc397d4cb4c438c16c3d46d6ecf15d005e1b0",
+  "equivalence_report_sha256": "19270e3a4af22ad866c02befb230878a4abc4a20f6be5e2d16fce29cb5b67806",
+  "baseline_runtime_parameters_sha256": "02ec03f353d3530e7953b0cb9808bad971e5d7df1cd545455bd7cee7e2a168bf",
+  "promotion_gate": "Only strict_joint_passed AND safe_to_continue permits batch validation."
+}

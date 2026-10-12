@@ -1,0 +1,550 @@
+{
+  "planned": 1,
+  "attempted": 1,
+  "detector_backend": "openvino",
+  "groups": {
+    "lane_change": {
+      "planned": 1,
+      "attempted": 1,
+      "completed": 1,
+      "not_launched": 0,
+      "task_passed": 1,
+      "identity_verified": 1,
+      "strict_joint_passed": 1,
+      "task_success_rate": 1.0,
+      "strict_success_rate": 1.0,
+      "success_denominator": "all attempted runs, including failures; unlaunched runs shown separately",
+      "metrics": {
+        "task_passed": {
+          "count": 1,
+          "mean": 1.0,
+          "sample_std": null,
+          "min": 1.0,
+          "max": 1.0,
+          "p95": 1.0,
+          "worst": 1.0
+        },
+        "strict_joint_passed": {
+          "count": 1,
+          "mean": 1.0,
+          "sample_std": null,
+          "min": 1.0,
+          "max": 1.0,
+          "p95": 1.0,
+          "worst": 1.0
+        },
+        "identity_verified": {
+          "count": 1,
+          "mean": 1.0,
+          "sample_std": null,
+          "min": 1.0,
+          "max": 1.0,
+          "p95": 1.0,
+          "worst": 1.0
+        },
+        "coverage_percent": {
+          "count": 1,
+          "mean": 91.33078242883633,
+          "sample_std": null,
+          "min": 91.33078242883633,
+          "max": 91.33078242883633,
+          "p95": 91.33078242883633,
+          "worst": 91.33078242883633
+        },
+        "unplanned_losses": {
+          "count": 1,
+          "mean": 2.0,
+          "sample_std": null,
+          "min": 2.0,
+          "max": 2.0,
+          "p95": 2.0,
+          "worst": 2.0
+        },
+        "unplanned_recovery_mean_s": {
+          "count": 1,
+          "mean": 0.700880372984102,
+          "sample_std": null,
+          "min": 0.700880372984102,
+          "max": 0.700880372984102,
+          "p95": 0.700880372984102,
+          "worst": 0.700880372984102
+        },
+        "unplanned_recovery_max_s": {
+          "count": 1,
+          "mean": 1.0019133919849992,
+          "sample_std": null,
+          "min": 1.0019133919849992,
+          "max": 1.0019133919849992,
+          "p95": 1.0019133919849992,
+          "worst": 1.0019133919849992
+        },
+        "unplanned_recovery_censored_count": {
+          "count": 1,
+          "mean": 0.0,
+          "sample_std": null,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "recovery_timeout_count": {
+          "count": 1,
+          "mean": 0.0,
+          "sample_std": null,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "planned_recovery_mean_s": {
+          "count": 1,
+          "mean": 1.4870178200071678,
+          "sample_std": null,
+          "min": 1.4870178200071678,
+          "max": 1.4870178200071678,
+          "p95": 1.4870178200071678,
+          "worst": 1.4870178200071678
+        },
+        "planned_recovery_max_s": {
+          "count": 1,
+          "mean": 1.4870178200071678,
+          "sample_std": null,
+          "min": 1.4870178200071678,
+          "max": 1.4870178200071678,
+          "p95": 1.4870178200071678,
+          "worst": 1.4870178200071678
+        },
+        "track_mean_abs_pixel_error": {
+          "count": 1,
+          "mean": 10.75520121769235,
+          "sample_std": null,
+          "min": 10.75520121769235,
+          "max": 10.75520121769235,
+          "p95": 10.75520121769235,
+          "worst": 10.75520121769235
+        },
+        "track_p95_abs_pixel_error": {
+          "count": 1,
+          "mean": 31.361632347106934,
+          "sample_std": null,
+          "min": 31.361632347106934,
+          "max": 31.361632347106934,
+          "p95": 31.361632347106934,
+          "worst": 31.361632347106934
+        },
+        "final_home_horizontal_error_m": {
+          "count": 1,
+          "mean": 0.7047544399696082,
+          "sample_std": null,
+          "min": 0.7047544399696082,
+          "max": 0.7047544399696082,
+          "p95": 0.7047544399696082,
+          "worst": 0.7047544399696082
+        },
+        "drone_follow_travel_m": {
+          "count": 1,
+          "mean": 60.25390917317602,
+          "sample_std": null,
+          "min": 60.25390917317602,
+          "max": 60.25390917317602,
+          "p95": 60.25390917317602,
+          "worst": 60.25390917317602
+        },
+        "full_frame_yolo_mean_s": {
+          "count": 1,
+          "mean": 0.13205800146711144,
+          "sample_std": null,
+          "min": 0.13205800146711144,
+          "max": 0.13205800146711144,
+          "p95": 0.13205800146711144,
+          "worst": 0.13205800146711144
+        },
+        "full_frame_yolo_p95_s": {
+          "count": 1,
+          "mean": 0.17007863436592743,
+          "sample_std": null,
+          "min": 0.17007863436592743,
+          "max": 0.17007863436592743,
+          "p95": 0.17007863436592743,
+          "worst": 0.17007863436592743
+        },
+        "processing_mean_s": {
+          "count": 1,
+          "mean": 0.1498470548100092,
+          "sample_std": null,
+          "min": 0.1498470548100092,
+          "max": 0.1498470548100092,
+          "p95": 0.1498470548100092,
+          "worst": 0.1498470548100092
+        },
+        "processing_p95_s": {
+          "count": 1,
+          "mean": 0.24178368273423975,
+          "sample_std": null,
+          "min": 0.24178368273423975,
+          "max": 0.24178368273423975,
+          "p95": 0.24178368273423975,
+          "worst": 0.24178368273423975
+        },
+        "target_publish_age_mean_s": {
+          "count": 1,
+          "mean": 0.188209329370822,
+          "sample_std": null,
+          "min": 0.188209329370822,
+          "max": 0.188209329370822,
+          "p95": 0.188209329370822,
+          "worst": 0.188209329370822
+        },
+        "target_publish_age_p95_s": {
+          "count": 1,
+          "mean": 0.3057978949247626,
+          "sample_std": null,
+          "min": 0.3057978949247626,
+          "max": 0.3057978949247626,
+          "p95": 0.3057978949247626,
+          "worst": 0.3057978949247626
+        },
+        "queue_wait_mean_s": {
+          "count": 1,
+          "mean": 0.03965356226708867,
+          "sample_std": null,
+          "min": 0.03965356226708867,
+          "max": 0.03965356226708867,
+          "p95": 0.03965356226708867,
+          "worst": 0.03965356226708867
+        },
+        "queue_wait_p95_s": {
+          "count": 1,
+          "mean": 0.11202042184013407,
+          "sample_std": null,
+          "min": 0.11202042184013407,
+          "max": 0.11202042184013407,
+          "p95": 0.11202042184013407,
+          "worst": 0.11202042184013407
+        },
+        "wrong_identity_observations": {
+          "count": 1,
+          "mean": 0.0,
+          "sample_std": null,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "scorable_identity_switches": {
+          "count": 1,
+          "mean": 0.0,
+          "sample_std": null,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "identity_scorable_fraction": {
+          "count": 1,
+          "mean": 0.9182481751824818,
+          "sample_std": null,
+          "min": 0.9182481751824818,
+          "max": 0.9182481751824818,
+          "p95": 0.9182481751824818,
+          "worst": 0.9182481751824818
+        },
+        "post_identity_frames": {
+          "count": 1,
+          "mean": 162.0,
+          "sample_std": null,
+          "min": 162.0,
+          "max": 162.0,
+          "p95": 162.0,
+          "worst": 162.0
+        },
+        "scene_request_failures": {
+          "count": 1,
+          "mean": 0.0,
+          "sample_std": null,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "safety_event_observations": {
+          "count": 1,
+          "mean": 0.0,
+          "sample_std": null,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "wall_duration_s": {
+          "count": 1,
+          "mean": 186.4482919689617,
+          "sample_std": null,
+          "min": 186.4482919689617,
+          "max": 186.4482919689617,
+          "p95": 186.4482919689617,
+          "worst": 186.4482919689617
+        }
+      },
+      "pooled_unplanned_recovery": {
+        "count": 2,
+        "mean": 0.700880372984102,
+        "sample_std": 0.42572497819318644,
+        "min": 0.3998473539832048,
+        "max": 1.0019133919849992,
+        "p95": 0.9718100900849095,
+        "worst": 1.0019133919849992,
+        "total_episodes": 2,
+        "censored_episodes": 0,
+        "timeout_episodes": 0,
+        "censor_lower_bounds_s": []
+      },
+      "failure_reason_counts": {},
+      "safety_evidence_missing_runs": 0,
+      "wrong_identity_total": 0,
+      "identity_evidence_missing_runs": 0
+    }
+  },
+  "trials": [
+    {
+      "name": "lane_change_pilot",
+      "group": "lane_change",
+      "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/openvino_pilot_20261011_01/lane_change_pilot",
+      "traffic_scenario": "lane_change_overtaking",
+      "attempted": true,
+      "completed": true,
+      "task_passed": true,
+      "identity_verified": true,
+      "scenario_verified": true,
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 91.33078242883633,
+      "track_losses": 3,
+      "unplanned_losses": 2,
+      "planned_losses": 1,
+      "recovery_episodes": [
+        {
+          "loss_wall_s": 84.7688029629644,
+          "planned_occlusion": true,
+          "confirmation_wall_s": 90.56487767299404,
+          "duration_s": 5.796074710029643,
+          "censored": false,
+          "censor_lower_bound_s": null,
+          "recovery_timeout": false
+        },
+        {
+          "loss_wall_s": 159.1135643509915,
+          "planned_occlusion": false,
+          "confirmation_wall_s": 160.1154777429765,
+          "duration_s": 1.0019133919849992,
+          "censored": false,
+          "censor_lower_bound_s": null,
+          "recovery_timeout": false
+        },
+        {
+          "loss_wall_s": 164.71355929697165,
+          "planned_occlusion": false,
+          "confirmation_wall_s": 165.11340665095486,
+          "duration_s": 0.3998473539832048,
+          "censored": false,
+          "censor_lower_bound_s": null,
+          "recovery_timeout": false
+        }
+      ],
+      "unplanned_recovery_mean_s": 0.700880372984102,
+      "unplanned_recovery_max_s": 1.0019133919849992,
+      "unplanned_recovery_censored_count": 0,
+      "recovery_timeout_count": 0,
+      "planned_recovery_mean_s": 1.4870178200071678,
+      "planned_recovery_max_s": 1.4870178200071678,
+      "planned_occlusion_recoveries_s": [
+        1.4870178200071678
+      ],
+      "wrong_identity_observations": 0,
+      "scorable_identity_switches": 0,
+      "identity_scorable_fraction": 0.9182481751824818,
+      "post_identity_frames": 162,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 8,
+          "tracked_vehicle": 214,
+          "panel_occlusion_unscorable": 21
+        },
+        "during": {
+          "tracked_vehicle": 253,
+          "unconfirmed": 3
+        },
+        "post": {
+          "tracked_vehicle": 162,
+          "unconfirmed": 13,
+          "overlap_unscorable": 11
+        }
+      },
+      "identity_reason_counts": {
+        "no_accepted_box": 24,
+        "unique_projection_support": 629,
+        "multiple_vehicle_support": 11
+      },
+      "scene_requests": {
+        "total": 981,
+        "failures": 0,
+        "receipt_errors": 0,
+        "client_sequences": {
+          "scene": {
+            "count": 493,
+            "first": 1,
+            "last": 493,
+            "complete_from_one": true,
+            "missing": [],
+            "duplicates": []
+          },
+          "traffic": {
+            "count": 488,
+            "first": 1,
+            "last": 488,
+            "complete_from_one": true,
+            "missing": [],
+            "duplicates": []
+          }
+        },
+        "files": {
+          "scene_service.jsonl": {
+            "rows": 493,
+            "malformed_lines": [],
+            "sha256": "3cc129082b5b888cddff303d398dd2f1c67502666e570ea2c6b9ea75eee46f7b"
+          },
+          "traffic_service.jsonl": {
+            "rows": 488,
+            "malformed_lines": [],
+            "sha256": "9ef25891b383925e68c370ac457301c8a30595cc061bf2f7cafc5a234d403219"
+          }
+        },
+        "errors": [],
+        "passed": true
+      },
+      "scene_request_failures": 0,
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "safety_event_observations": 0,
+      "px4_initial_parameter_sha256": "96699cb2ffdb1e92abec679453d5ac606fbde1a42e9ab298ecfb9b93d7a9228d",
+      "ulog_sha256": "e7b4c6886cf6d04c38ee844e8e4831c54e39b448464402d52b7a2de6fc620bf5",
+      "integrity": {
+        "passed": true,
+        "errors": [],
+        "verified_source_files": 40,
+        "model_sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5"
+      },
+      "geometry_evidence": {
+        "maneuver_observed": true,
+        "lane_change_scenario_observed": true,
+        "lane_change_checks": {
+          "same_lane_rear_follow_observed": true,
+          "left_lane_change_observed": true,
+          "left_lane_pass_observed": true,
+          "center_lane_return_observed": true,
+          "same_lane_ahead_follow_observed": true,
+          "vehicle_clearance_and_road_margin_verified": true
+        },
+        "maneuver_phase_counts": {
+          "rear_follow": 243,
+          "change_left": 79,
+          "left_pass": 100,
+          "merge_center": 75,
+          "ahead_follow": 188
+        },
+        "minimum_world_horizontal_clearance_m": 1.2761333676513815,
+        "minimum_distractor_road_margin_m": 0.258111852270944
+      },
+      "association_frames": 1100,
+      "association_frame_integrity": true,
+      "timing_all_recorded_associations": {
+        "processing_s": {
+          "count": 1100,
+          "mean": 0.1498470548100092,
+          "sample_std": 0.03599793046689596,
+          "min": 0.11073772900272161,
+          "max": 0.3205992800067179,
+          "p95": 0.24178368273423975,
+          "worst": 0.3205992800067179
+        },
+        "target_publish_age_s": {
+          "count": 1100,
+          "mean": 0.188209329370822,
+          "sample_std": 0.05581024801334219,
+          "min": 0.11187306203646585,
+          "max": 0.39474265300668776,
+          "p95": 0.3057978949247626,
+          "worst": 0.39474265300668776
+        },
+        "queue_wait_s": {
+          "count": 1100,
+          "mean": 0.03965356226708867,
+          "sample_std": 0.04020139240344528,
+          "min": 0.00022058398462831974,
+          "max": 0.24130828701891005,
+          "p95": 0.11202042184013407,
+          "worst": 0.24130828701891005
+        },
+        "full_frame_yolo_s": {
+          "count": 1100,
+          "mean": 0.13205800146711144,
+          "sample_std": 0.016213893951870593,
+          "min": 0.1049666740000248,
+          "max": 0.21918675600318238,
+          "p95": 0.17007863436592743,
+          "worst": 0.21918675600318238
+        }
+      },
+      "interventions": [],
+      "safe_to_continue": true,
+      "input_sha256": {
+        "report.json": "edc64aadf1244534336276fd8155519537733cf3aa71634e0e2bdad8b82d8481",
+        "identity_report.json": "5f1177c608b6a89de2aeaf5c3b3d1cd2bb986a37d92cad54a2fbdcf4c736040b",
+        "supervisor.json": "301ad382ebace4630aaded393e3708b86c98d55c67e34ed2c3773675cf6b4fa6",
+        "runtime_parameters.json": "1ea279cc2e4a7b8c8f2429b70b66bf6434e6038dffe56e5f05bfae6af3bacb8b",
+        "implementation_snapshot.json": "36ce17f111269f0642ba80ba605fca9ef69f644bf89ed37cb469354219525896",
+        "association.jsonl": "7d8b9664cb10fdfa93e6276a64946943eccabcd2f9518a220f676db51e066544"
+      },
+      "audit_script_sha256": "79384a55b3054af0c4b34e904e2fdc1a7c251279d7e28b7a1686a1120dfa690f",
+      "track_mean_abs_pixel_error": 10.75520121769235,
+      "track_p95_abs_pixel_error": 31.361632347106934,
+      "final_home_horizontal_error_m": 0.7047544399696082,
+      "drone_follow_travel_m": 60.25390917317602,
+      "wall_duration_s": 186.4482919689617,
+      "processing_mean_s": 0.1498470548100092,
+      "processing_p95_s": 0.24178368273423975,
+      "target_publish_age_mean_s": 0.188209329370822,
+      "target_publish_age_p95_s": 0.3057978949247626,
+      "queue_wait_mean_s": 0.03965356226708867,
+      "queue_wait_p95_s": 0.11202042184013407,
+      "full_frame_yolo_mean_s": 0.13205800146711144,
+      "full_frame_yolo_p95_s": 0.17007863436592743,
+      "attempt_state": "completed",
+      "returncode": 0
+    }
+  ],
+  "audit_script_sha256": "79384a55b3054af0c4b34e904e2fdc1a7c251279d7e28b7a1686a1120dfa690f",
+  "batch_complete": true,
+  "px4_parameter_audit": {
+    "available_logs": 1,
+    "runs_with_bookkeeping_differences": 0,
+    "runs_with_calibration_differences": 0,
+    "runs_with_other_parameter_differences": 0
+  },
+  "limitations": [
+    "All attempted failures remain in success denominators; unlaunched trials are explicitly incomplete, not successes or hidden failures.",
+    "Metric count is the number with available evidence; missing metrics are not imputed as zero. Sample SD uses n-1 and is unavailable for n<2.",
+    "Group timing means summarize per-trial means, not pooled frames. Per-trial timing covers all recorded associations, not only TRACK.",
+    "No-loss trials have no recovery duration, not a zero-second recovery. Unrecovered episodes remain censored and are listed separately.",
+    "Task recovery and inference durations are wall seconds; traffic trajectory phases and identity observer latency are simulation seconds.",
+    "Zero observed wrong identities applies only to scorable projected-volume evidence; ambiguous and missing-truth frames are not proof of correctness.",
+    "Fixed-scene repeats measure runtime repeatability, not random-scene, real-flight or weather generalization.",
+    "ULog safety fields are observation counts, not necessarily distinct incidents; zero counts do not certify absence of every collision.",
+    "The two traffic scenarios have different geometry; their difference is not an isolated algorithm ablation.",
+    "Historical pilot runs are excluded from the repeat denominator.",
+    "Runtime PX4 calibration and flight counters may vary despite frozen launch settings; inspect px4_parameter_audit.json before attributing changes to control tuning."
+  ]
+}

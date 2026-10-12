@@ -1,0 +1,274 @@
+{
+  "scenario": {
+    "vehicle_speed": 0.8,
+    "occlusion_start": 15.0,
+    "occlusion_duration": 4.0,
+    "recovery_competition_enabled": false,
+    "predict_box_scale_velocity": true,
+    "smooth_recovery_setpoints": false,
+    "cpu_inference_threads": 0,
+    "detector_backend": "torch",
+    "backend_artifacts": "",
+    "gui": true,
+    "distractor_color": "red",
+    "parked_vehicle_y": -4.4,
+    "crossing": false,
+    "overtaking": false,
+    "lane_change_overtaking": true,
+    "traffic_scenario": "lane_change_overtaking"
+  },
+  "task_passed": true,
+  "maneuver_observed": true,
+  "identity_verified": false,
+  "identity_evaluation_version": "exclusive_projection_v2",
+  "strict_joint_passed": false,
+  "failure_reasons": [
+    "independent_identity_not_verified",
+    "post_identity_evidence_insufficient"
+  ],
+  "coverage_percent": 86.23694501126843,
+  "track_losses": 8,
+  "planned_losses": 1,
+  "unplanned_losses": 7,
+  "observation_gap_events": 14,
+  "recovery_episodes": [
+    {
+      "loss_wall_s": 80.90617022599326,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 81.40666302695172,
+      "loss_to_confirmation_wall_s": 0.5004928009584546,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 97.7611202049884,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 98.26072934496915,
+      "loss_to_confirmation_wall_s": 0.4996091399807483,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 104.3613976239576,
+      "planned_occlusion": true,
+      "confirmation_wall_s": 110.86078703898238,
+      "loss_to_confirmation_wall_s": 6.49938941502478,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 163.53316929499852,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 163.8332633379614,
+      "loss_to_confirmation_wall_s": 0.30009404296288267,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 166.43321172898868,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 167.03290233999724,
+      "loss_to_confirmation_wall_s": 0.5996906110085547,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 167.73562593699899,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 169.33318226598203,
+      "loss_to_confirmation_wall_s": 1.5975563289830461,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 170.93293982598698,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 173.5331694879569,
+      "loss_to_confirmation_wall_s": 2.6002296619699337,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 174.23304901295342,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 175.8333498709835,
+      "loss_to_confirmation_wall_s": 1.6003008580300957,
+      "recovery_timeout": false
+    }
+  ],
+  "occlusion_confirmed_recovery_wall_s": [
+    1.3237011629971676
+  ],
+  "wrong_identity_observations": 0,
+  "scorable_identity_switches": 0,
+  "identity_phase_counts": {
+    "pre": {
+      "tracked_vehicle": 198,
+      "unconfirmed": 8,
+      "panel_occlusion_unscorable": 24
+    },
+    "during": {
+      "tracked_vehicle": 229,
+      "unconfirmed": 19
+    },
+    "post": {
+      "unconfirmed": 17,
+      "tracked_vehicle": 5,
+      "overlap_unscorable": 77
+    }
+  },
+  "identity_scorable_observations": 432,
+  "identity_observations_total": 577,
+  "drone_follow_travel_m": 52.14620824824857,
+  "track_mean_abs_pixel_error": 12.927462639673742,
+  "track_p95_abs_pixel_error": 36.244322061538696,
+  "final_home_horizontal_error_m": 0.6943121636652295,
+  "geometry_evidence": {
+    "maneuver_observed": true,
+    "lane_change_scenario_observed": true,
+    "lane_change_checks": {
+      "same_lane_rear_follow_observed": true,
+      "left_lane_change_observed": true,
+      "left_lane_pass_observed": true,
+      "center_lane_return_observed": true,
+      "same_lane_ahead_follow_observed": true,
+      "vehicle_clearance_and_road_margin_verified": true
+    },
+    "maneuver_phase_counts": {
+      "rear_follow": 4487,
+      "change_left": 598,
+      "left_pass": 717,
+      "merge_center": 600,
+      "ahead_follow": 1725
+    },
+    "minimum_world_horizontal_clearance_m": 1.2761333676513815,
+    "minimum_distractor_road_margin_m": 0.258111852270944
+  },
+  "scene_requests": {
+    "total": 858,
+    "failures": 0,
+    "by_service": {
+      "/world/default/create": 5,
+      "/world/default/set_pose": 853
+    },
+    "receipt_errors": 0,
+    "sequence_errors": [],
+    "client_sequences": {
+      "scene": {
+        "count": 432,
+        "first": 1,
+        "last": 432,
+        "missing": [],
+        "duplicates": [],
+        "increasing": true
+      },
+      "traffic": {
+        "count": 426,
+        "first": 1,
+        "last": 426,
+        "missing": [],
+        "duplicates": [],
+        "increasing": true
+      }
+    },
+    "files": {
+      "scene_service.jsonl": {
+        "rows": 432,
+        "sha256": "7ed2729883120b24b2d4e9126ea93497cff4e986dc53a259e290e5f6191470ab"
+      },
+      "traffic_service.jsonl": {
+        "rows": 426,
+        "sha256": "f7f686145d6177bab5275dceed0d19e779038f982a7f07371c1ab982db0c9901"
+      }
+    }
+  },
+  "ulog_safety": {
+    "armed_failsafe_observations": 0,
+    "armed_offboard_lost_observations": 0,
+    "ulog_dropout_events": 0
+  },
+  "ulog_sha256": "862ed53e97d7324691e3d2cf015cb4ab2b16e4f6221b7644da05dc73d2e79860",
+  "source_snapshot_files_verified": 40,
+  "required_parameters": {
+    "perception_node": {
+      "overlap_candidate_recovery": true,
+      "bounded_scale_prediction": true,
+      "target_reacquire_timeout": 10.0
+    },
+    "px4_offboard_controller": {
+      "recovery_timeout": 10.0,
+      "recovery_max_distance": 4.0,
+      "recovery_max_speed": 0.8
+    },
+    "vehicle_scene": {
+      "distractor_color": "red",
+      "parked_vehicle_y": -4.4,
+      "traffic_scenario": "lane_change_overtaking",
+      "vehicle_speed": 0.8,
+      "occlusion_start": 15.0,
+      "occlusion_duration": 4.0
+    }
+  },
+  "parameter_errors": [],
+  "parameter_comparison": {
+    "reference": "results/vehicle_tracking_validation/red_lane_change_gui_20261011_01/runtime_parameters.json",
+    "reference_sha256": "0c592b06a6664f65f8dce825ea6365937a0ba1acfa0d56e830a539756ebb0b47",
+    "only_two_requested_additions": true,
+    "differences": [
+      {
+        "node": "perception_node",
+        "parameter": "bounded_scale_prediction",
+        "before_present": false,
+        "before": null,
+        "after": true
+      },
+      {
+        "node": "perception_node",
+        "parameter": "overlap_candidate_recovery",
+        "before_present": false,
+        "before": null,
+        "after": true
+      }
+    ]
+  },
+  "timing_all_recorded_associations": {
+    "processing_s": {
+      "count": 976,
+      "mean_s": 0.1949078335535768,
+      "p95_s": 0.2982085674884729,
+      "maximum_s": 0.49298586195800453
+    },
+    "target_publish_age_s": {
+      "count": 976,
+      "mean_s": 0.24950996419307767,
+      "p95_s": 0.3812907310202718,
+      "maximum_s": 0.6707734779920429
+    },
+    "queue_wait_s": {
+      "count": 976,
+      "mean_s": 0.056114854463676686,
+      "p95_s": 0.153044059232343,
+      "maximum_s": 0.48655585397500545
+    },
+    "full_frame_yolo_s": {
+      "count": 976,
+      "mean_s": 0.1779605558279355,
+      "p95_s": 0.27541128599841613,
+      "maximum_s": 0.3248330560163595
+    }
+  },
+  "input_sha256": {
+    "report.json": "e76916c2cedd83341cc8424ac03cec2e274083524cfa7b1abd6ea8cdc2b51de6",
+    "identity_report.json": "1df0608caff08e98a7e9e5e1f3040b157f1094d1a4d1b9d04b7d106772cad0e9",
+    "supervisor.json": "c88b80308c5d6050707b8f723afecbcf6ea4d332767585cdc364a75cba5d2a22",
+    "implementation_snapshot.json": "dd2faf67eda31df951c600497cc26fbb209cf0d3f86882971c377ef72039c7ed",
+    "runtime_parameters.json": "adc10e3463a533fea9b7b06f9050101ea1e2ad228058406d1368038816aabe5c",
+    "full_pose_geometry_audit.json": "b4cb8310eb4ad7a86e21db0a758ed2251b094d699bb38e66352614f12e91b480",
+    "association.jsonl": "5ba6df1740cf91949bc449e11fcf6507279a437a5e4cea7a127377567048931d"
+  },
+  "audit_script_sha256": "f742355fa280c3d8b7e96b68cd5912c89b6bcd622e53824338583ea50ecf5123",
+  "limitations": [
+    "One independent restart, not a repeated benchmark or proof of general improvement.",
+    "The two runtime additions are isolated, but trajectories and processing latency may differ between runs.",
+    "Coverage is time-weighted onboard target confirmation, not detector mAP or verified identity accuracy.",
+    "Partial-overlap identity scoring uses projected volumes and exclusive regions, not instance masks.",
+    "Unscorable frames are not assumed to have correct identity; zero wrong identities applies to scored frames.",
+    "Recovery durations use wall seconds; traffic phases and independent identity latency use simulation seconds.",
+    "Mesh-box separation and ULog counters do not certify absence of all possible physical collisions.",
+    "Timing statistics cover every recorded association, not just the TRACK state.",
+    "Independent identity comes from identity_report.json, not the placeholder in report.json."
+  ]
+}

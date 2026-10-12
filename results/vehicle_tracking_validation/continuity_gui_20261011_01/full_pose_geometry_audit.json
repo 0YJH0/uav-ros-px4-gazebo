@@ -1,0 +1,228 @@
+{
+  "audit": "full_gazebo_pose_geometry",
+  "source": "results/vehicle_tracking_validation/continuity_gui_20261011_01/identity_poses.jsonl",
+  "source_sha256": "e78176b4118e9d353095ddcdbc3418637690b4553fcfbb3029784ed1fff63eff",
+  "geometry_helper_sha256": "184bd20eda9356d9cc2cbdf870ba2aca97274bcaf4aecfb216313baef9208c33",
+  "audit_script_sha256": "b3fdc9e262b3efb94ff533baf3c898b1b26fbd8b48fefbc7a74540923d4ee864",
+  "vehicle_speed_m_s": 0.8,
+  "total_pose_records": 7831,
+  "measured_pose_pairs": 7830,
+  "skipped_missing_car_pairs": 1,
+  "supervisor_autonomous_passed": true,
+  "phase_ranges": {
+    "rear_follow": {
+      "first_sim_s": 16.064,
+      "last_sim_s": 91.796,
+      "first_motion_s": 0.0,
+      "last_motion_s": 24.800000000000004,
+      "relative_x_min_m": -28.160000000000004,
+      "relative_x_max_m": -10.160719698526215,
+      "lane_y_min_m": 0.0,
+      "lane_y_max_m": 0.0
+    },
+    "change_left": {
+      "first_sim_s": 91.804,
+      "last_sim_s": 101.792,
+      "first_motion_s": 25.0,
+      "last_motion_s": 34.800000000000004,
+      "relative_x_min_m": -10.160091057618956,
+      "relative_x_max_m": -10.0,
+      "lane_y_min_m": 0.0,
+      "lane_y_max_m": 3.7977115852799983
+    },
+    "left_pass": {
+      "first_sim_s": 101.804,
+      "last_sim_s": 113.796,
+      "first_motion_s": 35.0,
+      "last_motion_s": 46.8,
+      "relative_x_min_m": -10.160000000000004,
+      "relative_x_max_m": 9.999097067901232,
+      "lane_y_min_m": 3.7997050470400042,
+      "lane_y_max_m": 3.8
+    },
+    "merge_center": {
+      "first_sim_s": 113.804,
+      "last_sim_s": 123.792,
+      "first_motion_s": 47.00000000000001,
+      "last_motion_s": 56.8,
+      "relative_x_min_m": 9.839097067901221,
+      "relative_x_max_m": 9.840000000000025,
+      "lane_y_min_m": 0.0022884147200017413,
+      "lane_y_max_m": 3.8
+    },
+    "ahead_follow": {
+      "first_sim_s": 123.804,
+      "last_sim_s": 147.46,
+      "first_motion_s": 57.0,
+      "last_motion_s": 80.00000000000001,
+      "relative_x_min_m": 9.83999999999996,
+      "relative_x_max_m": 10.000000000000014,
+      "lane_y_min_m": 0.0,
+      "lane_y_max_m": 0.000294952959995598
+    }
+  },
+  "scenario_evidence": {
+    "maneuver_observed": true,
+    "lane_change_scenario_observed": true,
+    "lane_change_checks": {
+      "same_lane_rear_follow_observed": true,
+      "left_lane_change_observed": true,
+      "left_lane_pass_observed": true,
+      "center_lane_return_observed": true,
+      "same_lane_ahead_follow_observed": true,
+      "vehicle_clearance_and_road_margin_verified": true
+    },
+    "maneuver_phase_counts": {
+      "rear_follow": 4510,
+      "change_left": 600,
+      "left_pass": 717,
+      "merge_center": 598,
+      "ahead_follow": 1405
+    },
+    "minimum_world_horizontal_clearance_m": 1.2761333676513817,
+    "minimum_distractor_road_margin_m": 0.25811185227094224
+  },
+  "minimum_horizontal_clearance_context": {
+    "sim_s": 106.404,
+    "motion_time": 39.600000000000016,
+    "maneuver_phase": "left_pass",
+    "target_position": [
+      47.680000000000014,
+      0.36697518211272384,
+      0.05
+    ],
+    "distractor_position": [
+      42.751980246913604,
+      3.8,
+      0.05
+    ],
+    "uav_reference_position": [
+      35.148115752962816,
+      -0.312031508867714,
+      2.931328588317275
+    ],
+    "relative_longitudinal_m": -4.92801975308641,
+    "relative_lateral_m": 3.4330248178872758,
+    "distractor_lane_y_m": 3.8,
+    "world_horizontal_clearance_m": 1.2761333676513817,
+    "world_lateral_clearance_m": 1.2761333676513817,
+    "distractor_road_margin_m": 0.8047684599918865
+  },
+  "minimum_road_margin_context": {
+    "sim_s": 99.624,
+    "motion_time": 32.79999999999999,
+    "maneuver_phase": "change_left",
+    "target_position": [
+      42.239999999999995,
+      0.3990425525276695,
+      0.05
+    ],
+    "distractor_position": [
+      32.08000000000001,
+      3.4456455372800043,
+      0.05
+    ],
+    "uav_reference_position": [
+      30.22956014700484,
+      -0.6061621032292756,
+      2.933908471778703
+    ],
+    "relative_longitudinal_m": -10.159999999999982,
+    "relative_lateral_m": 3.046602984752335,
+    "distractor_lane_y_m": 3.4456455372800043,
+    "world_horizontal_clearance_m": 5.931726716329472,
+    "world_lateral_clearance_m": 0.29661320643425637,
+    "distractor_road_margin_m": 0.25811185227094224
+  },
+  "first_pair": {
+    "sim_s": 16.064,
+    "motion_time": 0.0,
+    "maneuver_phase": "rear_follow",
+    "target_position": [
+      16.0,
+      0.0,
+      0.05
+    ],
+    "distractor_position": [
+      -12.0,
+      0.0,
+      0.05
+    ],
+    "uav_reference_position": [
+      -8.297937234570625e-06,
+      -1.7521775766331737e-15,
+      -0.012667169295014491
+    ],
+    "relative_longitudinal_m": -28.0,
+    "relative_lateral_m": 0.0,
+    "distractor_lane_y_m": 0.0,
+    "world_horizontal_clearance_m": 23.998898019989518,
+    "world_lateral_clearance_m": -2.140463080019592,
+    "distractor_road_margin_m": 4.604768459988522
+  },
+  "last_pair": {
+    "sim_s": 147.46,
+    "motion_time": 80.00000000000001,
+    "maneuver_phase": "ahead_follow",
+    "target_position": [
+      80.00000000000001,
+      -0.30272099812317155,
+      0.05
+    ],
+    "distractor_position": [
+      89.84,
+      0.0,
+      0.05
+    ],
+    "uav_reference_position": [
+      0.7690508229941125,
+      0.1064493081539546,
+      0.016946823392899768
+    ],
+    "relative_longitudinal_m": 9.83999999999999,
+    "relative_lateral_m": 0.30272099812317155,
+    "distractor_lane_y_m": 0.0,
+    "world_horizontal_clearance_m": 5.821724515700794,
+    "world_lateral_clearance_m": -1.864672781874773,
+    "distractor_road_margin_m": 4.604768459988522
+  },
+  "uav_reference_over_car_aabb": {
+    "tracked_vehicle": {
+      "observations": 0,
+      "minimum_reference_to_roof_vertical_m": null,
+      "minimum_context": null
+    },
+    "crossing_vehicle": {
+      "observations": 144,
+      "minimum_reference_to_roof_vertical_m": 1.3330286085121705,
+      "minimum_context": {
+        "sim_s": 84.596,
+        "uav_reference_position": [
+          15.389567513653642,
+          -0.5189502030732777,
+          2.9395812485121704
+        ],
+        "car_position": [
+          16.88858126273742,
+          0.0,
+          0.05
+        ],
+        "roof_world_z_m": 1.6065526399999999
+      }
+    },
+    "parked_vehicle": {
+      "observations": 0,
+      "minimum_reference_to_roof_vertical_m": null,
+      "minimum_context": null
+    }
+  },
+  "limitations": [
+    "Uses every logged Gazebo pose message, not perception association samples.",
+    "Pose samples do not prove continuous-time clearance between samples.",
+    "Separating-axis gap is a conservative horizontal mesh-box separation bound.",
+    "Maneuver phase is derived from measured target X and the configured target speed.",
+    "UAV vertical check uses its model reference point over each car world-axis-aligned XY box.",
+    "UAV arms, rotors, body size, and full 3D collision volumes are not checked.",
+    "This geometry audit does not certify target identity or replace flight safety auditing."
+  ]
+}

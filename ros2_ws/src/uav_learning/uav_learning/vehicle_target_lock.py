@@ -12,7 +12,9 @@ class VehicleTargetLock:
     def __init__(self, recovery_timeout=10.0, acquisition_center_gate=1.0,
                  acquisition_confirm_frames=1, confidence_threshold=0.25,
                  weak_idless_confirm_frames=3, weak_idless_max_age=2.0,
-                 recovery_competition_enabled=True, predict_box_scale_velocity=True):
+                 recovery_competition_enabled=True, predict_box_scale_velocity=True,
+                 overlap_candidate_recovery=True, bounded_scale_prediction=True,
+                 overlap_confirmation_continuity=True):
         # Legacy argument: horizon of the image-motion model, not lock expiry.
         self.prediction_horizon = recovery_timeout
         self.acquisition_center_gate = acquisition_center_gate
@@ -42,6 +44,12 @@ class VehicleTargetLock:
         self.crossing_risk_diagnostic = {}
         self.recovery_competition_enabled = recovery_competition_enabled
         self.predict_box_scale_velocity = predict_box_scale_velocity
+        self.overlap_candidate_recovery = overlap_candidate_recovery
+        self.bounded_scale_prediction = bounded_scale_prediction
+        self.overlap_confirmation_continuity = overlap_confirmation_continuity
+        self.candidate_overlap = {}
+        self.merged_candidates = set()
+        self.scale_prediction_clamped = False
         self.competition = RecoveryCompetition()
         self.competition_diagnostic = {'reason': 'inactive'}
         self.filter = cv2.KalmanFilter(8, 4, 0, cv2.CV_64F)
@@ -140,13 +148,24 @@ class VehicleTargetLock:
         self.competition.compensate(normalized, shift, math.log(scale))
         self.camera_motion_reason = 'applied'
 
-    def confirm(self, item, measurement, now, required, evidence='standard'):
+    def confirmation_continuous(self, item, measurement, now, evidence):
+        overlap_evidence = ('partial_overlap', 'overlap_recovery')
+        same_evidence = self.pending_evidence == evidence
+        same_overlap = (self.overlap_confirmation_continuity
+                        and evidence in overlap_evidence and self.pending_evidence in overlap_evidence)
         compatible_id = (self.pending_id == item[0] or
                          self.pending_id is None or item[0] is None)
-        consistent = (self.pending_count > 0 and compatible_id and self.pending_evidence == evidence
-                      and now - self.pending_time <= 0.5
-                      and np.linalg.norm(measurement[:2] - self.pending_measurement[:2]) < 0.05
-                      and np.max(np.abs(measurement[2:] - self.pending_measurement[2:])) < 0.2)
+        if evidence == 'partial_overlap' or same_overlap:
+            compatible_id = self.pending_id == item[0]
+        # A mode-label change is not a new identity, but unknown IDs cannot bridge it.
+        compatible_evidence = same_evidence or (same_overlap and item[0] is not None)
+        return (self.pending_count > 0 and compatible_id and compatible_evidence
+                and 0 <= now - self.pending_time <= 0.5
+                and np.linalg.norm(measurement[:2] - self.pending_measurement[:2]) < 0.05
+                and np.max(np.abs(measurement[2:] - self.pending_measurement[2:])) < 0.2)
+
+    def confirm(self, item, measurement, now, required, evidence='standard'):
+        consistent = self.confirmation_continuous(item, measurement, now, evidence)
         self.pending_count = min(required, self.pending_count + 1) if consistent else 1
         self.pending_evidence = evidence
         self.pending_id, self.pending_time = item[0], now
@@ -168,6 +187,8 @@ class VehicleTargetLock:
 
     def crossing_risk(self, candidates, histograms, predicted, width, height, now):
         self.crossing_risk_diagnostic = {}
+        self.candidate_overlap = {}
+        self.merged_candidates = set()
         if self.reference is None:
             return None
         expected = self.view_box(predicted, width, height)
@@ -203,6 +224,8 @@ class VehicleTargetLock:
                 self.last_similar_rival = now
                 if overlap > 0.05:
                     risk = 'similar_vehicle_overlap'
+                    self.candidate_overlap.setdefault(index, set()).add(other)
+                    self.candidate_overlap.setdefault(other, set()).add(index)
         rival_age = None if self.last_similar_rival is None else now - self.last_similar_rival
         # Missed/stale frames must not erase a rival before identity is restored.
         # Confirmed tracking still expires this evidence after two seconds.
@@ -212,10 +235,35 @@ class VehicleTargetLock:
         self.crossing_risk_diagnostic = {'similar_rival_age_s': rival_age,
                                          'gap_retained': gap_retained}
         if rival_age is not None and (rival_age <= 2.0 or gap_retained):
-            for _, measurement, _ in nearby:
-                if measurement[2, 0] - self.last_measurement[2, 0] > math.log(1.6):
+            for index, measurement, _ in nearby:
+                change = (measurement[2:4] - self.last_measurement[2:4])[:, 0]
+                vertical_merge = (self.bounded_scale_prediction and change[1] > math.log(1.35)
+                                  and change[1] - change[0] > math.log(1.25))
+                if change[0] > math.log(1.6) or vertical_merge:
                     risk = 'merged_vehicle_box'
+                    self.merged_candidates.add(index)
         return risk
+
+    def overlap_distinguishable(self, index, candidates):
+        box = np.asarray(candidates[index][3:], dtype=float)
+        others = [np.asarray(candidates[other][3:], dtype=float)
+                  for other in self.candidate_overlap.get(index, ())]
+        if not others:
+            return True
+        # Subtract the union of competing boxes, not a sum that double-counts overlaps.
+        xs = sorted({box[0], box[2], *(float(np.clip(x, box[0], box[2]))
+                    for other in others for x in (other[0], other[2]))})
+        ys = sorted({box[1], box[3], *(float(np.clip(y, box[1], box[3]))
+                    for other in others for y in (other[1], other[3]))})
+        exclusive = 0.
+        for x1, x2 in zip(xs, xs[1:]):
+            for y1, y2 in zip(ys, ys[1:]):
+                x, y = (x1 + x2) / 2, (y1 + y2) / 2
+                if not any(other[0] < x < other[2] and other[1] < y < other[3] for other in others):
+                    exclusive += (x2 - x1) * (y2 - y1)
+        fraction = exclusive / max(float(np.prod(box[2:] - box[:2])), 1e-12)
+        self.diagnostics[index]['candidate_exclusive_fraction'] = fraction
+        return fraction > .5
 
     def select(self, candidates, histograms, width, height, now, camera_motion=None):
         self.competition_diagnostic = {'reason': 'inactive'}
@@ -265,6 +313,7 @@ class VehicleTargetLock:
         elapsed = self.elapsed_since_seen
         stale = self.mode == 'reacquiring'
         recovering = elapsed >= 2.0
+        self.scale_prediction_clamped = False
         if stale:
             # Camera yaw and target motion invalidate old extrapolation. Keep
             # identity evidence, but use a bounded last-view search with stronger
@@ -280,6 +329,12 @@ class VehicleTargetLock:
             self.last_predict = now
             transition = np.eye(8)
             transition[:4, 4:] = np.eye(4) * dt
+            if self.bounded_scale_prediction and elapsed > .5:
+                # Damped scale velocity has a finite, frame-rate-independent integral.
+                observed_dt = min(dt, max(0., .5 - max(0., elapsed - dt)))
+                decay = math.exp(-(dt - observed_dt))
+                transition[2:4, 6:8] = np.eye(2) * (observed_dt + 1. - decay)
+                transition[6:8, 6:8] = np.eye(2) * decay
             self.filter.transitionMatrix = transition
             noise = np.zeros((8, 8))
             for axis, variance in enumerate([0.03**2] * 2 + [0.15**2] * 2):
@@ -288,6 +343,17 @@ class VehicleTargetLock:
                 noise[axis + 4, axis + 4] = variance * dt**2
             self.filter.processNoiseCov = noise
             predicted = self.filter.predict()[:4]
+            if self.bounded_scale_prediction and elapsed > .5:
+                state = self.filter.statePost.copy()
+                bounded = np.clip(state[2:4], self.last_measurement[2:4] - math.log(1.25),
+                                  self.last_measurement[2:4] + math.log(1.25))
+                clamped = np.abs(state[2:4] - bounded)[:, 0] > 1e-12
+                self.scale_prediction_clamped = bool(np.any(clamped))
+                state[2:4] = bounded
+                state[6:8][clamped] = 0.
+                self.filter.statePost = state
+                self.filter.statePre = state.copy()
+                predicted = state[:4].copy()
             covariance = self.filter.errorCovPre[:4, :4] + self.filter.measurementNoiseCov
 
         matches = []
@@ -328,19 +394,30 @@ class VehicleTargetLock:
             diagnostic.update(confidence_gate=self.confidence_threshold,
                               low_confidence_continuation=weak and continuation,
                               weak_idless_candidate=weak_idless)
-            if risk:
+            if risk and not self.overlap_candidate_recovery:
                 reasons.append(risk)
                 diagnostic['crossing_risk_evidence'] = dict(self.crossing_risk_diagnostic)
             elif self.overlap_guard_active:
                 # Preserve the pre-overlap shape instead of learning a merged
                 # box or trusting an old tracker ID attached to another car.
                 diagnostic.update(overlap_recovery=True, overlap_width_ratio_max=1.35)
+                if risk:
+                    diagnostic['crossing_risk_evidence'] = dict(self.crossing_risk_diagnostic)
+                if index in self.merged_candidates:
+                    reasons.append('merged_vehicle_box')
+                elif self.overlap_candidate_recovery and not self.overlap_distinguishable(index, candidates):
+                    reasons.append('overlap_ambiguous_geometry')
                 if weak:
                     reasons.append('overlap_recovery_requires_strong')
                 if similarity is None or similarity < 0.85:
                     reasons.append('overlap_recovery_appearance')
-                if measurement[2, 0] - self.last_measurement[2, 0] > math.log(1.35):
+                size_change = measurement[2:4] - self.last_measurement[2:4]
+                shape_growth = (float(np.max(size_change)) if self.bounded_scale_prediction
+                                else float(size_change[0, 0]))
+                if shape_growth > math.log(1.35):
                     reasons.append('overlap_shape_gate')
+            diagnostic.update(scale_prediction_clamped=self.scale_prediction_clamped,
+                              predicted_size_px=(np.exp(predicted[2:4, 0]) * [width, height]).tolist())
             if weak_idless:
                 anchor_age = None if self.last_strong_seen is None else max(0.0, now - self.last_strong_seen)
                 diagnostic.update(strong_anchor_age_s=anchor_age, strong_anchor_max_age_s=self.weak_idless_max_age)
@@ -407,6 +484,7 @@ class VehicleTargetLock:
         changed_id = selected[0] != self.target_id or selected[0] is None
         near_continuation = (elapsed <= 0.75 and np.linalg.norm(residual[:2]) < 0.025
                              and np.max(np.abs(residual[2:])) < 0.2)
+        preserve_overlap = False
         required = self.weak_idless_confirm_frames if weak_idless else 3 if recovering or self.overlap_guard_active else 2
         if competition_confirmed:
             self.diagnostics[index].update(confirmation_count=self.competition.consecutive[selected[0]],
@@ -414,12 +492,23 @@ class VehicleTargetLock:
         elif weak_idless or recovering or self.overlap_guard_active or (changed_id and not near_continuation):
             if not self.confirm(selected, measurement, now, required,
                                 evidence='weak_idless' if weak_idless else
+                                'partial_overlap' if risk and self.overlap_candidate_recovery else
                                 'overlap_recovery' if self.overlap_guard_active else
                                 'recovery' if recovering else 'standard'):
                 self.mark_pending(index, required)
                 return None
             self.diagnostics[index].update(confirmation_count=self.pending_count,
                                            confirmation_required=required)
+            preserve_overlap = (self.overlap_confirmation_continuity
+                                and self.pending_evidence in ('partial_overlap', 'overlap_recovery'))
+        elif (self.overlap_confirmation_continuity and self.pending_count >= 3
+              and self.pending_evidence in ('partial_overlap', 'overlap_recovery')
+              and selected[0] is not None and selected[2] >= self.confidence_threshold
+              and self.confirmation_continuous(selected, measurement, now, self.pending_evidence)):
+            # Keep mature overlap evidence current only with real, gate-passing observations.
+            self.confirm(selected, measurement, now, 3, self.pending_evidence)
+            preserve_overlap = True
+        self.diagnostics[index]['overlap_confirmation_preserved'] = preserve_overlap
         if stale:
             self.reset_prediction(measurement, now)
             self.diagnostics[index]['geometry_update'] = 'full_reset'
@@ -436,7 +525,10 @@ class VehicleTargetLock:
                 state[6:] = 0.
             self.filter.statePost = state
         return self.accept(selected, histograms[index], measurement, now, index,
-                           preserve_confirmation=weak_idless)
+                           preserve_confirmation=weak_idless or preserve_overlap or bool(
+                               risk and self.overlap_candidate_recovery),
+                           overlap_continuation=bool(risk and self.overlap_candidate_recovery),
+                           overlap_confirmation=preserve_overlap)
 
     def mark_pending(self, index, required):
         self.reason = 'pending_confirmation'
@@ -444,7 +536,8 @@ class VehicleTargetLock:
                                        confirmation_count=self.pending_count,
                                        confirmation_required=required)
 
-    def accept(self, selected, histogram, measurement, now, index, preserve_confirmation=False):
+    def accept(self, selected, histogram, measurement, now, index, preserve_confirmation=False,
+               overlap_continuation=False, overlap_confirmation=False):
         # An identity-associated raw box may temporarily lack a tracker ID.
         # Keep the last known ID; do not disable low-score continuity by erasing it.
         if selected[0] is not None:
@@ -456,11 +549,14 @@ class VehicleTargetLock:
         if not preserve_confirmation:
             self.clear_pending()
         self.reason = 'confirmed'
-        self.overlap_guard_active = False
-        self.overlap_guard_reason = None
-        self.competition.clear()
+        if not overlap_continuation:
+            self.overlap_guard_active = False
+            self.overlap_guard_reason = None
+            self.competition.clear()
         self.diagnostics[index].update(accepted=True, reason='confirmed',
-                                       weak_idless_confirmed=preserve_confirmation)
+                                       weak_idless_confirmed=(preserve_confirmation and not overlap_continuation
+                                                              and not overlap_confirmation),
+                                       overlap_continuation=overlap_continuation)
         if self.reference is None and histogram is not None:
             self.reference = histogram.copy()
         return selected

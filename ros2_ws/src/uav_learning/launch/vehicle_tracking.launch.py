@@ -19,6 +19,7 @@ def generate_launch_description():
         DeclareLaunchArgument('detector_backend', default_value='torch'),
         DeclareLaunchArgument('backend_artifacts', default_value=''),
         DeclareLaunchArgument('predict_box_scale_velocity', default_value='true'),
+        DeclareLaunchArgument('overlap_confirmation_continuity', default_value='true'),
         DeclareLaunchArgument('perception_python', default_value=''),
         DeclareLaunchArgument('target_roi_enabled', default_value='true'),
         DeclareLaunchArgument('recovery_competition_enabled', default_value='false'),
@@ -26,6 +27,8 @@ def generate_launch_description():
         DeclareLaunchArgument('occlusion_enabled', default_value='false'),
         DeclareLaunchArgument('vehicle_speed', default_value='0.8'),
         DeclareLaunchArgument('traffic_scenario', default_value='crossing'),
+        DeclareLaunchArgument('distractor_color', default_value='auto'),
+        DeclareLaunchArgument('parked_vehicle_y', default_value='-12.0'),
         DeclareLaunchArgument('smooth_recovery_setpoints', default_value='false'),
         DeclareLaunchArgument('occlusion_start', default_value='15.0'),
         DeclareLaunchArgument('occlusion_duration', default_value='4.0'),
@@ -37,6 +40,9 @@ def generate_launch_description():
              output='screen', parameters=[{
                  'use_sim_time': True,
                  'traffic_scenario': LaunchConfiguration('traffic_scenario'),
+                 'distractor_color': LaunchConfiguration('distractor_color'),
+                 'parked_vehicle_y': ParameterValue(
+                     LaunchConfiguration('parked_vehicle_y'), value_type=float),
                  'occlusion_enabled': ParameterValue(
                      LaunchConfiguration('occlusion_enabled'), value_type=bool),
                  'vehicle_speed': ParameterValue(
@@ -57,6 +63,8 @@ def generate_launch_description():
                  'backend_artifacts': ParameterValue(LaunchConfiguration('backend_artifacts'), value_type=str),
                  'predict_box_scale_velocity': ParameterValue(
                      LaunchConfiguration('predict_box_scale_velocity'), value_type=bool),
+                 'overlap_confirmation_continuity': ParameterValue(
+                     LaunchConfiguration('overlap_confirmation_continuity'), value_type=bool),
                  'target_roi_enabled': ParameterValue(
                      LaunchConfiguration('target_roi_enabled'), value_type=bool),
                  'recovery_competition_enabled': ParameterValue(

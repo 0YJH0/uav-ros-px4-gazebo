@@ -1,0 +1,189 @@
+{
+  "name": "left_overtaking_05",
+  "group": "left_overtaking",
+  "directory": "/home/yjh/ROS2_manmade/results/vehicle_tracking_validation/openvino_two_scenario_repeat_20261011_01/left_overtaking_05",
+  "traffic_scenario": "overtaking",
+  "attempted": true,
+  "completed": true,
+  "task_passed": true,
+  "identity_verified": true,
+  "scenario_verified": true,
+  "strict_joint_passed": false,
+  "failure_reasons": [
+    "service_receipt_sequence_incomplete:scene"
+  ],
+  "coverage_percent": 93.69703099504355,
+  "track_losses": 1,
+  "unplanned_losses": 0,
+  "planned_losses": 1,
+  "recovery_episodes": [
+    {
+      "loss_wall_s": 77.9904390439624,
+      "planned_occlusion": true,
+      "confirmation_wall_s": 83.390133058012,
+      "duration_s": 5.399694014049601,
+      "censored": false,
+      "censor_lower_bound_s": null,
+      "recovery_timeout": false
+    }
+  ],
+  "unplanned_recovery_mean_s": null,
+  "unplanned_recovery_max_s": null,
+  "unplanned_recovery_censored_count": 0,
+  "recovery_timeout_count": 0,
+  "planned_recovery_mean_s": 1.6122665430302732,
+  "planned_recovery_max_s": 1.6122665430302732,
+  "planned_occlusion_recoveries_s": [
+    1.6122665430302732
+  ],
+  "wrong_identity_observations": 0,
+  "scorable_identity_switches": 0,
+  "identity_scorable_fraction": 0.9578804347826086,
+  "post_identity_frames": 356,
+  "identity_phase_counts": {
+    "pre": {
+      "unconfirmed": 9,
+      "tracked_vehicle": 288,
+      "panel_occlusion_unscorable": 22
+    },
+    "during": {
+      "tracked_vehicle": 61
+    },
+    "post": {
+      "tracked_vehicle": 356
+    }
+  },
+  "identity_reason_counts": {
+    "no_accepted_box": 9,
+    "unique_projection_support": 705
+  },
+  "scene_requests": {
+    "total": 1046,
+    "failures": 0,
+    "receipt_errors": 0,
+    "client_sequences": {
+      "scene": {
+        "count": 524,
+        "first": 5,
+        "last": 528,
+        "complete_from_one": false,
+        "missing": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "duplicates": []
+      },
+      "traffic": {
+        "count": 522,
+        "first": 1,
+        "last": 522,
+        "complete_from_one": true,
+        "missing": [],
+        "duplicates": []
+      }
+    },
+    "files": {
+      "scene_service.jsonl": {
+        "rows": 524,
+        "malformed_lines": [],
+        "sha256": "c6401856017a2eafffbabb8c493c6bc93e59ef06a3fd5761d438b8eae425f5cb"
+      },
+      "traffic_service.jsonl": {
+        "rows": 522,
+        "malformed_lines": [],
+        "sha256": "9e721094e16193d3018ff827e9d096b323c63e499f6737555d5d6affb04d052e"
+      }
+    },
+    "errors": [
+      "service_receipt_sequence_incomplete:scene"
+    ],
+    "passed": false
+  },
+  "scene_request_failures": 0,
+  "ulog_safety": {
+    "armed_failsafe_observations": 0,
+    "armed_offboard_lost_observations": 0,
+    "ulog_dropout_events": 0
+  },
+  "safety_event_observations": 0,
+  "px4_initial_parameter_sha256": "a0838da7fd652a7dc3cb2f08749532ace532a04218d2809baedbcccf9126c3c0",
+  "ulog_sha256": "a03a2787b52e02628554353102f60d40863c52d0493e193086e43e7241c9a4eb",
+  "integrity": {
+    "passed": true,
+    "errors": [],
+    "verified_source_files": 40,
+    "model_sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5"
+  },
+  "geometry_evidence": {
+    "traffic_started": true,
+    "traffic_completed": true,
+    "overtaking_observed": true,
+    "minimum_world_lateral_clearance_m": 1.458896028816499
+  },
+  "association_frames": 1210,
+  "association_frame_integrity": true,
+  "timing_all_recorded_associations": {
+    "processing_s": {
+      "count": 1210,
+      "mean": 0.12569831246548632,
+      "sample_std": 0.0269958755925543,
+      "min": 0.09409824601607397,
+      "max": 0.3337542529916391,
+      "p95": 0.2100975048582768,
+      "worst": 0.3337542529916391
+    },
+    "target_publish_age_s": {
+      "count": 1210,
+      "mean": 0.1555529589022025,
+      "sample_std": 0.050210529039104224,
+      "min": 0.09091774997068569,
+      "max": 0.38990300201112404,
+      "p95": 0.24831873491930306,
+      "worst": 0.38990300201112404
+    },
+    "queue_wait_s": {
+      "count": 1210,
+      "mean": 0.03101356120646377,
+      "sample_std": 0.03603770825938177,
+      "min": 0.0002028830349445343,
+      "max": 0.19952405500225723,
+      "p95": 0.10060461910034064,
+      "worst": 0.19952405500225723
+    },
+    "full_frame_yolo_s": {
+      "count": 1210,
+      "mean": 0.11030294601006957,
+      "sample_std": 0.005515241284845141,
+      "min": 0.08511676703346893,
+      "max": 0.13455480197444558,
+      "p95": 0.11944756858865731,
+      "worst": 0.13455480197444558
+    }
+  },
+  "interventions": [],
+  "safe_to_continue": true,
+  "input_sha256": {
+    "report.json": "e29b1f5cf9400fe501f18fa105170688a1be702fb59642eba2240c26cbf4cc18",
+    "identity_report.json": "ee7157e53ee31cd5222b7b46a8455a8c06b1e85339f84f7db61b1aa1cfd48487",
+    "supervisor.json": "5e7e0c13bb71677c0c84933a980ec394014bcff5a8524d321f27856c80e03f50",
+    "runtime_parameters.json": "9c01caab5e13e0733859b4a04f0c06fac4893838e6d8fe3e64704b5a19b1e065",
+    "implementation_snapshot.json": "9de1c5207e6328cb366cdab675c30722fbb9a29eabaae1ea8443280d27eeceb8",
+    "association.jsonl": "268e8ef0f772f70a7d1f319264b4e632cdedd5452249fa56494d8e59304149de"
+  },
+  "audit_script_sha256": "79384a55b3054af0c4b34e904e2fdc1a7c251279d7e28b7a1686a1120dfa690f",
+  "track_mean_abs_pixel_error": 12.792614879235266,
+  "track_p95_abs_pixel_error": 35.22051930427551,
+  "final_home_horizontal_error_m": 0.6947752893362609,
+  "drone_follow_travel_m": 68.78389585090953,
+  "wall_duration_s": 176.59983058297075,
+  "processing_mean_s": 0.12569831246548632,
+  "processing_p95_s": 0.2100975048582768,
+  "target_publish_age_mean_s": 0.1555529589022025,
+  "target_publish_age_p95_s": 0.24831873491930306,
+  "queue_wait_mean_s": 0.03101356120646377,
+  "queue_wait_p95_s": 0.10060461910034064,
+  "full_frame_yolo_mean_s": 0.11030294601006957,
+  "full_frame_yolo_p95_s": 0.11944756858865731
+}

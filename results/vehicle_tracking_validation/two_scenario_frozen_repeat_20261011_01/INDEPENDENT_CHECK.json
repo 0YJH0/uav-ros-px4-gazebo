@@ -1,0 +1,2061 @@
+{
+  "check_passed": true,
+  "checks_count": 778,
+  "mismatches": [],
+  "meaning": "Report/evidence consistency check, not a replacement for frozen trial verdicts.",
+  "planned_trials": 20,
+  "completed_trials": 20,
+  "shared_frozen_files_checked": 537,
+  "source_archive_errors": [],
+  "total_native_requests_recorded": 17410,
+  "total_native_requests_failed": 1,
+  "total_missing_service_receipts": 4,
+  "groups_recomputed": {
+    "left_overtaking": {
+      "metrics": {
+        "task_passed": {
+          "count": 10,
+          "mean": 1.0,
+          "sample_std": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "p95": 1.0,
+          "worst": 1.0
+        },
+        "strict_joint_passed": {
+          "count": 10,
+          "mean": 0.8,
+          "sample_std": 0.4216370213557839,
+          "min": 0.0,
+          "max": 1.0,
+          "p95": 1.0,
+          "worst": 0.0
+        },
+        "identity_verified": {
+          "count": 10,
+          "mean": 1.0,
+          "sample_std": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "p95": 1.0,
+          "worst": 1.0
+        },
+        "coverage_percent": {
+          "count": 10,
+          "mean": 92.4271809695118,
+          "sample_std": 1.1001719602176263,
+          "min": 90.4638376862384,
+          "max": 93.79359313465528,
+          "p95": 93.48623204319972,
+          "worst": 90.4638376862384
+        },
+        "unplanned_losses": {
+          "count": 10,
+          "mean": 0.6,
+          "sample_std": 0.8432740427115678,
+          "min": 0.0,
+          "max": 2.0,
+          "p95": 2.0,
+          "worst": 2.0
+        },
+        "unplanned_recovery_mean_s": {
+          "count": 4,
+          "mean": 0.4804674191400409,
+          "sample_std": 0.06850552410408746,
+          "min": 0.4001091230311431,
+          "max": 0.5497225649887696,
+          "p95": 0.5457429649424739,
+          "worst": 0.5497225649887696
+        },
+        "unplanned_recovery_max_s": {
+          "count": 4,
+          "mean": 0.5058773082564585,
+          "sample_std": 0.08244953874892987,
+          "min": 0.4001091230311431,
+          "max": 0.6000793799757957,
+          "p95": 0.5885462576814461,
+          "worst": 0.6000793799757957
+        },
+        "unplanned_recovery_censored_count": {
+          "count": 10,
+          "mean": 0.0,
+          "sample_std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "recovery_timeout_count": {
+          "count": 10,
+          "mean": 0.0,
+          "sample_std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "planned_recovery_mean_s": {
+          "count": 10,
+          "mean": 1.6135985328932292,
+          "sample_std": 0.4968634904417606,
+          "min": 1.0337199859786779,
+          "max": 2.4905092509579845,
+          "p95": 2.4603275003435554,
+          "worst": 2.4905092509579845
+        },
+        "planned_recovery_max_s": {
+          "count": 10,
+          "mean": 1.6135985328932292,
+          "sample_std": 0.4968634904417606,
+          "min": 1.0337199859786779,
+          "max": 2.4905092509579845,
+          "p95": 2.4603275003435554,
+          "worst": 2.4905092509579845
+        },
+        "track_mean_abs_pixel_error": {
+          "count": 10,
+          "mean": 15.620900729153691,
+          "sample_std": 1.6411207725329295,
+          "min": 13.007271149577573,
+          "max": 18.21179320529336,
+          "p95": 17.864065593840134,
+          "worst": 18.21179320529336
+        },
+        "track_p95_abs_pixel_error": {
+          "count": 10,
+          "mean": 37.247915267944336,
+          "sample_std": 1.0734547974607167,
+          "min": 35.194244384765625,
+          "max": 38.751922845840454,
+          "p95": 38.618424475193024,
+          "worst": 38.751922845840454
+        },
+        "final_home_horizontal_error_m": {
+          "count": 10,
+          "mean": 0.6759754853529123,
+          "sample_std": 0.02885063021412144,
+          "min": 0.6276943580817156,
+          "max": 0.7200720984289399,
+          "p95": 0.7156986894343079,
+          "worst": 0.7200720984289399
+        },
+        "drone_follow_travel_m": {
+          "count": 10,
+          "mean": 55.36229387093358,
+          "sample_std": 6.667000087926713,
+          "min": 45.66069837626884,
+          "max": 64.6166439189654,
+          "p95": 64.04805362510358,
+          "worst": 45.66069837626884
+        },
+        "full_frame_yolo_mean_s": {
+          "count": 10,
+          "mean": 0.16265793676890106,
+          "sample_std": 0.03275662084470819,
+          "min": 0.12546843964425275,
+          "max": 0.2295170651500008,
+          "p95": 0.2083996048833621,
+          "worst": 0.2295170651500008
+        },
+        "full_frame_yolo_p95_s": {
+          "count": 10,
+          "mean": 0.20931890075822593,
+          "sample_std": 0.060142381829799474,
+          "min": 0.13966090354369953,
+          "max": 0.294574344943976,
+          "p95": 0.2801264057381194,
+          "worst": 0.294574344943976
+        },
+        "processing_mean_s": {
+          "count": 10,
+          "mean": 0.18012759844388926,
+          "sample_std": 0.03518850634814072,
+          "min": 0.14054545393916773,
+          "max": 0.25138068808744374,
+          "p95": 0.22877308609015076,
+          "worst": 0.25138068808744374
+        },
+        "processing_p95_s": {
+          "count": 10,
+          "mean": 0.26657676170114425,
+          "sample_std": 0.05234705668873155,
+          "min": 0.16712815346545537,
+          "max": 0.35333380783267776,
+          "p95": 0.3302562860249598,
+          "worst": 0.35333380783267776
+        },
+        "target_publish_age_mean_s": {
+          "count": 10,
+          "mean": 0.2280202085040293,
+          "sample_std": 0.04480099804306909,
+          "min": 0.17826038184323892,
+          "max": 0.3143508113928311,
+          "p95": 0.2889365900443777,
+          "worst": 0.3143508113928311
+        },
+        "target_publish_age_p95_s": {
+          "count": 10,
+          "mean": 0.340444517978467,
+          "sample_std": 0.06149083901714368,
+          "min": 0.26054890479426823,
+          "max": 0.4485123461287003,
+          "p95": 0.4221471318662224,
+          "worst": 0.4485123461287003
+        },
+        "queue_wait_mean_s": {
+          "count": 10,
+          "mean": 0.04928209828255242,
+          "sample_std": 0.010087748394640217,
+          "min": 0.03712516381625165,
+          "max": 0.06481391163535938,
+          "p95": 0.06182888943499753,
+          "worst": 0.06481391163535938
+        },
+        "queue_wait_p95_s": {
+          "count": 10,
+          "mean": 0.1346234519468271,
+          "sample_std": 0.02194145426251428,
+          "min": 0.10840216500218956,
+          "max": 0.175504517214722,
+          "p95": 0.1639960520365275,
+          "worst": 0.175504517214722
+        },
+        "wrong_identity_observations": {
+          "count": 10,
+          "mean": 0.0,
+          "sample_std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "scorable_identity_switches": {
+          "count": 10,
+          "mean": 0.0,
+          "sample_std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "identity_scorable_fraction": {
+          "count": 10,
+          "mean": 0.9454651971847775,
+          "sample_std": 0.008961501559876866,
+          "min": 0.9296703296703297,
+          "max": 0.9542097488921714,
+          "p95": 0.9537216118906943,
+          "worst": 0.9296703296703297
+        },
+        "post_identity_frames": {
+          "count": 10,
+          "mean": 208.1,
+          "sample_std": 68.24539056473583,
+          "min": 105.0,
+          "max": 295.0,
+          "p95": 295.0,
+          "worst": 105.0
+        },
+        "scene_request_failures": {
+          "count": 10,
+          "mean": 0.1,
+          "sample_std": 0.31622776601683794,
+          "min": 0.0,
+          "max": 1.0,
+          "p95": 0.5499999999999989,
+          "worst": 1.0
+        },
+        "safety_event_observations": {
+          "count": 10,
+          "mean": 0.0,
+          "sample_std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "wall_duration_s": {
+          "count": 10,
+          "mean": 195.47434581390698,
+          "sample_std": 11.845719310757522,
+          "min": 183.25359461898915,
+          "max": 221.5020330310217,
+          "p95": 213.75384809261593,
+          "worst": 221.5020330310217
+        }
+      },
+      "task_passed": 10,
+      "identity_verified": 10,
+      "strict_joint_passed": 8
+    },
+    "lane_change": {
+      "metrics": {
+        "task_passed": {
+          "count": 10,
+          "mean": 1.0,
+          "sample_std": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "p95": 1.0,
+          "worst": 1.0
+        },
+        "strict_joint_passed": {
+          "count": 10,
+          "mean": 0.9,
+          "sample_std": 0.31622776601683794,
+          "min": 0.0,
+          "max": 1.0,
+          "p95": 1.0,
+          "worst": 0.0
+        },
+        "identity_verified": {
+          "count": 10,
+          "mean": 0.9,
+          "sample_std": 0.31622776601683794,
+          "min": 0.0,
+          "max": 1.0,
+          "p95": 1.0,
+          "worst": 0.0
+        },
+        "coverage_percent": {
+          "count": 10,
+          "mean": 90.43634444400332,
+          "sample_std": 2.0525387254887946,
+          "min": 87.831365433764,
+          "max": 93.73859177863383,
+          "p95": 93.51298727058938,
+          "worst": 87.831365433764
+        },
+        "unplanned_losses": {
+          "count": 10,
+          "mean": 2.0,
+          "sample_std": 1.632993161855452,
+          "min": 0.0,
+          "max": 5.0,
+          "p95": 4.549999999999999,
+          "worst": 5.0
+        },
+        "unplanned_recovery_mean_s": {
+          "count": 8,
+          "mean": 1.261513847233194,
+          "sample_std": 1.316307606024945,
+          "min": 0.10027197300223634,
+          "max": 4.326779469032772,
+          "p95": 3.3200806781969714,
+          "worst": 4.326779469032772
+        },
+        "unplanned_recovery_max_s": {
+          "count": 8,
+          "mean": 1.723419843998272,
+          "sample_std": 1.322000232725527,
+          "min": 0.10027197300223634,
+          "max": 4.326779469032772,
+          "p95": 3.652403153121121,
+          "worst": 4.326779469032772
+        },
+        "unplanned_recovery_censored_count": {
+          "count": 10,
+          "mean": 0.0,
+          "sample_std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "recovery_timeout_count": {
+          "count": 10,
+          "mean": 0.0,
+          "sample_std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "planned_recovery_mean_s": {
+          "count": 10,
+          "mean": 1.470256312796846,
+          "sample_std": 0.2895143760964656,
+          "min": 1.0353474000003189,
+          "max": 1.8408432090072893,
+          "p95": 1.7971840879472438,
+          "worst": 1.8408432090072893
+        },
+        "planned_recovery_max_s": {
+          "count": 10,
+          "mean": 1.470256312796846,
+          "sample_std": 0.2895143760964656,
+          "min": 1.0353474000003189,
+          "max": 1.8408432090072893,
+          "p95": 1.7971840879472438,
+          "worst": 1.8408432090072893
+        },
+        "track_mean_abs_pixel_error": {
+          "count": 10,
+          "mean": 15.295673647315036,
+          "sample_std": 3.5736894129166354,
+          "min": 7.416669832865327,
+          "max": 18.908428989863022,
+          "p95": 18.394431411095212,
+          "worst": 18.908428989863022
+        },
+        "track_p95_abs_pixel_error": {
+          "count": 10,
+          "mean": 34.842092871665955,
+          "sample_std": 6.771143124941395,
+          "min": 15.949280261993408,
+          "max": 39.508363008499146,
+          "p95": 38.67321002483368,
+          "worst": 39.508363008499146
+        },
+        "final_home_horizontal_error_m": {
+          "count": 10,
+          "mean": 0.7017241315223389,
+          "sample_std": 0.03590874956810976,
+          "min": 0.6501565592485988,
+          "max": 0.7567268947904173,
+          "p95": 0.7495946818053422,
+          "worst": 0.7567268947904173
+        },
+        "drone_follow_travel_m": {
+          "count": 10,
+          "mean": 54.52988948920612,
+          "sample_std": 6.032708164300854,
+          "min": 44.89688260202385,
+          "max": 62.95775707032562,
+          "p95": 62.59012534877901,
+          "worst": 44.89688260202385
+        },
+        "full_frame_yolo_mean_s": {
+          "count": 10,
+          "mean": 0.1647787322137268,
+          "sample_std": 0.027726088613429924,
+          "min": 0.12891505594536207,
+          "max": 0.22122482631158868,
+          "p95": 0.20389320584116377,
+          "worst": 0.22122482631158868
+        },
+        "full_frame_yolo_p95_s": {
+          "count": 10,
+          "mean": 0.22694415147154356,
+          "sample_std": 0.056057042961797865,
+          "min": 0.14333199647371656,
+          "max": 0.29678302322281525,
+          "p95": 0.2847654334901016,
+          "worst": 0.29678302322281525
+        },
+        "processing_mean_s": {
+          "count": 10,
+          "mean": 0.1837124756713136,
+          "sample_std": 0.028768540739931625,
+          "min": 0.14735796368768206,
+          "max": 0.24165881681534795,
+          "p95": 0.22328687661039615,
+          "worst": 0.24165881681534795
+        },
+        "processing_p95_s": {
+          "count": 10,
+          "mean": 0.28380304286605673,
+          "sample_std": 0.031777385598105314,
+          "min": 0.23393593979708385,
+          "max": 0.32700791375827976,
+          "p95": 0.31661864822162883,
+          "worst": 0.32700791375827976
+        },
+        "target_publish_age_mean_s": {
+          "count": 10,
+          "mean": 0.2332899597063441,
+          "sample_std": 0.03708666716843358,
+          "min": 0.1863324657757106,
+          "max": 0.3068871734165135,
+          "p95": 0.28417698383248163,
+          "worst": 0.3068871734165135
+        },
+        "target_publish_age_p95_s": {
+          "count": 10,
+          "mean": 0.3601187927546561,
+          "sample_std": 0.04629263117440763,
+          "min": 0.30002377189230156,
+          "max": 0.4498032159899594,
+          "p95": 0.4180279711447654,
+          "worst": 0.4498032159899594
+        },
+        "queue_wait_mean_s": {
+          "count": 10,
+          "mean": 0.05098067286775411,
+          "sample_std": 0.008594540216660677,
+          "min": 0.04018278868985775,
+          "max": 0.06703075435493744,
+          "p95": 0.06254876275203808,
+          "worst": 0.06703075435493744
+        },
+        "queue_wait_p95_s": {
+          "count": 10,
+          "mean": 0.1377951763756573,
+          "sample_std": 0.015611128029830099,
+          "min": 0.11668776111328036,
+          "max": 0.1667649972368963,
+          "p95": 0.16036661013204137,
+          "worst": 0.1667649972368963
+        },
+        "wrong_identity_observations": {
+          "count": 10,
+          "mean": 0.0,
+          "sample_std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "scorable_identity_switches": {
+          "count": 10,
+          "mean": 0.0,
+          "sample_std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "identity_scorable_fraction": {
+          "count": 10,
+          "mean": 0.8988119984937022,
+          "sample_std": 0.06103999874260029,
+          "min": 0.7604017216642754,
+          "max": 0.9512578616352201,
+          "p95": 0.9490846810422282,
+          "worst": 0.7604017216642754
+        },
+        "post_identity_frames": {
+          "count": 9,
+          "mean": 89.0,
+          "sample_std": 49.67393682807917,
+          "min": 34.0,
+          "max": 179.0,
+          "p95": 165.79999999999998,
+          "worst": 34.0
+        },
+        "scene_request_failures": {
+          "count": 10,
+          "mean": 0.0,
+          "sample_std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "safety_event_observations": {
+          "count": 10,
+          "mean": 0.0,
+          "sample_std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "p95": 0.0,
+          "worst": 0.0
+        },
+        "wall_duration_s": {
+          "count": 10,
+          "mean": 198.2684819121845,
+          "sample_std": 9.50303272668328,
+          "min": 185.24531879200367,
+          "max": 217.32596169796307,
+          "p95": 211.4257107037789,
+          "worst": 217.32596169796307
+        }
+      },
+      "task_passed": 10,
+      "identity_verified": 9,
+      "strict_joint_passed": 9
+    }
+  },
+  "trials": [
+    {
+      "name": "left_overtaking_01",
+      "group": "left_overtaking",
+      "strict_joint_passed": false,
+      "failure_reasons": [
+        "scene_service_requests_failed"
+      ],
+      "coverage_percent": 90.55609488619875,
+      "native_requests": 836,
+      "native_failed_requests": 1,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "959eb3e50e307b7e395f9a85f1c66bb0a4f236210438ea1143de3b9d920bf364",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 14,
+          "tracked_vehicle": 256,
+          "panel_occlusion_unscorable": 23
+        },
+        "during": {
+          "tracked_vehicle": 58
+        },
+        "post": {
+          "tracked_vehicle": 181
+        }
+      }
+    },
+    {
+      "name": "lane_change_01",
+      "group": "lane_change",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 88.53211805621876,
+      "native_requests": 897,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "e410e685c81e70c57437e0711815af020e04c758d70e55e3a550968e02d68827",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 20,
+          "tracked_vehicle": 182,
+          "panel_occlusion_unscorable": 21
+        },
+        "during": {
+          "tracked_vehicle": 242,
+          "unconfirmed": 3
+        },
+        "post": {
+          "tracked_vehicle": 121
+        }
+      }
+    },
+    {
+      "name": "left_overtaking_02",
+      "group": "left_overtaking",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 92.43793284344916,
+      "native_requests": 816,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "ff55a256df3b481867482713374a3e51d228d94bdba8ad28fb0a15bf8ef58866",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "tracked_vehicle": 277,
+          "unconfirmed": 5,
+          "panel_occlusion_unscorable": 21
+        },
+        "during": {
+          "tracked_vehicle": 58
+        },
+        "post": {
+          "tracked_vehicle": 164
+        }
+      }
+    },
+    {
+      "name": "lane_change_02",
+      "group": "lane_change",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 91.74685342519187,
+      "native_requests": 832,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "efd549d28dfba95d2dcf55b95b59d780ffa7a965f9d05a00c134860cd40deb60",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 6,
+          "tracked_vehicle": 205,
+          "panel_occlusion_unscorable": 21
+        },
+        "during": {
+          "tracked_vehicle": 234,
+          "unconfirmed": 3
+        },
+        "post": {
+          "tracked_vehicle": 69
+        }
+      }
+    },
+    {
+      "name": "left_overtaking_03",
+      "group": "left_overtaking",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 92.29584096269,
+      "native_requests": 811,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "b790a94c2bb05e16b308954bdc75c79fc31eaf1ddead33223f6d72dfa7b14420",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 8,
+          "tracked_vehicle": 279,
+          "panel_occlusion_unscorable": 23
+        },
+        "during": {
+          "tracked_vehicle": 59
+        },
+        "post": {
+          "tracked_vehicle": 162
+        }
+      }
+    },
+    {
+      "name": "lane_change_03",
+      "group": "lane_change",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 90.03352260916908,
+      "native_requests": 854,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "fe8e1617dc10ce71118b53574be2755d60429b2390b471541a218290fdc7689d",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 9,
+          "tracked_vehicle": 195,
+          "panel_occlusion_unscorable": 22
+        },
+        "during": {
+          "tracked_vehicle": 232,
+          "unconfirmed": 2
+        },
+        "post": {
+          "tracked_vehicle": 78,
+          "unconfirmed": 6
+        }
+      }
+    },
+    {
+      "name": "left_overtaking_04",
+      "group": "left_overtaking",
+      "strict_joint_passed": false,
+      "failure_reasons": [
+        "service_receipt_sequence_incomplete:scene"
+      ],
+      "coverage_percent": 93.0676692297426,
+      "native_requests": 979,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "traffic": []
+      },
+      "ulog_sha256": "339eb00f58d383145d006ac3d31770332ebd4139b965af7006eace76bfc4ca3a",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 7,
+          "tracked_vehicle": 291,
+          "panel_occlusion_unscorable": 23
+        },
+        "during": {
+          "tracked_vehicle": 56,
+          "unconfirmed": 3
+        },
+        "post": {
+          "tracked_vehicle": 295
+        }
+      }
+    },
+    {
+      "name": "lane_change_04",
+      "group": "lane_change",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 93.23724842742394,
+      "native_requests": 973,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "d044a7c99f3c72c3b0e2fb3d552a030fd658676a482a4ec74046b55ed64aac62",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 8,
+          "tracked_vehicle": 212,
+          "panel_occlusion_unscorable": 23
+        },
+        "during": {
+          "tracked_vehicle": 245,
+          "unconfirmed": 2
+        },
+        "post": {
+          "tracked_vehicle": 179,
+          "unconfirmed": 3
+        }
+      }
+    },
+    {
+      "name": "left_overtaking_05",
+      "group": "left_overtaking",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 93.79359313465528,
+      "native_requests": 971,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "fbcd6c8e0a05e621cd6849d8521b326297f15eb3bd84cc8531b6c7189a884e98",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 8,
+          "tracked_vehicle": 293,
+          "panel_occlusion_unscorable": 23
+        },
+        "during": {
+          "tracked_vehicle": 58
+        },
+        "post": {
+          "tracked_vehicle": 295
+        }
+      }
+    },
+    {
+      "name": "lane_change_05",
+      "group": "lane_change",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 88.25671620474279,
+      "native_requests": 998,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "615ae4e1cc04b7e416b98546460f816a250980655c59997a91ae046e9bcc8731",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 5,
+          "tracked_vehicle": 206,
+          "panel_occlusion_unscorable": 23
+        },
+        "during": {
+          "tracked_vehicle": 241,
+          "unconfirmed": 6,
+          "overlap_unscorable": 6
+        },
+        "post": {
+          "unconfirmed": 32,
+          "overlap_unscorable": 95,
+          "tracked_vehicle": 83
+        }
+      }
+    },
+    {
+      "name": "left_overtaking_06",
+      "group": "left_overtaking",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 93.0449272579608,
+      "native_requests": 950,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "c741e58a1d9d10b9f1691e4cfe3fd07f69d1d6c69ae2b2aabadbd032c39b9cfc",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "tracked_vehicle": 290,
+          "unconfirmed": 13,
+          "panel_occlusion_unscorable": 22
+        },
+        "during": {
+          "tracked_vehicle": 67
+        },
+        "post": {
+          "tracked_vehicle": 277
+        }
+      }
+    },
+    {
+      "name": "lane_change_06",
+      "group": "lane_change",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 90.24244163912456,
+      "native_requests": 837,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "ce1aa7d4bc30f419954d56ebb589684df1199e2a2305af8f265a7733ee945fc1",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "tracked_vehicle": 200,
+          "unconfirmed": 5,
+          "panel_occlusion_unscorable": 20
+        },
+        "during": {
+          "tracked_vehicle": 240,
+          "unconfirmed": 2
+        },
+        "post": {
+          "tracked_vehicle": 46,
+          "unconfirmed": 15,
+          "overlap_unscorable": 16
+        }
+      }
+    },
+    {
+      "name": "left_overtaking_07",
+      "group": "left_overtaking",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 92.4464282675875,
+      "native_requests": 803,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "d066f3269e6d4edfc5d63e25b21902c61106fe4cdc50318bb72fb4d87474bb93",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "tracked_vehicle": 285,
+          "unconfirmed": 5,
+          "panel_occlusion_unscorable": 24
+        },
+        "during": {
+          "tracked_vehicle": 58
+        },
+        "post": {
+          "tracked_vehicle": 154
+        }
+      }
+    },
+    {
+      "name": "lane_change_07",
+      "group": "lane_change",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 89.35296503389245,
+      "native_requests": 847,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "f2b2cd084d524446705c985355de9aeb7b4666d07fd7cc386b09207079b9c0c8",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "tracked_vehicle": 189,
+          "unconfirmed": 6,
+          "panel_occlusion_unscorable": 23
+        },
+        "during": {
+          "tracked_vehicle": 238,
+          "unconfirmed": 2
+        },
+        "post": {
+          "tracked_vehicle": 45,
+          "unconfirmed": 17,
+          "overlap_unscorable": 23
+        }
+      }
+    },
+    {
+      "name": "left_overtaking_08",
+      "group": "left_overtaking",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 93.11056848697626,
+      "native_requests": 944,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "c41cb5a3e24e539c4a897108faf36fadca7e9c620e861c0a413b740ba7d4de1a",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 8,
+          "tracked_vehicle": 283,
+          "panel_occlusion_unscorable": 22
+        },
+        "during": {
+          "tracked_vehicle": 63
+        },
+        "post": {
+          "tracked_vehicle": 264
+        }
+      }
+    },
+    {
+      "name": "lane_change_08",
+      "group": "lane_change",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 87.831365433764,
+      "native_requests": 858,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "9fadccabffb1a7db85a79bade84eaf482c1c48e7f257da7eb948ec27d3fadb9a",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 8,
+          "tracked_vehicle": 208,
+          "panel_occlusion_unscorable": 24
+        },
+        "during": {
+          "tracked_vehicle": 233,
+          "unconfirmed": 10
+        },
+        "post": {
+          "tracked_vehicle": 34,
+          "unconfirmed": 16,
+          "overlap_unscorable": 34
+        }
+      }
+    },
+    {
+      "name": "left_overtaking_09",
+      "group": "left_overtaking",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 93.05491693961919,
+      "native_requests": 833,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "0350aca6218a978dfa16fd5a8d8433e040759a6a030877329e47bd33ec1f2f2c",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "tracked_vehicle": 283,
+          "unconfirmed": 6,
+          "panel_occlusion_unscorable": 20
+        },
+        "during": {
+          "tracked_vehicle": 62,
+          "unconfirmed": 1
+        },
+        "post": {
+          "tracked_vehicle": 184
+        }
+      }
+    },
+    {
+      "name": "lane_change_09",
+      "group": "lane_change",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 93.73859177863383,
+      "native_requests": 936,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "fe3b74a3decf08fae11fe189b6cebab3dcf884d577275151b31b9aa97cb7f8e8",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 6,
+          "tracked_vehicle": 217,
+          "panel_occlusion_unscorable": 23
+        },
+        "during": {
+          "tracked_vehicle": 242,
+          "unconfirmed": 2
+        },
+        "post": {
+          "tracked_vehicle": 146
+        }
+      }
+    },
+    {
+      "name": "left_overtaking_10",
+      "group": "left_overtaking",
+      "strict_joint_passed": true,
+      "failure_reasons": [],
+      "coverage_percent": 90.4638376862384,
+      "native_requests": 724,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "eef8f01b62cb753bb8a443086a0fa6001ba2c8e966d7d3c61973be0374ab3504",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "tracked_vehicle": 258,
+          "unconfirmed": 8,
+          "panel_occlusion_unscorable": 23
+        },
+        "during": {
+          "tracked_vehicle": 60,
+          "unconfirmed": 1
+        },
+        "post": {
+          "tracked_vehicle": 105
+        }
+      }
+    },
+    {
+      "name": "lane_change_10",
+      "group": "lane_change",
+      "strict_joint_passed": false,
+      "failure_reasons": [
+        "scenario_maneuver_not_verified",
+        "independent_identity_not_verified",
+        "post_identity_evidence_insufficient"
+      ],
+      "coverage_percent": 91.39162183187199,
+      "native_requests": 711,
+      "native_failed_requests": 0,
+      "missing_service_sequences": {
+        "scene": [],
+        "traffic": []
+      },
+      "ulog_sha256": "bad78b8258e0eb0ebd68720e3df0b652b4691088f890eb43c906fa28e7c9a928",
+      "ulog_safety": {
+        "armed_failsafe_observations": 0,
+        "armed_offboard_lost_observations": 0,
+        "ulog_dropout_events": 0
+      },
+      "snapshot_source_files_checked": 40,
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 5,
+          "tracked_vehicle": 224,
+          "panel_occlusion_unscorable": 25
+        },
+        "during": {
+          "tracked_vehicle": 227,
+          "unconfirmed": 3
+        },
+        "post": {}
+      }
+    }
+  ],
+  "checks": {
+    "twenty_unique_plan_entries": true,
+    "two_groups_ten_each": true,
+    "exactly_twenty_attempt_ledgers": true,
+    "summary_complete_twenty": true,
+    "freeze_manifest_unchanged": true,
+    "plan_unchanged": true,
+    "shared_frozen_sources_valid": true,
+    "live_model_matches_frozen_model": true,
+    "left_overtaking_01:completed_ledger": true,
+    "left_overtaking_01:ledger_freeze_hash": true,
+    "left_overtaking_01:attempt_time_order": true,
+    "left_overtaking_01:summary_matches_trial_audit": true,
+    "left_overtaking_01:strict_verdict_matches_reasons": true,
+    "left_overtaking_01:coverage_from_raw_report": true,
+    "left_overtaking_01:task_success_from_raw_report": true,
+    "left_overtaking_01:archive_snapshot_hash": true,
+    "left_overtaking_01:model_provenance": true,
+    "left_overtaking_01:all_snapshot_sources_frozen": true,
+    "left_overtaking_01:raw_unchanged:report.json": true,
+    "left_overtaking_01:raw_unchanged:identity_report.json": true,
+    "left_overtaking_01:raw_unchanged:supervisor.json": true,
+    "left_overtaking_01:raw_unchanged:runtime_parameters.json": true,
+    "left_overtaking_01:raw_unchanged:implementation_snapshot.json": true,
+    "left_overtaking_01:raw_unchanged:association.jsonl": true,
+    "left_overtaking_01:valid_client:scene": true,
+    "left_overtaking_01:missing_sequence_accounting:scene": true,
+    "left_overtaking_01:service_log_hash:scene": true,
+    "left_overtaking_01:valid_client:traffic": true,
+    "left_overtaking_01:missing_sequence_accounting:traffic": true,
+    "left_overtaking_01:service_log_hash:traffic": true,
+    "left_overtaking_01:native_failure_count": true,
+    "left_overtaking_01:native_request_count": true,
+    "left_overtaking_01:raw_identity_counts_and_maneuver": true,
+    "left_overtaking_01:timing:processing_s": true,
+    "left_overtaking_01:timing:target_publish_age_s": true,
+    "left_overtaking_01:timing:queue_wait_s": true,
+    "left_overtaking_01:timing:full_frame_yolo_s": true,
+    "left_overtaking_01:ulog_hash_matches_archive": true,
+    "left_overtaking_01:independent_ulog_safety": true,
+    "lane_change_01:completed_ledger": true,
+    "lane_change_01:ledger_freeze_hash": true,
+    "lane_change_01:attempt_time_order": true,
+    "lane_change_01:summary_matches_trial_audit": true,
+    "lane_change_01:strict_verdict_matches_reasons": true,
+    "lane_change_01:coverage_from_raw_report": true,
+    "lane_change_01:task_success_from_raw_report": true,
+    "lane_change_01:archive_snapshot_hash": true,
+    "lane_change_01:model_provenance": true,
+    "lane_change_01:all_snapshot_sources_frozen": true,
+    "lane_change_01:raw_unchanged:report.json": true,
+    "lane_change_01:raw_unchanged:identity_report.json": true,
+    "lane_change_01:raw_unchanged:supervisor.json": true,
+    "lane_change_01:raw_unchanged:runtime_parameters.json": true,
+    "lane_change_01:raw_unchanged:implementation_snapshot.json": true,
+    "lane_change_01:raw_unchanged:association.jsonl": true,
+    "lane_change_01:valid_client:scene": true,
+    "lane_change_01:missing_sequence_accounting:scene": true,
+    "lane_change_01:service_log_hash:scene": true,
+    "lane_change_01:valid_client:traffic": true,
+    "lane_change_01:missing_sequence_accounting:traffic": true,
+    "lane_change_01:service_log_hash:traffic": true,
+    "lane_change_01:native_failure_count": true,
+    "lane_change_01:native_request_count": true,
+    "lane_change_01:raw_identity_counts_and_maneuver": true,
+    "lane_change_01:timing:processing_s": true,
+    "lane_change_01:timing:target_publish_age_s": true,
+    "lane_change_01:timing:queue_wait_s": true,
+    "lane_change_01:timing:full_frame_yolo_s": true,
+    "lane_change_01:ulog_hash_matches_archive": true,
+    "lane_change_01:independent_ulog_safety": true,
+    "left_overtaking_02:completed_ledger": true,
+    "left_overtaking_02:ledger_freeze_hash": true,
+    "left_overtaking_02:attempt_time_order": true,
+    "left_overtaking_02:summary_matches_trial_audit": true,
+    "left_overtaking_02:strict_verdict_matches_reasons": true,
+    "left_overtaking_02:coverage_from_raw_report": true,
+    "left_overtaking_02:task_success_from_raw_report": true,
+    "left_overtaking_02:archive_snapshot_hash": true,
+    "left_overtaking_02:model_provenance": true,
+    "left_overtaking_02:all_snapshot_sources_frozen": true,
+    "left_overtaking_02:raw_unchanged:report.json": true,
+    "left_overtaking_02:raw_unchanged:identity_report.json": true,
+    "left_overtaking_02:raw_unchanged:supervisor.json": true,
+    "left_overtaking_02:raw_unchanged:runtime_parameters.json": true,
+    "left_overtaking_02:raw_unchanged:implementation_snapshot.json": true,
+    "left_overtaking_02:raw_unchanged:association.jsonl": true,
+    "left_overtaking_02:valid_client:scene": true,
+    "left_overtaking_02:missing_sequence_accounting:scene": true,
+    "left_overtaking_02:service_log_hash:scene": true,
+    "left_overtaking_02:valid_client:traffic": true,
+    "left_overtaking_02:missing_sequence_accounting:traffic": true,
+    "left_overtaking_02:service_log_hash:traffic": true,
+    "left_overtaking_02:native_failure_count": true,
+    "left_overtaking_02:native_request_count": true,
+    "left_overtaking_02:raw_identity_counts_and_maneuver": true,
+    "left_overtaking_02:timing:processing_s": true,
+    "left_overtaking_02:timing:target_publish_age_s": true,
+    "left_overtaking_02:timing:queue_wait_s": true,
+    "left_overtaking_02:timing:full_frame_yolo_s": true,
+    "left_overtaking_02:ulog_hash_matches_archive": true,
+    "left_overtaking_02:independent_ulog_safety": true,
+    "lane_change_02:completed_ledger": true,
+    "lane_change_02:ledger_freeze_hash": true,
+    "lane_change_02:attempt_time_order": true,
+    "lane_change_02:summary_matches_trial_audit": true,
+    "lane_change_02:strict_verdict_matches_reasons": true,
+    "lane_change_02:coverage_from_raw_report": true,
+    "lane_change_02:task_success_from_raw_report": true,
+    "lane_change_02:archive_snapshot_hash": true,
+    "lane_change_02:model_provenance": true,
+    "lane_change_02:all_snapshot_sources_frozen": true,
+    "lane_change_02:raw_unchanged:report.json": true,
+    "lane_change_02:raw_unchanged:identity_report.json": true,
+    "lane_change_02:raw_unchanged:supervisor.json": true,
+    "lane_change_02:raw_unchanged:runtime_parameters.json": true,
+    "lane_change_02:raw_unchanged:implementation_snapshot.json": true,
+    "lane_change_02:raw_unchanged:association.jsonl": true,
+    "lane_change_02:valid_client:scene": true,
+    "lane_change_02:missing_sequence_accounting:scene": true,
+    "lane_change_02:service_log_hash:scene": true,
+    "lane_change_02:valid_client:traffic": true,
+    "lane_change_02:missing_sequence_accounting:traffic": true,
+    "lane_change_02:service_log_hash:traffic": true,
+    "lane_change_02:native_failure_count": true,
+    "lane_change_02:native_request_count": true,
+    "lane_change_02:raw_identity_counts_and_maneuver": true,
+    "lane_change_02:timing:processing_s": true,
+    "lane_change_02:timing:target_publish_age_s": true,
+    "lane_change_02:timing:queue_wait_s": true,
+    "lane_change_02:timing:full_frame_yolo_s": true,
+    "lane_change_02:ulog_hash_matches_archive": true,
+    "lane_change_02:independent_ulog_safety": true,
+    "left_overtaking_03:completed_ledger": true,
+    "left_overtaking_03:ledger_freeze_hash": true,
+    "left_overtaking_03:attempt_time_order": true,
+    "left_overtaking_03:summary_matches_trial_audit": true,
+    "left_overtaking_03:strict_verdict_matches_reasons": true,
+    "left_overtaking_03:coverage_from_raw_report": true,
+    "left_overtaking_03:task_success_from_raw_report": true,
+    "left_overtaking_03:archive_snapshot_hash": true,
+    "left_overtaking_03:model_provenance": true,
+    "left_overtaking_03:all_snapshot_sources_frozen": true,
+    "left_overtaking_03:raw_unchanged:report.json": true,
+    "left_overtaking_03:raw_unchanged:identity_report.json": true,
+    "left_overtaking_03:raw_unchanged:supervisor.json": true,
+    "left_overtaking_03:raw_unchanged:runtime_parameters.json": true,
+    "left_overtaking_03:raw_unchanged:implementation_snapshot.json": true,
+    "left_overtaking_03:raw_unchanged:association.jsonl": true,
+    "left_overtaking_03:valid_client:scene": true,
+    "left_overtaking_03:missing_sequence_accounting:scene": true,
+    "left_overtaking_03:service_log_hash:scene": true,
+    "left_overtaking_03:valid_client:traffic": true,
+    "left_overtaking_03:missing_sequence_accounting:traffic": true,
+    "left_overtaking_03:service_log_hash:traffic": true,
+    "left_overtaking_03:native_failure_count": true,
+    "left_overtaking_03:native_request_count": true,
+    "left_overtaking_03:raw_identity_counts_and_maneuver": true,
+    "left_overtaking_03:timing:processing_s": true,
+    "left_overtaking_03:timing:target_publish_age_s": true,
+    "left_overtaking_03:timing:queue_wait_s": true,
+    "left_overtaking_03:timing:full_frame_yolo_s": true,
+    "left_overtaking_03:ulog_hash_matches_archive": true,
+    "left_overtaking_03:independent_ulog_safety": true,
+    "lane_change_03:completed_ledger": true,
+    "lane_change_03:ledger_freeze_hash": true,
+    "lane_change_03:attempt_time_order": true,
+    "lane_change_03:summary_matches_trial_audit": true,
+    "lane_change_03:strict_verdict_matches_reasons": true,
+    "lane_change_03:coverage_from_raw_report": true,
+    "lane_change_03:task_success_from_raw_report": true,
+    "lane_change_03:archive_snapshot_hash": true,
+    "lane_change_03:model_provenance": true,
+    "lane_change_03:all_snapshot_sources_frozen": true,
+    "lane_change_03:raw_unchanged:report.json": true,
+    "lane_change_03:raw_unchanged:identity_report.json": true,
+    "lane_change_03:raw_unchanged:supervisor.json": true,
+    "lane_change_03:raw_unchanged:runtime_parameters.json": true,
+    "lane_change_03:raw_unchanged:implementation_snapshot.json": true,
+    "lane_change_03:raw_unchanged:association.jsonl": true,
+    "lane_change_03:valid_client:scene": true,
+    "lane_change_03:missing_sequence_accounting:scene": true,
+    "lane_change_03:service_log_hash:scene": true,
+    "lane_change_03:valid_client:traffic": true,
+    "lane_change_03:missing_sequence_accounting:traffic": true,
+    "lane_change_03:service_log_hash:traffic": true,
+    "lane_change_03:native_failure_count": true,
+    "lane_change_03:native_request_count": true,
+    "lane_change_03:raw_identity_counts_and_maneuver": true,
+    "lane_change_03:timing:processing_s": true,
+    "lane_change_03:timing:target_publish_age_s": true,
+    "lane_change_03:timing:queue_wait_s": true,
+    "lane_change_03:timing:full_frame_yolo_s": true,
+    "lane_change_03:ulog_hash_matches_archive": true,
+    "lane_change_03:independent_ulog_safety": true,
+    "left_overtaking_04:completed_ledger": true,
+    "left_overtaking_04:ledger_freeze_hash": true,
+    "left_overtaking_04:attempt_time_order": true,
+    "left_overtaking_04:summary_matches_trial_audit": true,
+    "left_overtaking_04:strict_verdict_matches_reasons": true,
+    "left_overtaking_04:coverage_from_raw_report": true,
+    "left_overtaking_04:task_success_from_raw_report": true,
+    "left_overtaking_04:archive_snapshot_hash": true,
+    "left_overtaking_04:model_provenance": true,
+    "left_overtaking_04:all_snapshot_sources_frozen": true,
+    "left_overtaking_04:raw_unchanged:report.json": true,
+    "left_overtaking_04:raw_unchanged:identity_report.json": true,
+    "left_overtaking_04:raw_unchanged:supervisor.json": true,
+    "left_overtaking_04:raw_unchanged:runtime_parameters.json": true,
+    "left_overtaking_04:raw_unchanged:implementation_snapshot.json": true,
+    "left_overtaking_04:raw_unchanged:association.jsonl": true,
+    "left_overtaking_04:valid_client:scene": true,
+    "left_overtaking_04:missing_sequence_accounting:scene": true,
+    "left_overtaking_04:service_log_hash:scene": true,
+    "left_overtaking_04:valid_client:traffic": true,
+    "left_overtaking_04:missing_sequence_accounting:traffic": true,
+    "left_overtaking_04:service_log_hash:traffic": true,
+    "left_overtaking_04:native_failure_count": true,
+    "left_overtaking_04:native_request_count": true,
+    "left_overtaking_04:raw_identity_counts_and_maneuver": true,
+    "left_overtaking_04:timing:processing_s": true,
+    "left_overtaking_04:timing:target_publish_age_s": true,
+    "left_overtaking_04:timing:queue_wait_s": true,
+    "left_overtaking_04:timing:full_frame_yolo_s": true,
+    "left_overtaking_04:ulog_hash_matches_archive": true,
+    "left_overtaking_04:independent_ulog_safety": true,
+    "lane_change_04:completed_ledger": true,
+    "lane_change_04:ledger_freeze_hash": true,
+    "lane_change_04:attempt_time_order": true,
+    "lane_change_04:summary_matches_trial_audit": true,
+    "lane_change_04:strict_verdict_matches_reasons": true,
+    "lane_change_04:coverage_from_raw_report": true,
+    "lane_change_04:task_success_from_raw_report": true,
+    "lane_change_04:archive_snapshot_hash": true,
+    "lane_change_04:model_provenance": true,
+    "lane_change_04:all_snapshot_sources_frozen": true,
+    "lane_change_04:raw_unchanged:report.json": true,
+    "lane_change_04:raw_unchanged:identity_report.json": true,
+    "lane_change_04:raw_unchanged:supervisor.json": true,
+    "lane_change_04:raw_unchanged:runtime_parameters.json": true,
+    "lane_change_04:raw_unchanged:implementation_snapshot.json": true,
+    "lane_change_04:raw_unchanged:association.jsonl": true,
+    "lane_change_04:valid_client:scene": true,
+    "lane_change_04:missing_sequence_accounting:scene": true,
+    "lane_change_04:service_log_hash:scene": true,
+    "lane_change_04:valid_client:traffic": true,
+    "lane_change_04:missing_sequence_accounting:traffic": true,
+    "lane_change_04:service_log_hash:traffic": true,
+    "lane_change_04:native_failure_count": true,
+    "lane_change_04:native_request_count": true,
+    "lane_change_04:raw_identity_counts_and_maneuver": true,
+    "lane_change_04:timing:processing_s": true,
+    "lane_change_04:timing:target_publish_age_s": true,
+    "lane_change_04:timing:queue_wait_s": true,
+    "lane_change_04:timing:full_frame_yolo_s": true,
+    "lane_change_04:ulog_hash_matches_archive": true,
+    "lane_change_04:independent_ulog_safety": true,
+    "left_overtaking_05:completed_ledger": true,
+    "left_overtaking_05:ledger_freeze_hash": true,
+    "left_overtaking_05:attempt_time_order": true,
+    "left_overtaking_05:summary_matches_trial_audit": true,
+    "left_overtaking_05:strict_verdict_matches_reasons": true,
+    "left_overtaking_05:coverage_from_raw_report": true,
+    "left_overtaking_05:task_success_from_raw_report": true,
+    "left_overtaking_05:archive_snapshot_hash": true,
+    "left_overtaking_05:model_provenance": true,
+    "left_overtaking_05:all_snapshot_sources_frozen": true,
+    "left_overtaking_05:raw_unchanged:report.json": true,
+    "left_overtaking_05:raw_unchanged:identity_report.json": true,
+    "left_overtaking_05:raw_unchanged:supervisor.json": true,
+    "left_overtaking_05:raw_unchanged:runtime_parameters.json": true,
+    "left_overtaking_05:raw_unchanged:implementation_snapshot.json": true,
+    "left_overtaking_05:raw_unchanged:association.jsonl": true,
+    "left_overtaking_05:valid_client:scene": true,
+    "left_overtaking_05:missing_sequence_accounting:scene": true,
+    "left_overtaking_05:service_log_hash:scene": true,
+    "left_overtaking_05:valid_client:traffic": true,
+    "left_overtaking_05:missing_sequence_accounting:traffic": true,
+    "left_overtaking_05:service_log_hash:traffic": true,
+    "left_overtaking_05:native_failure_count": true,
+    "left_overtaking_05:native_request_count": true,
+    "left_overtaking_05:raw_identity_counts_and_maneuver": true,
+    "left_overtaking_05:timing:processing_s": true,
+    "left_overtaking_05:timing:target_publish_age_s": true,
+    "left_overtaking_05:timing:queue_wait_s": true,
+    "left_overtaking_05:timing:full_frame_yolo_s": true,
+    "left_overtaking_05:ulog_hash_matches_archive": true,
+    "left_overtaking_05:independent_ulog_safety": true,
+    "lane_change_05:completed_ledger": true,
+    "lane_change_05:ledger_freeze_hash": true,
+    "lane_change_05:attempt_time_order": true,
+    "lane_change_05:summary_matches_trial_audit": true,
+    "lane_change_05:strict_verdict_matches_reasons": true,
+    "lane_change_05:coverage_from_raw_report": true,
+    "lane_change_05:task_success_from_raw_report": true,
+    "lane_change_05:archive_snapshot_hash": true,
+    "lane_change_05:model_provenance": true,
+    "lane_change_05:all_snapshot_sources_frozen": true,
+    "lane_change_05:raw_unchanged:report.json": true,
+    "lane_change_05:raw_unchanged:identity_report.json": true,
+    "lane_change_05:raw_unchanged:supervisor.json": true,
+    "lane_change_05:raw_unchanged:runtime_parameters.json": true,
+    "lane_change_05:raw_unchanged:implementation_snapshot.json": true,
+    "lane_change_05:raw_unchanged:association.jsonl": true,
+    "lane_change_05:valid_client:scene": true,
+    "lane_change_05:missing_sequence_accounting:scene": true,
+    "lane_change_05:service_log_hash:scene": true,
+    "lane_change_05:valid_client:traffic": true,
+    "lane_change_05:missing_sequence_accounting:traffic": true,
+    "lane_change_05:service_log_hash:traffic": true,
+    "lane_change_05:native_failure_count": true,
+    "lane_change_05:native_request_count": true,
+    "lane_change_05:raw_identity_counts_and_maneuver": true,
+    "lane_change_05:timing:processing_s": true,
+    "lane_change_05:timing:target_publish_age_s": true,
+    "lane_change_05:timing:queue_wait_s": true,
+    "lane_change_05:timing:full_frame_yolo_s": true,
+    "lane_change_05:ulog_hash_matches_archive": true,
+    "lane_change_05:independent_ulog_safety": true,
+    "left_overtaking_06:completed_ledger": true,
+    "left_overtaking_06:ledger_freeze_hash": true,
+    "left_overtaking_06:attempt_time_order": true,
+    "left_overtaking_06:summary_matches_trial_audit": true,
+    "left_overtaking_06:strict_verdict_matches_reasons": true,
+    "left_overtaking_06:coverage_from_raw_report": true,
+    "left_overtaking_06:task_success_from_raw_report": true,
+    "left_overtaking_06:archive_snapshot_hash": true,
+    "left_overtaking_06:model_provenance": true,
+    "left_overtaking_06:all_snapshot_sources_frozen": true,
+    "left_overtaking_06:raw_unchanged:report.json": true,
+    "left_overtaking_06:raw_unchanged:identity_report.json": true,
+    "left_overtaking_06:raw_unchanged:supervisor.json": true,
+    "left_overtaking_06:raw_unchanged:runtime_parameters.json": true,
+    "left_overtaking_06:raw_unchanged:implementation_snapshot.json": true,
+    "left_overtaking_06:raw_unchanged:association.jsonl": true,
+    "left_overtaking_06:valid_client:scene": true,
+    "left_overtaking_06:missing_sequence_accounting:scene": true,
+    "left_overtaking_06:service_log_hash:scene": true,
+    "left_overtaking_06:valid_client:traffic": true,
+    "left_overtaking_06:missing_sequence_accounting:traffic": true,
+    "left_overtaking_06:service_log_hash:traffic": true,
+    "left_overtaking_06:native_failure_count": true,
+    "left_overtaking_06:native_request_count": true,
+    "left_overtaking_06:raw_identity_counts_and_maneuver": true,
+    "left_overtaking_06:timing:processing_s": true,
+    "left_overtaking_06:timing:target_publish_age_s": true,
+    "left_overtaking_06:timing:queue_wait_s": true,
+    "left_overtaking_06:timing:full_frame_yolo_s": true,
+    "left_overtaking_06:ulog_hash_matches_archive": true,
+    "left_overtaking_06:independent_ulog_safety": true,
+    "lane_change_06:completed_ledger": true,
+    "lane_change_06:ledger_freeze_hash": true,
+    "lane_change_06:attempt_time_order": true,
+    "lane_change_06:summary_matches_trial_audit": true,
+    "lane_change_06:strict_verdict_matches_reasons": true,
+    "lane_change_06:coverage_from_raw_report": true,
+    "lane_change_06:task_success_from_raw_report": true,
+    "lane_change_06:archive_snapshot_hash": true,
+    "lane_change_06:model_provenance": true,
+    "lane_change_06:all_snapshot_sources_frozen": true,
+    "lane_change_06:raw_unchanged:report.json": true,
+    "lane_change_06:raw_unchanged:identity_report.json": true,
+    "lane_change_06:raw_unchanged:supervisor.json": true,
+    "lane_change_06:raw_unchanged:runtime_parameters.json": true,
+    "lane_change_06:raw_unchanged:implementation_snapshot.json": true,
+    "lane_change_06:raw_unchanged:association.jsonl": true,
+    "lane_change_06:valid_client:scene": true,
+    "lane_change_06:missing_sequence_accounting:scene": true,
+    "lane_change_06:service_log_hash:scene": true,
+    "lane_change_06:valid_client:traffic": true,
+    "lane_change_06:missing_sequence_accounting:traffic": true,
+    "lane_change_06:service_log_hash:traffic": true,
+    "lane_change_06:native_failure_count": true,
+    "lane_change_06:native_request_count": true,
+    "lane_change_06:raw_identity_counts_and_maneuver": true,
+    "lane_change_06:timing:processing_s": true,
+    "lane_change_06:timing:target_publish_age_s": true,
+    "lane_change_06:timing:queue_wait_s": true,
+    "lane_change_06:timing:full_frame_yolo_s": true,
+    "lane_change_06:ulog_hash_matches_archive": true,
+    "lane_change_06:independent_ulog_safety": true,
+    "left_overtaking_07:completed_ledger": true,
+    "left_overtaking_07:ledger_freeze_hash": true,
+    "left_overtaking_07:attempt_time_order": true,
+    "left_overtaking_07:summary_matches_trial_audit": true,
+    "left_overtaking_07:strict_verdict_matches_reasons": true,
+    "left_overtaking_07:coverage_from_raw_report": true,
+    "left_overtaking_07:task_success_from_raw_report": true,
+    "left_overtaking_07:archive_snapshot_hash": true,
+    "left_overtaking_07:model_provenance": true,
+    "left_overtaking_07:all_snapshot_sources_frozen": true,
+    "left_overtaking_07:raw_unchanged:report.json": true,
+    "left_overtaking_07:raw_unchanged:identity_report.json": true,
+    "left_overtaking_07:raw_unchanged:supervisor.json": true,
+    "left_overtaking_07:raw_unchanged:runtime_parameters.json": true,
+    "left_overtaking_07:raw_unchanged:implementation_snapshot.json": true,
+    "left_overtaking_07:raw_unchanged:association.jsonl": true,
+    "left_overtaking_07:valid_client:scene": true,
+    "left_overtaking_07:missing_sequence_accounting:scene": true,
+    "left_overtaking_07:service_log_hash:scene": true,
+    "left_overtaking_07:valid_client:traffic": true,
+    "left_overtaking_07:missing_sequence_accounting:traffic": true,
+    "left_overtaking_07:service_log_hash:traffic": true,
+    "left_overtaking_07:native_failure_count": true,
+    "left_overtaking_07:native_request_count": true,
+    "left_overtaking_07:raw_identity_counts_and_maneuver": true,
+    "left_overtaking_07:timing:processing_s": true,
+    "left_overtaking_07:timing:target_publish_age_s": true,
+    "left_overtaking_07:timing:queue_wait_s": true,
+    "left_overtaking_07:timing:full_frame_yolo_s": true,
+    "left_overtaking_07:ulog_hash_matches_archive": true,
+    "left_overtaking_07:independent_ulog_safety": true,
+    "lane_change_07:completed_ledger": true,
+    "lane_change_07:ledger_freeze_hash": true,
+    "lane_change_07:attempt_time_order": true,
+    "lane_change_07:summary_matches_trial_audit": true,
+    "lane_change_07:strict_verdict_matches_reasons": true,
+    "lane_change_07:coverage_from_raw_report": true,
+    "lane_change_07:task_success_from_raw_report": true,
+    "lane_change_07:archive_snapshot_hash": true,
+    "lane_change_07:model_provenance": true,
+    "lane_change_07:all_snapshot_sources_frozen": true,
+    "lane_change_07:raw_unchanged:report.json": true,
+    "lane_change_07:raw_unchanged:identity_report.json": true,
+    "lane_change_07:raw_unchanged:supervisor.json": true,
+    "lane_change_07:raw_unchanged:runtime_parameters.json": true,
+    "lane_change_07:raw_unchanged:implementation_snapshot.json": true,
+    "lane_change_07:raw_unchanged:association.jsonl": true,
+    "lane_change_07:valid_client:scene": true,
+    "lane_change_07:missing_sequence_accounting:scene": true,
+    "lane_change_07:service_log_hash:scene": true,
+    "lane_change_07:valid_client:traffic": true,
+    "lane_change_07:missing_sequence_accounting:traffic": true,
+    "lane_change_07:service_log_hash:traffic": true,
+    "lane_change_07:native_failure_count": true,
+    "lane_change_07:native_request_count": true,
+    "lane_change_07:raw_identity_counts_and_maneuver": true,
+    "lane_change_07:timing:processing_s": true,
+    "lane_change_07:timing:target_publish_age_s": true,
+    "lane_change_07:timing:queue_wait_s": true,
+    "lane_change_07:timing:full_frame_yolo_s": true,
+    "lane_change_07:ulog_hash_matches_archive": true,
+    "lane_change_07:independent_ulog_safety": true,
+    "left_overtaking_08:completed_ledger": true,
+    "left_overtaking_08:ledger_freeze_hash": true,
+    "left_overtaking_08:attempt_time_order": true,
+    "left_overtaking_08:summary_matches_trial_audit": true,
+    "left_overtaking_08:strict_verdict_matches_reasons": true,
+    "left_overtaking_08:coverage_from_raw_report": true,
+    "left_overtaking_08:task_success_from_raw_report": true,
+    "left_overtaking_08:archive_snapshot_hash": true,
+    "left_overtaking_08:model_provenance": true,
+    "left_overtaking_08:all_snapshot_sources_frozen": true,
+    "left_overtaking_08:raw_unchanged:report.json": true,
+    "left_overtaking_08:raw_unchanged:identity_report.json": true,
+    "left_overtaking_08:raw_unchanged:supervisor.json": true,
+    "left_overtaking_08:raw_unchanged:runtime_parameters.json": true,
+    "left_overtaking_08:raw_unchanged:implementation_snapshot.json": true,
+    "left_overtaking_08:raw_unchanged:association.jsonl": true,
+    "left_overtaking_08:valid_client:scene": true,
+    "left_overtaking_08:missing_sequence_accounting:scene": true,
+    "left_overtaking_08:service_log_hash:scene": true,
+    "left_overtaking_08:valid_client:traffic": true,
+    "left_overtaking_08:missing_sequence_accounting:traffic": true,
+    "left_overtaking_08:service_log_hash:traffic": true,
+    "left_overtaking_08:native_failure_count": true,
+    "left_overtaking_08:native_request_count": true,
+    "left_overtaking_08:raw_identity_counts_and_maneuver": true,
+    "left_overtaking_08:timing:processing_s": true,
+    "left_overtaking_08:timing:target_publish_age_s": true,
+    "left_overtaking_08:timing:queue_wait_s": true,
+    "left_overtaking_08:timing:full_frame_yolo_s": true,
+    "left_overtaking_08:ulog_hash_matches_archive": true,
+    "left_overtaking_08:independent_ulog_safety": true,
+    "lane_change_08:completed_ledger": true,
+    "lane_change_08:ledger_freeze_hash": true,
+    "lane_change_08:attempt_time_order": true,
+    "lane_change_08:summary_matches_trial_audit": true,
+    "lane_change_08:strict_verdict_matches_reasons": true,
+    "lane_change_08:coverage_from_raw_report": true,
+    "lane_change_08:task_success_from_raw_report": true,
+    "lane_change_08:archive_snapshot_hash": true,
+    "lane_change_08:model_provenance": true,
+    "lane_change_08:all_snapshot_sources_frozen": true,
+    "lane_change_08:raw_unchanged:report.json": true,
+    "lane_change_08:raw_unchanged:identity_report.json": true,
+    "lane_change_08:raw_unchanged:supervisor.json": true,
+    "lane_change_08:raw_unchanged:runtime_parameters.json": true,
+    "lane_change_08:raw_unchanged:implementation_snapshot.json": true,
+    "lane_change_08:raw_unchanged:association.jsonl": true,
+    "lane_change_08:valid_client:scene": true,
+    "lane_change_08:missing_sequence_accounting:scene": true,
+    "lane_change_08:service_log_hash:scene": true,
+    "lane_change_08:valid_client:traffic": true,
+    "lane_change_08:missing_sequence_accounting:traffic": true,
+    "lane_change_08:service_log_hash:traffic": true,
+    "lane_change_08:native_failure_count": true,
+    "lane_change_08:native_request_count": true,
+    "lane_change_08:raw_identity_counts_and_maneuver": true,
+    "lane_change_08:timing:processing_s": true,
+    "lane_change_08:timing:target_publish_age_s": true,
+    "lane_change_08:timing:queue_wait_s": true,
+    "lane_change_08:timing:full_frame_yolo_s": true,
+    "lane_change_08:ulog_hash_matches_archive": true,
+    "lane_change_08:independent_ulog_safety": true,
+    "left_overtaking_09:completed_ledger": true,
+    "left_overtaking_09:ledger_freeze_hash": true,
+    "left_overtaking_09:attempt_time_order": true,
+    "left_overtaking_09:summary_matches_trial_audit": true,
+    "left_overtaking_09:strict_verdict_matches_reasons": true,
+    "left_overtaking_09:coverage_from_raw_report": true,
+    "left_overtaking_09:task_success_from_raw_report": true,
+    "left_overtaking_09:archive_snapshot_hash": true,
+    "left_overtaking_09:model_provenance": true,
+    "left_overtaking_09:all_snapshot_sources_frozen": true,
+    "left_overtaking_09:raw_unchanged:report.json": true,
+    "left_overtaking_09:raw_unchanged:identity_report.json": true,
+    "left_overtaking_09:raw_unchanged:supervisor.json": true,
+    "left_overtaking_09:raw_unchanged:runtime_parameters.json": true,
+    "left_overtaking_09:raw_unchanged:implementation_snapshot.json": true,
+    "left_overtaking_09:raw_unchanged:association.jsonl": true,
+    "left_overtaking_09:valid_client:scene": true,
+    "left_overtaking_09:missing_sequence_accounting:scene": true,
+    "left_overtaking_09:service_log_hash:scene": true,
+    "left_overtaking_09:valid_client:traffic": true,
+    "left_overtaking_09:missing_sequence_accounting:traffic": true,
+    "left_overtaking_09:service_log_hash:traffic": true,
+    "left_overtaking_09:native_failure_count": true,
+    "left_overtaking_09:native_request_count": true,
+    "left_overtaking_09:raw_identity_counts_and_maneuver": true,
+    "left_overtaking_09:timing:processing_s": true,
+    "left_overtaking_09:timing:target_publish_age_s": true,
+    "left_overtaking_09:timing:queue_wait_s": true,
+    "left_overtaking_09:timing:full_frame_yolo_s": true,
+    "left_overtaking_09:ulog_hash_matches_archive": true,
+    "left_overtaking_09:independent_ulog_safety": true,
+    "lane_change_09:completed_ledger": true,
+    "lane_change_09:ledger_freeze_hash": true,
+    "lane_change_09:attempt_time_order": true,
+    "lane_change_09:summary_matches_trial_audit": true,
+    "lane_change_09:strict_verdict_matches_reasons": true,
+    "lane_change_09:coverage_from_raw_report": true,
+    "lane_change_09:task_success_from_raw_report": true,
+    "lane_change_09:archive_snapshot_hash": true,
+    "lane_change_09:model_provenance": true,
+    "lane_change_09:all_snapshot_sources_frozen": true,
+    "lane_change_09:raw_unchanged:report.json": true,
+    "lane_change_09:raw_unchanged:identity_report.json": true,
+    "lane_change_09:raw_unchanged:supervisor.json": true,
+    "lane_change_09:raw_unchanged:runtime_parameters.json": true,
+    "lane_change_09:raw_unchanged:implementation_snapshot.json": true,
+    "lane_change_09:raw_unchanged:association.jsonl": true,
+    "lane_change_09:valid_client:scene": true,
+    "lane_change_09:missing_sequence_accounting:scene": true,
+    "lane_change_09:service_log_hash:scene": true,
+    "lane_change_09:valid_client:traffic": true,
+    "lane_change_09:missing_sequence_accounting:traffic": true,
+    "lane_change_09:service_log_hash:traffic": true,
+    "lane_change_09:native_failure_count": true,
+    "lane_change_09:native_request_count": true,
+    "lane_change_09:raw_identity_counts_and_maneuver": true,
+    "lane_change_09:timing:processing_s": true,
+    "lane_change_09:timing:target_publish_age_s": true,
+    "lane_change_09:timing:queue_wait_s": true,
+    "lane_change_09:timing:full_frame_yolo_s": true,
+    "lane_change_09:ulog_hash_matches_archive": true,
+    "lane_change_09:independent_ulog_safety": true,
+    "left_overtaking_10:completed_ledger": true,
+    "left_overtaking_10:ledger_freeze_hash": true,
+    "left_overtaking_10:attempt_time_order": true,
+    "left_overtaking_10:summary_matches_trial_audit": true,
+    "left_overtaking_10:strict_verdict_matches_reasons": true,
+    "left_overtaking_10:coverage_from_raw_report": true,
+    "left_overtaking_10:task_success_from_raw_report": true,
+    "left_overtaking_10:archive_snapshot_hash": true,
+    "left_overtaking_10:model_provenance": true,
+    "left_overtaking_10:all_snapshot_sources_frozen": true,
+    "left_overtaking_10:raw_unchanged:report.json": true,
+    "left_overtaking_10:raw_unchanged:identity_report.json": true,
+    "left_overtaking_10:raw_unchanged:supervisor.json": true,
+    "left_overtaking_10:raw_unchanged:runtime_parameters.json": true,
+    "left_overtaking_10:raw_unchanged:implementation_snapshot.json": true,
+    "left_overtaking_10:raw_unchanged:association.jsonl": true,
+    "left_overtaking_10:valid_client:scene": true,
+    "left_overtaking_10:missing_sequence_accounting:scene": true,
+    "left_overtaking_10:service_log_hash:scene": true,
+    "left_overtaking_10:valid_client:traffic": true,
+    "left_overtaking_10:missing_sequence_accounting:traffic": true,
+    "left_overtaking_10:service_log_hash:traffic": true,
+    "left_overtaking_10:native_failure_count": true,
+    "left_overtaking_10:native_request_count": true,
+    "left_overtaking_10:raw_identity_counts_and_maneuver": true,
+    "left_overtaking_10:timing:processing_s": true,
+    "left_overtaking_10:timing:target_publish_age_s": true,
+    "left_overtaking_10:timing:queue_wait_s": true,
+    "left_overtaking_10:timing:full_frame_yolo_s": true,
+    "left_overtaking_10:ulog_hash_matches_archive": true,
+    "left_overtaking_10:independent_ulog_safety": true,
+    "lane_change_10:completed_ledger": true,
+    "lane_change_10:ledger_freeze_hash": true,
+    "lane_change_10:attempt_time_order": true,
+    "lane_change_10:summary_matches_trial_audit": true,
+    "lane_change_10:strict_verdict_matches_reasons": true,
+    "lane_change_10:coverage_from_raw_report": true,
+    "lane_change_10:task_success_from_raw_report": true,
+    "lane_change_10:archive_snapshot_hash": true,
+    "lane_change_10:model_provenance": true,
+    "lane_change_10:all_snapshot_sources_frozen": true,
+    "lane_change_10:raw_unchanged:report.json": true,
+    "lane_change_10:raw_unchanged:identity_report.json": true,
+    "lane_change_10:raw_unchanged:supervisor.json": true,
+    "lane_change_10:raw_unchanged:runtime_parameters.json": true,
+    "lane_change_10:raw_unchanged:implementation_snapshot.json": true,
+    "lane_change_10:raw_unchanged:association.jsonl": true,
+    "lane_change_10:valid_client:scene": true,
+    "lane_change_10:missing_sequence_accounting:scene": true,
+    "lane_change_10:service_log_hash:scene": true,
+    "lane_change_10:valid_client:traffic": true,
+    "lane_change_10:missing_sequence_accounting:traffic": true,
+    "lane_change_10:service_log_hash:traffic": true,
+    "lane_change_10:native_failure_count": true,
+    "lane_change_10:native_request_count": true,
+    "lane_change_10:raw_identity_counts_and_maneuver": true,
+    "lane_change_10:timing:processing_s": true,
+    "lane_change_10:timing:target_publish_age_s": true,
+    "lane_change_10:timing:queue_wait_s": true,
+    "lane_change_10:timing:full_frame_yolo_s": true,
+    "lane_change_10:ulog_hash_matches_archive": true,
+    "lane_change_10:independent_ulog_safety": true,
+    "twenty_distinct_archived_ulogs": true,
+    "left_overtaking:ten_actual_completed": true,
+    "left_overtaking:statistic:task_passed": true,
+    "left_overtaking:markdown_metric:task_passed": true,
+    "left_overtaking:statistic:strict_joint_passed": true,
+    "left_overtaking:markdown_metric:strict_joint_passed": true,
+    "left_overtaking:statistic:identity_verified": true,
+    "left_overtaking:markdown_metric:identity_verified": true,
+    "left_overtaking:statistic:coverage_percent": true,
+    "left_overtaking:markdown_metric:coverage_percent": true,
+    "left_overtaking:statistic:unplanned_losses": true,
+    "left_overtaking:markdown_metric:unplanned_losses": true,
+    "left_overtaking:statistic:unplanned_recovery_mean_s": true,
+    "left_overtaking:markdown_metric:unplanned_recovery_mean_s": true,
+    "left_overtaking:statistic:unplanned_recovery_max_s": true,
+    "left_overtaking:markdown_metric:unplanned_recovery_max_s": true,
+    "left_overtaking:statistic:unplanned_recovery_censored_count": true,
+    "left_overtaking:markdown_metric:unplanned_recovery_censored_count": true,
+    "left_overtaking:statistic:recovery_timeout_count": true,
+    "left_overtaking:markdown_metric:recovery_timeout_count": true,
+    "left_overtaking:statistic:planned_recovery_mean_s": true,
+    "left_overtaking:markdown_metric:planned_recovery_mean_s": true,
+    "left_overtaking:statistic:planned_recovery_max_s": true,
+    "left_overtaking:markdown_metric:planned_recovery_max_s": true,
+    "left_overtaking:statistic:track_mean_abs_pixel_error": true,
+    "left_overtaking:markdown_metric:track_mean_abs_pixel_error": true,
+    "left_overtaking:statistic:track_p95_abs_pixel_error": true,
+    "left_overtaking:markdown_metric:track_p95_abs_pixel_error": true,
+    "left_overtaking:statistic:final_home_horizontal_error_m": true,
+    "left_overtaking:markdown_metric:final_home_horizontal_error_m": true,
+    "left_overtaking:statistic:drone_follow_travel_m": true,
+    "left_overtaking:markdown_metric:drone_follow_travel_m": true,
+    "left_overtaking:statistic:full_frame_yolo_mean_s": true,
+    "left_overtaking:markdown_metric:full_frame_yolo_mean_s": true,
+    "left_overtaking:statistic:full_frame_yolo_p95_s": true,
+    "left_overtaking:markdown_metric:full_frame_yolo_p95_s": true,
+    "left_overtaking:statistic:processing_mean_s": true,
+    "left_overtaking:markdown_metric:processing_mean_s": true,
+    "left_overtaking:statistic:processing_p95_s": true,
+    "left_overtaking:markdown_metric:processing_p95_s": true,
+    "left_overtaking:statistic:target_publish_age_mean_s": true,
+    "left_overtaking:markdown_metric:target_publish_age_mean_s": true,
+    "left_overtaking:statistic:target_publish_age_p95_s": true,
+    "left_overtaking:markdown_metric:target_publish_age_p95_s": true,
+    "left_overtaking:statistic:queue_wait_mean_s": true,
+    "left_overtaking:markdown_metric:queue_wait_mean_s": true,
+    "left_overtaking:statistic:queue_wait_p95_s": true,
+    "left_overtaking:markdown_metric:queue_wait_p95_s": true,
+    "left_overtaking:statistic:wrong_identity_observations": true,
+    "left_overtaking:markdown_metric:wrong_identity_observations": true,
+    "left_overtaking:statistic:scorable_identity_switches": true,
+    "left_overtaking:markdown_metric:scorable_identity_switches": true,
+    "left_overtaking:statistic:identity_scorable_fraction": true,
+    "left_overtaking:markdown_metric:identity_scorable_fraction": true,
+    "left_overtaking:statistic:post_identity_frames": true,
+    "left_overtaking:markdown_metric:post_identity_frames": true,
+    "left_overtaking:statistic:scene_request_failures": true,
+    "left_overtaking:markdown_metric:scene_request_failures": true,
+    "left_overtaking:statistic:safety_event_observations": true,
+    "left_overtaking:markdown_metric:safety_event_observations": true,
+    "left_overtaking:statistic:wall_duration_s": true,
+    "left_overtaking:markdown_metric:wall_duration_s": true,
+    "left_overtaking:pass_counts": true,
+    "left_overtaking:markdown_pass_counts": true,
+    "left_overtaking:success_rates": true,
+    "lane_change:ten_actual_completed": true,
+    "lane_change:statistic:task_passed": true,
+    "lane_change:markdown_metric:task_passed": true,
+    "lane_change:statistic:strict_joint_passed": true,
+    "lane_change:markdown_metric:strict_joint_passed": true,
+    "lane_change:statistic:identity_verified": true,
+    "lane_change:markdown_metric:identity_verified": true,
+    "lane_change:statistic:coverage_percent": true,
+    "lane_change:markdown_metric:coverage_percent": true,
+    "lane_change:statistic:unplanned_losses": true,
+    "lane_change:markdown_metric:unplanned_losses": true,
+    "lane_change:statistic:unplanned_recovery_mean_s": true,
+    "lane_change:markdown_metric:unplanned_recovery_mean_s": true,
+    "lane_change:statistic:unplanned_recovery_max_s": true,
+    "lane_change:markdown_metric:unplanned_recovery_max_s": true,
+    "lane_change:statistic:unplanned_recovery_censored_count": true,
+    "lane_change:markdown_metric:unplanned_recovery_censored_count": true,
+    "lane_change:statistic:recovery_timeout_count": true,
+    "lane_change:markdown_metric:recovery_timeout_count": true,
+    "lane_change:statistic:planned_recovery_mean_s": true,
+    "lane_change:markdown_metric:planned_recovery_mean_s": true,
+    "lane_change:statistic:planned_recovery_max_s": true,
+    "lane_change:markdown_metric:planned_recovery_max_s": true,
+    "lane_change:statistic:track_mean_abs_pixel_error": true,
+    "lane_change:markdown_metric:track_mean_abs_pixel_error": true,
+    "lane_change:statistic:track_p95_abs_pixel_error": true,
+    "lane_change:markdown_metric:track_p95_abs_pixel_error": true,
+    "lane_change:statistic:final_home_horizontal_error_m": true,
+    "lane_change:markdown_metric:final_home_horizontal_error_m": true,
+    "lane_change:statistic:drone_follow_travel_m": true,
+    "lane_change:markdown_metric:drone_follow_travel_m": true,
+    "lane_change:statistic:full_frame_yolo_mean_s": true,
+    "lane_change:markdown_metric:full_frame_yolo_mean_s": true,
+    "lane_change:statistic:full_frame_yolo_p95_s": true,
+    "lane_change:markdown_metric:full_frame_yolo_p95_s": true,
+    "lane_change:statistic:processing_mean_s": true,
+    "lane_change:markdown_metric:processing_mean_s": true,
+    "lane_change:statistic:processing_p95_s": true,
+    "lane_change:markdown_metric:processing_p95_s": true,
+    "lane_change:statistic:target_publish_age_mean_s": true,
+    "lane_change:markdown_metric:target_publish_age_mean_s": true,
+    "lane_change:statistic:target_publish_age_p95_s": true,
+    "lane_change:markdown_metric:target_publish_age_p95_s": true,
+    "lane_change:statistic:queue_wait_mean_s": true,
+    "lane_change:markdown_metric:queue_wait_mean_s": true,
+    "lane_change:statistic:queue_wait_p95_s": true,
+    "lane_change:markdown_metric:queue_wait_p95_s": true,
+    "lane_change:statistic:wrong_identity_observations": true,
+    "lane_change:markdown_metric:wrong_identity_observations": true,
+    "lane_change:statistic:scorable_identity_switches": true,
+    "lane_change:markdown_metric:scorable_identity_switches": true,
+    "lane_change:statistic:identity_scorable_fraction": true,
+    "lane_change:markdown_metric:identity_scorable_fraction": true,
+    "lane_change:statistic:post_identity_frames": true,
+    "lane_change:markdown_metric:post_identity_frames": true,
+    "lane_change:statistic:scene_request_failures": true,
+    "lane_change:markdown_metric:scene_request_failures": true,
+    "lane_change:statistic:safety_event_observations": true,
+    "lane_change:markdown_metric:safety_event_observations": true,
+    "lane_change:statistic:wall_duration_s": true,
+    "lane_change:markdown_metric:wall_duration_s": true,
+    "lane_change:pass_counts": true,
+    "lane_change:markdown_pass_counts": true,
+    "lane_change:success_rates": true,
+    "csv_twenty_rows": true,
+    "left_overtaking_01:csv_fields": true,
+    "lane_change_01:csv_fields": true,
+    "left_overtaking_02:csv_fields": true,
+    "lane_change_02:csv_fields": true,
+    "left_overtaking_03:csv_fields": true,
+    "lane_change_03:csv_fields": true,
+    "left_overtaking_04:csv_fields": true,
+    "lane_change_04:csv_fields": true,
+    "left_overtaking_05:csv_fields": true,
+    "lane_change_05:csv_fields": true,
+    "left_overtaking_06:csv_fields": true,
+    "lane_change_06:csv_fields": true,
+    "left_overtaking_07:csv_fields": true,
+    "lane_change_07:csv_fields": true,
+    "left_overtaking_08:csv_fields": true,
+    "lane_change_08:csv_fields": true,
+    "left_overtaking_09:csv_fields": true,
+    "lane_change_09:csv_fields": true,
+    "left_overtaking_10:csv_fields": true,
+    "lane_change_10:csv_fields": true
+  },
+  "checker_sha256": "87b0555d40bf8d98a4cd4caa4475e729ee7e3032e610cef79c6fbe8c9776ca7e",
+  "input_sha256": {
+    "SUMMARY.json": "97a023a07690dd3b9fe45a7b230ff46a6280b2d1bda194001164771c9e958ee8",
+    "trials.csv": "86080e43938db2cca1bb65079f642b44df3d072bdb04df7dc8eba620e68649a8",
+    "FINAL_REPORT.md": "56e9e47170a5c5639242e3c3386a03f2877e94280823ecae02b51d3a62470d00",
+    "plan.json": "fdb51a58dab17939190cb88a0dcd61116e8a569ac6bc6889c5939d0ea5f89523",
+    "freeze_manifest.json": "d173dc7630866d8d0078200b145a7f021e10977e57f3b09ab00e8e4883e17923",
+    "batch_protocol.json": "57e6583505b7a2b8320c71c78752bcf63416f65952a9ff1d2d3a87c25ef90282"
+  },
+  "limitations": [
+    "This post-hoc check does not rewrite frozen criteria, failed runs or missing receipts.",
+    "Original identity rows are re-aggregated using the frozen v2 evaluator; no new identity thresholds are introduced.",
+    "Zero observed ULog events does not certify absence of every possible collision.",
+    "Unique ledgers, ordered nonoverlapping times and distinct ULogs support independent attempts; they are not proof of all external host activity."
+  ]
+}

@@ -1,0 +1,259 @@
+[INFO] [1791728517.800605203] [px4_offboard_controller]: PX4 Perception Mission State Machine started.
+[INFO] [1791728517.802793530] [px4_offboard_controller]: Mission: Takeoff -> Hover -> Search -> Detect -> Approach -> Hold -> Return -> Land
+[INFO] [1791728517.803755274] [px4_offboard_controller]: Takeoff height : 3.0 m
+[INFO] [1791728517.805412723] [px4_offboard_controller]: Search yaw rate: 3.0 deg/s
+[INFO] [1791728517.806379999] [px4_offboard_controller]: Detection gate : 6/10 frames
+[INFO] [1791728517.807235434] [px4_offboard_controller]: Approach stop  : area_ratio >= 0.020
+[INFO] [1791728517.808070321] [px4_offboard_controller]: Approach speed : 2.00 m/s (position-setpoint ramp)
+[INFO] [1791728517.809043802] [px4_offboard_controller]: Approach slow  : area >= 0.015 -> 0.60 m/s
+[INFO] [1791728518.076532885] [px4_offboard_controller]: Mission initialized.
+[INFO] [1791728518.076828851] [px4_offboard_controller]: Home NED: (-0.00, 0.04, -0.11)
+[INFO] [1791728518.077056915] [px4_offboard_controller]: Takeoff point: (-0.00, 0.04, -3.11)
+[INFO] [1791728518.077316889] [px4_offboard_controller]: Home yaw: 97.0 deg
+[INFO] [1791728518.077554885] [px4_offboard_controller]: 
+[INFO] [1791728518.077791509] [px4_offboard_controller]: ========================================
+[INFO] [1791728518.078148525] [px4_offboard_controller]: MISSION STATE: WAIT_FOR_PX4 -> PRESTREAM
+[INFO] [1791728518.078386956] [px4_offboard_controller]: ========================================
+[INFO] [1791728518.177030205] [px4_offboard_controller]: Starting Offboard pre-stream...
+[INFO] [1791728520.077767171] [px4_offboard_controller]: 
+[INFO] [1791728520.078278707] [px4_offboard_controller]: ========================================
+[INFO] [1791728520.079074780] [px4_offboard_controller]: MISSION STATE: PRESTREAM -> REQUEST_OFFBOARD
+[INFO] [1791728520.079577010] [px4_offboard_controller]: ========================================
+[INFO] [1791728520.176776502] [px4_offboard_controller]: Requesting OFFBOARD mode...
+[INFO] [1791728520.194413642] [px4_offboard_controller]: Command ACK: command=176, result=ACCEPTED
+[INFO] [1791728520.276846573] [px4_offboard_controller]: 
+[INFO] [1791728520.277158033] [px4_offboard_controller]: ========================================
+[INFO] [1791728520.277584669] [px4_offboard_controller]: MISSION STATE: REQUEST_OFFBOARD -> ARMING
+[INFO] [1791728520.277889089] [px4_offboard_controller]: ========================================
+[INFO] [1791728521.177242781] [px4_offboard_controller]: Requesting ARM...
+[INFO] [1791728521.193728538] [px4_offboard_controller]: Command ACK: command=400, result=ACCEPTED
+[INFO] [1791728521.277389526] [px4_offboard_controller]: 
+[INFO] [1791728521.278130056] [px4_offboard_controller]: ========================================
+[INFO] [1791728521.278923047] [px4_offboard_controller]: MISSION STATE: ARMING -> TAKEOFF
+[INFO] [1791728521.279371339] [px4_offboard_controller]: ========================================
+[INFO] [1791728521.777429370] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.00, 0.01, -0.10) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728522.776842887] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.00, 0.01, -0.08) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728523.777514944] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.02, 0.00, -0.06) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728524.777177167] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.02, 0.01, -0.06) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728525.777212841] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.04, 0.03, -0.07) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=+0.000 area=0.0128
+[INFO] [1791728526.779976450] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.05, 0.01, -0.07) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=+0.000 area=0.0127
+[INFO] [1791728527.777230539] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.04, 0.02, -0.05) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=+0.000 area=0.0127
+[INFO] [1791728528.776870468] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.02, 0.04, -0.05) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=+0.000 area=0.0127
+[INFO] [1791728529.777028039] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.00, 0.05, -0.06) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0126
+[INFO] [1791728531.277485890] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.00, 0.03, -0.05) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.001 area=0.0127
+[INFO] [1791728532.277405981] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.01, 0.01, -0.04) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728533.277536614] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.01, 0.01, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.001 area=0.0127
+[INFO] [1791728534.277899692] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.00, 0.00, -0.02) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.001 area=0.0128
+[INFO] [1791728535.276901942] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.01, -0.01, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728536.277691990] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.01, -0.02, -0.02) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0128
+[INFO] [1791728537.276944032] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.01, -0.01, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0128
+[INFO] [1791728538.277682590] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.01, -0.00, -0.04) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728539.276957093] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.01, -0.00, -0.05) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728540.277088697] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.02, 0.00, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0128
+[INFO] [1791728541.276927453] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.03, 0.01, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.001 area=0.0128
+[INFO] [1791728542.277724851] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.01, -0.00, -0.02) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0128
+[INFO] [1791728543.278428909] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.01, -0.01, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0128
+[INFO] [1791728544.277472084] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.00, -0.02, -0.02) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728545.277679818] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.00, 0.00, -0.02) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728546.277551603] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.01, 0.01, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0126
+[INFO] [1791728547.276994503] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.00, 0.02, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0125
+[INFO] [1791728548.276916431] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.00, 0.02, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0126
+[INFO] [1791728549.277610669] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.00, 0.00, -0.04) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728550.277045070] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.02, -0.00, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0128
+[INFO] [1791728551.276942590] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.03, -0.01, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728552.277375383] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.02, -0.03, -0.02) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728553.277628524] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.00, -0.03, -0.02) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0126
+[INFO] [1791728554.277144967] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.00, -0.03, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728555.277103321] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.02, -0.02, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728556.276975735] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.02, -0.01, -0.02) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728557.277756319] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.01, 0.01, 0.00) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728558.277864249] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.01, 0.01, 0.01) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728559.277013825] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.00, 0.02, 0.01) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0126
+[INFO] [1791728560.277583175] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.02, 0.01, 0.02) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0126
+[INFO] [1791728561.277412710] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.01, 0.01, 0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.001 area=0.0126
+[INFO] [1791728562.277512247] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.00, 0.02, 0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728563.277427361] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.01, 0.02, 0.01) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0126
+[INFO] [1791728564.877127539] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.02, 0.03, 0.00) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728565.876950422] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.02, 0.03, 0.00) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728566.880143062] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.01, 0.02, -0.01) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728567.877150313] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.00, 0.01, -0.03) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728568.876964285] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.01, 0.03, -0.05) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0127
+[INFO] [1791728569.876922281] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.70, 0.98, -1.10) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728570.877504666] [px4_offboard_controller]: STATE=TAKEOFF | POS=(1.25, 1.45, -2.10) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728571.876934250] [px4_offboard_controller]: STATE=TAKEOFF | POS=(0.67, 0.68, -2.36) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728572.877494293] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.09, 0.00, -2.58) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728573.877323782] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.33, -0.16, -2.75) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728574.877749601] [px4_offboard_controller]: STATE=TAKEOFF | POS=(-0.29, -0.18, -2.87) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728575.077426244] [px4_offboard_controller]: Takeoff altitude reached.
+[INFO] [1791728575.078071429] [px4_offboard_controller]: 
+[INFO] [1791728575.078402224] [px4_offboard_controller]: ========================================
+[INFO] [1791728575.078849493] [px4_offboard_controller]: MISSION STATE: TAKEOFF -> HOVER
+[INFO] [1791728575.079206915] [px4_offboard_controller]: ========================================
+[INFO] [1791728575.876819605] [px4_offboard_controller]: STATE=HOVER | POS=(-0.21, -0.19, -2.94) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728576.877471972] [px4_offboard_controller]: STATE=HOVER | POS=(-0.16, -0.18, -3.00) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728577.079161375] [px4_offboard_controller]: Starting visual target search.
+[INFO] [1791728577.079605279] [px4_offboard_controller]: 
+[INFO] [1791728577.080053447] [px4_offboard_controller]: ========================================
+[INFO] [1791728577.080820743] [px4_offboard_controller]: MISSION STATE: HOVER -> SEARCH
+[INFO] [1791728577.081208417] [px4_offboard_controller]: ========================================
+[INFO] [1791728577.877447947] [px4_offboard_controller]: STATE=SEARCH | POS=(-0.11, -0.13, -3.05) | YAW_SP=98.5 deg | TARGET_DETECTED=YES ex=-0.044 area=0.0130
+[INFO] [1791728578.578277046] [px4_offboard_controller]: Stable target detection acquired.
+[INFO] [1791728578.578896261] [px4_offboard_controller]: Detection at SEARCH exit: ex=-0.084, ey=+0.406, area=0.0122
+[INFO] [1791728578.579209775] [px4_offboard_controller]: 
+[INFO] [1791728578.579552909] [px4_offboard_controller]: ========================================
+[INFO] [1791728578.580321220] [px4_offboard_controller]: MISSION STATE: SEARCH -> DETECT
+[INFO] [1791728578.580829918] [px4_offboard_controller]: ========================================
+[INFO] [1791728578.877095273] [px4_offboard_controller]: STATE=DETECT | POS=(-0.12, -0.08, -3.06) | YAW_SP=98.5 deg | TARGET_DETECTED=YES ex=-0.094 area=0.0123
+[INFO] [1791728579.677900304] [px4_offboard_controller]: TARGET CONFIRMED.
+[INFO] [1791728579.678965325] [px4_offboard_controller]: Target confirmed. Starting visual approach.
+[INFO] [1791728579.679584132] [px4_offboard_controller]: 
+[INFO] [1791728579.680134679] [px4_offboard_controller]: ========================================
+[INFO] [1791728579.680963368] [px4_offboard_controller]: MISSION STATE: DETECT -> APPROACH
+[INFO] [1791728579.681511911] [px4_offboard_controller]: ========================================
+[INFO] [1791728579.877768538] [px4_offboard_controller]: STATE=APPROACH | POS=(-0.10, -0.05, -3.08) | YAW_SP=98.0 deg | TARGET_DETECTED=YES ex=-0.085 area=0.0129
+[INFO] [1791728580.877832944] [px4_offboard_controller]: STATE=APPROACH | POS=(-0.15, -0.05, -3.09) | YAW_SP=97.4 deg | TARGET_DETECTED=YES ex=-0.069 area=0.0135
+[INFO] [1791728581.876940105] [px4_offboard_controller]: STATE=APPROACH | POS=(-0.18, 0.17, -3.11) | YAW_SP=97.3 deg | TARGET_DETECTED=YES ex=-0.059 area=0.0135
+[INFO] [1791728582.877402782] [px4_offboard_controller]: STATE=APPROACH | POS=(-0.18, 0.81, -3.11) | YAW_SP=97.3 deg | TARGET_DETECTED=YES ex=-0.056 area=0.0142
+[INFO] [1791728583.876797605] [px4_offboard_controller]: STATE=APPROACH | POS=(-0.22, 1.87, -3.11) | YAW_SP=97.3 deg | TARGET_DETECTED=YES ex=-0.055 area=0.0173
+[INFO] [1791728584.776990080] [px4_offboard_controller]: APPROACH SUCCESS | area=0.0204 >= 0.0200
+[INFO] [1791728584.777402282] [px4_offboard_controller]: 
+[INFO] [1791728584.777627724] [px4_offboard_controller]: ========================================
+[INFO] [1791728584.778014882] [px4_offboard_controller]: MISSION STATE: APPROACH -> TRACK
+[INFO] [1791728584.778268859] [px4_offboard_controller]: ========================================
+[INFO] [1791728584.876970029] [px4_offboard_controller]: STATE=TRACK | POS=(-0.33, 2.98, -3.11) | YAW_SP=97.3 deg | TARGET_DETECTED=YES ex=-0.068 area=0.0204
+[INFO] [1791728586.876955031] [px4_offboard_controller]: STATE=TRACK | POS=(-0.53, 3.90, -3.11) | YAW_SP=95.1 deg | TARGET_DETECTED=YES ex=-0.107 area=0.0211
+[INFO] [1791728587.877601454] [px4_offboard_controller]: STATE=TRACK | POS=(-0.55, 4.45, -3.11) | YAW_SP=93.9 deg | TARGET_DETECTED=YES ex=-0.067 area=0.0192
+[INFO] [1791728588.877461841] [px4_offboard_controller]: STATE=TRACK | POS=(-0.52, 5.28, -3.10) | YAW_SP=93.9 deg | TARGET_DETECTED=YES ex=-0.020 area=0.0203
+[INFO] [1791728589.876912537] [px4_offboard_controller]: STATE=TRACK | POS=(-0.49, 6.32, -3.10) | YAW_SP=93.9 deg | TARGET_DETECTED=YES ex=-0.019 area=0.0220
+[INFO] [1791728590.876752613] [px4_offboard_controller]: STATE=TRACK | POS=(-0.54, 7.42, -3.11) | YAW_SP=93.9 deg | TARGET_DETECTED=YES ex=-0.024 area=0.0239
+[INFO] [1791728591.877895302] [px4_offboard_controller]: STATE=TRACK | POS=(-0.64, 8.44, -3.10) | YAW_SP=93.9 deg | TARGET_DETECTED=YES ex=-0.040 area=0.0259
+[INFO] [1791728592.877644152] [px4_offboard_controller]: STATE=TRACK | POS=(-0.71, 9.21, -3.11) | YAW_SP=93.9 deg | TARGET_DETECTED=YES ex=-0.057 area=0.0286
+[INFO] [1791728593.881349645] [px4_offboard_controller]: STATE=TRACK | POS=(-0.74, 9.64, -3.10) | YAW_SP=93.9 deg | TARGET_DETECTED=YES ex=-0.070 area=0.0282
+[INFO] [1791728594.877725942] [px4_offboard_controller]: STATE=TRACK | POS=(-0.75, 9.85, -3.11) | YAW_SP=93.8 deg | TARGET_DETECTED=YES ex=-0.077 area=0.0262
+[INFO] [1791728595.877644516] [px4_offboard_controller]: STATE=TRACK | POS=(-0.70, 10.10, -3.12) | YAW_SP=93.8 deg | TARGET_DETECTED=YES ex=-0.074 area=0.0233
+[INFO] [1791728596.877040375] [px4_offboard_controller]: STATE=TRACK | POS=(-0.62, 10.53, -3.11) | YAW_SP=93.9 deg | TARGET_DETECTED=YES ex=-0.058 area=0.0212
+[INFO] [1791728597.877193341] [px4_offboard_controller]: STATE=TRACK | POS=(-0.57, 11.22, -3.10) | YAW_SP=93.9 deg | TARGET_DETECTED=YES ex=-0.045 area=0.0208
+[INFO] [1791728599.477044980] [px4_offboard_controller]: STATE=TRACK | POS=(-0.56, 11.80, -3.10) | YAW_SP=93.9 deg | TARGET_DETECTED=YES ex=-0.047 area=0.0189
+[INFO] [1791728600.477026950] [px4_offboard_controller]: STATE=TRACK | POS=(-0.59, 11.74, -3.11) | YAW_SP=93.8 deg | TARGET_DETECTED=YES ex=-0.055 area=0.0209
+[INFO] [1791728601.477636906] [px4_offboard_controller]: STATE=TRACK | POS=(-0.60, 11.88, -3.12) | YAW_SP=93.8 deg | TARGET_DETECTED=YES ex=-0.062 area=0.0173
+[INFO] [1791728602.477813813] [px4_offboard_controller]: STATE=TRACK | POS=(-0.56, 12.46, -3.13) | YAW_SP=93.9 deg | TARGET_DETECTED=YES ex=-0.048 area=0.0168
+[INFO] [1791728603.477437204] [px4_offboard_controller]: STATE=TRACK | POS=(-0.52, 13.39, -3.12) | YAW_SP=93.9 deg | TARGET_DETECTED=YES ex=-0.039 area=0.0173
+[INFO] [1791728604.976785539] [px4_offboard_controller]: 
+[INFO] [1791728604.977148434] [px4_offboard_controller]: ========================================
+[INFO] [1791728604.977604720] [px4_offboard_controller]: MISSION STATE: TRACK -> RECOVER
+[INFO] [1791728604.977964145] [px4_offboard_controller]: ========================================
+[INFO] [1791728605.477802200] [px4_offboard_controller]: STATE=RECOVER | POS=(-0.62, 15.41, -3.12) | YAW_SP=93.8 deg | TARGET_DETECTED=NO
+[INFO] [1791728606.477686345] [px4_offboard_controller]: STATE=RECOVER | POS=(-0.65, 15.59, -3.11) | YAW_SP=93.8 deg | TARGET_DETECTED=NO
+[INFO] [1791728607.477051013] [px4_offboard_controller]: STATE=RECOVER | POS=(-0.71, 15.66, -3.10) | YAW_SP=93.8 deg | TARGET_DETECTED=NO
+[INFO] [1791728608.477069400] [px4_offboard_controller]: STATE=RECOVER | POS=(-0.70, 15.99, -3.08) | YAW_SP=93.8 deg | TARGET_DETECTED=NO
+[INFO] [1791728609.476947359] [px4_offboard_controller]: STATE=RECOVER | POS=(-0.66, 16.41, -3.08) | YAW_SP=93.8 deg | TARGET_DETECTED=NO
+[INFO] [1791728610.477033279] [px4_offboard_controller]: 
+[INFO] [1791728610.477381968] [px4_offboard_controller]: ========================================
+[INFO] [1791728610.477847429] [px4_offboard_controller]: MISSION STATE: RECOVER -> TRACK
+[INFO] [1791728610.478127334] [px4_offboard_controller]: ========================================
+[INFO] [1791728610.478651304] [px4_offboard_controller]: STATE=TRACK | POS=(-0.63, 16.78, -3.09) | YAW_SP=93.8 deg | TARGET_DETECTED=YES ex=-0.072 area=0.0161
+[INFO] [1791728611.476766121] [px4_offboard_controller]: STATE=TRACK | POS=(-0.64, 16.87, -3.09) | YAW_SP=93.8 deg | TARGET_DETECTED=YES ex=-0.075 area=0.0153
+[INFO] [1791728612.477778770] [px4_offboard_controller]: STATE=TRACK | POS=(-0.62, 16.93, -3.08) | YAW_SP=93.3 deg | TARGET_DETECTED=YES ex=-0.077 area=0.0144
+[INFO] [1791728613.477967240] [px4_offboard_controller]: STATE=TRACK | POS=(-0.59, 17.29, -3.10) | YAW_SP=93.4 deg | TARGET_DETECTED=YES ex=-0.061 area=0.0131
+[INFO] [1791728614.477622129] [px4_offboard_controller]: STATE=TRACK | POS=(-0.55, 18.01, -3.09) | YAW_SP=93.4 deg | TARGET_DETECTED=YES ex=-0.047 area=0.0115
+[INFO] [1791728615.477071065] [px4_offboard_controller]: STATE=TRACK | POS=(-0.56, 19.02, -3.10) | YAW_SP=93.5 deg | TARGET_DETECTED=YES ex=-0.043 area=0.0136
+[INFO] [1791728616.477497746] [px4_offboard_controller]: STATE=TRACK | POS=(-0.58, 20.05, -3.10) | YAW_SP=93.5 deg | TARGET_DETECTED=YES ex=-0.044 area=0.0145
+[INFO] [1791728617.476791149] [px4_offboard_controller]: STATE=TRACK | POS=(-0.63, 21.15, -3.10) | YAW_SP=93.5 deg | TARGET_DETECTED=YES ex=-0.053 area=0.0154
+[INFO] [1791728618.478006535] [px4_offboard_controller]: STATE=TRACK | POS=(-0.70, 22.29, -3.11) | YAW_SP=93.5 deg | TARGET_DETECTED=YES ex=-0.065 area=0.0167
+[INFO] [1791728619.477327373] [px4_offboard_controller]: STATE=TRACK | POS=(-0.76, 23.37, -3.11) | YAW_SP=93.5 deg | TARGET_DETECTED=YES ex=-0.077 area=0.0180
+[INFO] [1791728620.477711316] [px4_offboard_controller]: STATE=TRACK | POS=(-0.83, 24.49, -3.11) | YAW_SP=92.3 deg | TARGET_DETECTED=YES ex=-0.087 area=0.0198
+[INFO] [1791728621.477444576] [px4_offboard_controller]: STATE=TRACK | POS=(-0.86, 25.62, -3.11) | YAW_SP=91.8 deg | TARGET_DETECTED=YES ex=-0.060 area=0.0215
+[INFO] [1791728622.477659780] [px4_offboard_controller]: STATE=TRACK | POS=(-0.89, 26.73, -3.11) | YAW_SP=91.7 deg | TARGET_DETECTED=YES ex=-0.060 area=0.0234
+[INFO] [1791728623.477922075] [px4_offboard_controller]: STATE=TRACK | POS=(-0.90, 27.80, -3.11) | YAW_SP=91.7 deg | TARGET_DETECTED=YES ex=-0.069 area=0.0270
+[INFO] [1791728624.477611873] [px4_offboard_controller]: STATE=TRACK | POS=(-0.87, 28.75, -3.11) | YAW_SP=91.7 deg | TARGET_DETECTED=YES ex=-0.068 area=0.0283
+[INFO] [1791728625.478026571] [px4_offboard_controller]: STATE=TRACK | POS=(-0.86, 29.38, -3.12) | YAW_SP=91.6 deg | TARGET_DETECTED=YES ex=-0.076 area=0.0297
+[INFO] [1791728626.477632249] [px4_offboard_controller]: STATE=TRACK | POS=(-0.83, 29.80, -3.12) | YAW_SP=91.6 deg | TARGET_DETECTED=YES ex=-0.077 area=0.0278
+[INFO] [1791728627.477124443] [px4_offboard_controller]: STATE=TRACK | POS=(-0.79, 30.08, -3.11) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=-0.073 area=0.0270
+[INFO] [1791728628.477451361] [px4_offboard_controller]: STATE=TRACK | POS=(-0.74, 30.43, -3.12) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=-0.047 area=0.0236
+[INFO] [1791728629.477267657] [px4_offboard_controller]: STATE=TRACK | POS=(-0.70, 31.02, -3.11) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=-0.042 area=0.0224
+[INFO] [1791728632.453414369] [px4_offboard_controller]: 
+[INFO] [1791728632.453872486] [px4_offboard_controller]: ========================================
+[INFO] [1791728632.454748100] [px4_offboard_controller]: MISSION STATE: TRACK -> RECOVER
+[INFO] [1791728632.455269777] [px4_offboard_controller]: ========================================
+[INFO] [1791728632.977485076] [px4_offboard_controller]: 
+[INFO] [1791728632.978151864] [px4_offboard_controller]: ========================================
+[INFO] [1791728632.978725850] [px4_offboard_controller]: MISSION STATE: RECOVER -> TRACK
+[INFO] [1791728632.979054036] [px4_offboard_controller]: ========================================
+[INFO] [1791728634.078035326] [px4_offboard_controller]: STATE=TRACK | POS=(-0.62, 32.61, -3.12) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=-0.036 area=0.0209
+[INFO] [1791728635.076931733] [px4_offboard_controller]: STATE=TRACK | POS=(-0.63, 32.74, -3.12) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=-0.030 area=0.0182
+[INFO] [1791728636.077739957] [px4_offboard_controller]: STATE=TRACK | POS=(-0.57, 33.16, -3.12) | YAW_SP=91.1 deg | TARGET_DETECTED=YES ex=-0.018 area=0.0159
+[INFO] [1791728637.077434936] [px4_offboard_controller]: STATE=TRACK | POS=(-0.51, 34.08, -3.11) | YAW_SP=91.1 deg | TARGET_DETECTED=YES ex=+0.000 area=0.0154
+[INFO] [1791728638.077808711] [px4_offboard_controller]: STATE=TRACK | POS=(-0.49, 35.19, -3.11) | YAW_SP=91.1 deg | TARGET_DETECTED=YES ex=+0.005 area=0.0178
+[INFO] [1791728639.077866745] [px4_offboard_controller]: STATE=TRACK | POS=(-0.52, 36.30, -3.10) | YAW_SP=91.1 deg | TARGET_DETECTED=YES ex=-0.002 area=0.0200
+[INFO] [1791728640.077552177] [px4_offboard_controller]: STATE=TRACK | POS=(-0.58, 37.45, -3.11) | YAW_SP=91.1 deg | TARGET_DETECTED=YES ex=-0.009 area=0.0219
+[INFO] [1791728641.077258723] [px4_offboard_controller]: STATE=TRACK | POS=(-0.64, 38.56, -3.11) | YAW_SP=91.1 deg | TARGET_DETECTED=YES ex=-0.021 area=0.0239
+[INFO] [1791728642.077519763] [px4_offboard_controller]: STATE=TRACK | POS=(-0.67, 39.70, -3.11) | YAW_SP=91.1 deg | TARGET_DETECTED=YES ex=-0.028 area=0.0267
+[INFO] [1791728643.077213684] [px4_offboard_controller]: STATE=TRACK | POS=(-0.67, 40.63, -3.12) | YAW_SP=91.1 deg | TARGET_DETECTED=YES ex=-0.032 area=0.0271
+[INFO] [1791728644.077486961] [px4_offboard_controller]: STATE=TRACK | POS=(-0.66, 41.28, -3.11) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=-0.036 area=0.0313
+[INFO] [1791728645.077580008] [px4_offboard_controller]: STATE=TRACK | POS=(-0.67, 41.67, -3.12) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=-0.041 area=0.0300
+[INFO] [1791728646.077046248] [px4_offboard_controller]: STATE=TRACK | POS=(-0.66, 41.92, -3.11) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.045 area=0.0266
+[INFO] [1791728647.076965770] [px4_offboard_controller]: STATE=TRACK | POS=(-0.61, 42.22, -3.11) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.038 area=0.0240
+[INFO] [1791728648.077338540] [px4_offboard_controller]: STATE=TRACK | POS=(-0.57, 42.80, -3.10) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=-0.025 area=0.0233
+[INFO] [1791728649.076905343] [px4_offboard_controller]: STATE=TRACK | POS=(-0.51, 43.69, -3.10) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=-0.010 area=0.0234
+[INFO] [1791728650.077316284] [px4_offboard_controller]: STATE=TRACK | POS=(-0.50, 44.60, -3.10) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=+0.000 area=0.0251
+[INFO] [1791728651.077706808] [px4_offboard_controller]: STATE=TRACK | POS=(-0.54, 45.44, -3.10) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=-0.006 area=0.0256
+[INFO] [1791728652.076851016] [px4_offboard_controller]: STATE=TRACK | POS=(-0.59, 46.09, -3.09) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=-0.018 area=0.0260
+[INFO] [1791728653.077010598] [px4_offboard_controller]: STATE=TRACK | POS=(-0.62, 46.60, -3.10) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.018 area=0.0271
+[INFO] [1791728654.077718677] [px4_offboard_controller]: STATE=TRACK | POS=(-0.61, 47.07, -3.11) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.016 area=0.0253
+[INFO] [1791728655.077076197] [px4_offboard_controller]: STATE=TRACK | POS=(-0.60, 47.55, -3.13) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.013 area=0.0237
+[INFO] [1791728656.076984356] [px4_offboard_controller]: STATE=TRACK | POS=(-0.59, 48.12, -3.13) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.009 area=0.0235
+[INFO] [1791728657.077840066] [px4_offboard_controller]: STATE=TRACK | POS=(-0.59, 48.81, -3.13) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=-0.006 area=0.0229
+[INFO] [1791728658.077075142] [px4_offboard_controller]: STATE=TRACK | POS=(-0.59, 49.54, -3.12) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=-0.001 area=0.0225
+[INFO] [1791728659.079017889] [px4_offboard_controller]: STATE=TRACK | POS=(-0.59, 50.32, -3.12) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=+0.000 area=0.0226
+[INFO] [1791728660.077609764] [px4_offboard_controller]: STATE=TRACK | POS=(-0.63, 51.00, -3.12) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=+0.003 area=0.0247
+[INFO] [1791728661.077523290] [px4_offboard_controller]: STATE=TRACK | POS=(-0.64, 51.63, -3.10) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=+0.002 area=0.0247
+[INFO] [1791728662.076891340] [px4_offboard_controller]: STATE=TRACK | POS=(-0.65, 52.18, -3.10) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.000 area=0.0246
+[INFO] [1791728663.076859708] [px4_offboard_controller]: STATE=TRACK | POS=(-0.67, 52.67, -3.11) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.001 area=0.0242
+[INFO] [1791728664.077102548] [px4_offboard_controller]: STATE=TRACK | POS=(-0.67, 53.18, -3.11) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.005 area=0.0225
+[INFO] [1791728665.077014547] [px4_offboard_controller]: STATE=TRACK | POS=(-0.67, 53.79, -3.11) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=+0.003 area=0.0218
+[INFO] [1791728666.676880054] [px4_offboard_controller]: STATE=TRACK | POS=(-0.67, 54.41, -3.11) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=+0.004 area=0.0214
+[INFO] [1791728667.677551598] [px4_offboard_controller]: STATE=TRACK | POS=(-0.67, 54.77, -3.11) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=+0.007 area=0.0231
+[INFO] [1791728668.680031313] [px4_offboard_controller]: STATE=TRACK | POS=(-0.71, 54.97, -3.11) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.001 area=0.0196
+[INFO] [1791728669.676954157] [px4_offboard_controller]: STATE=TRACK | POS=(-0.71, 55.50, -3.10) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.001 area=0.0188
+[INFO] [1791728670.680047465] [px4_offboard_controller]: STATE=TRACK | POS=(-0.69, 56.31, -3.11) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=+0.015 area=0.0183
+[INFO] [1791728671.677627852] [px4_offboard_controller]: STATE=TRACK | POS=(-0.67, 57.21, -3.10) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=+0.021 area=0.0195
+[INFO] [1791728672.677144067] [px4_offboard_controller]: STATE=TRACK | POS=(-0.70, 58.07, -3.10) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=+0.021 area=0.0204
+[INFO] [1791728673.676838200] [px4_offboard_controller]: STATE=TRACK | POS=(-0.75, 59.01, -3.10) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=+0.015 area=0.0212
+[INFO] [1791728674.677388843] [px4_offboard_controller]: STATE=TRACK | POS=(-0.79, 59.89, -3.09) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=+0.010 area=0.0219
+[INFO] [1791728675.676864316] [px4_offboard_controller]: STATE=TRACK | POS=(-0.84, 60.77, -3.10) | YAW_SP=91.0 deg | TARGET_DETECTED=YES ex=+0.003 area=0.0242
+[INFO] [1791728676.676910971] [px4_offboard_controller]: STATE=TRACK | POS=(-0.88, 61.52, -3.12) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.002 area=0.0245
+[INFO] [1791728677.677487871] [px4_offboard_controller]: STATE=TRACK | POS=(-0.88, 62.00, -3.11) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.004 area=0.0243
+[INFO] [1791728678.677254825] [px4_offboard_controller]: STATE=TRACK | POS=(-0.87, 62.36, -3.10) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.004 area=0.0218
+[INFO] [1791728679.676918918] [px4_offboard_controller]: STATE=TRACK | POS=(-0.88, 62.80, -3.10) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=-0.005 area=0.0209
+[INFO] [1791728680.676841921] [px4_offboard_controller]: STATE=TRACK | POS=(-0.86, 63.54, -3.12) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=+0.007 area=0.0199
+[INFO] [1791728681.678043776] [px4_offboard_controller]: STATE=TRACK | POS=(-0.83, 64.31, -3.12) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=+0.015 area=0.0206
+[INFO] [1791728682.677647921] [px4_offboard_controller]: STATE=TRACK | POS=(-0.86, 65.09, -3.11) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=+0.014 area=0.0213
+[INFO] [1791728683.677008957] [px4_offboard_controller]: STATE=TRACK | POS=(-0.91, 65.84, -3.11) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=+0.008 area=0.0217
+[INFO] [1791728684.677570674] [px4_offboard_controller]: STATE=TRACK | POS=(-0.96, 66.56, -3.11) | YAW_SP=90.9 deg | TARGET_DETECTED=YES ex=+0.001 area=0.0219
+[INFO] [1791728685.577263239] [px4_offboard_controller]: 
+[INFO] [1791728685.577666442] [px4_offboard_controller]: ========================================
+[INFO] [1791728685.578124027] [px4_offboard_controller]: MISSION STATE: TRACK -> RETURN
+[INFO] [1791728685.578412474] [px4_offboard_controller]: ========================================
+[INFO] [1791728685.680210673] [px4_offboard_controller]: STATE=RETURN | POS=(-0.97, 67.26, -3.12) | YAW_SP=97.0 deg | TARGET_DETECTED=YES ex=+0.001 area=0.0228
+[INFO] [1791728686.676945152] [px4_offboard_controller]: STATE=RETURN | POS=(-1.03, 66.06, -3.34) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728687.677510683] [px4_offboard_controller]: STATE=RETURN | POS=(-1.35, 58.74, -3.19) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728688.677999200] [px4_offboard_controller]: STATE=RETURN | POS=(-1.31, 49.43, -3.16) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728689.676938904] [px4_offboard_controller]: STATE=RETURN | POS=(-1.06, 39.80, -3.16) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728690.676897302] [px4_offboard_controller]: STATE=RETURN | POS=(-0.81, 30.69, -3.14) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728691.676974745] [px4_offboard_controller]: STATE=RETURN | POS=(-0.49, 20.92, -3.11) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728692.677058490] [px4_offboard_controller]: STATE=RETURN | POS=(-0.17, 10.95, -3.09) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728693.677434067] [px4_offboard_controller]: STATE=RETURN | POS=(0.02, 2.89, -3.19) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728694.677432189] [px4_offboard_controller]: STATE=RETURN | POS=(0.16, -0.62, -3.14) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728695.676823474] [px4_offboard_controller]: STATE=RETURN | POS=(0.16, -0.72, -3.12) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728696.676895521] [px4_offboard_controller]: STATE=RETURN | POS=(0.09, -0.25, -3.18) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728697.676796721] [px4_offboard_controller]: STATE=RETURN | POS=(0.02, 0.01, -3.17) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728698.077682400] [px4_offboard_controller]: Returned above home position.
+[INFO] [1791728698.077986017] [px4_offboard_controller]: 
+[INFO] [1791728698.078246693] [px4_offboard_controller]: ========================================
+[INFO] [1791728698.078650133] [px4_offboard_controller]: MISSION STATE: RETURN -> LAND
+[INFO] [1791728698.078945037] [px4_offboard_controller]: ========================================
+[INFO] [1791728698.176761035] [px4_offboard_controller]: Requesting AUTO LAND...
+[INFO] [1791728698.190979837] [px4_offboard_controller]: Command ACK: command=21, result=ACCEPTED
+[INFO] [1791728698.677127606] [px4_offboard_controller]: STATE=LAND | POS=(-0.00, 0.19, -3.08) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728699.676789320] [px4_offboard_controller]: STATE=LAND | POS=(-0.01, 0.46, -2.45) | YAW_SP=97.0 deg | TARGET_DETECTED=NO
+[INFO] [1791728701.276752879] [px4_offboard_controller]: STATE=LAND | POS=(-0.02, 0.67, -1.92) | YAW_SP=97.0 deg | TARGET_DETECTED=NO

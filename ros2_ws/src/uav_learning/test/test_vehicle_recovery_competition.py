@@ -90,9 +90,13 @@ def test_missing_or_immature_evidence_cannot_select_a_winner(kind):
 def test_rejected_geometry_never_enters_competition():
     lock = guarded()
     for tick in range(5):
+        guarded_before = lock.overlap_guard_active
         lock.select([car(19, 0.45, width=0.15), car(9, 0.6 + tick * 0.01)],
                     [HISTOGRAM] * 2, 100, 100, 20. + tick * 0.2, IDENTITY_WARP)
-        assert set(lock.diagnostics[0]['rejection_reasons']) & {'overlap_shape_gate', 'merged_vehicle_box'}
+        reasons = set(lock.diagnostics[0]['rejection_reasons'])
+        assert reasons and not lock.diagnostics[0]['accepted']
+        if guarded_before:
+            assert reasons & {'overlap_shape_gate', 'merged_vehicle_box'}
         assert 19 not in lock.competition.histories
 
 

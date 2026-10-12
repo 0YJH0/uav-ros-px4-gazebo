@@ -1,0 +1,66 @@
+{
+  "identity_independently_verified": false,
+  "wrong_identity_observations": 0,
+  "target_color": "red",
+  "distractor_color": "red",
+  "traffic_scenario": "lane_change_overtaking",
+  "overtaking_observed": true,
+  "lane_change": {
+    "maneuver_observed": true,
+    "lane_change_scenario_observed": true,
+    "lane_change_checks": {
+      "same_lane_rear_follow_observed": true,
+      "left_lane_change_observed": true,
+      "left_lane_pass_observed": true,
+      "center_lane_return_observed": true,
+      "same_lane_ahead_follow_observed": true,
+      "vehicle_clearance_and_road_margin_verified": true
+    },
+    "maneuver_phase_counts": {
+      "rear_follow": 227,
+      "change_left": 75,
+      "left_pass": 89,
+      "merge_center": 79,
+      "ahead_follow": 232
+    },
+    "minimum_world_horizontal_clearance_m": 1.2761333676513815,
+    "minimum_distractor_road_margin_m": 0.258111852270944
+  },
+  "minimum_world_lateral_clearance_m": -2.8848220823073616,
+  "traffic_started": true,
+  "traffic_completed": true,
+  "phase_counts": {
+    "pre": {
+      "unconfirmed": 9,
+      "tracked_vehicle": 197,
+      "panel_occlusion_unscorable": 22
+    },
+    "during": {
+      "tracked_vehicle": 192,
+      "unconfirmed": 2,
+      "overlap_unscorable": 49
+    },
+    "post": {
+      "overlap_unscorable": 231
+    }
+  },
+  "overlap_observations": 49,
+  "post_crossing_confirmation_sim_s": null,
+  "post_traffic_confirmation_sim_s": null,
+  "after_last_overlap_confirmation_sim_s": null,
+  "after_last_overlap_confirmation_wall_s": null,
+  "scorable_identity_switches": 0,
+  "observations_total": 702,
+  "scorable_observations": 389,
+  "matched_truth_fraction": 1.0,
+  "crossing_started": false,
+  "crossing_completed": false,
+  "errors": [],
+  "limitations": [
+    "Labels use projected mesh bounding volumes, not per-pixel instance masks.",
+    "Overlapping or poorly matched boxes are unscorable, never assumed correct.",
+    "Post-confirmation latency is in simulation seconds; mission recovery uses wall seconds.",
+    "No identity claims are made for unscorable frames or absent scenario evidence.",
+    "Identity claims apply only to the tested traffic geometry and appearance configuration."
+  ]
+}

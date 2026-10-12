@@ -55,6 +55,16 @@ def street_sdf(overtaking=False):
     return ET.tostring(root, encoding='unicode')
 
 
+def distractor_model_file(target_model, traffic_scenario='crossing', color='auto'):
+    if color not in ('auto', 'red', 'blue'):
+        raise ValueError('distractor_color must be auto, red or blue')
+    if color == 'auto':
+        color = 'blue' if traffic_scenario == 'overtaking' else 'red'
+    target_model = Path(target_model)
+    return (target_model.parent.parent / 'tracking_car_blue/model.sdf'
+            if color == 'blue' else target_model)
+
+
 def car_sdf(model_file, name, x, y):
     root = ET.parse(model_file).getroot()
     model = root.find('model')
@@ -83,15 +93,21 @@ class VehicleScene(Node):
         self.declare_parameter('occlusion_start', 15.0)
         self.declare_parameter('occlusion_duration', 4.0)
         self.declare_parameter('traffic_scenario', 'crossing')
+        self.declare_parameter('distractor_color', 'auto')
+        self.declare_parameter('parked_vehicle_y', -12.0)
         self.world = self.get_parameter('world').value
         self.model_file = (Path(get_package_share_directory('uav_learning'))
                            / 'config/models/tracking_car/model.sdf')
-        overtaking = self.get_parameter('traffic_scenario').value == 'overtaking'
-        distractor_model = (self.model_file.parent.parent / 'tracking_car_blue/model.sdf'
-                            if overtaking else self.model_file)
+        overtaking = self.get_parameter('traffic_scenario').value in ('overtaking', 'lane_change_overtaking')
+        distractor_model = distractor_model_file(
+            self.model_file, self.get_parameter('traffic_scenario').value,
+            self.get_parameter('distractor_color').value)
+        parked_y = float(self.get_parameter('parked_vehicle_y').value)
+        if not math.isfinite(parked_y):
+            raise ValueError('parked_vehicle_y must be finite')
         self.pending = [street_sdf(overtaking=overtaking),
                         car_sdf(self.model_file, 'tracked_vehicle', 16, 0),
-                        car_sdf(distractor_model, 'parked_vehicle', 30, -12)]
+                        car_sdf(distractor_model, 'parked_vehicle', 30, parked_y)]
         if self.get_parameter('occlusion_enabled').value:
             self.pending.append(occluder_sdf())
         self.occluded = False

@@ -1,0 +1,4 @@
+[WARN] [1791737134.394952008] [vehicle_scene]: Gazebo service failed: {"client": "scene", "sequence": 1, "service": "/world/default/create", "request_type": "gz.msgs.EntityFactory", "timeout_ms": 500, "start_monotonic_s": 296239.609024839, "success": false, "payload_sha256": "6cd5c30767cf64feda164a8ad9913112f91ab7f11e0cfcbb329debb1fd7610ad", "binding_result": false, "response_data": false, "model_name": "", "reason": "request_not_confirmed", "duration_s": 0.5014479879755527, "sim_s": 9.716}
+[INFO] [1791737135.153274401] [vehicle_scene]: Street and vehicles ready.
+[INFO] [1791737210.207135239] [vehicle_scene]: Occlusion active=True
+[INFO] [1791737214.838986640] [vehicle_scene]: Occlusion active=False

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sdf version="1.9">
+
+  <model name="x500_perception">
+
+
+    <!-- ================================================== -->
+    <!-- Base PX4 X500                                     -->
+    <!-- ================================================== -->
+
+    <include merge="true">
+
+      <uri>
+        x500
+      </uri>
+
+    </include>
+
+
+    <!-- ================================================== -->
+    <!-- Forward RGB camera                                -->
+    <!--                                                   -->
+    <!-- Original x500_depth camera:                       -->
+    <!-- approximately (0.12, 0.03, 0.242)                -->
+    <!--                                                   -->
+    <!-- New position:                                     -->
+    <!-- x = 0.28 m : move forward                         -->
+    <!-- y = 0.00 m : centered                             -->
+    <!-- z = 0.30 m : slightly higher                      -->
+    <!-- ================================================== -->
+
+    <include merge="true">
+
+      <uri>
+        model://uav_rgb_camera
+      </uri>
+
+      <pose>
+        0.28 0.00 0.30 0 0 0
+      </pose>
+
+    </include>
+
+
+    <!-- ================================================== -->
+    <!-- Fixed camera mount                                -->
+    <!-- ================================================== -->
+
+    <joint
+      name="CameraJoint"
+      type="fixed">
+
+      <parent>
+        base_link
+      </parent>
+
+      <child>
+        camera_link
+      </child>
+
+      <pose relative_to="base_link">
+        0.28 0.00 0.30 0 0 0
+      </pose>
+
+    </joint>
+
+  </model>
+
+</sdf>

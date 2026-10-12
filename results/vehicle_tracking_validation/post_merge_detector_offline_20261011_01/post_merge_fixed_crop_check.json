@@ -1,0 +1,578 @@
+[
+  {
+    "image": "crossing_0125.600_raw.png",
+    "wall_s": 169.92745249101426,
+    "original_label": "unconfirmed",
+    "crop_name": "fixed_square320",
+    "crop": [
+      327,
+      208,
+      647,
+      528
+    ],
+    "imgsz": 640,
+    "infer_s": 1.0049557199818082,
+    "candidates": [
+      {
+        "box": [
+          446.169677734375,
+          315.5324172973633,
+          528.5332641601562,
+          409.7998046875
+        ],
+        "confidence": 0.8055217862129211,
+        "label": "overlap_unscorable",
+        "reason": "multiple_vehicle_support",
+        "crop_border_touches": false
+      },
+      {
+        "box": [
+          465.8772888183594,
+          315.8770294189453,
+          517.5184326171875,
+          348.3650360107422
+        ],
+        "confidence": 0.1496291607618332,
+        "label": "overlap_unscorable",
+        "reason": "insufficient_exclusive_projection",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0125.600_raw.png",
+    "wall_s": 169.92745249101426,
+    "original_label": "unconfirmed",
+    "crop_name": "fixed_square400",
+    "crop": [
+      287,
+      140,
+      687,
+      540
+    ],
+    "imgsz": 640,
+    "infer_s": 0.08768318599322811,
+    "candidates": [
+      {
+        "box": [
+          446.2384796142578,
+          315.73211669921875,
+          527.9765930175781,
+          409.9735107421875
+        ],
+        "confidence": 0.8595024347305298,
+        "label": "overlap_unscorable",
+        "reason": "multiple_vehicle_support",
+        "crop_border_touches": false
+      },
+      {
+        "box": [
+          466.7503204345703,
+          315.73814392089844,
+          517.6255340576172,
+          348.64479064941406
+        ],
+        "confidence": 0.3124843239784241,
+        "label": "overlap_unscorable",
+        "reason": "insufficient_exclusive_projection",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0125.600_raw.png",
+    "wall_s": 169.92745249101426,
+    "original_label": "unconfirmed",
+    "crop_name": "fixed_square480",
+    "crop": [
+      247,
+      60,
+      727,
+      540
+    ],
+    "imgsz": 640,
+    "infer_s": 0.08793570898706093,
+    "candidates": [
+      {
+        "box": [
+          446.33099365234375,
+          336.73681640625,
+          527.6708374023438,
+          410.7628173828125
+        ],
+        "confidence": 0.8322478532791138,
+        "label": "tracked_vehicle",
+        "reason": "unique_projection_support",
+        "crop_border_touches": false
+      },
+      {
+        "box": [
+          467.1407928466797,
+          315.21337890625,
+          517.8753662109375,
+          349.2680969238281
+        ],
+        "confidence": 0.8011966347694397,
+        "label": "overlap_unscorable",
+        "reason": "insufficient_exclusive_projection",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0125.600_raw.png",
+    "wall_s": 169.92745249101426,
+    "original_label": "unconfirmed",
+    "crop_name": "fixed_square540",
+    "crop": [
+      217,
+      0,
+      757,
+      540
+    ],
+    "imgsz": 640,
+    "infer_s": 0.08419090899406001,
+    "candidates": [
+      {
+        "box": [
+          446.3179473876953,
+          339.2416687011719,
+          528.867431640625,
+          408.6563415527344
+        ],
+        "confidence": 0.8407367467880249,
+        "label": "tracked_vehicle",
+        "reason": "unique_projection_support",
+        "crop_border_touches": false
+      },
+      {
+        "box": [
+          466.71131896972656,
+          315.9548034667969,
+          517.427001953125,
+          348.86590576171875
+        ],
+        "confidence": 0.6862308382987976,
+        "label": "overlap_unscorable",
+        "reason": "insufficient_exclusive_projection",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0125.600_raw.png",
+    "wall_s": 169.92745249101426,
+    "original_label": "unconfirmed",
+    "crop_name": "full_frame",
+    "crop": [
+      0,
+      0,
+      960,
+      540
+    ],
+    "imgsz": 640,
+    "infer_s": 0.07399904896738008,
+    "candidates": [
+      {
+        "box": [
+          446.0342102050781,
+          315.9602355957031,
+          527.8568725585938,
+          411.2973937988281
+        ],
+        "confidence": 0.7838188409805298,
+        "label": "overlap_unscorable",
+        "reason": "multiple_vehicle_support",
+        "crop_border_touches": false
+      },
+      {
+        "box": [
+          445.9333190917969,
+          344.8259582519531,
+          527.4979858398438,
+          410.56695556640625
+        ],
+        "confidence": 0.1323300451040268,
+        "label": "tracked_vehicle",
+        "reason": "unique_projection_support",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0126.600_raw.png",
+    "wall_s": 171.48605801101075,
+    "original_label": "overlap_unscorable",
+    "crop_name": "fixed_square320",
+    "crop": [
+      328,
+      195,
+      648,
+      515
+    ],
+    "imgsz": 640,
+    "infer_s": 0.0903627320076339,
+    "candidates": [
+      {
+        "box": [
+          465.8222351074219,
+          311.6333465576172,
+          516.585205078125,
+          341.74183654785156
+        ],
+        "confidence": 0.5854511260986328,
+        "label": "overlap_unscorable",
+        "reason": "insufficient_exclusive_projection",
+        "crop_border_touches": false
+      },
+      {
+        "box": [
+          448.8549118041992,
+          333.9233703613281,
+          526.6880493164062,
+          401.6772766113281
+        ],
+        "confidence": 0.5658735036849976,
+        "label": "tracked_vehicle",
+        "reason": "unique_projection_support",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0126.600_raw.png",
+    "wall_s": 171.48605801101075,
+    "original_label": "overlap_unscorable",
+    "crop_name": "fixed_square400",
+    "crop": [
+      288,
+      140,
+      688,
+      540
+    ],
+    "imgsz": 640,
+    "infer_s": 0.08811803202843294,
+    "candidates": [
+      {
+        "box": [
+          449.15863037109375,
+          331.5512390136719,
+          526.7775726318359,
+          398.46722412109375
+        ],
+        "confidence": 0.836687445640564,
+        "label": "tracked_vehicle",
+        "reason": "unique_projection_support",
+        "crop_border_touches": false
+      },
+      {
+        "box": [
+          466.93812561035156,
+          311.81394958496094,
+          516.0809173583984,
+          341.5255584716797
+        ],
+        "confidence": 0.7972104549407959,
+        "label": "overlap_unscorable",
+        "reason": "insufficient_exclusive_projection",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0126.600_raw.png",
+    "wall_s": 171.48605801101075,
+    "original_label": "overlap_unscorable",
+    "crop_name": "fixed_square480",
+    "crop": [
+      248,
+      60,
+      728,
+      540
+    ],
+    "imgsz": 640,
+    "infer_s": 0.07645152701297775,
+    "candidates": [
+      {
+        "box": [
+          449.63475036621094,
+          334.43609619140625,
+          527.5594482421875,
+          400.3165283203125
+        ],
+        "confidence": 0.7886748909950256,
+        "label": "tracked_vehicle",
+        "reason": "unique_projection_support",
+        "crop_border_touches": false
+      },
+      {
+        "box": [
+          467.6270446777344,
+          311.81842041015625,
+          516.9362487792969,
+          343.26544189453125
+        ],
+        "confidence": 0.620094895362854,
+        "label": "overlap_unscorable",
+        "reason": "insufficient_exclusive_projection",
+        "crop_border_touches": false
+      },
+      {
+        "box": [
+          449.3456268310547,
+          311.94227600097656,
+          521.2339782714844,
+          396.8764343261719
+        ],
+        "confidence": 0.1557336449623108,
+        "label": "overlap_unscorable",
+        "reason": "multiple_vehicle_support",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0126.600_raw.png",
+    "wall_s": 171.48605801101075,
+    "original_label": "overlap_unscorable",
+    "crop_name": "fixed_square540",
+    "crop": [
+      218,
+      0,
+      758,
+      540
+    ],
+    "imgsz": 640,
+    "infer_s": 0.08682141097960994,
+    "candidates": [
+      {
+        "box": [
+          449.3267059326172,
+          313.4742431640625,
+          527.5982055664062,
+          397.0879821777344
+        ],
+        "confidence": 0.6480222940444946,
+        "label": "overlap_unscorable",
+        "reason": "multiple_vehicle_support",
+        "crop_border_touches": false
+      },
+      {
+        "box": [
+          467.4901885986328,
+          311.3406066894531,
+          516.58935546875,
+          342.9383850097656
+        ],
+        "confidence": 0.43248701095581055,
+        "label": "overlap_unscorable",
+        "reason": "insufficient_exclusive_projection",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0126.600_raw.png",
+    "wall_s": 171.48605801101075,
+    "original_label": "overlap_unscorable",
+    "crop_name": "full_frame",
+    "crop": [
+      0,
+      0,
+      960,
+      540
+    ],
+    "imgsz": 640,
+    "infer_s": 0.04998527799034491,
+    "candidates": [
+      {
+        "box": [
+          448.92279052734375,
+          312.22515869140625,
+          527.3428955078125,
+          403.0792541503906
+        ],
+        "confidence": 0.819688618183136,
+        "label": "overlap_unscorable",
+        "reason": "multiple_vehicle_support",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0127.652_raw.png",
+    "wall_s": 173.22512784198625,
+    "original_label": "overlap_unscorable",
+    "crop_name": "fixed_square320",
+    "crop": [
+      329,
+      178,
+      649,
+      498
+    ],
+    "imgsz": 640,
+    "infer_s": 0.09947030001785606,
+    "candidates": [
+      {
+        "box": [
+          452.29212951660156,
+          297.92401123046875,
+          526.0074005126953,
+          380.479248046875
+        ],
+        "confidence": 0.6733582615852356,
+        "label": "overlap_unscorable",
+        "reason": "multiple_vehicle_support",
+        "crop_border_touches": false
+      },
+      {
+        "box": [
+          467.34629821777344,
+          297.9360809326172,
+          515.3874359130859,
+          324.94944763183594
+        ],
+        "confidence": 0.4207734167575836,
+        "label": "overlap_unscorable",
+        "reason": "insufficient_exclusive_projection",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0127.652_raw.png",
+    "wall_s": 173.22512784198625,
+    "original_label": "overlap_unscorable",
+    "crop_name": "fixed_square400",
+    "crop": [
+      289,
+      138,
+      689,
+      538
+    ],
+    "imgsz": 640,
+    "infer_s": 0.0988543099956587,
+    "candidates": [
+      {
+        "box": [
+          452.49986267089844,
+          317.39830017089844,
+          526.2135467529297,
+          376.492919921875
+        ],
+        "confidence": 0.7174379825592041,
+        "label": "tracked_vehicle",
+        "reason": "unique_projection_support",
+        "crop_border_touches": false
+      },
+      {
+        "box": [
+          467.8372344970703,
+          297.7941436767578,
+          515.0834045410156,
+          324.4237365722656
+        ],
+        "confidence": 0.681013286113739,
+        "label": "overlap_unscorable",
+        "reason": "insufficient_exclusive_projection",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0127.652_raw.png",
+    "wall_s": 173.22512784198625,
+    "original_label": "overlap_unscorable",
+    "crop_name": "fixed_square480",
+    "crop": [
+      249,
+      60,
+      729,
+      540
+    ],
+    "imgsz": 640,
+    "infer_s": 0.08737999596633017,
+    "candidates": [
+      {
+        "box": [
+          452.3250274658203,
+          297.6986389160156,
+          525.4697875976562,
+          374.97747802734375
+        ],
+        "confidence": 0.8178420066833496,
+        "label": "overlap_unscorable",
+        "reason": "multiple_vehicle_support",
+        "crop_border_touches": false
+      },
+      {
+        "box": [
+          468.26307678222656,
+          297.59381103515625,
+          514.4304504394531,
+          324.94940185546875
+        ],
+        "confidence": 0.18089748919010162,
+        "label": "overlap_unscorable",
+        "reason": "insufficient_exclusive_projection",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0127.652_raw.png",
+    "wall_s": 173.22512784198625,
+    "original_label": "overlap_unscorable",
+    "crop_name": "fixed_square540",
+    "crop": [
+      219,
+      0,
+      759,
+      540
+    ],
+    "imgsz": 640,
+    "infer_s": 0.08163977199001238,
+    "candidates": [
+      {
+        "box": [
+          452.37062072753906,
+          297.6254577636719,
+          525.901611328125,
+          375.4527282714844
+        ],
+        "confidence": 0.8707367181777954,
+        "label": "overlap_unscorable",
+        "reason": "multiple_vehicle_support",
+        "crop_border_touches": false
+      }
+    ]
+  },
+  {
+    "image": "crossing_0127.652_raw.png",
+    "wall_s": 173.22512784198625,
+    "original_label": "overlap_unscorable",
+    "crop_name": "full_frame",
+    "crop": [
+      0,
+      0,
+      960,
+      540
+    ],
+    "imgsz": 640,
+    "infer_s": 0.0536975699942559,
+    "candidates": [
+      {
+        "box": [
+          451.8778381347656,
+          299.14544677734375,
+          525.9218139648438,
+          382.58001708984375
+        ],
+        "confidence": 0.555386483669281,
+        "label": "overlap_unscorable",
+        "reason": "multiple_vehicle_support",
+        "crop_border_touches": false
+      }
+    ]
+  }
+]

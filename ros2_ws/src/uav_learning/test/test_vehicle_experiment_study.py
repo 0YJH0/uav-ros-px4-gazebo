@@ -35,6 +35,19 @@ def test_group_changes_only_scene_parameters():
         study.verify_parameters(captured, scenario, expected)
 
 
+def test_lane_change_scene_overrides_are_verified_without_loosening_controller():
+    expected = study.declared_parameters(study.ROOT)
+    captured = {node: dict(values) for node, values in expected.items()}
+    scenario = {'vehicle_speed': .8, 'occlusion_start': 15., 'occlusion_duration': 4.,
+                'traffic_scenario': 'lane_change_overtaking', 'distractor_color': 'red',
+                'parked_vehicle_y': -4.4}
+    captured['vehicle_scene'].update(scenario, occlusion_enabled=True)
+    study.verify_parameters(captured, scenario, expected)
+    captured['vehicle_scene']['distractor_color'] = 'blue'
+    with pytest.raises(RuntimeError, match='distractor_color'):
+        study.verify_parameters(captured, scenario, expected)
+
+
 def test_freeze_drift_is_rejected(tmp_path):
     source = tmp_path / 'source.py'
     source.write_text('original')
@@ -107,7 +120,7 @@ def test_new_freeze_excludes_generated_test_caches_but_keeps_implementation(tmp_
              'PX4-Autopilot/build/px4_sitl_default/bin/px4', 'model.pt']
     paths += ['scripts/' + name for name in ('run_vehicle_tracking_validation.py',
         'validate_vehicle_tracking.py', 'vehicle_experiment_study.py', 'px4_env.sh',
-        'analyze_vehicle_association.py', 'vehicle_crossing_validation.py')]
+        'analyze_vehicle_association.py', 'vehicle_crossing_validation.py', 'vehicle_lane_change.py')]
     for name in paths:
         path = root / name
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -116,6 +129,7 @@ def test_new_freeze_excludes_generated_test_caches_but_keeps_implementation(tmp_
     monkeypatch.setattr(study.importlib.metadata, 'version', lambda name: 'test')
     manifest = study.freeze(root, output, root / 'model.pt')
     assert 'ros2_ws/src/uav_learning/uav_learning/source.py' in manifest['source_sha256']
+    assert 'scripts/vehicle_lane_change.py' in manifest['source_sha256']
     assert not any('.pytest_cache' in name or '.ruff_cache' in name for name in manifest['source_sha256'])
 
 

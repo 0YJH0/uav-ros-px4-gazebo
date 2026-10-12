@@ -1,0 +1,2 @@
+[INFO] [1791731481.436036420] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[INFO] [1791731698.001261592] [rclcpp]: signal_handler(SIGINT/SIGTERM)

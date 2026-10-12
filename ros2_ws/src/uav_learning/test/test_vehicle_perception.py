@@ -2,12 +2,15 @@ from types import SimpleNamespace
 import json
 
 import numpy as np
+import pytest
 from cv_bridge import CvBridge
 
 from uav_learning.perception_node import PerceptionNode
 from uav_learning.vehicle_target_lock import VehicleTargetLock
 from uav_learning.px4_offboard_controller import MissionState, PX4OffboardController
-from uav_learning.vehicle_scene import VehicleScene, car_sdf, street_sdf, occluder_sdf
+from uav_learning.vehicle_scene import (
+    VehicleScene, car_sdf, distractor_model_file, street_sdf, occluder_sdf,
+)
 import xml.etree.ElementTree as ET
 
 
@@ -558,6 +561,30 @@ def test_scene_mesh_paths_resolve():
     root = ET.fromstring(car_sdf(model, 'test_car', 16, 0))
     assert all(Path(uri.text).is_file() for uri in root.iter('uri'))
     assert len(ET.fromstring(street_sdf()).findall('.//collision')) == 21
+
+
+@pytest.mark.parametrize('scenario,color,model_name', [
+    ('crossing', 'auto', 'tracking_car'),
+    ('overtaking', 'auto', 'tracking_car_blue'),
+    ('crossing', 'red', 'tracking_car'),
+    ('overtaking', 'red', 'tracking_car'),
+    ('crossing', 'blue', 'tracking_car_blue'),
+    ('overtaking', 'blue', 'tracking_car_blue'),
+])
+def test_distractor_model_color_selection_preserves_scenario_defaults(scenario, color, model_name):
+    from pathlib import Path
+    model = Path(__file__).resolve().parents[1] / 'config/models/tracking_car/model.sdf'
+    selected = distractor_model_file(model, scenario, color)
+    assert selected == model.parent.parent / model_name / 'model.sdf'
+    assert selected.is_file()
+
+
+def test_distractor_model_default_and_invalid_color():
+    from pathlib import Path
+    model = Path(__file__).resolve().parents[1] / 'config/models/tracking_car/model.sdf'
+    assert distractor_model_file(model) == model
+    with pytest.raises(ValueError):
+        distractor_model_file(model, 'overtaking', 'green')
 
 
 def test_overtaking_color_changes_rendering_not_collision_geometry():

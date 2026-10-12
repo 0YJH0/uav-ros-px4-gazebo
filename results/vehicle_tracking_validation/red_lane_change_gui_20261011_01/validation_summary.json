@@ -1,0 +1,142 @@
+{
+  "scenario": {
+    "vehicle_speed": 0.8,
+    "occlusion_start": 15.0,
+    "occlusion_duration": 4.0,
+    "recovery_competition_enabled": false,
+    "predict_box_scale_velocity": true,
+    "smooth_recovery_setpoints": false,
+    "cpu_inference_threads": 0,
+    "detector_backend": "torch",
+    "backend_artifacts": "",
+    "gui": true,
+    "distractor_color": "red",
+    "parked_vehicle_y": -4.4,
+    "crossing": false,
+    "overtaking": false,
+    "lane_change_overtaking": true,
+    "traffic_scenario": "lane_change_overtaking"
+  },
+  "task_passed": false,
+  "maneuver_observed": true,
+  "identity_verified": false,
+  "strict_joint_passed": false,
+  "coverage_percent": 74.60685501259896,
+  "failure_reasons": [
+    "confirmed_coverage_below_0_8",
+    "no_scorable_original_identity_after_merge"
+  ],
+  "track_losses": 4,
+  "planned_losses": 1,
+  "unplanned_losses": 3,
+  "recovery_episodes": [
+    {
+      "loss_wall_s": 95.87605932500446,
+      "planned_occlusion": true,
+      "confirmation_wall_s": 102.47556656401139,
+      "loss_to_confirmation_wall_s": 6.599507239006925,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 148.76850379700772,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 162.77036842302186,
+      "loss_to_confirmation_wall_s": 14.00186462601414,
+      "recovery_timeout": true
+    },
+    {
+      "loss_wall_s": 175.46871395898052,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 177.56867338699521,
+      "loss_to_confirmation_wall_s": 2.0999594280146994,
+      "recovery_timeout": false
+    },
+    {
+      "loss_wall_s": 185.90571801702026,
+      "planned_occlusion": false,
+      "confirmation_wall_s": 198.20897949201753,
+      "loss_to_confirmation_wall_s": 12.30326147499727,
+      "recovery_timeout": true
+    }
+  ],
+  "occlusion_confirmed_recovery_wall_s": [
+    1.3723614899790846
+  ],
+  "wrong_identity_observations": 0,
+  "scorable_identity_switches": 0,
+  "identity_phase_counts": {
+    "pre": {
+      "unconfirmed": 9,
+      "tracked_vehicle": 197,
+      "panel_occlusion_unscorable": 22
+    },
+    "during": {
+      "tracked_vehicle": 192,
+      "unconfirmed": 2,
+      "overlap_unscorable": 49
+    },
+    "post": {
+      "overlap_unscorable": 231
+    }
+  },
+  "drone_follow_travel_m": 59.83776410514833,
+  "track_mean_abs_pixel_error": 17.934542838328333,
+  "final_home_horizontal_error_m": 0.7292485626141322,
+  "parked_pose": [
+    30.0,
+    -4.4,
+    0.05
+  ],
+  "geometry_evidence": {
+    "maneuver_observed": true,
+    "lane_change_scenario_observed": true,
+    "lane_change_checks": {
+      "same_lane_rear_follow_observed": true,
+      "left_lane_change_observed": true,
+      "left_lane_pass_observed": true,
+      "center_lane_return_observed": true,
+      "same_lane_ahead_follow_observed": true,
+      "vehicle_clearance_and_road_margin_verified": true
+    },
+    "maneuver_phase_counts": {
+      "rear_follow": 4551,
+      "change_left": 591,
+      "left_pass": 711,
+      "merge_center": 595,
+      "ahead_follow": 3083
+    },
+    "minimum_world_horizontal_clearance_m": 1.2761333676513815,
+    "minimum_distractor_road_margin_m": 0.258111852270944
+  },
+  "scene_requests": {
+    "total": 1055,
+    "failures": 0,
+    "by_service": {
+      "/world/default/set_pose": 1054,
+      "/world/default/create": 1
+    },
+    "receipt_errors": 0,
+    "sequence_errors": [
+      "scene"
+    ]
+  },
+  "ulog_safety": {
+    "armed_failsafe_observations": 0,
+    "armed_offboard_lost_observations": 0,
+    "ulog_dropout_events": 0
+  },
+  "ulog_sha256": "e7c1a20cca6192feede737d16e67844d2377412223f8db3367aa915919c4cf75",
+  "source_snapshot_files_verified": 40,
+  "regression_tests": {
+    "passed": 353,
+    "warnings": 3
+  },
+  "limitations": [
+    "Single trial, not a repeated benchmark or evidence of algorithm improvement.",
+    "Coverage is time-weighted onboard confirmation, not independently verified identity accuracy.",
+    "All post-merge identity observations are projection-overlap unscorable.",
+    "Zero scorable wrong identities does not verify post-merge target identity.",
+    "Mesh-box clearance and ULog events are not a full 3D collision audit.",
+    "Identity is from identity_report.json; report.json does not independently verify identity."
+  ]
+}

@@ -25,4 +25,7 @@ __pycache__/
 # Keep the selected detector and its frozen experiment copy.
 *.pt
 !/yolo11s.pt
-!/results/vehicle_tracking_validation/scene_transport_isolated_repeat_20261011_01/frozen_files/yolo11s.pt
+!/results/vehicle_tracking_validation/**/frozen_files/yolo11s.pt
+
+# Archived installation metadata is part of the validation evidence.
+!/results/vehicle_tracking_validation/**/installed_snapshot/**/*.egg-info/

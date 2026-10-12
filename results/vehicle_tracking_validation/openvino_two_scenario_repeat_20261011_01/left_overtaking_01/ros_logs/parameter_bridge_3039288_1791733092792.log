@@ -1,0 +1,2 @@
+[INFO] [1791733092.930741952] [camera_info_bridge]: Creating GZ->ROS Bridge: [/world/default/model/x500_perception_0/link/camera_link/sensor/IMX214/camera_info (gz.msgs.CameraInfo) -> /world/default/model/x500_perception_0/link/camera_link/sensor/IMX214/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[INFO] [1791733276.384170645] [rclcpp]: signal_handler(SIGINT/SIGTERM)

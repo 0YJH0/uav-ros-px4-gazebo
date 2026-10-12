@@ -43,6 +43,9 @@ class PerceptionNode(Node):
             'weak_idless_max_age': 2.0,
             'recovery_competition_enabled': False,
             'predict_box_scale_velocity': True,
+            'overlap_candidate_recovery': True,
+            'bounded_scale_prediction': True,
+            'overlap_confirmation_continuity': True,
             'target_roi_enabled': True,
             'target_roi_image_size': 640,
             'target_roi_full_frame_budget_s': 0.25,
@@ -112,7 +115,10 @@ class PerceptionNode(Node):
             self.settings['weak_idless_confirm_frames'],
             self.settings['weak_idless_max_age'],
             recovery_competition_enabled=self.settings['recovery_competition_enabled'],
-            predict_box_scale_velocity=self.settings['predict_box_scale_velocity'])
+            predict_box_scale_velocity=self.settings['predict_box_scale_velocity'],
+            overlap_candidate_recovery=self.settings['overlap_candidate_recovery'],
+            bounded_scale_prediction=self.settings['bounded_scale_prediction'],
+            overlap_confirmation_continuity=self.settings['overlap_confirmation_continuity'])
         self.tracking_started = False
         self.airborne_search_initialized = False
         self.last_log = 0.0
@@ -494,7 +500,10 @@ class PerceptionNode(Node):
             self.settings['weak_idless_confirm_frames'],
             self.settings['weak_idless_max_age'],
             recovery_competition_enabled=self.settings.get('recovery_competition_enabled', False),
-            predict_box_scale_velocity=self.settings.get('predict_box_scale_velocity', True))
+            predict_box_scale_velocity=self.settings.get('predict_box_scale_velocity', True),
+            overlap_candidate_recovery=self.settings.get('overlap_candidate_recovery', True),
+            bounded_scale_prediction=self.settings.get('bounded_scale_prediction', True),
+            overlap_confirmation_continuity=self.settings.get('overlap_confirmation_continuity', True))
 
     @staticmethod
     def appearance(image, box):

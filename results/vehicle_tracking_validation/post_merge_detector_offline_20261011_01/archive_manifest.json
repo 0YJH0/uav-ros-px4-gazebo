@@ -1,0 +1,155 @@
+{
+  "archived_at_utc": "2026-10-11T13:33:19.720228+00:00",
+  "source_trial": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01",
+  "scope": "Read-only detection checks; no deployed detector change or new closed-loop run.",
+  "sample_count": 9,
+  "late_crop_sweep_sample_count": 3,
+  "late_crop_sweep_sim_s": [
+    125.6,
+    126.6,
+    127.652
+  ],
+  "confirmed_nms_loss_examples": 1,
+  "confirmed_nms_loss_example_sim_s": 126.6,
+  "matching_key": "Exact image stamp (sec, nanosec), not wall_s.",
+  "wall_clock_limitation": "Output wall_s uses identity/image-manifest epoch; association epoch differs by about +4.484 s.",
+  "model": {
+    "path_relative_to_root": "yolo11s.pt",
+    "sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+    "size_bytes": 19313732
+  },
+  "settings": {
+    "classes": [
+      2
+    ],
+    "confidence": 0.1,
+    "full_frame_imgsz": 960,
+    "roi_default_imgsz": 640,
+    "torch_cpu_threads": 8,
+    "existing_cross_source_nms_iou": 0.7
+  },
+  "environment_versions": {
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu",
+    "ultralytics": "8.4.174",
+    "numpy": "1.26.4",
+    "opencv-python": "4.11.0.86"
+  },
+  "images": {
+    "crossing_0119.300_raw.png": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/crossing_0119.300_raw.png",
+      "sha256": "c3d233e201d0cec8745f4beecf23a604f1135d0a697029cf557f12390752c431",
+      "size_bytes": 61465
+    },
+    "crossing_0120.400_raw.png": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/crossing_0120.400_raw.png",
+      "sha256": "d7bf7fbc988e2a9d9923b0d5b867bb62f87590099d657e27c510b40e5aacfaa7",
+      "size_bytes": 59592
+    },
+    "crossing_0121.400_raw.png": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/crossing_0121.400_raw.png",
+      "sha256": "584a50c377222c4b214cf7ae97c15f350795bbdb67e8edbdf86277638d239fe3",
+      "size_bytes": 57444
+    },
+    "crossing_0122.452_raw.png": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/crossing_0122.452_raw.png",
+      "sha256": "364d5329f82b263852830e4c00d2d87d36bf19a6a63845772d9e15f682b92263",
+      "size_bytes": 55548
+    },
+    "crossing_0123.600_raw.png": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/crossing_0123.600_raw.png",
+      "sha256": "c77106a49e667590052d1b41cf556398b477d79e01f9f094db89129f97e89c6e",
+      "size_bytes": 54738
+    },
+    "crossing_0124.600_raw.png": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/crossing_0124.600_raw.png",
+      "sha256": "2ab140c2257df11721832533ae7962e2acfaef78be22084013c44a44d974f786",
+      "size_bytes": 53600
+    },
+    "crossing_0125.600_raw.png": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/crossing_0125.600_raw.png",
+      "sha256": "aaa093cc0ece6bdac7d4ebe2e646fcade37f6245a7404f5c5781bb919466b151",
+      "size_bytes": 53030
+    },
+    "crossing_0126.600_raw.png": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/crossing_0126.600_raw.png",
+      "sha256": "5658e6d04fe8b90d41a7a1dd67e5ebb8c8ddff7f0a3eaefc608c4980c2512361",
+      "size_bytes": 51797
+    },
+    "crossing_0127.652_raw.png": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/crossing_0127.652_raw.png",
+      "sha256": "aed10a18650e6cdf932a64efd893105021feffc4c408c616a688bdee45d7106a",
+      "size_bytes": 50936
+    }
+  },
+  "original_evidence": {
+    "association.jsonl": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/association.jsonl",
+      "sha256": "5ba6df1740cf91949bc449e11fcf6507279a437a5e4cea7a127377567048931d"
+    },
+    "identity_observations.jsonl": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/identity_observations.jsonl",
+      "sha256": "22bd00569f86a105898837062be5fd462dc930d1d33fd34729287d6cb403078d"
+    },
+    "crossing_image_manifest.jsonl": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/crossing_image_manifest.jsonl",
+      "sha256": "46f62279b2b7de71bc4f8bea62841898a46b7dcffea7da5667a9bb26ff389aba"
+    },
+    "runtime_parameters.json": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/runtime_parameters.json",
+      "sha256": "adc10e3463a533fea9b7b06f9050101ea1e2ad228058406d1368038816aabe5c"
+    },
+    "identity_report.json": {
+      "source_relative_to_root": "results/vehicle_tracking_validation/overlap_scale_gui_20261011_01/identity_report.json",
+      "sha256": "1df0608caff08e98a7e9e5e1f3040b157f1094d1a4d1b9d04b7d106772cad0e9"
+    }
+  },
+  "source_snapshot": {
+    "ros2_ws/src/uav_learning/uav_learning/vehicle_roi_detector.py": {
+      "sha256": "7fbd6e6e5ad90884696fc152fa6d55a7f9252fb721230a71859f3ba7dce8aa86",
+      "matches_prior_flight_snapshot": true
+    },
+    "scripts/vehicle_crossing_validation.py": {
+      "sha256": "7caa1ca7e901ff311fbef70615bd1fa64c4718b785ff202d06a27ad2db8297cd",
+      "matches_prior_flight_snapshot": true
+    }
+  },
+  "copied_artifacts": {
+    "post_merge_detection_check.py": {
+      "working_source": "/tmp/post_merge_detection_check.py",
+      "sha256": "b8e93cf04fc22915f5e9ae7098df45a84bb3556c306ba8f3d1974b9890ecea54"
+    },
+    "post_merge_detection_check.json": {
+      "working_source": "/tmp/post_merge_detection_check.json",
+      "sha256": "60b38234c241350970a811fa0b77dcfdc30a501015623c4a9c5c32e1fc493c4d"
+    },
+    "post_merge_fixed_crop_check.py": {
+      "working_source": "/tmp/post_merge_crop_check.py",
+      "sha256": "5395c1588cb24d24119b8eef1b71c58ea3ed9eb0c29f682d47fc9a1320679cb4"
+    },
+    "post_merge_fixed_crop_check.json": {
+      "working_source": "/tmp/post_merge_fixed_crop_check.json",
+      "sha256": "fb3ce7ed42e14635774187ebfd0e50ef357654d5a4a8d7fdad4ceec49fa89597"
+    },
+    "post_merge_crop_check.json": {
+      "working_source": "/tmp/post_merge_crop_check.json",
+      "sha256": "47820915fb8eee89fc97dab0d810ea2517ddf3787547f2f74e3e2806d6e5d280"
+    },
+    "DIAGNOSIS.md": {
+      "working_source": "/tmp/post_merge_diagnosis.md",
+      "sha256": "a8384138622c2f25274f48d9182e1b6481c891f60fdb99204f1f0f189592456d"
+    }
+  },
+  "reconstructed_script": {
+    "name": "post_merge_broad_crop_reconstructed.py",
+    "status": "Reconstructed from this turn execution record after original /tmp script was edited for fixed-square comparison; not rerun.",
+    "sha256": "6a29664a95831033c2e3ad74fd81e16dc9e16cfb272e4130bf33bb2dfd165c60"
+  },
+  "limitations": [
+    "Nine archived images and a three-image hard-case crop sweep, not an independent test set.",
+    "Labels are projected-box evidence, not pixel-instance ground truth.",
+    "Raw output contains diagnostic timings including initialization in some first calls.",
+    "No new coverage, recovery, wrong-identity, or closed-loop safety result is inferred.",
+    "Detector source snapshots match the prior flight only when explicitly recorded true."
+  ]
+}

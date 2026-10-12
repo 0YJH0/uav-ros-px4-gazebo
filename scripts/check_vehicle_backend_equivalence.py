@@ -42,6 +42,8 @@ def main():
                 cars.append([{'bbox': box[:4].tolist(), 'confidence': float(box[4])} for box in result.boxes.data])
             rows.append({'image': file, 'size': size, **comparison(*cars)})
     report = {'inputs': len(files), 'comparisons': len(rows), 'rows': rows,
+              'model_sha256': hashlib.sha256(args.model_path.read_bytes()).hexdigest(),
+              'backend_manifest_sha256': hashlib.sha256((args.backend_artifacts/'manifest.json').read_bytes()).hexdigest(),
               'unmatched_boxes': sum(row['unmatched'] for row in rows),
               'matched_boxes': sum(row['matched'] for row in rows),
               'max_box_delta_px': max(row['box_max_delta_px'] or 0 for row in rows),

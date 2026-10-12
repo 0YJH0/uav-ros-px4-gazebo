@@ -25,8 +25,12 @@ def measurement(candidate, width, height):
 
 
 def predict(lock, now):
-    if now - lock.last_seen > lock.prediction_horizon:
+    age = now - lock.last_seen
+    if age > lock.prediction_horizon:
         return lock.last_measurement.copy(), None
+    if lock.bounded_scale_prediction and age > .5:
+        raise ValueError('Legacy CV prediction cannot reconstruct bounded scale prediction; '
+                         'use an archived implementation replay or recorded predicted_size_px.')
     dt = max(0., now - lock.last_predict)
     lock.last_predict = now
     transition = np.eye(8)
@@ -44,24 +48,33 @@ def predict(lock, now):
 
 
 def reconstruct(directory):
-    associations = load_lines(directory / 'association.jsonl')
-    truth = {(row['stamp']['sec'], row['stamp']['nanosec']): row
-             for row in load_lines(directory / 'identity_observations.jsonl')}
-    truth, calibration = extend_truth(directory, truth, associations, ROOT)
     settings = load_json(directory / 'runtime_parameters.json')['perception_node']
+    if settings.get('bounded_scale_prediction') is not False:
+        raise ValueError('This legacy CV audit requires explicit bounded_scale_prediction=false. '
+                         'Enabled or missing configuration is unsupported; use an archived '
+                         'implementation replay or recorded predicted_size_px.')
+    if not settings['predict_box_scale_velocity']:
+        raise ValueError('This audit reconstructs the recorded scale-velocity-enabled configuration.')
+    associations = load_lines(directory / 'association.jsonl')
+    if any(candidate.get('accepted') and candidate.get('geometry_update') not in
+           (None, 'full', 'full_reset') for row in associations for candidate in row['candidates']):
+        raise ValueError('This legacy CV audit does not support masked geometry corrections; '
+                         'use an archived implementation replay or recorded predicted_size_px.')
     module = 'ros2_ws/src/uav_learning/uav_learning/vehicle_target_lock.py'
     snapshot = load_json(directory / 'implementation_snapshot.json')
     if digest(ROOT / module) != snapshot['source_sha256'][module]:
         raise RuntimeError('Current Kalman implementation differs from the executed trial.')
-    if not settings['predict_box_scale_velocity']:
-        raise ValueError('This audit reconstructs the recorded scale-velocity-enabled configuration.')
+    truth = {(row['stamp']['sec'], row['stamp']['nanosec']): row
+             for row in load_lines(directory / 'identity_observations.jsonl')}
+    truth, calibration = extend_truth(directory, truth, associations, ROOT)
     search = next(row['time_s'] for row in load_json(directory / 'report.json')['transitions']
                   if row['state'] == 'SEARCH')
     seed = next(index for index, row in enumerate(associations)
                 if row['wall_s'] >= search and row['mode'] == 'acquiring'
                 and row['identity_confirmed'])
     width, height = associations[seed]['image_shape'][::-1]
-    lock = VehicleTargetLock(recovery_timeout=settings['target_reacquire_timeout'])
+    lock = VehicleTargetLock(recovery_timeout=settings['target_reacquire_timeout'],
+                             bounded_scale_prediction=False)
     rows, discrepancies, errors = [], [], {'center': [], 'log_scale': [], 'mahalanobis': []}
     for index, row in enumerate(associations[seed:], start=seed):
         selected = next((candidate for candidate in row['candidates'] if candidate.get('accepted')), None)

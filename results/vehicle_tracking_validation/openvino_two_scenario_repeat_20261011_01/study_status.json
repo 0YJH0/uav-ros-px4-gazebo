@@ -1,0 +1,11 @@
+{
+  "updated_utc": "2026-10-11T16:48:38.657350+00:00",
+  "runner_pid": 3038310,
+  "planned": 20,
+  "attempted": 20,
+  "completed_attempts": 20,
+  "completed": true,
+  "interrupted": false,
+  "error": null,
+  "active_trial": null
+}

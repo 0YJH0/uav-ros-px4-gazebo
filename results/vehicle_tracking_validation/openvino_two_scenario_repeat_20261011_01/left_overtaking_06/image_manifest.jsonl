@@ -1,0 +1,17 @@
+{"wall_s": 10.342302905977704, "debug_image": "00010.3_TAKEOFF.jpg", "raw_image": "00010.3_TAKEOFF_raw.png", "stamp": {"sec": 17, "nanosec": 0}}
+{"wall_s": 20.417836548003834, "debug_image": "00020.4_TAKEOFF.jpg", "raw_image": "00020.4_TAKEOFF_raw.png", "stamp": {"sec": 26, "nanosec": 352000000}}
+{"wall_s": 30.646899351966567, "debug_image": "00030.6_TAKEOFF.jpg", "raw_image": "00030.6_TAKEOFF_raw.png", "stamp": {"sec": 35, "nanosec": 900000000}}
+{"wall_s": 40.73676467197947, "debug_image": "00040.7_TAKEOFF.jpg", "raw_image": "00040.7_TAKEOFF_raw.png", "stamp": {"sec": 45, "nanosec": 100000000}}
+{"wall_s": 50.92159929999616, "debug_image": "00050.9_TAKEOFF.jpg", "raw_image": "00050.9_TAKEOFF_raw.png", "stamp": {"sec": 54, "nanosec": 552000000}}
+{"wall_s": 61.01928253698861, "debug_image": "00061.0_APPROACH.jpg", "raw_image": "00061.0_APPROACH_raw.png", "stamp": {"sec": 63, "nanosec": 752000000}}
+{"wall_s": 71.37037354399217, "debug_image": "00071.4_TRACK.jpg", "raw_image": "00071.4_TRACK_raw.png", "stamp": {"sec": 72, "nanosec": 552000000}}
+{"wall_s": 81.42456418700749, "debug_image": "00081.4_RECOVER.jpg", "raw_image": "00081.4_RECOVER_raw.png", "stamp": {"sec": 80, "nanosec": 900000000}}
+{"wall_s": 91.59902200498618, "debug_image": "00091.6_TRACK.jpg", "raw_image": "00091.6_TRACK_raw.png", "stamp": {"sec": 89, "nanosec": 600000000}}
+{"wall_s": 101.74730497901328, "debug_image": "00101.7_TRACK.jpg", "raw_image": "00101.7_TRACK_raw.png", "stamp": {"sec": 98, "nanosec": 400000000}}
+{"wall_s": 111.88605817896314, "debug_image": "00111.9_TRACK.jpg", "raw_image": "00111.9_TRACK_raw.png", "stamp": {"sec": 107, "nanosec": 52000000}}
+{"wall_s": 121.97402812598739, "debug_image": "00122.0_TRACK.jpg", "raw_image": "00122.0_TRACK_raw.png", "stamp": {"sec": 115, "nanosec": 952000000}}
+{"wall_s": 132.008628888987, "debug_image": "00132.0_TRACK.jpg", "raw_image": "00132.0_TRACK_raw.png", "stamp": {"sec": 124, "nanosec": 752000000}}
+{"wall_s": 142.11984241200844, "debug_image": "00142.1_TRACK.jpg", "raw_image": "00142.1_TRACK_raw.png", "stamp": {"sec": 133, "nanosec": 452000000}}
+{"wall_s": 152.16697120998288, "debug_image": "00152.2_TRACK.jpg", "raw_image": "00152.2_TRACK_raw.png", "stamp": {"sec": 142, "nanosec": 452000000}}
+{"wall_s": 162.45188428496476, "debug_image": "00162.4_RETURN.jpg", "raw_image": "00162.4_RETURN_raw.png", "stamp": {"sec": 151, "nanosec": 500000000}}
+{"wall_s": 172.48101406201022, "debug_image": "00172.5_LAND.jpg", "raw_image": "00172.5_LAND_raw.png", "stamp": {"sec": 160, "nanosec": 552000000}}

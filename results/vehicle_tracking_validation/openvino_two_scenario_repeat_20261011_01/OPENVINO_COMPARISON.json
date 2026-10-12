@@ -1,0 +1,817 @@
+{
+  "comparison": {
+    "left_overtaking": {
+      "coverage_percent": {
+        "torch": 92.4271809695118,
+        "openvino": 94.19057442613038,
+        "difference": 1.7633934566185872
+      },
+      "full_frame_yolo_mean_s": {
+        "torch": 0.16265793676890106,
+        "openvino": 0.11251363594623084,
+        "difference": -0.05014430082267021
+      },
+      "processing_mean_s": {
+        "torch": 0.18012759844388926,
+        "openvino": 0.12801080211685323,
+        "difference": -0.05211679632703603
+      },
+      "target_publish_age_mean_s": {
+        "torch": 0.2280202085040293,
+        "openvino": 0.15911264101943726,
+        "difference": -0.06890756748459204
+      },
+      "target_publish_age_p95_s": {
+        "torch": 0.340444517978467,
+        "openvino": 0.2498181335107074,
+        "difference": -0.09062638446775959
+      },
+      "track_mean_abs_pixel_error": {
+        "torch": 15.620900729153691,
+        "openvino": 13.172002053325,
+        "difference": -2.4488986758286906
+      },
+      "unplanned_losses": {
+        "torch": 0.6,
+        "openvino": 0.2,
+        "difference": -0.39999999999999997
+      },
+      "unplanned_recovery_max_s": {
+        "torch": 0.5058773082564585,
+        "openvino": 0.19992951201857068,
+        "difference": -0.3059477962378878
+      },
+      "planned_recovery_max_s": {
+        "torch": 1.6135985328932292,
+        "openvino": 1.1394817609107122,
+        "difference": -0.474116771982517
+      }
+    },
+    "lane_change": {
+      "coverage_percent": {
+        "torch": 90.43634444400332,
+        "openvino": 92.62191523123454,
+        "difference": 2.185570787231214
+      },
+      "full_frame_yolo_mean_s": {
+        "torch": 0.1647787322137268,
+        "openvino": 0.11191861705432034,
+        "difference": -0.05286011515940646
+      },
+      "processing_mean_s": {
+        "torch": 0.1837124756713136,
+        "openvino": 0.12726134784768994,
+        "difference": -0.05645112782362366
+      },
+      "target_publish_age_mean_s": {
+        "torch": 0.2332899597063441,
+        "openvino": 0.15745606917400393,
+        "difference": -0.07583389053234019
+      },
+      "target_publish_age_p95_s": {
+        "torch": 0.3601187927546561,
+        "openvino": 0.24928853039542442,
+        "difference": -0.11083026235923166
+      },
+      "track_mean_abs_pixel_error": {
+        "torch": 15.295673647315036,
+        "openvino": 14.283272777052808,
+        "difference": -1.012400870262228
+      },
+      "unplanned_losses": {
+        "torch": 2.0,
+        "openvino": 1.3,
+        "difference": -0.7
+      },
+      "unplanned_recovery_max_s": {
+        "torch": 1.723419843998272,
+        "openvino": 0.7399233032017947,
+        "difference": -0.9834965407964773
+      },
+      "planned_recovery_max_s": {
+        "torch": 1.470256312796846,
+        "openvino": 1.100007142702816,
+        "difference": -0.37024917009403
+      }
+    }
+  },
+  "failed_trials": [
+    {
+      "name": "left_overtaking_01",
+      "failure_reasons": [
+        "service_receipt_sequence_incomplete:scene"
+      ],
+      "native_failed_requests": [],
+      "missing_service_receipts": {
+        "scene": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "traffic": []
+      },
+      "occlusions": [
+        {
+          "start_wall_s": 86.04724809300387,
+          "state_at_start": "TRACK",
+          "entry_locked": true,
+          "end_wall_s": 91.1393282720237,
+          "recovery_s": 1.1169935180223547,
+          "confirmed_recovery_s": 1.4583180149784312,
+          "negative_observations": 20,
+          "vehicle_travel_during_occlusion_m": 3.0404188177975335
+        }
+      ],
+      "unlocked_entry_association_context": [],
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 6,
+          "tracked_vehicle": 297,
+          "panel_occlusion_unscorable": 23
+        },
+        "during": {
+          "tracked_vehicle": 67
+        },
+        "post": {
+          "tracked_vehicle": 329
+        }
+      },
+      "post_identity_frames": 329
+    },
+    {
+      "name": "lane_change_01",
+      "failure_reasons": [
+        "scene_service_requests_failed"
+      ],
+      "native_failed_requests": [
+        {
+          "client": "scene",
+          "sequence": 1,
+          "service": "/world/default/create",
+          "model_name": "",
+          "timeout_ms": 500,
+          "duration_s": 0.5013244510046206,
+          "binding_result": false,
+          "response_data": false,
+          "reason": "request_not_confirmed",
+          "wall_s": 2.9170081869815476,
+          "sim_s": 9.812
+        }
+      ],
+      "missing_service_receipts": {
+        "scene": [],
+        "traffic": []
+      },
+      "occlusions": [
+        {
+          "start_wall_s": 76.76530241500586,
+          "state_at_start": "TRACK",
+          "entry_locked": true,
+          "end_wall_s": 81.68920280697057,
+          "recovery_s": 0.9233161020092666,
+          "confirmed_recovery_s": 1.211783019010909,
+          "negative_observations": 21,
+          "vehicle_travel_during_occlusion_m": 3.0404188177975335
+        }
+      ],
+      "unlocked_entry_association_context": [],
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 8,
+          "tracked_vehicle": 213,
+          "panel_occlusion_unscorable": 23
+        },
+        "during": {
+          "tracked_vehicle": 243,
+          "unconfirmed": 2
+        },
+        "post": {
+          "tracked_vehicle": 222
+        }
+      },
+      "post_identity_frames": 222
+    },
+    {
+      "name": "left_overtaking_02",
+      "failure_reasons": [
+        "scene_service_requests_failed"
+      ],
+      "native_failed_requests": [
+        {
+          "client": "scene",
+          "sequence": 1,
+          "service": "/world/default/create",
+          "model_name": "",
+          "timeout_ms": 500,
+          "duration_s": 0.5016737619880587,
+          "binding_result": false,
+          "response_data": false,
+          "reason": "request_not_confirmed",
+          "wall_s": 2.9719262659782544,
+          "sim_s": 9.884
+        }
+      ],
+      "missing_service_receipts": {
+        "scene": [],
+        "traffic": []
+      },
+      "occlusions": [
+        {
+          "start_wall_s": 75.4079111359897,
+          "state_at_start": "TRACK",
+          "entry_locked": true,
+          "end_wall_s": 80.3374083149829,
+          "recovery_s": 0.6930710870074108,
+          "confirmed_recovery_s": 0.9461523490026593,
+          "negative_observations": 18,
+          "vehicle_travel_during_occlusion_m": 3.0404188177975335
+        }
+      ],
+      "unlocked_entry_association_context": [],
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 9,
+          "tracked_vehicle": 282,
+          "panel_occlusion_unscorable": 22
+        },
+        "during": {
+          "tracked_vehicle": 64
+        },
+        "post": {
+          "tracked_vehicle": 335
+        }
+      },
+      "post_identity_frames": 335
+    },
+    {
+      "name": "lane_change_03",
+      "failure_reasons": [
+        "scene_service_requests_failed"
+      ],
+      "native_failed_requests": [
+        {
+          "client": "scene",
+          "sequence": 1,
+          "service": "/world/default/create",
+          "model_name": "",
+          "timeout_ms": 500,
+          "duration_s": 0.5020494139753282,
+          "binding_result": false,
+          "response_data": false,
+          "reason": "request_not_confirmed",
+          "wall_s": 3.00527568400139,
+          "sim_s": 9.776
+        }
+      ],
+      "missing_service_receipts": {
+        "scene": [],
+        "traffic": []
+      },
+      "occlusions": [
+        {
+          "start_wall_s": 79.90739821002353,
+          "state_at_start": "TRACK",
+          "entry_locked": true,
+          "end_wall_s": 84.9128685790347,
+          "recovery_s": 0.7707754359580576,
+          "confirmed_recovery_s": 1.1098529750015587,
+          "negative_observations": 21,
+          "vehicle_travel_during_occlusion_m": 3.0404188177975335
+        }
+      ],
+      "unlocked_entry_association_context": [],
+      "identity_phase_counts": {
+        "pre": {
+          "tracked_vehicle": 251,
+          "unconfirmed": 6,
+          "panel_occlusion_unscorable": 23
+        },
+        "during": {
+          "tracked_vehicle": 291,
+          "unconfirmed": 6
+        },
+        "post": {
+          "tracked_vehicle": 234
+        }
+      },
+      "post_identity_frames": 234
+    },
+    {
+      "name": "lane_change_04",
+      "failure_reasons": [
+        "scene_service_requests_failed"
+      ],
+      "native_failed_requests": [
+        {
+          "client": "scene",
+          "sequence": 1,
+          "service": "/world/default/create",
+          "model_name": "",
+          "timeout_ms": 500,
+          "duration_s": 0.5015348150045611,
+          "binding_result": false,
+          "response_data": false,
+          "reason": "request_not_confirmed",
+          "wall_s": 2.851531713968143,
+          "sim_s": 9.712
+        }
+      ],
+      "missing_service_receipts": {
+        "scene": [],
+        "traffic": []
+      },
+      "occlusions": [
+        {
+          "start_wall_s": 77.30861734895734,
+          "state_at_start": "TRACK",
+          "entry_locked": true,
+          "end_wall_s": 82.22103935596533,
+          "recovery_s": 0.6046620840206742,
+          "confirmed_recovery_s": 0.9120113879907876,
+          "negative_observations": 22,
+          "vehicle_travel_during_occlusion_m": 3.0404188177975335
+        }
+      ],
+      "unlocked_entry_association_context": [],
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 6,
+          "tracked_vehicle": 223,
+          "panel_occlusion_unscorable": 24
+        },
+        "during": {
+          "tracked_vehicle": 249,
+          "unconfirmed": 2
+        },
+        "post": {
+          "tracked_vehicle": 238
+        }
+      },
+      "post_identity_frames": 238
+    },
+    {
+      "name": "left_overtaking_05",
+      "failure_reasons": [
+        "service_receipt_sequence_incomplete:scene"
+      ],
+      "native_failed_requests": [],
+      "missing_service_receipts": {
+        "scene": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "traffic": []
+      },
+      "occlusions": [
+        {
+          "start_wall_s": 76.9915874399594,
+          "state_at_start": "TRACK",
+          "entry_locked": true,
+          "end_wall_s": 81.77787237096345,
+          "recovery_s": 1.3024147470132448,
+          "confirmed_recovery_s": 1.6122665430302732,
+          "negative_observations": 20,
+          "vehicle_travel_during_occlusion_m": 3.0404188177975335
+        }
+      ],
+      "unlocked_entry_association_context": [],
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 9,
+          "tracked_vehicle": 288,
+          "panel_occlusion_unscorable": 22
+        },
+        "during": {
+          "tracked_vehicle": 61
+        },
+        "post": {
+          "tracked_vehicle": 356
+        }
+      },
+      "post_identity_frames": 356
+    },
+    {
+      "name": "lane_change_05",
+      "failure_reasons": [
+        "scene_service_requests_failed"
+      ],
+      "native_failed_requests": [
+        {
+          "client": "scene",
+          "sequence": 1,
+          "service": "/world/default/create",
+          "model_name": "",
+          "timeout_ms": 500,
+          "duration_s": 0.5011911200126633,
+          "binding_result": false,
+          "response_data": false,
+          "reason": "request_not_confirmed",
+          "wall_s": 2.9042498919880018,
+          "sim_s": 9.768
+        }
+      ],
+      "missing_service_receipts": {
+        "scene": [],
+        "traffic": []
+      },
+      "occlusions": [
+        {
+          "start_wall_s": 78.90847569698235,
+          "state_at_start": "TRACK",
+          "entry_locked": true,
+          "end_wall_s": 83.72567875497043,
+          "recovery_s": 1.0400020370143466,
+          "confirmed_recovery_s": 1.319867967045866,
+          "negative_observations": 20,
+          "vehicle_travel_during_occlusion_m": 3.0404188177975335
+        }
+      ],
+      "unlocked_entry_association_context": [],
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 7,
+          "tracked_vehicle": 230,
+          "panel_occlusion_unscorable": 22
+        },
+        "during": {
+          "tracked_vehicle": 257,
+          "unconfirmed": 3
+        },
+        "post": {
+          "tracked_vehicle": 200,
+          "unconfirmed": 40,
+          "overlap_unscorable": 44
+        }
+      },
+      "post_identity_frames": 200
+    },
+    {
+      "name": "lane_change_07",
+      "failure_reasons": [
+        "scene_service_requests_failed"
+      ],
+      "native_failed_requests": [
+        {
+          "client": "scene",
+          "sequence": 1,
+          "service": "/world/default/create",
+          "model_name": "",
+          "timeout_ms": 500,
+          "duration_s": 0.6016302810166962,
+          "binding_result": false,
+          "response_data": false,
+          "reason": "request_not_confirmed",
+          "wall_s": 3.0943021529819816,
+          "sim_s": 10.72
+        }
+      ],
+      "missing_service_receipts": {
+        "scene": [],
+        "traffic": []
+      },
+      "occlusions": [
+        {
+          "start_wall_s": 75.48426447098609,
+          "state_at_start": "TRACK",
+          "entry_locked": true,
+          "end_wall_s": 80.28453817695845,
+          "recovery_s": 0.5611557800439186,
+          "confirmed_recovery_s": 0.9360857300343923,
+          "negative_observations": 21,
+          "vehicle_travel_during_occlusion_m": 3.0404188177975335
+        }
+      ],
+      "unlocked_entry_association_context": [],
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 9,
+          "tracked_vehicle": 214,
+          "panel_occlusion_unscorable": 21
+        },
+        "during": {
+          "tracked_vehicle": 270,
+          "unconfirmed": 3
+        },
+        "post": {
+          "tracked_vehicle": 243,
+          "unconfirmed": 7
+        }
+      },
+      "post_identity_frames": 243
+    },
+    {
+      "name": "lane_change_09",
+      "failure_reasons": [
+        "supervisor_exit_not_zero:1",
+        "task_passed_not_confirmed",
+        "planned_occlusion_criteria_not_met",
+        "supervisor_autonomous_passed_not_confirmed"
+      ],
+      "native_failed_requests": [],
+      "missing_service_receipts": {
+        "scene": [],
+        "traffic": []
+      },
+      "occlusions": [
+        {
+          "start_wall_s": 78.08269010996446,
+          "state_at_start": "TRACK",
+          "entry_locked": false,
+          "end_wall_s": 82.9703799340059,
+          "recovery_s": 0.7002014899626374,
+          "confirmed_recovery_s": 0.9945136070018634,
+          "negative_observations": 21,
+          "vehicle_travel_during_occlusion_m": 3.040418817797544
+        }
+      ],
+      "unlocked_entry_association_context": [
+        {
+          "wall_s": 77.3570061000064,
+          "reason": "confirmed",
+          "candidate_reasons": [
+            {
+              "index": 0,
+              "track_id": 15,
+              "reason": "confirmed",
+              "rejection_reasons": []
+            },
+            {
+              "index": 1,
+              "track_id": 18,
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ]
+            }
+          ]
+        },
+        {
+          "wall_s": 77.47136621398386,
+          "reason": "confirmed",
+          "candidate_reasons": [
+            {
+              "index": 0,
+              "track_id": 15,
+              "reason": "confirmed",
+              "rejection_reasons": []
+            },
+            {
+              "index": 1,
+              "track_id": 18,
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ]
+            }
+          ]
+        },
+        {
+          "wall_s": 77.59840814600466,
+          "reason": "confirmed",
+          "candidate_reasons": [
+            {
+              "index": 0,
+              "track_id": 15,
+              "reason": "confirmed",
+              "rejection_reasons": []
+            },
+            {
+              "index": 1,
+              "track_id": 18,
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ]
+            }
+          ]
+        },
+        {
+          "wall_s": 77.71762880997267,
+          "reason": "all_candidates_rejected",
+          "candidate_reasons": [
+            {
+              "index": 0,
+              "track_id": 15,
+              "reason": "overlap_ambiguous_geometry",
+              "rejection_reasons": [
+                "overlap_ambiguous_geometry"
+              ]
+            },
+            {
+              "index": 1,
+              "track_id": 18,
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ]
+            },
+            {
+              "index": 2,
+              "track_id": null,
+              "reason": "overlap_ambiguous_geometry",
+              "rejection_reasons": [
+                "overlap_ambiguous_geometry",
+                "overlap_shape_gate",
+                "mahalanobis_gate"
+              ]
+            }
+          ]
+        },
+        {
+          "wall_s": 77.90985363197979,
+          "reason": "pending_confirmation",
+          "candidate_reasons": [
+            {
+              "index": 0,
+              "track_id": 15,
+              "reason": "pending_confirmation",
+              "rejection_reasons": []
+            },
+            {
+              "index": 1,
+              "track_id": 18,
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ]
+            }
+          ]
+        },
+        {
+          "wall_s": 78.01509576995159,
+          "reason": "pending_confirmation",
+          "candidate_reasons": [
+            {
+              "index": 0,
+              "track_id": 15,
+              "reason": "pending_confirmation",
+              "rejection_reasons": []
+            },
+            {
+              "index": 1,
+              "track_id": 18,
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ]
+            }
+          ]
+        },
+        {
+          "wall_s": 78.13717815995915,
+          "reason": "confirmed",
+          "candidate_reasons": [
+            {
+              "index": 0,
+              "track_id": 15,
+              "reason": "confirmed",
+              "rejection_reasons": []
+            },
+            {
+              "index": 1,
+              "track_id": 18,
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ]
+            }
+          ]
+        },
+        {
+          "wall_s": 78.25974554300774,
+          "reason": "confirmed",
+          "candidate_reasons": [
+            {
+              "index": 0,
+              "track_id": 15,
+              "reason": "confirmed",
+              "rejection_reasons": []
+            },
+            {
+              "index": 1,
+              "track_id": 18,
+              "reason": "center_gate",
+              "rejection_reasons": [
+                "center_gate",
+                "mahalanobis_gate"
+              ]
+            }
+          ]
+        }
+      ],
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 11,
+          "tracked_vehicle": 234,
+          "panel_occlusion_unscorable": 23
+        },
+        "during": {
+          "tracked_vehicle": 263,
+          "unconfirmed": 2
+        },
+        "post": {
+          "tracked_vehicle": 231,
+          "unconfirmed": 9
+        }
+      },
+      "post_identity_frames": 231
+    },
+    {
+      "name": "lane_change_10",
+      "failure_reasons": [
+        "scene_service_requests_failed"
+      ],
+      "native_failed_requests": [
+        {
+          "client": "scene",
+          "sequence": 1,
+          "service": "/world/default/create",
+          "model_name": "",
+          "timeout_ms": 500,
+          "duration_s": 0.5014479879755527,
+          "binding_result": false,
+          "response_data": false,
+          "reason": "request_not_confirmed",
+          "wall_s": 2.8459702760446817,
+          "sim_s": 9.716
+        }
+      ],
+      "missing_service_receipts": {
+        "scene": [],
+        "traffic": []
+      },
+      "occlusions": [
+        {
+          "start_wall_s": 77.63470832002349,
+          "state_at_start": "TRACK",
+          "entry_locked": true,
+          "end_wall_s": 82.26654642401263,
+          "recovery_s": 0.6210947469808161,
+          "confirmed_recovery_s": 0.941571269009728,
+          "negative_observations": 22,
+          "vehicle_travel_during_occlusion_m": 3.0404188177975335
+        }
+      ],
+      "unlocked_entry_association_context": [],
+      "identity_phase_counts": {
+        "pre": {
+          "unconfirmed": 7,
+          "tracked_vehicle": 222,
+          "panel_occlusion_unscorable": 24
+        },
+        "during": {
+          "tracked_vehicle": 263,
+          "unconfirmed": 2
+        },
+        "post": {
+          "tracked_vehicle": 239,
+          "unconfirmed": 3
+        }
+      },
+      "post_identity_frames": 239
+    }
+  ],
+  "pilot_passed": true,
+  "same_weight_and_declared_nonbackend_parameters": true,
+  "actual_backend_counts": {
+    "openvino": 24393
+  },
+  "actual_inference_thread_counts": {
+    "8": 24393
+  },
+  "independent_check_passed": true,
+  "backend_runtime": {
+    "interpreter": "/home/yjh/ROS2_manmade/.venv-yolo-backends/bin/python",
+    "interpreter_sha256": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+    "python_version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "packages": {
+      "openvino": "2026.4.1",
+      "ultralytics": "8.4.174",
+      "torch": "2.14.1+cpu",
+      "torchvision": "0.29.1+cpu",
+      "numpy": "1.26.4",
+      "opencv-python": "4.11.0.86"
+    }
+  },
+  "input_sha256": {
+    "results/vehicle_tracking_validation/openvino_two_scenario_repeat_20261011_01/SUMMARY.json": "4d4c052eaa69bff1619654959118820a3a4922f88dbaa049c9d5215deff7d57e",
+    "results/vehicle_tracking_validation/two_scenario_frozen_repeat_20261011_01/SUMMARY.json": "97a023a07690dd3b9fe45a7b230ff46a6280b2d1bda194001164771c9e958ee8",
+    "results/vehicle_tracking_validation/openvino_two_scenario_repeat_20261011_01/INDEPENDENT_CHECK.json": "22a7b4a8c77e2a7ba8d86c6811cce4e8ca17fa1b618228a2d1b10bcd31ee0cc9",
+    "results/vehicle_tracking_validation/openvino_pilot_20261011_01/PILOT_GATE.json": "d7361ed6206921b93d2e7345a0e52093c8f3a43c1450044353bf4d4bac3f8b95",
+    "results/vehicle_tracking_validation/openvino_two_scenario_repeat_20261011_01/batch_protocol.json": "4fe4fd5234238265f38d359b97009c252fe69c19eb435a6ee68271e0794818eb",
+    "results/vehicle_tracking_validation/two_scenario_frozen_repeat_20261011_01/batch_protocol.json": "57e6583505b7a2b8320c71c78752bcf63416f65952a9ff1d2d3a87c25ef90282",
+    "results/vehicle_tracking_validation/openvino_two_scenario_repeat_20261011_01/freeze_manifest.json": "554fb1f314c09e90db5e84e9edb8763aaedad8e1aa6e0c2cb8a61d333b332673",
+    "results/vehicle_tracking_validation/two_scenario_frozen_repeat_20261011_01/freeze_manifest.json": "d173dc7630866d8d0078200b145a7f021e10977e57f3b09ab00e8e4883e17923"
+  },
+  "script_sha256": "556dc2047643dca8079226c8e527646ddfa9c7a14df91e22304c93af70219419"
+}

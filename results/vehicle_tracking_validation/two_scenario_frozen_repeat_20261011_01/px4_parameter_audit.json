@@ -1,0 +1,817 @@
+{
+  "trials": [
+    {
+      "name": "left_overtaking_01",
+      "available": true,
+      "initial_parameter_sha256": "e9949543b09a62a5b7b6a73bd1181b0bac42283f87b457d16c07ce837b4da3fd",
+      "bookkeeping_differences": {},
+      "calibration_differences": {},
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4068000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4068000,
+          "name": "CAL_BARO0_OFF",
+          "value": 3.662109375
+        },
+        {
+          "timestamp_us": 4068000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "lane_change_01",
+      "available": true,
+      "initial_parameter_sha256": "de08ee79870269303c990fbf3da701b390bca165c7c48a519167d0faf1c29b62",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 166
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": -472980480
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": 3.662109375
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4020000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4020000,
+          "name": "CAL_BARO0_OFF",
+          "value": -1.220703125
+        },
+        {
+          "timestamp_us": 4020000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "left_overtaking_02",
+      "available": true,
+      "initial_parameter_sha256": "16840f7058b02c4127058f079f71a83143f980439dac398de791c2f1194785b5",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 167
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": -334148480
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3988000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3988000,
+          "name": "CAL_BARO0_OFF",
+          "value": 3.662109375
+        },
+        {
+          "timestamp_us": 3988000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "lane_change_02",
+      "available": true,
+      "initial_parameter_sha256": "64641d6adabbe4f918448c2d4938dab5e235a0512a33b85b49c2ada8f20414dd",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 168
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": -200296480
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": 3.662109375
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4004000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4004000,
+          "name": "CAL_BARO0_OFF",
+          "value": -1.220703125
+        },
+        {
+          "timestamp_us": 4004000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "left_overtaking_03",
+      "available": true,
+      "initial_parameter_sha256": "0fa3f5e66958c84abef06babad7eb1ebfbd5bc1286bc1a3b4449348c8f66c82e",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 169
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": -69040480
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4084000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4084000,
+          "name": "CAL_BARO0_OFF",
+          "value": -1.220703125
+        },
+        {
+          "timestamp_us": 4084000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "lane_change_03",
+      "available": true,
+      "initial_parameter_sha256": "eeb005fd4be0dd1b7055c83bbafaf2484c246eca6b068f6e5e5f2a3ea6133764",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 170
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 59983520
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4000000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4000000,
+          "name": "CAL_BARO0_OFF",
+          "value": -1.220703125
+        },
+        {
+          "timestamp_us": 4000000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "left_overtaking_04",
+      "available": true,
+      "initial_parameter_sha256": "b368dfd1fe268dc159ab485fcd9a071ab621df76b097a0505fab054d1ace211f",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 171
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 194471520
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3992000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3992000,
+          "name": "CAL_BARO0_OFF",
+          "value": 3.662109375
+        },
+        {
+          "timestamp_us": 3992000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "lane_change_04",
+      "available": true,
+      "initial_parameter_sha256": "b6abd2ff3bbf7b95e8365b08f892f029221346b51800ef218a7c06f1f59ce962",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 172
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 340627520
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": 3.662109375
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3908000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3908000,
+          "name": "CAL_BARO0_OFF",
+          "value": 1.220703125
+        },
+        {
+          "timestamp_us": 3908000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "left_overtaking_05",
+      "available": true,
+      "initial_parameter_sha256": "b939aab48df8905586cd3500449c39656358dd1ee6fc1baeaebe6fd01b5de48e",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 173
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 485871520
+        }
+      },
+      "calibration_differences": {},
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3872000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3872000,
+          "name": "CAL_BARO0_OFF",
+          "value": -3.662109375
+        },
+        {
+          "timestamp_us": 3872000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "lane_change_05",
+      "available": true,
+      "initial_parameter_sha256": "016506028fa3a38c6c916d0f60dea2f62c538f002919b818f9031145c91137cd",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 174
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 629983520
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -3.662109375
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3916000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3916000,
+          "name": "CAL_BARO0_OFF",
+          "value": 1.220703125
+        },
+        {
+          "timestamp_us": 3916000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "left_overtaking_06",
+      "available": true,
+      "initial_parameter_sha256": "11c48f3a63ab0e93e5d245b67f2d49b894c4130fb41877f93d96f6d31f838d3a",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 175
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 778387520
+        }
+      },
+      "calibration_differences": {},
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3916000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3916000,
+          "name": "CAL_BARO0_OFF",
+          "value": -1.220703125
+        },
+        {
+          "timestamp_us": 3916000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "lane_change_06",
+      "available": true,
+      "initial_parameter_sha256": "7fea0aab0775319bee94a1423840a96103a2d535bb82d60619201eef5a9cec80",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 176
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 920367520
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4052000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4052000,
+          "name": "CAL_BARO0_OFF",
+          "value": -1.220703125
+        },
+        {
+          "timestamp_us": 4052000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "left_overtaking_07",
+      "available": true,
+      "initial_parameter_sha256": "982f8aae18d2c386f74389fe008a33df37a355f23e61699ed89e53c76c715765",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 177
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 1050631520
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4044000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4044000,
+          "name": "CAL_BARO0_OFF",
+          "value": -1.220703125
+        },
+        {
+          "timestamp_us": 4044000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "lane_change_07",
+      "available": true,
+      "initial_parameter_sha256": "84f514cbab063fef40d645499cf146752d32177cea7b31662250f8b548a4337f",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 178
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 1181007520
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3996000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3996000,
+          "name": "CAL_BARO0_OFF",
+          "value": 3.662109375
+        },
+        {
+          "timestamp_us": 3996000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "left_overtaking_08",
+      "available": true,
+      "initial_parameter_sha256": "5aa425117f9d96f25013d6f0eb01184f2bded33665fdc2dbc89c29c73186580d",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 179
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 1313487520
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": 3.662109375
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4064000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4064000,
+          "name": "CAL_BARO0_OFF",
+          "value": -1.220703125
+        },
+        {
+          "timestamp_us": 4064000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "lane_change_08",
+      "available": true,
+      "initial_parameter_sha256": "5e628572edd71426b64fe921f19654ae20adc3c26a2bfcd9e590c618c525fad1",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 180
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 1454871520
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -1.220703125
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3980000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3980000,
+          "name": "CAL_BARO0_OFF",
+          "value": -3.662109375
+        },
+        {
+          "timestamp_us": 3980000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "left_overtaking_09",
+      "available": true,
+      "initial_parameter_sha256": "401c2e3a9c3f171dafe5a635708583c243b33f5de6d54be17891dddf50b4ba38",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 181
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 1588487520
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -3.662109375
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3988000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3988000,
+          "name": "CAL_BARO0_OFF",
+          "value": 1.220703125
+        },
+        {
+          "timestamp_us": 3988000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "lane_change_09",
+      "available": true,
+      "initial_parameter_sha256": "132c7b0ea232728ba5e01229124bf0c5f36dbe968c6da7f80176397ccc7c0b20",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 182
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 1719347520
+        }
+      },
+      "calibration_differences": {},
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 3904000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 3904000,
+          "name": "CAL_BARO0_OFF",
+          "value": 1.220703125
+        },
+        {
+          "timestamp_us": 3904000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "left_overtaking_10",
+      "available": true,
+      "initial_parameter_sha256": "8e52298becd48b9e4611895f72518919c61f81ad9bd85a924d83e28bb19b89da",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 183
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 1860995520
+        }
+      },
+      "calibration_differences": {},
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4200000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4200000,
+          "name": "CAL_BARO0_OFF",
+          "value": -3.662109375
+        },
+        {
+          "timestamp_us": 4200000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "lane_change_10",
+      "available": true,
+      "initial_parameter_sha256": "148b99d0d8541f11d79025bb63b133aff19d68c26c9b7685c9e21c019732122d",
+      "bookkeeping_differences": {
+        "COM_FLIGHT_UUID": {
+          "reference": 165,
+          "observed": 184
+        },
+        "LND_FLIGHT_T_HI": {
+          "reference": 4,
+          "observed": 5
+        },
+        "LND_FLIGHT_T_LO": {
+          "reference": -603828480,
+          "observed": 1983675520
+        }
+      },
+      "calibration_differences": {
+        "CAL_BARO0_OFF": {
+          "reference": 1.220703125,
+          "observed": -3.662109375
+        }
+      },
+      "other_parameter_differences": {},
+      "parameter_updates_after_header": [
+        {
+          "timestamp_us": 4152000,
+          "name": "CAL_BARO0_ID",
+          "value": 6619404
+        },
+        {
+          "timestamp_us": 4152000,
+          "name": "CAL_BARO0_OFF",
+          "value": -3.662109375
+        },
+        {
+          "timestamp_us": 4152000,
+          "name": "CAL_BARO0_PRIO",
+          "value": 50
+        }
+      ]
+    }
+  ],
+  "available_logs": 20,
+  "comparison_reference": "left_overtaking_01",
+  "limitations": [
+    "Frozen launch files do not imply identical runtime calibration or flight counters.",
+    "Initial ULog values are the used parameter set; unrecorded defaults are not verified.",
+    "Startup parameter updates are not automatically in-flight updates."
+  ]
+}

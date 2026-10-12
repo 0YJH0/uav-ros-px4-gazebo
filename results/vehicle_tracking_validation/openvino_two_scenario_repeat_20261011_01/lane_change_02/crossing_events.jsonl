@@ -1,0 +1,7 @@
+{"event": "lane_change_rear_follow", "sim_s": 64.0, "wall_s": 55.783132632030174, "motion_time": 0.19999999999999574, "scenario": "lane_change_overtaking"}
+{"event": "lane_change_change_left", "sim_s": 89.0, "wall_s": 84.40933563699946, "motion_time": 25.199999999999996, "scenario": "lane_change_overtaking"}
+{"event": "lane_change_overtaking_started", "sim_s": 89.0, "wall_s": 84.40936802898068, "motion_time": 25.199999999999996, "scenario": "lane_change_overtaking"}
+{"event": "lane_change_left_pass", "sim_s": 99.0, "wall_s": 96.25421848503174, "motion_time": 35.199999999999996, "scenario": "lane_change_overtaking"}
+{"event": "lane_change_merge_center", "sim_s": 111.0, "wall_s": 110.99354408401996, "motion_time": 47.199999999999996, "scenario": "lane_change_overtaking"}
+{"event": "lane_change_ahead_follow", "sim_s": 121.0, "wall_s": 122.33005221001804, "motion_time": 57.199999999999996, "scenario": "lane_change_overtaking"}
+{"event": "lane_change_overtaking_completed", "sim_s": 121.0, "wall_s": 122.33010621299036, "motion_time": 57.199999999999996, "scenario": "lane_change_overtaking"}

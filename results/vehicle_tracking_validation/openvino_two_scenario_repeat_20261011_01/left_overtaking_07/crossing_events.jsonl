@@ -1,0 +1,2 @@
+{"event": "overtaking_started", "sim_s": 97.4, "wall_s": 95.01556394598447, "motion_time": 35.0, "scenario": "overtaking"}
+{"event": "overtaking_completed", "sim_s": 105.4, "wall_s": 104.24093038594583, "motion_time": 43.2, "scenario": "overtaking"}

@@ -1,0 +1,66 @@
+{
+  "scenario": {
+    "vehicle_speed": 0.8,
+    "occlusion_start": 15.0,
+    "occlusion_duration": 4.0,
+    "recovery_competition_enabled": false,
+    "predict_box_scale_velocity": true,
+    "smooth_recovery_setpoints": false,
+    "cpu_inference_threads": 0,
+    "detector_backend": "torch",
+    "backend_artifacts": "",
+    "gui": true,
+    "distractor_color": "red",
+    "parked_vehicle_y": -4.4,
+    "crossing": false,
+    "overtaking": true,
+    "traffic_scenario": "overtaking"
+  },
+  "task_passed": true,
+  "identity_verified": true,
+  "strict_joint_passed": true,
+  "coverage_percent": 93.53018735621454,
+  "track_losses": 1,
+  "planned_losses": 1,
+  "unplanned_losses": 0,
+  "occlusion_confirmed_recovery_wall_s": [
+    1.1521760399919003
+  ],
+  "wrong_identity_observations": 0,
+  "scorable_identity_switches": 0,
+  "drone_follow_travel_m": 58.192813289443215,
+  "track_mean_abs_pixel_error": 15.957904927023986,
+  "final_home_horizontal_error_m": 0.7211350413119215,
+  "parked_pose": [
+    30.0,
+    -4.4,
+    0.05
+  ],
+  "scene_requests": {
+    "total": 903,
+    "failures": 0,
+    "by_service": {
+      "/world/default/create": 5,
+      "/world/default/set_pose": 898
+    },
+    "receipt_errors": 0,
+    "sequence_errors": []
+  },
+  "ulog_safety": {
+    "armed_failsafe_observations": 0,
+    "armed_offboard_lost_observations": 0,
+    "ulog_dropout_events": 0
+  },
+  "ulog_sha256": "820000282eec2f6c37e836706853c308eda39a5664014bf349ff040b314861db",
+  "source_snapshot_files_verified": 39,
+  "regression_tests": {
+    "passed": 336,
+    "warnings": 3
+  },
+  "limitations": [
+    "Single trial, not a repeated benchmark or evidence of algorithm improvement.",
+    "Both distractor color and parked position changed from the archived blue baseline.",
+    "Same-appearance separate-lane overtaking is not overlapping crossing recovery.",
+    "Identity is from identity_report.json; report.json does not independently verify identity."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "identity_independently_verified": true,
+  "wrong_identity_observations": 0,
+  "identity_evaluation_version": "exclusive_projection_v2",
+  "identity_criteria": {
+    "minimum_match_iou": 0.4,
+    "minimum_match_margin": 0.2,
+    "projection_overlap_event_iou": 0.1,
+    "exclusive_majority": 0.5
+  },
+  "identity_reason_counts": {
+    "no_accepted_box": 43,
+    "unique_projection_support": 530,
+    "multiple_vehicle_support": 101
+  },
+  "target_color": "red",
+  "distractor_color": "red",
+  "traffic_scenario": "lane_change_overtaking",
+  "overtaking_observed": true,
+  "lane_change": {
+    "maneuver_observed": true,
+    "lane_change_scenario_observed": true,
+    "lane_change_checks": {
+      "same_lane_rear_follow_observed": true,
+      "left_lane_change_observed": true,
+      "left_lane_pass_observed": true,
+      "center_lane_return_observed": true,
+      "same_lane_ahead_follow_observed": true,
+      "vehicle_clearance_and_road_margin_verified": true
+    },
+    "maneuver_phase_counts": {
+      "rear_follow": 230,
+      "change_left": 82,
+      "left_pass": 94,
+      "merge_center": 80,
+      "ahead_follow": 211
+    },
+    "minimum_world_horizontal_clearance_m": 1.2761333676513817,
+    "minimum_distractor_road_margin_m": 0.258111852270944
+  },
+  "minimum_world_lateral_clearance_m": -2.881309473334408,
+  "traffic_started": true,
+  "traffic_completed": true,
+  "phase_counts": {
+    "pre": {
+      "unconfirmed": 5,
+      "tracked_vehicle": 206,
+      "panel_occlusion_unscorable": 23
+    },
+    "during": {
+      "tracked_vehicle": 241,
+      "unconfirmed": 6,
+      "overlap_unscorable": 6
+    },
+    "post": {
+      "unconfirmed": 32,
+      "overlap_unscorable": 95,
+      "tracked_vehicle": 83
+    }
+  },
+  "overlap_observations": 51,
+  "post_crossing_confirmation_sim_s": 9.699999999999989,
+  "post_traffic_confirmation_sim_s": 9.699999999999989,
+  "after_last_overlap_confirmation_sim_s": 9.899999999999991,
+  "after_last_overlap_confirmation_wall_s": 12.49339506396791,
+  "scorable_identity_switches": 0,
+  "observations_total": 697,
+  "scorable_observations": 530,
+  "matched_truth_fraction": 1.0,
+  "crossing_started": false,
+  "crossing_completed": false,
+  "errors": [],
+  "limitations": [
+    "Labels use projected mesh bounding volumes, not per-pixel instance masks.",
+    "Partial projection overlap is scored only with unique majority support; merged or ambiguous boxes remain unscorable.",
+    "Projected exclusive areas are geometric box evidence, not visible pixel instance masks.",
+    "Post-confirmation latency is in simulation seconds; mission recovery uses wall seconds.",
+    "No identity claims are made for unscorable frames or absent scenario evidence.",
+    "Identity claims apply only to the tested traffic geometry and appearance configuration."
+  ]
+}
